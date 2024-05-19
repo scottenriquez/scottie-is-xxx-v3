@@ -41,10 +41,6 @@ const config = {
       ({
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -65,7 +61,7 @@ const config = {
         },
         items: [
           {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/resume', label: 'Resume', position: 'left'},
+          {to: '/files/resume.pdf', label: 'Resume', position: 'left', target: '_blank'},
           {
             href: 'https://github.com/scottenriquez',
             label: 'GitHub',
@@ -117,6 +113,11 @@ const config = {
         theme: prismThemes.dracula,
         darkTheme: prismThemes.dracula,
         additionalLanguages: ['bash', 'diff', 'json', 'yaml', 'csharp', 'hcl', 'toml', 'sql', 'docker', 'editorconfig', 'swift', 'markdown', 'typescript', 'jsx', 'python', 'graphql']
+      },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
     }),
 };
