@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'About Me',
+    Svg: require('@site/static/img/scott-s.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+          I'm a cloud solutions architect, software engineer, and occasional nomad. I currently work for Amazon Web Services.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Cloud and Coding',
+    Svg: require('@site/static/img/code-c.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        I'm a graduate of the University of Texas at Austin with degrees in computer science and Asian studies. I also have over 10 AWS, Azure, and HashiCorp certifications. I've been working in tech for over 10 years across disciplines including software engineering, cloud engineering, DevOps engineering, and consulting.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Blog',
+    Svg: require('@site/static/img/blog-b.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        I started writing this blog in 2012 as an undergraduate student. I enjoy musing about technology, travel, and life in general.
       </>
     ),
   },
@@ -41,8 +38,10 @@ function Feature({Svg, title, description}) {
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
+      <br/>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
+        <br/>
         <p>{description}</p>
       </div>
     </div>

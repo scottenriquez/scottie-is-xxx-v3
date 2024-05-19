@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Scottie Enriquez',
-  tagline: 'I\'m a cloud solutions architect, software engineer, and occasional nomad. I currently live in Los Angeles, California and work for Amazon Web Services. All opinions expressed here are my own.',
+  tagline: 'Computer Scientist in Los Angeles, California',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
