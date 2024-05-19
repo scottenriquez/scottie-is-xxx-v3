@@ -27,7 +27,7 @@ const FeatureList = [
     Svg: require('@site/static/img/blog-b.svg').default,
     description: (
       <>
-        I started writing <Link href={'/blog'}>this blog</Link> in 2012 as an undergraduate student. I enjoy musing about technology, travel, and life in general.
+        I started writing <Link href={'/writing'}>this blog</Link> in 2012 as an undergraduate student. I enjoy musing about technology, travel, and life in general.
       </>
     ),
   },

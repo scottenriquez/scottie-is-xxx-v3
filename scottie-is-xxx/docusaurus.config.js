@@ -40,6 +40,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         blog: {
+          routeBasePath: '/writing',
           showReadingTime: true,
           blogSidebarTitle: 'Posts',
           blogSidebarCount: 'ALL',
@@ -62,7 +63,7 @@ const config = {
           src: 'img/scott-s.svg',
         },
         items: [
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/writing', label: 'Blog', position: 'left'},
           {to: '/files/resume.pdf', label: 'Resume', position: 'left', target: '_blank'},
           {
             href: 'https://github.com/scottenriquez',
