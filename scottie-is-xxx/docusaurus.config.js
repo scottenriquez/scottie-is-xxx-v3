@@ -116,6 +116,7 @@ const config = {
       prism: {
         theme: prismThemes.dracula,
         darkTheme: prismThemes.dracula,
+        additionalLanguages: ['bash', 'diff', 'json', 'yaml', 'csharp', 'hcl', 'toml', 'sql', 'docker', 'editorconfig', 'swift', 'markdown', 'typescript', 'jsx', 'python', 'graphql']
       },
     }),
 };
