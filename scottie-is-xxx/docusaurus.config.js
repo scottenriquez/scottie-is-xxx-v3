@@ -41,6 +41,8 @@ const config = {
       ({
         blog: {
           showReadingTime: true,
+          blogSidebarTitle: 'Posts',
+          blogSidebarCount: 'ALL',
         },
         theme: {
           customCss: './src/css/custom.css',
