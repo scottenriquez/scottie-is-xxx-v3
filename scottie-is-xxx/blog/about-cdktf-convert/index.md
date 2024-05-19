@@ -1,4 +1,5 @@
 ---
+authors: [scottenriquez]
 title: "Using the New Terraform for CDK Convert Feature"
 date: "2021-08-02T22:12:03.284Z"
 description: "Testing the new CDKTF 0.5 feature."

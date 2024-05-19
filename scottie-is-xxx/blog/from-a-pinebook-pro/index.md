@@ -1,4 +1,5 @@
 ---
+authors: [scottenriquez]
 title: "Testing the PINEBOOK Pro as a Daily Driver"
 date: "2020-07-11T22:12:03.284Z"
 description: "Using a $200 laptop as my primary machine."

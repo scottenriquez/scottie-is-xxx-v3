@@ -1,4 +1,5 @@
 ---
+authors: [scottenriquez]
 title: Cloud9 IDE Configuration 
 date: "2020-11-08T22:12:03.284Z"
 description: "Scripts for preparing a cloud-hosted IDE in AWS."

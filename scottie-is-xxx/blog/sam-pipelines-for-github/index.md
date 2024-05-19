@@ -1,4 +1,5 @@
 ---
+authors: [scottenriquez]
 title: "Configuring AWS SAM Pipelines for GitHub Actions"
 date: "2021-07-29T22:12:03.284Z"
 description: "Creating a multi-account CI/CD pipeline using the latest SAM CLI functionality."

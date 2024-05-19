@@ -1,4 +1,5 @@
 ---
+authors: [scottenriquez]
 title: Testing .NET Standard Libraries Using .NET Core, NUnit, and Travis CI
 date: "2018-04-16T22:12:03.284Z"
 description: "Getting started testing .NET Standard class libraries."

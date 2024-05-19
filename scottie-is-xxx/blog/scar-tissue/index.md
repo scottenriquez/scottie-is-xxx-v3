@@ -1,4 +1,5 @@
 ---
+authors: [scottenriquez]
 title: Scar Tissue
 date: "2013-12-18T22:12:03.284Z"
 description: "Thoughts on college graduation on returning to Alaska."

@@ -1,4 +1,5 @@
 ---
+authors: [scottenriquez]
 title: A Timeline for Learning Japanese
 date: "2012-12-04T22:12:03.284Z"
 description: "An outline of the road to Japanese fluency."

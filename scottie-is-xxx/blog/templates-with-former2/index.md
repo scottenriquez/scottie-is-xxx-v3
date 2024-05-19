@@ -1,4 +1,5 @@
 ---
+authors: [scottenriquez]
 title: Using Former2 for Existing AWS Resources 
 date: "2020-09-26T22:12:03.284Z"
 description: "Generating CloudFormation templates from existing AWS resources."

@@ -1,4 +1,5 @@
 ---
+authors: [scottenriquez]
 title: AWS re:Invent 2022 
 date: "2022-11-29T22:12:03.284Z"
 description: "Thoughts and proofs-of-concepts from re:Invent 2022 releases."

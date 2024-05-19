@@ -1,4 +1,5 @@
 ---
+authors: [scottenriquez]
 title: An Integrated Approach to Japanese Study
 date: "2012-12-15T22:12:03.284Z"
 description: "A guide for intermediate Japanese study."

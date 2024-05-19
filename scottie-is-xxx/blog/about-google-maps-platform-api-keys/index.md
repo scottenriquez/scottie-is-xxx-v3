@@ -1,4 +1,5 @@
 ---
+authors: [scottenriquez]
 title: Mitigating Risk With Using Google Maps API Keys in the Browser
 date: "2018-05-05T22:12:03.284Z"
 description: "Relevant to the June 2018 Terms of Service changes to the Google Maps platform."

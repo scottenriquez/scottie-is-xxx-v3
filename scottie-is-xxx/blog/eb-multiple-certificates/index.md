@@ -1,4 +1,5 @@
 ---
+authors: [scottenriquez]
 title: Configuring Multiple SSL Certs for a Single Elastic Beanstalk Instance
 date: "2018-07-13T22:12:03.284Z"
 description: "Configuring an Application Load Balancer to use multiple SSL certificates with the same application."

@@ -1,4 +1,5 @@
 ---
+authors: [scottenriquez]
 title: TEALS Week One Postmortem
 date: "2018-09-03T22:12:03.284Z"
 description: "Successes and lessons learned during my first week of teaching computer science."

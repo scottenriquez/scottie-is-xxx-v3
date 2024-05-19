@@ -1,4 +1,5 @@
 ---
+authors: [scottenriquez]
 title: Greetings from Gatsby
 date: "2020-05-22T22:12:03.284Z"
 description: "Migrating to JAMstack."
