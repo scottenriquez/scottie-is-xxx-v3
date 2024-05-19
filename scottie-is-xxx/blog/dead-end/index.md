@@ -1,7 +1,7 @@
 ---
 authors: [scottenriquez]
 title: "Life on the Street Is a Dead End"
-date: "2014-02-22T22:12:03.284Z"
+date: "2014-02-22"
 description: "Thoughts on witnessing the socioeconomic inequities of Anchorage firsthand."
 tag: "Personal"
 ---

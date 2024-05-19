@@ -1,7 +1,7 @@
 ---
 authors: [scottenriquez]
 title: Another Journey Through the Heisig 2042
-date: "2012-11-26T22:12:03.284Z"
+date: "2012-11-26"
 description: "My second attempt to memorize the most commonly used Japanese characters."
 tag: "Japanese"
 ---

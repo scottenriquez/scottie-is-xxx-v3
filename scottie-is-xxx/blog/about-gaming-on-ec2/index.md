@@ -1,7 +1,7 @@
 ---
 authors: [scottenriquez]
 title: Gaming on EC2
-date: "2019-03-17T22:12:03.284Z"
+date: "2019-03-17"
 description: "Creating a gaming rig on AWS."
 tag: "Hardware"
 ---

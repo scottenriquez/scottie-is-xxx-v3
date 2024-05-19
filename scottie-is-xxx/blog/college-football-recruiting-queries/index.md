@@ -1,7 +1,7 @@
 ---
 authors: [scottenriquez]
 title: "Creating College Football Recruiting Database on AWS Athena"
-date: "2020-06-09T22:12:03.284Z"
+date: "2020-06-09"
 description: "A set of tools to fetch and process publicly available data from 247 for non-commercial, personal data analysis use."
 tag: "Programming"
 ---

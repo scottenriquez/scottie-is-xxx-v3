@@ -1,7 +1,7 @@
 ---
 authors: [scottenriquez]
 title: "AWS re:Invent 2020" 
-date: "2020-12-01T22:12:03.284Z"
+date: "2020-12-01"
 description: "Thoughts and proofs-of-concepts from AWS re:Invent 2020."
 tag: "Programming"
 ---

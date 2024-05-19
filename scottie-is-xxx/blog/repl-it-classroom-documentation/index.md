@@ -1,7 +1,7 @@
 ---
 authors: [scottenriquez]
 title: Using Repl.it in a High School Classroom
-date: "2020-07-30T22:12:03.284Z"
+date: "2020-07-30"
 description: "Configuring a classroom environment in Repl.it for high school computer science."
 tag: "Teaching"
 ---

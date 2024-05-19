@@ -1,7 +1,7 @@
 ---
 authors: [scottenriquez]
 title: Learning About Learning
-date: "2013-11-14T22:12:03.284Z"
+date: "2013-11-14"
 description: "A reflection on my undergraduate career."
 tag: "Personal"
 ---

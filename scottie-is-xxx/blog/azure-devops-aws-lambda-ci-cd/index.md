@@ -1,6 +1,6 @@
 ---
 title: "Azure DevOps CI/CD Pipeline for an AWS Lambda Node.js Function"
-date: "2020-02-08T22:12:03.284Z"
+date: "2020-02-08"
 description: "End-to-end working example for testing, building, linting, and deploying an AWS Lambda Node.js function to multiple environments."
 tag: "Programming"
 ---

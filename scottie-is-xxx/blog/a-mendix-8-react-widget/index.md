@@ -1,7 +1,7 @@
 ---
 authors: [scottenriquez]
 title: Building a React Widget for Mendix 8
-date: "2019-11-20T22:12:03.284Z"
+date: "2019-11-20"
 description: "Bringing the Ace editor to Mendix."
 tag: "Programming"
 ---

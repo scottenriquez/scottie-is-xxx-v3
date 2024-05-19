@@ -1,7 +1,7 @@
 ---
 authors: [scottenriquez]
 title: Creating a Swift 5.2 Executable with Unit Tests
-date: "2020-08-03T22:12:03.284Z"
+date: "2020-08-03"
 description: "A guide to creating, structuring, and testing Swift executable packages."
 tag: "Programming"
 ---

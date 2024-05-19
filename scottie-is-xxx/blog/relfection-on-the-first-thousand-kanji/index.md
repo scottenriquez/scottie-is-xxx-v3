@@ -1,7 +1,7 @@
 ---
 authors: [scottenriquez]
 title: Reflections on the First Thousand Kanji
-date: "2013-01-13T22:12:03.284Z"
+date: "2013-01-13"
 description: "Thoughts on completing the first thousand characters."
 tag: "Japanese"
 ---

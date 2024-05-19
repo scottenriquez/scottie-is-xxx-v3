@@ -1,7 +1,7 @@
 ---
 authors: [scottenriquez]
 title: Getting Started with Python and Flask on AWS
-date: "2015-12-13T22:12:03.284Z"
+date: "2015-12-13"
 description: "A quick guide for getting a RESTful API set up using Flask on Amazon Web Services."
 tag: "Programming"
 ---

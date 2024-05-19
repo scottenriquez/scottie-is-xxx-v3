@@ -1,7 +1,7 @@
 ---
 authors: [scottenriquez]
 title: "SonarCloud for C# Projects with Travis CI"
-date: "2019-06-09T22:12:03.284Z"
+date: "2019-06-09"
 description: "Example .NET project utilizing SonarCloud for continuous code inspection via Travis CI build."
 tag: "Programming"
 ---

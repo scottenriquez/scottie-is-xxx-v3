@@ -1,7 +1,7 @@
 ---
 authors: [scottenriquez]
 title: Reflections on Alaska
-date: "2013-09-13T22:12:03.284Z"
+date: "2013-09-13"
 description: "Thoughts on my summer internship in Anchorage, Alaska."
 tag: "Personal"
 ---

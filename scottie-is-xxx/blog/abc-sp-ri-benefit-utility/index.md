@@ -1,7 +1,7 @@
 ---
 authors: [scottenriquez]
 title: AWS Billing Conductor SP/RI Benefit Utility 
-date: "2024-03-13T22:12:03.284Z"
+date: "2024-03-13"
 description: "SAM application for creating Billing Conductor custom line items to distribute SP/RI benefits purchased outside of billing groups."
 tag: "Programming"
 ---

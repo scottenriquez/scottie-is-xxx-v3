@@ -1,7 +1,7 @@
 ---
 authors: [scottenriquez]
 title: Things I Learned From Teaching a High School Class for a Semester
-date: "2018-11-19T22:12:03.284Z"
+date: "2018-11-19"
 description: "Spending a semester volunteering at a local high school."
 tag: "Teaching"
 ---

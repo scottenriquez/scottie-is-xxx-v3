@@ -1,7 +1,7 @@
 ---
 authors: [scottenriquez]
 title: "Bright Nights, Nomadic Days"
-date: "2014-06-22T22:12:03.284Z"
+date: "2014-06-22"
 description: "Wandering around after graduation."
 tag: "Personal"
 ---
