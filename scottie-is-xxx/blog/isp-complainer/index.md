@@ -18,8 +18,10 @@ Note that you do not need to run ISP Complainer on a Raspberry Pi. I built this 
 
 Raspberry Pi uses ARM while most modern desktop processors use the x86 instruction set architecture. Because of this, you’ll need Node.js binaries compiled for ARM. In the early days, these files weren’t maintained like they are for x86 and compiling from the source code was required. This is still a viable option if you want to target a specific version, but you can also just use a download maintained by node-arm using the following commands:
 
-`wget http://node-arm.herokuapp.com/node_latest_armhf.deb`
-`sudo dpkg -i node_latest_armhf.deb`
+```shell
+wget http://node-arm.herokuapp.com/node_latest_armhf.deb
+sudo dpkg -i node_latest_armhf.deb
+```
 
 **Update: the ARM binaries are now available on the [Node.js downloads](https://nodejs.org/en/download/) page.**
 
@@ -33,9 +35,7 @@ Start by creating a Twitter API key. This will allow you to programmatically cre
 
 Once you have your keys, you’ll need to add them to a file called `/server/configs/twitter-api-config.js`. This file is excluded by the `.gitignore` so that the API key is not exposed upon a commit. Copy the template to a new file using the command `cp twitter-api-config-template.js twitter-api-config.js`, and then enter the keys inside of the quotes of the return statement for each corresponding function. If you would prefer to store these inside of a database, you can inject the data access logic here as well. See the config template below:
 
-### `twitter-api-config-template.js`
-
-```javascript
+```javascript title='twitter-api-config-template.js'
 module.exports = {
   twitterConsumerKey: function () {
     return ""
@@ -54,9 +54,7 @@ module.exports = {
 
 One other config must be modified before use:
 
-### `complaint-config.js`
-
-```javascript
+```javascript title='complaint-config.js'
 module.exports = {
   tweetBody: function (promisedSpeed, actualSpeed, ispHandle) {
     return (
@@ -84,9 +82,7 @@ module.exports = {
 
 Optionally if you want to manually change the port number or environment variable, you can do so in the server file:
 
-### `server.js`
-
-```javascript
+```javascript title='server.js'
 ...
 var port = process.env.PORT || 3030;
 var environment = process.env.NODE_ENV || 'development';

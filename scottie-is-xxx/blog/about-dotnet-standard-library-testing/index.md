@@ -22,7 +22,7 @@ The demo source code included in this post targets .NET Standard 2.0. If you are
 
 This library does simple addition for type `decimal`. We'll start by creating a project for the domain logic. Be sure to create a .NET Standard library and not a .NET Framework library. Next, add an `AdditionService` class with function to execute the logic.
 
-```csharp
+```csharp title='src/Gg.Scottie.Dotnet.Standard.Testing.Demo.Domain/AdditionService.cs'
 public class AdditionService : IAdditionService
 {
 	public decimal Add(decimal first, decimal second)
@@ -38,7 +38,7 @@ This repo uses NUnit for unit testing. The NUnit project offers templates for cr
 
 The first dependency is Microsoft.NET.Test.Sdk. As noted previously, .NET Core is much more modular. This package is Microsoft's testing module. The next two dependencies are NUnit and NUnit3TestAdapter. These two packages will allow us to write NUnit tests and run them via the command line. We can now create our first unit test.
 
-```csharp
+```csharp title='src/Gg.Scottie.Dotnet.Standard.Testing.Unit.Tests/AdditionServiceTests.cs'
 [TestFixture]
 public class AdditionServiceTests
 {
@@ -66,7 +66,7 @@ You can run the unit tests locally using an IDE like Visual Studio or Rider or v
 
 If you plan on hosting your source code in a public repository on GitHub, you can leverage a testing automation tool called Travis CI for free. To get started, log into the Travis CI site with GitHub authentication and enable your repository for testing through the web interface. After that, simply add a YAML file in the root of your project named `.travis.yml`.
 
-```yaml
+```yaml title='.travis.yml'
 language: csharp
 mono: none
 dotnet: 2.0.0

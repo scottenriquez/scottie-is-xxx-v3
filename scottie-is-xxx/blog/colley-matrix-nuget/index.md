@@ -36,7 +36,7 @@ IEnumerable<double> solvedVector = colleyMatrix.Solve();
 
 `SimulateGame` updates the matrix state which is wrapped by an interface called `IMatrixProvider`. This removes the dependency on a specific matrix implementation from the underlying domain logic. For reference, the `ColleyMatrix` client ultimately injects a Math.NET `SparseMatrix`. The updates to the matrix state are very simple.
 
-```csharp
+```csharp title='src/ColleyMatrix/Service/ColleyMatrixService.cs'
 double gameCount = _matrixProvider.GetValue(winnerId, loserId);
 _matrixProvider.SetValue(winnerId, loserId, gameCount - 1);
 _matrixProvider.SetValue(loserId, winnerId, gameCount - 1);
@@ -46,7 +46,7 @@ _matrixProvider.SetValue(loserId, loserId, _matrixProvider.GetValue(loserId, los
 
 A list of teams and their corresponding ratings are also maintained.
 
-```csharp
+```csharp title='src/ColleyMatrix/Service/ColleyMatrixService.cs'
 _teams[winnerId].Wins++;
 _teams[loserId].Losses++;
 _teams[winnerId].ColleyRating = ComputeColleyRating(_teams[winnerId].Wins, _teams[winnerId].Losses);
@@ -55,13 +55,13 @@ _teams[loserId].ColleyRating = ComputeColleyRating(_teams[loserId].Wins, _teams[
 
 The formula for computing the Colley rating is very simple.
 
-```csharp
+```csharp title='src/ColleyMatrix/Service/ColleyMatrixService.cs'
 1 + (wins - losses) / 2;
 ```
 
 For the `Solve` method, the matrix is lower-upper factorized then solved for the vector of the teams' Colley ratings.
 
-```csharp
+```csharp title='src/ColleyMatrix/Service/ColleyMatrixService.cs'
 IEnumerable<double> colleyRatings = _teams.Select(team => team.ColleyRating);
 IEnumerable<double> solvedVector = _matrixProvider.LowerUpperFactorizeAndSolve(colleyRatings);
 ```

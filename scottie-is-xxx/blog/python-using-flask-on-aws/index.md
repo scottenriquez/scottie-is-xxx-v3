@@ -26,9 +26,7 @@ While your application and EC2 instance are being provisioned, start preparing y
 
 I have created a Python 2.7 demo for this post on hosted the code in [this GitHub repository](https://github.com/scottenriquez/scottie-io-python-aws-demo). You can clone the code using the following command in the desired directory: `git clone git@github.com:scottenriquez/scottie-io-python-aws-demo.git`. I've also included the source code below for convenience.
 
-### `application.py`
-
-```python
+```python title='application.py'
 from flask import Flask, request, url_for, jsonify
 from boto.s3.key import Key
 import boto
@@ -58,9 +56,7 @@ if __name__ == "__main__":
 	application.run()
 ```
 
-### `requirements.txt`
-
-```python
+```python title='requirements.txt'
 flask==0.10.1
 uuid==1.30
 boto==2.38.0
