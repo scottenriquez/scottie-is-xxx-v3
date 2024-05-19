@@ -36,7 +36,7 @@ The `pipeline` command walks you through a series of configuration steps. For th
 
 The pipeline user's access key and secret key will display in the terminal, which will be required for configuring the GitHub Actions. Repeat the steps for the second stage. The CLI creates `.aws-sam/pipeline/pipelineconfig.toml` to store the configuration.
 
-```toml
+```toml title='.aws-sam/pipeline/pipelineconfig.toml'
 version = 0.1
 [default]
 [default.pipeline_bootstrap]
@@ -64,7 +64,7 @@ region = "us-east-1"
 
 The CLI will prompt you for the secret name to use for the IAM pipeline user in GitHub Actions (i.e., `${{ secrets.AWS_ACCESS_KEY_ID }}` instead of a hardcoded value). These credentials should never be exposed in the source code. `pipeline.yaml` is created in the `.github/workflows` folder.
 
-```yaml
+```yaml title='.github/workflows/pipeline.yaml'
 name: Pipeline
 
 on:
@@ -121,7 +121,7 @@ Before pushing the changes to the remote origin, add the IAM pipeline user crede
 ## Adding Approvers
 The default pipeline does not have any approval mechanisms in place, so when pushing to `main`, the application goes directly to production. To add approvers, create [an environment](https://docs.github.com/en/actions/reference/environments#creating-an-environment) in GitHub and add approvers. Then, reference the environment in the pipeline YAML.
 
-```yaml
+```yaml title='.github/workflows/pipeline.yaml'
 deploy-prod:
     if: github.ref == 'refs/heads/main'
     needs: [integration-test]

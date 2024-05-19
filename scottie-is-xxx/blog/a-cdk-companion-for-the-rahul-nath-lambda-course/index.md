@@ -46,7 +46,7 @@ To build and run this codebase, the following dependencies must be installed:
 
 ## My Development Environment and CPU Architecture Considerations
 I developed all the code on my M1 MacBook Pro using JetBrains Rider. Because of my machine's ARM processor, it's key to note that all of my Dockerfiles use ARM images (e.g., `public.ecr.aws/lambda/dotnet:6-arm64`) and are deployed to [Graviton2 Lambda environments](https://aws.amazon.com/blogs/aws/aws-lambda-functions-powered-by-aws-graviton2-processor-run-your-functions-on-arm-and-get-up-to-34-better-price-performance/). I suspect that most folks reading this are using x86 Windows machines, so here is a modified Dockerfile illustrating the requisite changes:
-```dockerfile
+```dockerfile title='LambdaWithAPIGateway/src/LambdaWithApiGateway.DockerFunction/src/LambdaWithApiGateway.DockerFunction/Dockerfile'
 # ARM
 # FROM public.ecr.aws/lambda/dotnet:6-arm64 AS base
 # x86
@@ -82,7 +82,7 @@ CMD ["LambdaWithApiGateway.DockerFunction::LambdaWithApiGateway.DockerFunction.F
 ```
 
 The CDK code for the Lambda function also requires a slight change:
-```csharp
+```csharp title='LambdaWithAPIGateway/src/LambdaWithApiGateway/LambdaWithApiGatewayStack.cs'
 DockerImageFunction sqsDockerImageFunction = new DockerImageFunction(this, "LambdaFunction",
     new DockerImageFunctionProps()
     {
@@ -147,7 +147,7 @@ dotnet test Lambda.sln
 ```
 
 Each Lambda function has projects for the handler code and unit tests. All CDK code for infrastructure resides in the corresponding `*Stack.cs` file. Here is some example IaC for a Lambda function triggered by SQS:
-```csharp
+```csharp title='LambdaTriggers/src/LambdaTriggers/LambdaTriggersStack.cs'
 public class LambdaTriggersStack : Stack
 {
     public LambdaTriggersStack(Construct scope, string id, IStackProps props = null) : base(scope, id, props)

@@ -50,8 +50,8 @@ The core functionality resides in a Lambda function built using [AWS Serverless 
 - An IAM policy and execution role with the minimum required permissions
 
 ## Minimum IAM Permissions Required
-From the `template.yaml` file:
-```yaml
+From the CloudFormation file:
+```yaml title='template.yaml'
 Policies:
   - Statement:
       - Sid: BillingConductorAndCostExplorer

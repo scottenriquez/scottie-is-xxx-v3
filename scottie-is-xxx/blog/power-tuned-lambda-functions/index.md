@@ -91,7 +91,7 @@ The results are encoded into the query string of the hyperlink, so the tuning re
 
 The Python code for describing the deployment pipeline lives in `power_tuned_lambda_stack.py`. The build logic is spread across the pull request project's `buildspec` and a Bash script residing in the CodeCommit repository. The CodeBuild logic is responsible for creating and destroying the transient testing environment, while the `execute-power-tuning.sh` contains the specific logic needed to tune the target Lambda function(s). The following code snippets (with comments explaining the `build` phase) contain the core logic for integrating AWS Lambda Power Tuning into the pull request:
 
-```python
+```python title='lambda_power_tuned/lambda_power_tuned/lambda_power_tuned_stack.py'
 pull_request_codebuild_project = aws_codebuild.Project(self, 'PullRequestCodeBuildProject',
     build_spec=aws_codebuild.BuildSpec.from_object({
         'version': '0.2',
@@ -149,7 +149,7 @@ pull_request_codebuild_project = aws_codebuild.Project(self, 'PullRequestCodeBui
 
 Since the CodeBuild project does not have contextual awareness of what the Terraform HCL in the CodeCommit repository is describing (e.g., how many Lambda functions exist), the developer can implement the tuning logic in `execute-power-tuning.sh`. For this example, this is simply grabbing the Lambda ARN, formatting the AWS Lambda Power Tuning input file, and executing the state machine. However, this logic could be expanded for multiple Lambda functions and other use cases.
 
-```shell
+```shell title='lambda_power_tuned/lambda_power_tuned/terraform/execute-power-tuning.sh'
 #!/bin/bash
 # obtain ARN from Terraform and build input file
 TARGET_LAMBDA_ARN=$(terraform output -raw arn)
@@ -187,7 +187,7 @@ aws codecommit post-comment-for-pull-request --repository-name $REPOSITORY_NAME 
 
 Lastly, note that there is an AWS Lambda Power Tuning input file included in the CodeCommit repository that can be modified as well. The `"lambdaARN"` property is excluded because it will be dynamically added by the build for the transient environment. For more details on the input and output configurations, see the [documentation on GitHub](https://github.com/alexcasalboni/aws-lambda-power-tuning/blob/master/README-INPUT-OUTPUT.md).
 
-```json
+```json title='lambda_power_tuned/lambda_power_tuned/terraform/power-tuning-input.json'
 {
 	"powerValues": [
 		128,

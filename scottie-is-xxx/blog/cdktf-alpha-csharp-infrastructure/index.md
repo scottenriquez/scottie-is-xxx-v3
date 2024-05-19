@@ -42,7 +42,7 @@ cdktf init --template=csharp --local
 ```
 
 This action creates several files, including a `cdktf.json` file. Inside this configuration file, specify the AWS provider.
-```json
+```json title='resources/cdktf.json'
 {
     "language": "csharp",
     "app": "dotnet run -p MyTerraformStack.csproj",
@@ -81,7 +81,7 @@ The generated objects are stored in the newly created `.gen/` folder. Add this a
 ```
 
 Lastly, initialize the `AwsProvider` object in the `Main.cs` file.
-```csharp
+```csharp title='resources/Main.cs'
 using System;
 using Constructs;
 using HashiCorp.Cdktf;
@@ -114,7 +114,7 @@ namespace MyCompany.MyApp
 
 ## Adding Resources
 As noted above, the resources will be created using the Terraform AWS provider. There are corresponding C# classes for each of the [AWS resources specified by the provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs). While writing code, the AWS provider documentation in conjunction with your IDE's autocomplete functionality is a powerful way to navigate the available resources. For this example, the code looks up the latest AMI for Ubuntu 20.04 and uses it to create an EC2 Instance. Below the `AwsProvider` constructor method call in the `MyApp` constructor method, add a data source and instance like so:
-```csharp
+```csharp title='resources/Main.cs'
 // initialize the AWS provider
 // located in the .gen/ folder
 new AwsProvider(this, "aws", new AwsProviderConfig {

@@ -29,7 +29,7 @@ Back in the AWS Console for Compute Optimizer, select Datadog as an external met
 
 Lastly, we need to deploy an EC2 instance. The following CDK stack creates a VPC, EC2 instance (`t3.medium`; be aware of charges) with the Datadog agent installed, security group, and an IAM role. Before deploying the stack, be sure to set `DD_API_KEY` and `DD_SITE` environment variables. The EC2 instance, role, and security group are also configured for Instance Connect.
 
-```typescript
+```typescript title='ec2-instance-with-datadog/lib/ec2-instance-with-datadog-stack.ts'
 export class Ec2InstanceWithDatadogStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
@@ -101,7 +101,7 @@ For now, SnapStart only supports the Java runtime.
 
 With the release came support via CloudFormation and CDK. However, at the time of writing, CDK only supports SnapStart via the [L1 construct](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.CfnFunction.html): `CfnFunction`. The [L2 `Function` class](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda-readme.html) does not yet have support, so this may be a temporary blocker for CDK projects. Using CDK, I wrote a simple stack to test a trivial function:
 
-```typescript
+```typescript title='java11-snapstart-lambda/lib/java11-snapstart-lambda-stack.ts'
 export class Java11SnapstartLambdaStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);

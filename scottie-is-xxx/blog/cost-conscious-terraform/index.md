@@ -70,7 +70,7 @@ The CodePipeline resource is triggered at creation, but there are manual approva
 ![Approval](codepipeline-approval.png)
 
 Make some code changes to see the cost impact. To modify the Terraform code, either use the CodeCommit GUI in the Console or clone the repository to your development environment. First, create a branch called `feature` off of `main`. Then modify `ec2.tf` to use a different instance type:
-```hcl
+```hcl title='infracost-cdk-pipeline/lib/terraform/ec2.tf'
 resource "aws_instance" "server" {
   # Amazon Linux 2 Kernel 5.10 AMI 2.0.20220606.1 x86_64 HVM in us-east-1
   # if deploying outside of us-east-1, you must use the corresponding AL2 AMI for your region
@@ -88,7 +88,7 @@ resource "aws_instance" "server" {
 
 Infracost also supports usage estimates in addition to resource costs. For example, changing the storage GBs for the S3 bucket in `infracost-usage.yml` will also update the cost comparison and estimate. These values are hardcoded and version-controlled here, but Infracost is also [experimenting with fetching actual usage data via CloudWatch](https://www.infracost.io/docs/features/usage_based_resources/).
 
-```yaml
+```yaml title='infracost-cdk-pipeline/lib/terraform/infracost-usage.yml'
 version: 0.1
 resource_usage:
   aws_lambda_function.function:
@@ -143,7 +143,7 @@ Commit these changes to the `feature` branch and open a pull request. Doing so w
 
 ## Diving Into the Pull Request Build Logic
 The TypeScript for describing the deployment pipeline lives in `infracost-cdk-pipeline-stack.ts`. The following code snippet (with comments explaining the `install` and `build` phases) contains the core logic for integrating Infracost into the pull request: 
-```typescript
+```typescript title='infracost-cdk-pipeline/lib/infracost-cdk-pipeline-stack.ts'
 const pullRequestCodeBuildProject = new codebuild.Project(this, 'TerraformPullRequestCodeBuildProject', {
     buildSpec: codebuild.BuildSpec.fromObject({
         version: '0.2',

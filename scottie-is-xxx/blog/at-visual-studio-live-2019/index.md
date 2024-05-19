@@ -24,7 +24,7 @@ The keynote this year was _AI for the Rest of Us_ and was delivered by Damian Br
 
 I decided to put together a couple of quick demos and was truly amazed with the results. In about 20 lines of Python 3 code and 10 minutes, I was able to read text from an [image on a whiteboard](https://scottie-io.s3.amazonaws.com/vslive-whiteboard.jpg). You can find a `pipenv`-enabled demo [here](https://github.com/scottenriquez/visual-studio-live-2019-azure-computer-vision).
 
-```python
+```python title='main.py'
 subscription_key = os.environ['COMPUTER_VISION_SUBSCRIPTION_KEY']
 endpoint = os.environ['COMPUTER_VISION_ENDPOINT']
 computervision_client = ComputerVisionClient(endpoint, CognitiveServicesCredentials(subscription_key))
@@ -46,7 +46,7 @@ if get_printed_text_results.status == TextOperationStatusCodes.succeeded:
 
 In about 10 lines of C# using .NET Core 3.0, I was able to detect the language and sentiment of generic text. You can find the full code [here](https://github.com/scottenriquez/visual-studio-live-2019-azure-text-analysis).
 
-```csharp
+```csharp title='text-analytics/Program.cs'
 string textToAnalyze = "今年最強クラスの台風が週末3連休を直撃か...影響とその対策は？";
 ApiKeyServiceClientCredentials credentials = new ApiKeyServiceClientCredentials(subscriptionKey);
 TextAnalyticsClient client = new TextAnalyticsClient(credentials)
@@ -143,7 +143,7 @@ At Visual Studio Live this year, one of the new features discussed is systemd in
 
 I started by using the worker service template included in both Visual Studio and Rider. Configuring for systemd only requires one chained call: `.UseSystemd()`. It's worth noting that this still allows you to build and run using the CLI (i.e. `dotnet run`) without being integrated with systemd.
 
-```csharp
+```csharp title='src/SpeedTestWorkerService/SpeedTestWorkerService/Program.cs'
 public static IHostBuilder CreateHostBuilder(string[] args) =>
 	Host.CreateDefaultBuilder(args)
 		.UseSystemd()
@@ -152,7 +152,7 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 
 The `Worker` executes the given task until a cancellation token is received. I made a few modifications to the starter template such as changing the `Task.Delay()` millisecond parameter and implementing the speed test logic. Note that `_logger` is the dependency injected logging service.
 
-```csharp
+```csharp title='src/SpeedTestWorkerService/SpeedTestWorkerService/Worker.cs'
 protected override async Task ExecuteAsync(CancellationToken stoppingToken)
 {
 	while (!stoppingToken.IsCancellationRequested)

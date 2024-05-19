@@ -21,7 +21,7 @@ A simple `npm init` command will create the `package.json` file and populate rel
 
 In the root of the project, there's a file called `index.js` with the Lambda function logic. For this example, the handler function simply returns a 200 status code with a serialized JSON body.
 
-```javascript
+```javascript title='index.js'
 exports.handler = async event => ({
   statusCode: 200,
   body: JSON.stringify("Hello from Lambda!"),
@@ -32,7 +32,7 @@ exports.handler = async event => ({
 
 First, install a few development dependencies using the command `npm install --save-dev mocha chai nyc`. I've added a unit test in the file `test/handler.test.js`:
 
-```javascript
+```javascript title='test/handler.test.js'
 const mocha = require("mocha")
 const chai = require("chai")
 const index = require("../index")
@@ -57,7 +57,7 @@ describe("Handler", async () => {
 
 To configure code coverage rules for the CI/CD pipeline, add a `.nycrc` (Istanbul configuration) file to the root of the project. For this example, I've specified 80% across branches (i.e. if statement paths), lines, functions, and statements. You can also whitelist files to apply code coverage rules with the `include` attribute.
 
-```json
+```json title='.nycrc'
 {
   "branches": 80,
   "lines": 80,
@@ -71,7 +71,7 @@ To configure code coverage rules for the CI/CD pipeline, add a `.nycrc` (Istanbu
 
 With this in place, wire up everything in the `package.json` with the proper test command:
 
-```json
+```json title='package.json'
 ...
 "scripts": {
     "test": "nyc --reporter=text mocha"
@@ -87,7 +87,7 @@ It's important to think of linting and styling as two separate entities. Linting
 
 For configuring ESLint, I used [@wesbos' configuration](https://github.com/wesbos/eslint-config-wesbos "ESLint Setup") as a base using the command `npx install-peerdeps --dev eslint-config-wesbos`. Detailed instructions can be found in his README. This makes the `.eslintrc` config in the root quite clean:
 
-```json
+```json title='.eslintrc'
 {
   "extends": ["wesbos"]
 }
@@ -97,7 +97,7 @@ Given that code styling is quite opinionated, I won't inject any biases here. To
 
 With this in place, you can add linting and Prettier commands to the `package.json`:
 
-```json
+```json title='package.json'
 ...
 "scripts": {
   "lint": "eslint .",
@@ -113,7 +113,7 @@ Though there is no configuration managed in this repository for code styling, no
 
 Via the Azure DevOps web UI, you can directly commit an initial `azure-pipelines.yml` file to the root of the repository and configure the trigger (i.e. commits). Once the NPM scripts are properly set up like above, the build stage can be configured to install dependencies, run unit tests, and handle linting in a few lines of code. Note that I've added an archive step because Lambda functions are deployed as ZIP files later in the pipeline.
 
-```yaml
+```yaml title='azure-pipelines.yml'
 stages:
   - stage: Build
     jobs:
@@ -151,7 +151,7 @@ As indicated by the nomenclature, Azure Pipelines run in the cloud. It's worth n
 
 One of the core goals of this project is to create a complete solution with everything from the source code to the build pipeline and cloud infrastructure managed under source control. CloudFormation is a technology from AWS that allows engineers to specify solution infrastructure as JSON or YAML. For this solution, I specified a Lambda function and an IAM role. Note that the build artifact will be sourced from an additional S3 staging bucket not detailed in the CloudFormation template.
 
-```json
+```json title='cloudformation-stack.json'
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -210,7 +210,7 @@ With the ability to deploy cloud infrastructure, the build pipeline can now be a
 
 Another stage can be added to the YAML script that depends on a successful build:
 
-```yaml
+```yaml title='azure-pipelines.yml'
 - stage: DevelopmentDeployment
   dependsOn: Build
   jobs:
@@ -243,7 +243,7 @@ Note that I have parameterized certain inputs (i.e. `$(AWS_ACCESS_KEY_ID)`) as b
 
 Because each stage in the Azure Pipeline spins up a separate virtual machine, files such as the build artifact are not immediately accessible between build stages. In the build stage, a task can be added to publish a pipeline artifact (accessible via the path `$(Pipeline.Workspace)` path) that can be shared between stages.
 
-```yaml
+```yaml title='azure-pipelines.yml'
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: "$(Pipeline.Workspace)"
@@ -259,7 +259,7 @@ Most organizations will require some sort of human approval before migrating to 
 
 As part of a continuous deployment implementation, production migrations should happen every time that the master branch is updated via a pull request. However, all branches should still be privy to the CI/CD benefits. In the Azure Pipelines YAML script, the production stage can be configured to be skipped if the source branch is not master:
 
-```yaml
+```yaml title='azure-pipelines.yml'
 - stage: ProductionDeployment
   condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/master'))
   dependsOn: TestDeployment

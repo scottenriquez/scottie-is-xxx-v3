@@ -46,7 +46,7 @@ You'll notice that there are three releases of this example project. The first t
 
 Start by including the [SonarCloud addon](https://docs.travis-ci.com/user/sonarcloud/) and pasting in your SonarCloud organization name.
 
-```yaml
+```yaml title='.travis.yml'
 addons:
   sonarcloud:
     organization: "YOUR_ORG_NAME_HERE"
@@ -54,11 +54,11 @@ addons:
 
 You'll also need to run the `/tools/travis-ci-install-sonar.sh` script as part of `before-install` section and `/tools/travis-ci-build.sh` as part of the `script` section.
 
-### Modifying `travis-ci-build.sh`
+### Modifying Build Script 
 
 You'll need to make a few replacements in this file. Add your organization name and project key to the `SonarScanner.MSBuild.dll` (or `SonarScanner.MSBuild.exe` for the .NET Framework version) arguments. Note that you can also expose these as environment variables like `SONAR_TOKEN`. You'll also want to add any project-specific build and test commands to this script.
 
-```shell
+```shell title='tools/travis-ci-build.sh'
 dotnet ../tools/sonar/SonarScanner.MSBuild.dll begin /o:"YOUR_ORG_NAME_HERE" /k:"YOUR_PROJECT_KEY_HERE" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.verbose=true /d:sonar.login=${SONAR_TOKEN}
 # Add additional build and test commands here
 dotnet build
