@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/scott-s.svg').default,
     description: (
       <>
-          I'm a cloud solutions architect, software engineer, and occasional nomad. I currently work for Amazon Web Services.
+          I'm a cloud solutions architect, software engineer, and computer scientist. I live in Los Angeles, California and currently work for Amazon Web Services.
       </>
     ),
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/code-c.svg').default,
     description: (
       <>
-        I'm a graduate of the University of Texas at Austin with degrees in computer science and Asian studies. I also have over 10 AWS, Azure, and HashiCorp certifications. I've been working in tech for over 10 years across disciplines including software engineering, cloud engineering, DevOps engineering, and consulting.
+        I'm a graduate of the University of Texas at Austin with degrees in computer science and Asian studies. I also have over 10 total AWS, Azure, and HashiCorp certifications. I've worked in tech for over 10 years across disciplines including software engineering, cloud engineering, DevOps engineering, and consulting.
       </>
     ),
   },
