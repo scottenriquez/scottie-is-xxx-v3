@@ -1,16 +1,33 @@
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 import * as THREE from 'three';
 import SceneInit from './sceneInit';
 
-function BouncingBall() {
+const generateFloor = () => {
+  const floorGeometry = new THREE.BoxGeometry(50, 1, 50);
+  const floorMaterial = new THREE.MeshStandardMaterial({color: 0xbd93f9, roughness: 0});
+  const floor = new THREE.Mesh(floorGeometry, floorMaterial);
+  floor.position.set(0, -10, 0);
+  return floor;
+};
+
+const generateSphere = () => {
+  const sphereGeometry = new THREE.SphereGeometry(5, 32, 32);
+  const sphereMaterial = new THREE.MeshStandardMaterial({color: 0x50fa7b, roughness: 0});
+  const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+  sphere.name = 'sphere';
+  sphere.position.set(0, 5, 0);
+  return sphere;
+};
+
+const BouncingBall = () => {
   useEffect(() => {
     const canvas = new SceneInit('noc-bouncing-ball-canvas-div');
     canvas.initialize();
-    canvas.animate();
-    const boxGeometry = new THREE.BoxGeometry(16, 16, 16);
-    const boxMaterial = new THREE.MeshNormalMaterial();
-    const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
-    canvas.scene.add(boxMesh);
+    const floor = generateFloor();
+    const sphere = generateSphere();
+    canvas.scene.add(floor);
+    canvas.scene.add(sphere);
+    canvas.animate(floor, sphere);
   }, []);
   return (
     <div id={'noc-bouncing-ball-canvas-div'} style={{
@@ -19,7 +36,7 @@ function BouncingBall() {
       backgroundColor: 'black',
       position: 'relative'
     }}>
-      <canvas id={'noc-bouncing-ball-canvas'} />
+      <canvas id={'noc-bouncing-ball-canvas'}/>
     </div>
   );
 }

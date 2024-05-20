@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import scene from "three/addons/offscreen/scene";
 
 export default class SceneInit {
   constructor(canvasId) {
@@ -7,10 +8,7 @@ export default class SceneInit {
     this.camera = undefined;
     this.renderer = undefined;
     this.fov = 45;
-    this.nearPlane = 1;
-    this.farPlane = 1000;
     this.canvasId = canvasId;
-    this.clock = undefined;
     this.stats = undefined;
     this.controls = undefined;
     this.ambientLight = undefined;
@@ -19,6 +17,12 @@ export default class SceneInit {
     this.canvasHTMLElement = this.divHTMLElement.children[0];
     this.canvasHTMLElement.height = this.divHTMLElement.clientHeight;
     this.canvasHTMLElement.width = this.divHTMLElement.clientWidth;
+    this.acceleration = 9.8;
+    this.bounceDistance = 9;
+    this.bottomYPosition = -4;
+    this.timeStep = 0.2;
+    this.timeCounter = Math.sqrt(this.bounceDistance * 2 / this.acceleration);
+    this.initialSpeed = this.timeCounter * this.acceleration;
   }
 
   initialize() {
@@ -47,7 +51,13 @@ export default class SceneInit {
   }
 
   animate() {
+    const sphere = this.scene.getObjectByName('sphere');
     window.requestAnimationFrame(this.animate.bind(this));
+    if (sphere.position.y < this.bottomYPosition) {
+      this.timeCounter = 0;
+    }
+    sphere.position.y = this.bottomYPosition + this.initialSpeed * this.timeCounter - 0.5 * this.acceleration * Math.pow(this.timeCounter, 2);
+    this.timeCounter += this.timeStep;
     this.render();
     this.controls.update();
   }
