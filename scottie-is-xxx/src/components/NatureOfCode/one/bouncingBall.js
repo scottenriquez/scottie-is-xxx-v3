@@ -4,7 +4,7 @@ import SceneInit from './sceneInit';
 
 function BouncingBall() {
   useEffect(() => {
-    const canvas = new SceneInit('bouncingBall');
+    const canvas = new SceneInit('noc-bouncing-ball-canvas-div');
     canvas.initialize();
     canvas.animate();
     const boxGeometry = new THREE.BoxGeometry(16, 16, 16);
@@ -17,11 +17,9 @@ function BouncingBall() {
       height: '400px',
       width: '100%',
       backgroundColor: 'black',
+      position: 'relative'
     }}>
-      <canvas id="bouncingBall" style={{
-        height: '400px',
-        width: '100%',
-      }}/>
+      <canvas id={'noc-bouncing-ball-canvas'} />
     </div>
   );
 }

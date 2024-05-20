@@ -1,6 +1,5 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import Stats from 'three/examples/jsm/libs/stats.module';
 
 export default class SceneInit {
   constructor(canvasId) {
@@ -16,28 +15,28 @@ export default class SceneInit {
     this.controls = undefined;
     this.ambientLight = undefined;
     this.directionalLight = undefined;
-    this.htmlElement = document.getElementById(this.canvasId);
+    this.divHTMLElement = document.getElementById(this.canvasId);
+    this.canvasHTMLElement = this.divHTMLElement.children[0];
+    this.canvasHTMLElement.height = this.divHTMLElement.clientHeight;
+    this.canvasHTMLElement.width = this.divHTMLElement.clientWidth;
   }
 
   initialize() {
     this.scene = new THREE.Scene();
     this.camera = new THREE.PerspectiveCamera(
       this.fov,
-      this.htmlElement.width / this.htmlElement.height,
+      this.divHTMLElement.clientWidth / this.divHTMLElement.clientHeight,
       1,
       1000
     );
     this.camera.position.z = 48;
     this.renderer = new THREE.WebGLRenderer({
-      canvas: this.htmlElement,
+      canvas: this.canvasHTMLElement,
       antialias: true,
     });
-    this.renderer.setSize(this.htmlElement.width, this.htmlElement.height);
-    document.body.appendChild(this.renderer.domElement);
+    this.renderer.setSize(this.divHTMLElement.clientWidth, this.divHTMLElement.clientHeight);
     this.clock = new THREE.Clock();
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
-    this.stats = Stats();
-    document.body.appendChild(this.stats.dom);
     this.ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
     this.ambientLight.castShadow = true;
     this.scene.add(this.ambientLight);
@@ -50,7 +49,6 @@ export default class SceneInit {
   animate() {
     window.requestAnimationFrame(this.animate.bind(this));
     this.render();
-    this.stats.update();
     this.controls.update();
   }
 
@@ -59,8 +57,8 @@ export default class SceneInit {
   }
 
   onWindowResize() {
-    this.camera.aspect = this.htmlElement.width / this.htmlElement.height;
+    this.camera.aspect = this.divHTMLElement.clientWidth / this.divHTMLElement.clientHeight;
     this.camera.updateProjectionMatrix();
-    this.renderer.setSize(this.htmlElement.width, this.htmlElement.height);
+    this.renderer.setSize(this.divHTMLElement.clientWidth, this.divHTMLElement.clientHeight);
   }
 }
