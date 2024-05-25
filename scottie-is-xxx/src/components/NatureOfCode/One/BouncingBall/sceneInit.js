@@ -16,12 +16,13 @@ export default class SceneInit {
     this.canvasHTMLElement = this.divHTMLElement.children[0];
     this.canvasHTMLElement.height = this.divHTMLElement.clientHeight;
     this.canvasHTMLElement.width = this.divHTMLElement.clientWidth;
-    this.acceleration = 9.8;
-    this.bounceDistance = 9;
-    this.bottomYPosition = -4;
+    this.bottomXPosition= -100;
+    this.bottomYPosition = -100;
+    this.bottomZPosition = -100;
+    this.topXPosition= 100;
+    this.topYPosition = 100;
+    this.topZPosition = 100;
     this.timeStep = 0.2;
-    this.timeCounter = Math.sqrt(this.bounceDistance * 2 / this.acceleration);
-    this.initialSpeed = this.timeCounter * this.acceleration;
   }
 
   initialize() {
@@ -33,7 +34,9 @@ export default class SceneInit {
       1,
       1000
     );
-    this.camera.position.z = 48;
+    this.camera.position.x = -40;
+    this.camera.position.y = 20;
+    this.camera.position.z = 40;
     this.renderer = new THREE.WebGLRenderer({
       canvas: this.canvasHTMLElement,
       antialias: true,
@@ -50,14 +53,21 @@ export default class SceneInit {
     window.addEventListener('resize', () => this.onWindowResize(), false);
   }
 
-  animate() {
+  generateRandomVelocity() {
+    return Math.floor(Math.random() * 51) - 25;
+  }
+
+  animate(pause) {
+    if (pause) {
+      return;
+    }
     const sphere = this.scene.getObjectByName('sphere');
     window.requestAnimationFrame(this.animate.bind(this));
-    if (sphere.position.y < this.bottomYPosition) {
-      this.timeCounter = 0;
-    }
-    sphere.position.y = this.bottomYPosition + this.initialSpeed * this.timeCounter - 0.5 * this.acceleration * Math.pow(this.timeCounter, 2);
-    this.timeCounter += this.timeStep;
+    const sphereVelocityVector = new THREE.Vector3(this.generateRandomVelocity(), this.generateRandomVelocity(), this.generateRandomVelocity());
+    const timeDelta = this.clock.getDelta();
+    sphereVelocityVector.addScalar(timeDelta);
+    sphereVelocityVector.normalize();
+    sphere.position.add(sphereVelocityVector);
     this.render();
     this.controls.update();
   }
