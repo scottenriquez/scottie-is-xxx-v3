@@ -6,7 +6,56 @@ description: "A companion for chapter one of Daniel Shiffman's book."
 tag: "Programming"
 ---
 
-import BouncingBall from '../../src/components/NatureOfCode/one/bouncingBall'
+import BouncingBall from '../../src/components/NatureOfCode/One/BouncingBall/bouncingBall';
+import Vector from '../../src/components/NatureOfCode/One/Vectors/vector';
+
+## Vectors
+From [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_vector):
+> In mathematics, physics, and engineering, a Euclidean vector or simply a vector (sometimes called a geometric vector or spatial vector) is a geometric object that has magnitude (or length) and direction. Euclidean vectors can be added and scaled to form a vector space. A Euclidean vector is frequently represented by a directed line segment, or graphically as an arrow connecting an initial point `A` with a terminal point `B`.
+
+The book references example code in the Processing programming language that simulates a bouncing ball in two-dimensional space. Below is the core logic:
+
+```javascript title='Bounce.pde'
+void draw()
+{
+  xpos = xpos + ( xspeed * xdirection );
+  ypos = ypos + ( yspeed * ydirection );
+  if (xpos > width-rad || xpos < rad) {
+    xdirection *= -1;
+  }
+  if (ypos > height-rad || ypos < rad) {
+    ydirection *= -1;
+  }
+  ellipseMode(RADIUS);
+  fill(random(256));
+  ellipse(xpos, ypos, rad, rad);
+}
+```
+This image from the Processing output shows the ball's movement through vector space by selecting a random color for the ball on each iteration:
+![Bouncing Ball Processing](./bouncing-ball-processing.png)
+
+To expand this example to the third dimension, additional variables called `zpos` and `zspeed` are required. Naturally, this does not scale well to `N` dimensions. While vectors don't expand the physics functionality, they streamline the code required. In JavaScript, we can write a simple class to organize the components and implement vector operations such as addition.
+
+```javascript title='src/components/NatureOfCode/One/NVector/nVector.js'
+class NVector {
+  constructor(...components) {
+    this.components = components;
+  }
+
+  get dimensions() {
+    return this.components.length;
+  }
+
+  // assumes that the second vector has the same dimensions as the first
+  add(otherVector) {
+    return new NVector(
+      ...this.components.map((component, index) => component + otherVector.components[index])
+    );
+  }
+}
+```
+
+<Vector />
 
 ## Bouncing Ball
-<BouncingBall />
+[//]: # (<BouncingBall />)

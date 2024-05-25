@@ -10,12 +10,12 @@ const generateFloor = () => {
   return floor;
 };
 
-const generateSphere = () => {
+const generateSphere = (sphereLocaationVector) => {
   const sphereGeometry = new THREE.SphereGeometry(5, 32, 32);
   const sphereMaterial = new THREE.MeshStandardMaterial({color: 0x50fa7b, roughness: 0});
   const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
   sphere.name = 'sphere';
-  sphere.position.set(0, 5, 0);
+  sphere.position.set(sphereLocaationVector.x, sphereLocaationVector.y, sphereLocaationVector.z);
   return sphere;
 };
 
@@ -24,10 +24,11 @@ const BouncingBall = () => {
     const canvas = new SceneInit('noc-bouncing-ball-canvas-div');
     canvas.initialize();
     const floor = generateFloor();
-    const sphere = generateSphere();
+    const sphereLocationVector = new THREE.Vector3(0, 5, 0);
+    const sphere = generateSphere(sphereLocationVector);
     canvas.scene.add(floor);
     canvas.scene.add(sphere);
-    canvas.animate(floor, sphere);
+    canvas.animate();
   }, []);
   return (
     <div id={'noc-bouncing-ball-canvas-div'} style={{

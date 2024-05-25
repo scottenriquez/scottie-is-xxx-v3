@@ -1,6 +1,5 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import scene from "three/addons/offscreen/scene";
 
 export default class SceneInit {
   constructor(canvasId) {
@@ -27,6 +26,7 @@ export default class SceneInit {
 
   initialize() {
     this.scene = new THREE.Scene();
+    this.scene.name = 'Vector-1';
     this.camera = new THREE.PerspectiveCamera(
       this.fov,
       this.divHTMLElement.clientWidth / this.divHTMLElement.clientHeight,
@@ -51,13 +51,7 @@ export default class SceneInit {
   }
 
   animate() {
-    const sphere = this.scene.getObjectByName('sphere');
     window.requestAnimationFrame(this.animate.bind(this));
-    if (sphere.position.y < this.bottomYPosition) {
-      this.timeCounter = 0;
-    }
-    sphere.position.y = this.bottomYPosition + this.initialSpeed * this.timeCounter - 0.5 * this.acceleration * Math.pow(this.timeCounter, 2);
-    this.timeCounter += this.timeStep;
     this.render();
     this.controls.update();
   }
