@@ -9,7 +9,7 @@ tag: "Programming"
 import BouncingBall from '../../src/components/NatureOfCode/One/BouncingBall/bouncingBall';
 import Vector from '../../src/components/NatureOfCode/One/Vectors/vector';
 
-## Vectors
+## Introduction to Vectors
 From [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_vector):
 > In mathematics, physics, and engineering, a Euclidean vector or simply a vector (sometimes called a geometric vector or spatial vector) is a geometric object that has magnitude (or length) and direction. Euclidean vectors can be added and scaled to form a vector space. A Euclidean vector is frequently represented by a directed line segment, or graphically as an arrow connecting an initial point `A` with a terminal point `B`.
 
@@ -18,8 +18,8 @@ The book references example code in the Processing programming language that sim
 ```javascript title='Bounce.pde'
 void draw()
 {
-  xpos = xpos + ( xspeed * xdirection );
-  ypos = ypos + ( yspeed * ydirection );
+  xpos = xpos + (xspeed * xdirection);
+  ypos = ypos + (yspeed * ydirection);
   if (xpos > width-rad || xpos < rad) {
     xdirection *= -1;
   }
@@ -34,7 +34,7 @@ void draw()
 This image from the Processing output shows the ball's movement through vector space by selecting a random color for the ball on each iteration:
 ![Bouncing Ball Processing](./bouncing-ball-processing.png)
 
-To expand this example to the third dimension, additional variables called `zpos` and `zspeed` are required. Naturally, this does not scale well to `N` dimensions. While vectors don't expand the physics functionality, they streamline the code required. In JavaScript, we can write a simple class to organize the components and implement vector operations such as addition.
+To expand this example to the third dimension, additional variables called `zpos` and `zspeed` are required. Obviously, this approach does not scale well to `N` dimensions. While vectors don't expand the physics functionality, they streamline the code required. In JavaScript, we can write a simple class to organize the components and implement vector operations such as addition.
 
 ```javascript title='src/components/NatureOfCode/One/NVector/nVector.js'
 class NVector {
@@ -54,6 +54,32 @@ class NVector {
   }
 }
 ```
+
+After instantiating two objects, a third vector can be created to capture the sum:
+```javascript
+const first = new NVector(1, 2, 3);
+const second = new NVector(4, 5, 6);
+const third = first.add(second);
+// { components: [5, 7, 9] }
+console.log(third);
+```
+
+In other words:
+$$
+\overrightarrow{third} = \overrightarrow{first} + \overrightarrow{second}
+$$
+Or:
+$$
+third_{x} = first_{x} + second_{x}
+$$
+$$
+third_{y} = first_{y} + second_{y}
+$$
+$$
+third_{z} = first_{z} + second_{z}
+$$
+
+## Vector Velocity
 
 <Vector />
 
