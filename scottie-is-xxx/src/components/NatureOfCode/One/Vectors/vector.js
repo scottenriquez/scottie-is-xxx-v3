@@ -12,7 +12,7 @@ const Vector = () => {
   useEffect(() => {
     const canvas = new SceneInit('noc-vector-1-canvas-div');
     canvas.initialize();
-    const vectors = [new THREE.Vector3(0, 5, 0), new THREE.Vector3(0, -0.5, 0)];
+    const vectors = [new THREE.Vector3(-10, -10, -10), new THREE.Vector3(10, 10, 10)];
     const line = generateLine(vectors);
     canvas.scene.add(line);
     const gridXZ = new THREE.GridHelper(100, 10);

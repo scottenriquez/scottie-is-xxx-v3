@@ -33,7 +33,9 @@ export default class SceneInit {
       1,
       1000
     );
-    this.camera.position.z = 48;
+    this.camera.position.x = -40;
+    this.camera.position.y = 20;
+    this.camera.position.z = 40;
     this.renderer = new THREE.WebGLRenderer({
       canvas: this.canvasHTMLElement,
       antialias: true,

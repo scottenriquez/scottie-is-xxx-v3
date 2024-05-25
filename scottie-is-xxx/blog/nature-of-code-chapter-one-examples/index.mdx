@@ -9,6 +9,10 @@ tag: "Programming"
 import BouncingBall from '../../src/components/NatureOfCode/One/BouncingBall/bouncingBall';
 import Vector from '../../src/components/NatureOfCode/One/Vectors/vector';
 
+## Previous Entries in the Blog Series
+- [Introduction](https://scottie.is/writing/nature-of-code-introduction-examples)
+
+
 ## Introduction to Euclidean Vectors
 From [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_vector):
 > In mathematics, physics, and engineering, a Euclidean vector or simply a vector (sometimes called a geometric vector or spatial vector) is a geometric object that has magnitude (or length) and direction. Euclidean vectors can be added and scaled to form a vector space. A Euclidean vector is frequently represented by a directed line segment, or graphically as an arrow connecting an initial point `A` with a terminal point `B`.
@@ -22,9 +26,11 @@ void draw()
   ypos = ypos + (yspeed * ydirection);
   // width-rad and rad refer to the boundaries of the screen
   if (xpos > width-rad || xpos < rad) {
+    // invert direction if an edge has been hit
     xdirection *= -1;
   }
   if (ypos > height-rad || ypos < rad) {
+    // invert direction if an edge has been hit
     ydirection *= -1;
   }
   ellipseMode(RADIUS);
@@ -139,14 +145,13 @@ const w = u.dot(v);
 console.log(w);
 ```
 
-Lastly, a vector's magnitude (or length) can be calculated like so:
+Lastly (for now), a vector's magnitude (or length) can be calculated like so:
 $$
 {\displaystyle \|\mathbf {u} \|={\sqrt {u_{1}^{2}+u_{2}^{2}+\cdots +u_{n}^{2}}}.}
 $$
 
-## Vector Velocity
-
+With this code in hand (plus [a graphics library](https://threejs.org/)), we can start to model vectors in three-dimensional space:
 <Vector />
 
-## Bouncing Ball
+## Velocity
 [//]: # (<BouncingBall />)
