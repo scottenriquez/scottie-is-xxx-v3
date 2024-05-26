@@ -29,3 +29,12 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
+
+@font-face {
+  font-family: "JetBrains Mono Regular";
+  src: url('/static/fonts/JetBrainsMono-Regular.woff2') format('woff');
+}
+
+.navbar__title {
+  font-family: 'JetBrains Mono Regular', monospace;
+}
