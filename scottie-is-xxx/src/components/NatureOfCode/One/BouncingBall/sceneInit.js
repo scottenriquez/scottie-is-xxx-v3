@@ -16,13 +16,15 @@ export default class SceneInit {
     this.canvasHTMLElement = this.divHTMLElement.children[0];
     this.canvasHTMLElement.height = this.divHTMLElement.clientHeight;
     this.canvasHTMLElement.width = this.divHTMLElement.clientWidth;
-    this.bottomXPosition= -100;
-    this.bottomYPosition = -100;
-    this.bottomZPosition = -100;
-    this.topXPosition= 100;
-    this.topYPosition = 100;
-    this.topZPosition = 100;
-    this.timeStep = 0.2;
+    this.bottomXPosition= -50;
+    this.bottomYPosition = -50;
+    this.bottomZPosition = -50;
+    this.topXPosition = 50;
+    this.topYPosition = 50;
+    this.topZPosition = 50;
+    this.isXPositiveDirection = true;
+    this.isYPositiveDirection = true;
+    this.isZPositiveDirection = true;
   }
 
   initialize() {
@@ -34,9 +36,9 @@ export default class SceneInit {
       1,
       1000
     );
-    this.camera.position.x = -40;
-    this.camera.position.y = 20;
-    this.camera.position.z = 40;
+    this.camera.position.x = 100;
+    this.camera.position.y = 40;
+    this.camera.position.z = 100;
     this.renderer = new THREE.WebGLRenderer({
       canvas: this.canvasHTMLElement,
       antialias: true,
@@ -53,18 +55,27 @@ export default class SceneInit {
     window.addEventListener('resize', () => this.onWindowResize(), false);
   }
 
-  generateRandomVelocity() {
-    return Math.floor(Math.random() * 51) - 25;
+  generateVelocityVector() {
+    const x = (this.isXPositiveDirection ? 1 : -1) * 15;
+    const y = (this.isYPositiveDirection ? 1 : -1) * 15;
+    const z = (this.isZPositiveDirection ? 1 : -1) * 15;
+    return new THREE.Vector3(x, y, z);
   }
 
-  animate(pause) {
-    if (pause) {
-      return;
-    }
+  animate() {
     const sphere = this.scene.getObjectByName('sphere');
     window.requestAnimationFrame(this.animate.bind(this));
-    const sphereVelocityVector = new THREE.Vector3(this.generateRandomVelocity(), this.generateRandomVelocity(), this.generateRandomVelocity());
+    if (sphere.position.x > this.topXPosition || sphere.position.x < this.bottomXPosition) {
+      this.isXPositiveDirection = !this.isXPositiveDirection;
+    }
+    if (sphere.position.y > this.topYPosition || sphere.position.y < this.bottomYPosition) {
+      this.isYPositiveDirection = !this.isYPositiveDirection;
+    }
+    if (sphere.position.z > this.topZPosition || sphere.position.z < this.bottomZPosition) {
+      this.isZPositiveDirection = !this.isZPositiveDirection;
+    }
     const timeDelta = this.clock.getDelta();
+    const sphereVelocityVector = this.generateVelocityVector();
     sphereVelocityVector.addScalar(timeDelta);
     sphereVelocityVector.normalize();
     sphere.position.add(sphereVelocityVector);

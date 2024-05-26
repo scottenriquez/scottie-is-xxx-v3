@@ -1,28 +1,25 @@
 import React, {useEffect} from 'react';
 import * as THREE from 'three';
 import SceneInit from './sceneInit';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faRefresh} from '@fortawesome/free-solid-svg-icons';
 
-const generateSphere = (sphereLocaationVector) => {
+const generateSphere = () => {
+  const x = Math.random() * 100 - 50;
+  const y = Math.random() * 100 - 50;
+  const z = Math.random() * 100 - 50;
+  const sphereLocationVector = new THREE.Vector3(x, y, z);
   const sphereGeometry = new THREE.SphereGeometry(5, 32, 32);
   const sphereMaterial = new THREE.MeshStandardMaterial({color: 0x50fa7b, roughness: 0});
   const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
   sphere.name = 'sphere';
-  sphere.position.set(sphereLocaationVector.x, sphereLocaationVector.y, sphereLocaationVector.z);
+  sphere.position.set(sphereLocationVector.x, sphereLocationVector.y, sphereLocationVector.z);
   return sphere;
-};
-
-const handleRefreshDataClick = () => {
-
 };
 
 const BouncingBall = () => {
   useEffect(() => {
     const canvas = new SceneInit('noc-bouncing-ball-canvas-div');
     canvas.initialize();
-    const sphereLocationVector = new THREE.Vector3(0, 5, 0);
-    const sphere = generateSphere(sphereLocationVector);
+    const sphere = generateSphere();
     const gridXZ = new THREE.GridHelper(100, 10);
     canvas.scene.add(gridXZ);
     const gridXY = new THREE.GridHelper(100, 10);
@@ -41,9 +38,6 @@ const BouncingBall = () => {
       backgroundColor: 'black',
       position: 'relative'
     }}>
-      <button className={'button button--secondary button--md'} style={{backgroundColor: '#A277FF', color: 'black'}}
-              onClick={this.handleRefreshDataClick}><FontAwesomeIcon icon={faRefresh}/> Generate {this.props.buttonText}
-      </button>
       <canvas id={'noc-bouncing-ball-canvas'}/>
     </div>
   );
