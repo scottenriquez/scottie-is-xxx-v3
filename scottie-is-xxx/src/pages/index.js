@@ -1,10 +1,13 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBlog, faFilePdf } from "@fortawesome/free-solid-svg-icons"
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
-import Link from "@docusaurus/core/lib/client/exports/Link";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBlog, faFilePdf } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import Link from '@docusaurus/core/lib/client/exports/Link';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false;
 
 const HomeContainer = styled.div`
     display: flex;
@@ -27,7 +30,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (<Layout
     title={`Homepage`}
-    description="Scottie Enriquez">
+    description='Scottie Enriquez'>
     <main>
       <HomeContainer>
         <NameContainer>
