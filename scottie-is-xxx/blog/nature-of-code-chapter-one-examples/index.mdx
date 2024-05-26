@@ -7,6 +7,7 @@ tag: "Programming"
 ---
 
 import BouncingSphere from '../../src/components/NatureOfCode/One/BouncingSphere/bouncingSphere';
+import BouncingSphereWithAcceleration from '../../src/components/NatureOfCode/One/BouncingSphereWithAcceleration/bouncingSphereWithAcceleration';
 import Vector from '../../src/components/NatureOfCode/One/Vectors/vector';
 
 ## Previous Entries in the Blog Series
@@ -153,6 +154,7 @@ $$
 With this code in hand (plus [a graphics library](https://threejs.org/)), we can start to model vectors in three-dimensional space:
 
 ```javascript
+// a line is drawn between the two vectors
 const vectors = [
   new THREE.Vector3(-10, -10, -10),
   new THREE.Vector3(10, 10, 10)
@@ -180,7 +182,7 @@ const generateSphere = () => {
 
 Similarly to the two-dimensional example, the `animate` function uses the screen's boundaries as a signal to invert the direction of the sphere by negating the corresponding component in the velocity vector:
 
-```javascript title='src/components/NatureOfCode/One/BouncingSphere/boucingSphere.js'
+```javascript title='src/components/NatureOfCode/One/BouncingSphere/sceneInit.js'
 generateVelocityVector() {
   const x = (this.isXPositiveDirection ? 1 : -1) * 15;
   const y = (this.isYPositiveDirection ? 1 : -1) * 15;
@@ -215,3 +217,59 @@ Leveraging the [clock's time delta](https://threejs.org/docs/#api/en/core/Clock)
 <BouncingSphere />
 
 ## Bouncing Sphere with Random Acceleration
+
+In the first bouncing sphere model, the initial position is random. However, the path that the sphere takes is a deterministic loop. Next, we add random acceleration to the velocity, which alters the predictability of the path. In other words, the final algorithm is:
+
+$$
+\overrightarrow{finalVelocity} = \overrightarrow{initialVelocity} + \overrightarrow{acceleration} + time
+$$
+With the final velocity as $${\mathbf {v}}$$:
+$$
+{\displaystyle \mathbf {\hat {v}} ={\frac {\mathbf {v}}{\|\mathbf {v} \|}}}
+$$
+With the normalized vector as $${\mathbf {\hat {v}}}$$:
+$$
+{\overrightarrow{location} = \overrightarrow{location} + \displaystyle \mathbf {\hat {v}}}
+$$
+
+Implemented in JavaScript, this is:
+```javascript
+generateVelocityVector() {
+  const x = (this.isXPositiveDirection ? 1 : -1) * 15;
+  const y = (this.isYPositiveDirection ? 1 : -1) * 15;
+  const z = (this.isZPositiveDirection ? 1 : -1) * 15;
+  return new THREE.Vector3(x, y, z);
+}
+
+generateRandomAccelerationVector() {
+  const x = Math.random() * 30 - 15;
+  const y = Math.random() * 30 - 15;
+  const z = Math.random() * 30 - 15;
+  return new THREE.Vector3(x, y, z);
+}
+
+animate() {
+  const sphere = this.scene.getObjectByName('sphere-acceleration');
+  window.requestAnimationFrame(this.animate.bind(this));
+  if (sphere.position.x > this.topXPosition || sphere.position.x < this.bottomXPosition) {
+    this.isXPositiveDirection = !this.isXPositiveDirection;
+  }
+  if (sphere.position.y > this.topYPosition || sphere.position.y < this.bottomYPosition) {
+    this.isYPositiveDirection = !this.isYPositiveDirection;
+  }
+  if (sphere.position.z > this.topZPosition || sphere.position.z < this.bottomZPosition) {
+    this.isZPositiveDirection = !this.isZPositiveDirection;
+  }
+  const timeDelta = this.clock.getDelta();
+  const sphereVelocityVector = this.generateVelocityVector();
+  const sphereAccelerationVector = this.generateRandomAccelerationVector();
+  sphereVelocityVector.addScalar(timeDelta);
+  sphereVelocityVector.add(sphereAccelerationVector);
+  sphereVelocityVector.normalize();
+  sphere.position.add(sphereVelocityVector);
+  this.render();
+  this.controls.update();
+}
+```
+
+<BouncingSphereWithAcceleration />
