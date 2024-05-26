@@ -15,7 +15,7 @@ const generateSphere = () => {
   return sphere;
 };
 
-const BouncingBall = () => {
+const BouncingSphere = () => {
   useEffect(() => {
     const canvas = new SceneInit('noc-bouncing-ball-canvas-div');
     canvas.initialize();
@@ -43,4 +43,4 @@ const BouncingBall = () => {
   );
 }
 
-export default BouncingBall;
+export default BouncingSphere;

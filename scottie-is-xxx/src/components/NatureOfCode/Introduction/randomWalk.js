@@ -96,7 +96,7 @@ class RandomWalk extends Component {
     render() {
         return (
             <div>
-                <button className={'button button--secondary button--md'} style={{ backgroundColor: '#A277FF', color: 'black' }} onClick={this.handleRefreshDataClick}><FontAwesomeIcon icon={faRefresh} /> Generate {this.props.buttonText}</button>
+                <button className={'button button--secondary button--md'} style={{ backgroundColor: '#bd93f9', color: 'black' }} onClick={this.handleRefreshDataClick}><FontAwesomeIcon icon={faRefresh} /> Generate {this.props.buttonText}</button>
                 <CartesianPlane pixels={this.state.pixels} />
             </div>
         );
