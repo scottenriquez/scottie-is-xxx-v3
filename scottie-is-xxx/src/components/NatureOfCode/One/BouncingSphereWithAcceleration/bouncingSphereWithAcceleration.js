@@ -20,12 +20,12 @@ const BouncingSphereWithAcceleration = () => {
     const canvas = new SceneInit('noc-bouncing-ball-acceleration-canvas-div');
     canvas.initialize();
     const sphere = generateSphere();
-    const gridXZ = new THREE.GridHelper(100, 10);
+    const gridXZ = new THREE.GridHelper(500, 10);
     canvas.scene.add(gridXZ);
-    const gridXY = new THREE.GridHelper(100, 10);
+    const gridXY = new THREE.GridHelper(500, 10);
     gridXY.rotation.x = Math.PI / 2;
     canvas.scene.add(gridXY);
-    const gridYZ = new THREE.GridHelper(100, 10);
+    const gridYZ = new THREE.GridHelper(500, 10);
     gridYZ.rotation.z = Math.PI / 2;
     canvas.scene.add(gridYZ);
     canvas.scene.add(sphere);

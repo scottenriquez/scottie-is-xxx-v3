@@ -10,15 +10,20 @@ import BouncingSphere from '../../src/components/NatureOfCode/One/BouncingSphere
 import BouncingSphereWithAcceleration from '../../src/components/NatureOfCode/One/BouncingSphereWithAcceleration/bouncingSphereWithAcceleration';
 import Vector from '../../src/components/NatureOfCode/One/Vectors/vector';
 
+## About the Book
+Recently, I started reading a fantastic book called *The Nature of Code* by Daniel Shiffman. From the [description](https://natureofcode.com/):
+> How can we capture the unpredictable evolutionary and emergent properties of nature in software? How can understanding the mathematical principles behind our physical world help us to create digital worlds? This book focuses on a range of programming strategies and techniques behind computer simulations of natural systems, from elementary concepts in mathematics and physics to more advanced algorithms that enable sophisticated visual results. Readers will progress from building a basic physics engine to creating intelligent moving objects and complex systems, setting the foundation for further experiments in generative design.
+
+Daniel implements numerous examples using a programming language called [Processing](https://processing.org). Instead, I decided to write my own versions using JavaScript, React, Three.js, and D3. For this blog series, I intend to implement my learnings from each chapter.
+
 ## Previous Entries in the Blog Series
 - [Introduction](https://scottie.is/writing/nature-of-code-introduction-examples)
-
 
 ## Introduction to Euclidean Vectors
 From [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_vector):
 > In mathematics, physics, and engineering, a Euclidean vector or simply a vector (sometimes called a geometric vector or spatial vector) is a geometric object that has magnitude (or length) and direction. Euclidean vectors can be added and scaled to form a vector space. A Euclidean vector is frequently represented by a directed line segment, or graphically as an arrow connecting an initial point `A` with a terminal point `B`.
 
-The book references example code in the [Processing programming language](https://processing.org/) that simulates a bouncing ball in two-dimensional space. Below is the core logic:
+The book references example code in the Processing programming language that simulates a bouncing ball in two-dimensional space. Below is the core logic:
 
 ```csharp title='Bounce.pde'
 void draw()
@@ -146,15 +151,20 @@ const w = u.dot(v);
 console.log(w);
 ```
 
-Lastly (for now), a vector's magnitude (or length) can be calculated like so:
+Finally, a vector's magnitude (or length) can be calculated like so:
 $$
 {\displaystyle \|\mathbf {u} \|={\sqrt {u_{1}^{2}+u_{2}^{2}+\cdots +u_{n}^{2}}}.}
+$$
+
+This is useful for normalizing a vector (which we do in the bouncing sphere example later in the post):
+$$
+{\displaystyle \mathbf {\hat {u}} ={\frac {\mathbf {u}}{\|\mathbf {u} \|}}}
 $$
 
 With this code in hand (plus [a graphics library](https://threejs.org/)), we can start to model vectors in three-dimensional space:
 
 ```javascript
-// a line is drawn between the two vectors
+// additionally, a line is drawn between the two vectors
 const vectors = [
   new THREE.Vector3(-10, -10, -10),
   new THREE.Vector3(10, 10, 10)
@@ -233,7 +243,7 @@ $$
 $$
 
 Implemented in JavaScript, this is:
-```javascript
+```javascript title='src/components/NatureOfCode/One/BouncingSphereWithAcceleration/sceneInit.js'
 generateVelocityVector() {
   const x = (this.isXPositiveDirection ? 1 : -1) * 15;
   const y = (this.isYPositiveDirection ? 1 : -1) * 15;
