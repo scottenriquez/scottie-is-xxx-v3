@@ -38,3 +38,20 @@
 .navbar__title {
   font-family: 'JetBrains Mono Regular', monospace;
 }
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.name-center {
+  text-align: center;
+}
+
+.styled-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 3rem;
+  margin: 0;
+}

@@ -9,36 +9,29 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false;
 
-const HomeContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-`;
-
-const NameContainer = styled.div`
-    text-align: center;
-`;
-
-const Name = styled.h1`
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 3rem;
-    margin: 0;
-`;
-
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (<Layout
     title={`Homepage`}
     description='Scottie Enriquez'>
     <main>
-      <HomeContainer>
-        <NameContainer>
-          <Name>Scottie Enriquez</Name>
-          <p>Cloud solutions architect, software engineer, and computer scientist in Los Angeles, California</p>
-          <Link to={'/writing'}><FontAwesomeIcon icon={faBlog} size={'2x'} /></Link> <Link to={'/files/resume.pdf'} target={'_blank'}><FontAwesomeIcon icon={faFilePdf} size={'2x'} /></Link> <Link to={'https://github.com/scottenriquez'}><FontAwesomeIcon icon={faGithub} size={'2x'} /></Link> <Link to={'https://www.linkedin.com/in/scottenriquez/'}><FontAwesomeIcon icon={faLinkedin} size={'2x'} /></Link>
-        </NameContainer>
-      </HomeContainer>
+      <div className={'home-container'}>
+        <div className="container">
+          <div className={'text--center'}>
+            <h1 className={'styled-name'}>Scottie Enriquez</h1>
+          </div>
+          <div className={'text--center'}>
+            <p>Cloud solutions architect, software engineer, and computer scientist in Los Angeles, California</p>
+          </div>
+          <div className={'text--center'}>
+            <Link to={'/writing'}><FontAwesomeIcon icon={faBlog} size={'2x'}/></Link> <Link to={'/files/resume.pdf'} target={'_blank'}><FontAwesomeIcon
+            icon={faFilePdf} size={'2x'}/></Link> <Link to={'https://github.com/scottenriquez'}><FontAwesomeIcon
+            icon={faGithub} size={'2x'}/></Link> <Link
+            to={'https://www.linkedin.com/in/scottenriquez/'}><FontAwesomeIcon
+            icon={faLinkedin} size={'2x'}/></Link>
+          </div>
+        </div>
+      </div>
     </main>
   </Layout>);
 }
