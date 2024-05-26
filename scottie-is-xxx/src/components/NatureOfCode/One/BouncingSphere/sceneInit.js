@@ -76,7 +76,7 @@ export default class SceneInit {
     }
     const timeDelta = this.clock.getDelta();
     const sphereVelocityVector = this.generateVelocityVector();
-    sphereVelocityVector.addScalar(timeDelta);
+    sphereVelocityVector.multiplyScalar(timeDelta);
     sphereVelocityVector.normalize();
     sphere.position.add(sphereVelocityVector);
     this.render();

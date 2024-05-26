@@ -214,7 +214,7 @@ animate() {
   }
   const timeDelta = this.clock.getDelta();
   const sphereVelocityVector = this.generateVelocityVector();
-  sphereVelocityVector.addScalar(timeDelta);
+  sphereVelocityVector.multiplyScalar(timeDelta);
   sphereVelocityVector.normalize();
   sphere.position.add(sphereVelocityVector);
   this.render();
@@ -228,10 +228,9 @@ Leveraging the [clock's time delta](https://threejs.org/docs/#api/en/core/Clock)
 
 ## Bouncing Sphere with Random Acceleration
 
-In the first bouncing sphere model, the initial position is random. However, the path that the sphere takes is a deterministic loop. Next, we add random acceleration to the velocity, which alters the predictability of the path. In other words, the final algorithm is:
-
+In the first bouncing sphere model, the initial position is random. However, the path that the sphere takes is a deterministic loop. Next, we add random acceleration to the velocity, which alters the predictability of the path. In other words, the final algorithm is (with $$\overrightarrow{u}$$ as the initial velocity, $$\overrightarrow{a}$$ as acceleration, and $$t$$ as time):
 $$
-\overrightarrow{finalVelocity} = \overrightarrow{initialVelocity} + \overrightarrow{acceleration} + time
+\overrightarrow{v} = \overrightarrow{u} + \overrightarrow{a} * t
 $$
 With the final velocity as $${\mathbf {v}}$$:
 $$
@@ -273,7 +272,7 @@ animate() {
   const timeDelta = this.clock.getDelta();
   const sphereVelocityVector = this.generateVelocityVector();
   const sphereAccelerationVector = this.generateRandomAccelerationVector();
-  sphereVelocityVector.addScalar(timeDelta);
+  sphereVelocityVector.multiplyScalar(timeDelta);
   sphereVelocityVector.add(sphereAccelerationVector);
   sphereVelocityVector.normalize();
   sphere.position.add(sphereVelocityVector);

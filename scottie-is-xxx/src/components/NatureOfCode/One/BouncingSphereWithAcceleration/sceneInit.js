@@ -37,7 +37,7 @@ export default class SceneInit {
       1000
     );
     this.camera.position.x = 100;
-    this.camera.position.y = 40;
+    this.camera.position.y = 100;
     this.camera.position.z = 100;
     this.renderer = new THREE.WebGLRenderer({
       canvas: this.canvasHTMLElement,
@@ -84,7 +84,7 @@ export default class SceneInit {
     const timeDelta = this.clock.getDelta();
     const sphereVelocityVector = this.generateVelocityVector();
     const sphereAccelerationVector = this.generateRandomAccelerationVector();
-    sphereVelocityVector.addScalar(timeDelta);
+    sphereVelocityVector.multiplyScalar(timeDelta);
     sphereVelocityVector.add(sphereAccelerationVector);
     sphereVelocityVector.normalize();
     sphere.position.add(sphereVelocityVector);
