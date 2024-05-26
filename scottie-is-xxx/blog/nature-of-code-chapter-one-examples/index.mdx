@@ -1,7 +1,7 @@
 ---
 authors: [scottenriquez]
 title: "The Nature of Code Companion Series: Chapter One"
-date: "2024-05-19"
+date: "2024-05-25"
 description: "A companion for chapter one of Daniel Shiffman's book."
 tag: "Programming"
 ---
@@ -48,7 +48,7 @@ This image from the Processing code output shows the ball's movement through vec
 
 ![Bouncing Ball Processing](./bouncing-ball-processing.png)
 
-To expand this example to the third dimension, additional variables called `zpos` and `zspeed` are required. Obviously, this approach does not scale well to `n` dimensions since each needs new speed and position variables. While vectors alone don't expand the physics functionality (e.g., the circle's motion), they streamline and minimize the amount of code required to include new dimensions. In JavaScript, we can write a simple class to organize the components and implement vector operations such as addition.
+To expand this example to the third dimension, additional variables called `zpos` and `zspeed` are required. Obviously, this approach does not scale well to $$n$$ dimensions since each needs new speed and position variables. While vectors alone don't expand the physics functionality (e.g., the circle's motion), they streamline and minimize the amount of code required to include new dimensions. In JavaScript, we can write a simple class to organize the components and implement vector operations such as addition.
 
 ```javascript title='src/components/NatureOfCode/One/NVector/nVector.js'
 class NVector {
@@ -161,7 +161,7 @@ $$
 {\displaystyle \mathbf {\hat {u}} ={\frac {\mathbf {u}}{\|\mathbf {u} \|}}}
 $$
 
-With this code in hand (plus [a graphics library](https://threejs.org/)), we can start to model vectors in three-dimensional space:
+With this code in hand (plus [a graphics library called Three.js](https://threejs.org/)), we can begin to model vectors in three-dimensional space:
 
 ```javascript
 // additionally, a line is drawn between the two vectors
@@ -173,8 +173,8 @@ const vectors = [
 
 <Vector />
 
-## Bouncing Sphere Using Vectors
-Using our knowledge of vectors and a Vector class (`THREE.Vector3`, which is our graphics library's implementation of our `NVector`), we can expand the bouncing ball Processing example into the third dimension. First, create a sphere with a random starting position vector within the bounds of our space (i.e., -50 to 50).
+## Bouncing Sphere
+Using our knowledge of vectors and a Vector class (`THREE.Vector3`, which is our graphics library's implementation of our `NVector` class above), we can expand the bouncing ball Processing example into the third dimension. First, create a sphere with a random starting position vector within the bounds of our space (i.e., -50 to 50).
 
 ```javascript title='src/components/NatureOfCode/One/BouncingSphere/boucingSphere.js'
 const generateSphere = () => {
@@ -190,7 +190,7 @@ const generateSphere = () => {
 };
 ```
 
-Similarly to the two-dimensional example, the `animate` function uses the screen's boundaries as a signal to invert the direction of the sphere by negating the corresponding component in the velocity vector:
+Similarly to the two-dimensional example, the `animate` function uses the screen's boundaries as a signal to invert the direction of the sphere's motion by negating the corresponding component in the velocity vector:
 
 ```javascript title='src/components/NatureOfCode/One/BouncingSphere/sceneInit.js'
 generateVelocityVector() {
@@ -222,7 +222,7 @@ animate() {
 }
 ```
 
-Leveraging the [clock's time delta](https://threejs.org/docs/#api/en/core/Clock) (i.e., the time elapsed since the last frame) for scalar addition and normalizing the sphere velocity vector simulates motion over time in our three-dimensional space.
+Leveraging the [clock's time delta](https://threejs.org/docs/#api/en/core/Clock) (i.e., the time elapsed since the last frame) for scalar multiplication and normalizing the sphere velocity vector simulates motion over time in our three-dimensional space.
 
 <BouncingSphere />
 
@@ -282,3 +282,6 @@ animate() {
 ```
 
 <BouncingSphereWithAcceleration />
+
+## Next Section
+[Chapter two](https://natureofcode.com/forces/) examines forces and laws of motion.
