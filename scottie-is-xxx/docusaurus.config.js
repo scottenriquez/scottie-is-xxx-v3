@@ -93,7 +93,14 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: 'All opinions expressed here are my own.'
+        copyright: 'Crafted with love by Scottie in Los Angeles',
+        logo: {
+          alt: 'Logo',
+          src: 'img/scott-s.svg',
+          href: '/',
+          width: 160,
+          height: 51,
+        },
       },
       prism: {
         theme: prismThemes.dracula,
