@@ -20,9 +20,6 @@ Daniel implements numerous examples using a programming language called [Process
 - [Introduction](https://scottie.is/writing/nature-of-code-introduction-examples)
 
 ## Introduction to Euclidean Vectors
-From [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_vector):
-> In mathematics, physics, and engineering, a Euclidean vector or simply a vector (sometimes called a geometric vector or spatial vector) is a geometric object that has magnitude (or length) and direction. Euclidean vectors can be added and scaled to form a vector space. A Euclidean vector is frequently represented by a directed line segment, or graphically as an arrow connecting an initial point $$A$$ with a terminal point $$B$$.
-
 The book references example code in the Processing programming language that simulates a bouncing ball in two-dimensional space. Below is the core logic:
 
 ```csharp title='Bounce.pde'
@@ -47,6 +44,9 @@ void draw()
 This image from the Processing code output shows the ball's movement through vector space. The circle's path is tracked by selecting a random color for the ball on each iteration:
 
 ![Bouncing Ball Processing](./bouncing-ball-processing.png)
+
+From [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_vector):
+> In mathematics, physics, and engineering, a Euclidean vector or simply a vector (sometimes called a geometric vector or spatial vector) is a geometric object that has magnitude (or length) and direction. Euclidean vectors can be added and scaled to form a vector space. A Euclidean vector is frequently represented by a directed line segment, or graphically as an arrow connecting an initial point $$A$$ with a terminal point $$B$$.
 
 To expand this example to the third dimension, additional variables called `zpos` and `zspeed` are required. Obviously, this approach does not scale well to $$n$$ dimensions since each needs new speed and position variables. While vectors alone don't expand the physics functionality (e.g., the circle's motion), they streamline and minimize the amount of code required to include new dimensions. In JavaScript, we can write a simple class to organize the components and implement vector operations such as addition.
 
@@ -140,7 +140,7 @@ console.log(w);
 
 For dot products (where $$n$$ is the dimension of vector space):
 $$
-{\displaystyle \mathbf {u} \cdot \mathbf {v} =\sum _{i=1}^{n}u_{i}v_{i}=u_{1}v_{1}+u_{2}v_{2}+\cdots +u_{n}v_{n}}
+{\displaystyle \mathbf {u} \cdot \mathbf {v} =\sum _{i=1}^{n}u_{i}v_{i}=u_{1}v_{1}+\cdots +u_{n}v_{n}}
 $$
 
 ```javascript
@@ -153,7 +153,7 @@ console.log(w);
 
 Finally, a vector's magnitude (or length) can be calculated like so:
 $$
-{\displaystyle \|\mathbf {u} \|={\sqrt {u_{1}^{2}+u_{2}^{2}+\cdots +u_{n}^{2}}}.}
+{\displaystyle \|\mathbf {u} \|={\sqrt {u_{1}^{2}+\cdots +u_{n}^{2}}}.}
 $$
 
 This is useful for normalizing a vector (which we do in the bouncing sphere example later in the post):
@@ -166,6 +166,7 @@ With this code in hand (plus [a graphics library called Three.js](https://threej
 ```javascript
 // additionally, a line is drawn between the two vectors
 const vectors = [
+  // use the graphics library's implementation of a vector instead of NVector
   new THREE.Vector3(-10, -10, -10),
   new THREE.Vector3(10, 10, 10)
 ];
@@ -222,13 +223,13 @@ animate() {
 }
 ```
 
-Leveraging the [clock's time delta](https://threejs.org/docs/#api/en/core/Clock) (i.e., the time elapsed since the last frame) for scalar multiplication and normalizing the sphere velocity vector simulates motion over time in our three-dimensional space.
+Leveraging the [clock's time delta](https://threejs.org/docs/#api/en/core/Clock) (i.e., the time elapsed since the last frame) for scalar multiplication and normalizing the sphere velocity vector are the first steps for simulating motion.
 
 <BouncingSphere />
 
 ## Bouncing Sphere with Random Acceleration
 
-In the first bouncing sphere model, the initial position is random. However, the path that the sphere takes is a deterministic loop. Next, we add random acceleration to the velocity, which alters the predictability of the path. In other words, the final algorithm is (with $$\overrightarrow{u}$$ as the initial velocity, $$\overrightarrow{a}$$ as acceleration, and $$t$$ as time):
+In the first bouncing sphere model, the initial position is random. However, the path that the sphere takes is a deterministic loop. Next, we add random acceleration to the velocity. In other words, the final algorithm is (with $$\overrightarrow{u}$$ as the initial velocity, $$\overrightarrow{a}$$ as acceleration, and $$t$$ as time):
 $$
 \overrightarrow{v} = \overrightarrow{u} + \overrightarrow{a} * t
 $$
