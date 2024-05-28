@@ -81,19 +81,19 @@ circleLocation = circleLocation.add(circleVelocity);
 console.log(circleLocation);
 ```
 
-In other words:
+In other words (with location as $$l$$ and velocity as $$v$$):
 $$
-\overrightarrow{location} = \overrightarrow{location} + \overrightarrow{velocity}
+\overrightarrow{l} = \overrightarrow{l} + \overrightarrow{v}
 $$
 Or:
 $$
-location_{x} = location_{x} + velocity_{x}
+l_{x} = l_{x} + v_{x}
 $$
 $$
-location_{y} = location_{y} + velocity_{y}
+l_{y} = l_{y} + v_{y}
 $$
 $$
-location_{z} = location_{z} + velocity_{z}
+l_{z} = l_{z} + v_{z}
 $$
 
 Vector subtraction behaves the same way as addition:
@@ -240,9 +240,9 @@ With the final velocity as $${\mathbf {v}}$$:
 $$
 {\displaystyle \mathbf {\hat {v}} ={\frac {\mathbf {v}}{\|\mathbf {v} \|}}}
 $$
-With the normalized vector as $${\mathbf {\hat {v}}}$$:
+With the normalized vector as $${\mathbf {\hat {v}}}$$ and location as $$l$$:
 $$
-{\overrightarrow{location} = \overrightarrow{location} + \displaystyle \mathbf {\hat {v}}}
+{\overrightarrow{l} = \overrightarrow{l} + \displaystyle \mathbf {\hat {v}}}
 $$
 
 Implemented in JavaScript, this is:
