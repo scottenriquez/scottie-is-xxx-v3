@@ -99,8 +99,8 @@ const config = {
         },
         items: [
           {to: '/files/resume.pdf', label: 'Resume', position: 'left', target: '_blank'},
-          {to: '/writing', label: 'Personal Blog', position: 'left'},
-          {to: '/writing-about-fantasy-football', label: 'Fantasy Football Blog', position: 'left'},
+          {to: '/writing', label: 'Blog', position: 'left'},
+          {to: '/writing-about-fantasy-football', label: 'Fantasy Football', position: 'left'},
           {
             href: 'https://github.com/scottenriquez',
             label: 'GitHub',

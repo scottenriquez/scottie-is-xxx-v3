@@ -1,21 +1,21 @@
 ---
-title: Getting Started with the New Gatsby Site
+title: Getting Started with the League Site 
 date: "2020-08-08"
 description: "Documentation for creating new content."
 authors: [scottie]
 tags: ["Documentation"]
 ---
 
-## Build Status
+## Frontend Build Status
 
-[![Netlify](https://api.netlify.com/api/v1/badges/4192e85d-f2e4-44c3-855b-4159f9479efd/deploy-status)](https://app.netlify.com/sites/focused-swartz-8c4a84/deploys)
+[![Netlify](https://api.netlify.com/api/v1/badges/a5908d92-3e04-4353-8375-ccf634b9e1cd/deploy-status)](https://app.netlify.com/sites/scottie-is/deploys)
 
 ## Overview
 
-The Winner Is a Tryhard is now a Gatsby blog hosted on Netlify replacing the vanilla React frontend and Lambda backend for serving dynamic content. Gatsby uses Markdown (or MDX) syntax for writing blog posts, which should streamline the writing process for everyone. By utilizing the pull request system on GitHub, the publishing process will also be self-service thanks to the Netlify CI/CD tooling. This documentation will cover:
+The Winner Is a Tryhard is now a Docusaurus site hosted on Netlify replacing the vanilla React frontend and Lambda backend for serving dynamic content. It uses Markdown (or MDX) syntax for writing blog posts, which should streamline the writing process for everyone. By utilizing the pull request system on GitHub, the publishing process will also be self-service thanks to the Netlify CI/CD tooling. This documentation will cover:
 
 - Creating and configuring your GitHub account and keys
-- Setting up your local development environment for Gatsby
+- Setting up your local development environment
 - Cloning the project to your local machine
 - Creating a new post
 - Writing the post using Markdown
@@ -42,12 +42,6 @@ node --version
 npm --version
 ```
 
-Next, install the Gatsby CLI like so:
-
-```shell
-npm i -g gatsby-cli
-```
-
 ## Configuring SSH Keys and Git
 
 In order to push commits to the remote origin from your local machine, you'll need to [create a new SSH key](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [add the key to your account](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account). Set up your global name and email on your machine as well.
@@ -62,12 +56,12 @@ git config --global user.email "youremail@yourdomain.com"
 With the previous steps completed, you can now clone the repository to your local machine and start the local web server.
 
 ```shell
-git clone git@github.com:the-winner-is-a-tryhard/gatsby-frontend.git
-cd TWIATH
-gatsby develop
+git clone https://github.com/scottenriquez/scottie-is-xxx-v3.git
+cd scottie-is-xxx
+npm run start
 ```
 
-Navigate to `http://localhost:8000` in the browser.
+Navigate to `http://localhost:3000` in the browser.
 
 ## Creating a New Branch
 
@@ -80,15 +74,14 @@ git push origin -u scottie-power-rankings-week-one
 
 ## Creating a New Post
 
-Use the [power rankings CLI](/posts/power-rankings-cli/) to generate new posts. The generated template lists each league member with fantasy football data from Sleeper and their avatars stored on a private CDN.
+Use the power rankings CLI to generate new posts. The generated template lists each league member with fantasy football data from Sleeper and their avatars stored on a CDN.
 
 ```markdown
 ---
 title: "Scottie's Week One Power Rankings"
-date: "2020-08-22T21:54:41.559Z"
+date: "2020-08-22"
 description: "Scottie's dope power rankings."
-author: "Scottie Enriquez"
-tag: "Power Rankings"
+authors: [scottie] 
 ---
 
 ## <img src="https://twiath-site-cdn.s3.amazonaws.com/nfl_dal-one-scottie" class="sleeper-avatar"/> 🏆‼️ | 0-0W/L | 0PF
@@ -132,7 +125,7 @@ The section wrapped in `---` is called the slug. It contains metadata for queryi
 
 ## MDX
 
-This Gatsby site is configured to support MDX. MDX adds a new dimension of features in Markdown pages by seamlessly integrating JSX, which allows for writing HTML inside of JavaScript statements.
+This site is configured to support MDX. MDX adds a new dimension of features in Markdown pages by seamlessly integrating JSX, which allows for writing HTML inside of JavaScript statements.
 
 ```jsx
 const element = <h1>Hello, world!</h1>
@@ -160,4 +153,130 @@ git commit -m "Adding my super thoughtful power rankings"
 git push origin scottie-power-rankings-week-one
 ```
 
-From the GitHub web UI, open a pull request and select your branch with the changes. Add `@scottenriquez` or `@callentrail` as reviewers. Once we approve, your post will be published via Netlify's integration.
+From the GitHub web UI, open a pull request and select your branch with the changes. Add `@scottenriquez`. Once approved, your post will be published via Netlify's integration.
+
+## Power Rankings CLI Overview
+
+`spr` is a CLI tool for generating Markdown pages in the [league site](https://scottie.is/writing-about-fantasy-football) for power rankings posts with Sleeper data injected. The source code is hosted on [GitHub](https://github.com/the-winner-is-a-tryhard/power-rankings-markdown-cli).
+
+## Build Status
+
+[![Azure Pipelines](https://dev.azure.com/scottenriquez/Sleeper%20Power%20Rankings%20Markdown%20CLI/_apis/build/status/the-winner-is-a-tryhard.power-rankings-markdown-cli?branchName=master)](https://dev.azure.com/scottenriquez/Sleeper%20Power%20Rankings%20Markdown%20CLI/_build/latest?definitionId=5&branchName=master)
+
+## Installation and Dependencies
+
+Clone the repository, install NPM dependencies, and create a symlink in the global folder.
+
+```shell
+git clone git@github.com:the-winner-is-a-tryhard/power-rankings-markdown-cli.git
+cd power-rankings-markdown-cli
+npm install
+npm link
+spr --version
+```
+
+The CLI source code doesn't store any secrets, so ensure that the AWS CLI is installed and that the credentials are configured at `~/.aws/credentials`.
+
+```shell
+[default]
+aws_access_key_id=AKIAIOSFODNN7EXAMPLE
+aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+```
+
+If not, run `aws configure`.
+
+## Usage
+
+Navigate to the root folder of the league's site, and run `spr add <WEEK_NUMBER> <AUTHOR_FIRST_NAME>`. The alias for `add` is `a`. Open the generated `index.md` file in the newly created directory (`<FIRST_NAME>-week-<WEEK_NUMBER>-power-rankings/`) to enter the power rankings text for the new post.
+
+## Functionality
+
+- Validates the week number and author first name
+- Checks the current Git branch to ensure that the user has created a non-main branch
+- Fetches the league members and rosters from the Sleeper API
+- Fetches the current avatar for each league member and copies to a CDN hosted in AWS
+- Generates Markdown power rankings with the member's latest stats neatly formatted
+- Creates a new directory for the post and writes the `index.md` file
+
+## Configuration
+
+The league-specific details exist in various JavaScript configuration files to maximize reusability. While the CLI is tightly-coupled with Docusaurus, there's still much that can be reconfigured for other leagues.
+
+### Frontend
+
+```javascript title='/lib/config/frontend.js'
+const frontend = {
+  // used to determine if the user created a new branch
+  mainBranchName: "main",
+  // used to determine if the user is in the root directory
+  configFileName: "docusaurus.config.js",
+  // used to support any changes to the default blog path for vanity URLs
+  postPath: "/twiath/",
+  // used to defer image styling for the avatar 
+  avatarHTMLClass: "sleeper-avatar",
+}
+```
+
+### AWS
+
+```javascript title='/lib/config/aws.js'
+const awsConfig = {
+  // S3 bucket
+  bucketName: "twiath-site-cdn",
+  // URL base to be used for source in <img> tag
+  cdnURLBase: "https://dxyip34awyjyf.cloudfront.net",
+}
+```
+
+### League
+
+```javascript title='/lib/config/league.js'
+const league = {
+  // Sleeper league ID number
+  id: "541384381865115648",
+}
+```
+
+### Authors
+
+```javascript title='/lib/config/validAuthors.js'
+const authors = {
+  Scottie: "Scottie Enriquez",
+  Callen: "Callen Trail",
+  Logan: "Logan Richardson",
+  Carl: "Carl Meziere",
+  Andrew: "Andrew Carlough",
+  John: "John Yarrow",
+  Matt: "Matt Kniowski",
+  Chris: "Chris Ramsey",
+  Caleb: "Caleb Trantow",
+  Travis: "Travis James",
+  Trond: "Trond Liu",
+  Mark: "Mark Hamilton",
+}
+```
+
+### Weeks
+
+```javascript title='/lib/config/validWeeks.js'
+const weeks = {
+  0: "zero",
+  1: "one",
+  2: "two",
+  3: "three",
+  4: "four",
+  5: "five",
+  6: "six",
+  7: "seven",
+  8: "eight",
+  9: "nine",
+  10: "ten",
+  11: "eleven",
+  12: "twelve",
+  13: "thirteen",
+  14: "fourteen",
+  15: "fifteen",
+  16: "sixteen",
+  17: "seventeen",
+}
+```
