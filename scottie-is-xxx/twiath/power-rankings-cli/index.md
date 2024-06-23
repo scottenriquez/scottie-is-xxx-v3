@@ -1,9 +1,9 @@
 ---
-authors: [scottenriquez]
-title: Fantasy Football Power Rankings Markdown Generator
+title: Power Rankings Markdown Generator
 date: "2020-08-21"
-description: "A CLI for creating posts for my league's fantasy football site."
-tag: "Programming"
+description: "A CLI for creating posts with Sleeper data."
+authors: [scottie]
+tags: ["Documentation"]
 ---
 
 ## Overview
@@ -19,7 +19,7 @@ tag: "Programming"
 Clone the repository, install NPM dependencies, and create a symlink in the global folder.
 
 ```shell
-git clone git@github.com:the-winner-is-a-twiath/power-rankings-markdown-cli.git
+git clone git@github.com:the-winner-is-a-tryhard/power-rankings-markdown-cli.git
 cd power-rankings-markdown-cli
 npm install
 npm link
@@ -54,6 +54,8 @@ Navigate to the root folder of the league's Gatsby site, and run `spr add <WEEK_
 
 The league-specific details exist in various JavaScript configuration files to maximize reusability. While the CLI is tightly-coupled with Gatsby, there's still much that can be reconfigured for other leagues.
 
+### Frontend
+
 ```javascript title='/lib/config/gatsby.js'
 const gatsby = {
   // used to determine if the user created a new branch
@@ -67,14 +69,18 @@ const gatsby = {
 }
 ```
 
+### AWS 
+
 ```javascript title='/lib/config/aws.js'
 const awsConfig = {
   // S3 bucket
   bucketName: "twiath-site-cdn",
   // URL base to be used for source in <img> tag
-  cdnURLBase: "https://d1yqxti3jheii7.cloudfront.net",
+  cdnURLBase: "https://dxyip34awyjyf.cloudfront.net",
 }
 ```
+
+### League
 
 ```javascript title='/lib/config/league.js'
 const league = {
@@ -82,6 +88,8 @@ const league = {
   id: "541384381865115648",
 }
 ```
+
+### Authors
 
 ```javascript title='/lib/config/validAuthors.js'
 const authors = {
@@ -99,6 +107,8 @@ const authors = {
   Mark: "Mark Hamilton",
 }
 ```
+
+### Weeks
 
 ```javascript title='/lib/config/validWeeks.js'
 const weeks = {

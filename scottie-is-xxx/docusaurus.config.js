@@ -55,7 +55,28 @@ const config = {
       }),
     ],
   ],
-
+  plugins: [
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'twiath',
+        routeBasePath: 'writing-about-twiath',
+        path: './twiath',
+        blogSidebarTitle: 'Posts',
+        blogSidebarCount: 'ALL',
+        processBlogPosts: async ({blogPosts}) => {
+          const documentationPosts = blogPosts.filter((post) => post.metadata.tags.length !== 0);
+          const powerRankingsPosts = blogPosts.filter((post) => post.metadata.tags.length === 0);
+          powerRankingsPosts.sort((first, second) => {
+            return first.metadata.date < second.metadata.date;
+          });
+          return documentationPosts.concat(powerRankingsPosts);
+        },
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
+      },
+    ],
+  ],
   stylesheets: [
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
@@ -77,8 +98,9 @@ const config = {
           src: 'img/scott-s.svg',
         },
         items: [
-          {to: '/writing', label: 'Blog', position: 'left'},
           {to: '/files/resume.pdf', label: 'Resume', position: 'left', target: '_blank'},
+          {to: '/writing', label: 'Personal Blog', position: 'left'},
+          {to: '/writing-about-twiath', label: 'Fantasy Football Blog', position: 'left'},
           {
             href: 'https://github.com/scottenriquez',
             label: 'GitHub',

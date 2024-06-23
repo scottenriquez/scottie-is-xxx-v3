@@ -55,3 +55,25 @@
   font-size: 3rem;
   margin: 0;
 }
+
+.sleeper-avatar {
+  height: 25px;
+  border-radius: 50%;
+  margin-bottom: 0;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+
+.levelUp {
+  color: #50fa7b;
+  height: 30px;
+}
+
+.levelDown {
+  color: #ff5555;
+  height: 30px;
+}
