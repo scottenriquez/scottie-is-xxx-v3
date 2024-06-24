@@ -59,7 +59,7 @@ const config = {
       '@docusaurus/plugin-content-blog',
       {
         id: 'twiath',
-        routeBasePath: 'writing-about-fantasy-football',
+        routeBasePath: 'discussing-fantasy-football',
         blogTitle: 'Fantasy Football',
         path: './twiath',
         blogSidebarTitle: 'Posts',
@@ -100,7 +100,7 @@ const config = {
         items: [
           {to: '/files/resume.pdf', label: 'Resume', position: 'left', target: '_blank'},
           {to: '/writing', label: 'Blog', position: 'left'},
-          {to: '/writing-about-fantasy-football', label: 'Fantasy Football', position: 'left'},
+          {to: '/discussing-fantasy-football', label: 'Fantasy Football', position: 'left'},
           {
             href: 'https://github.com/scottenriquez',
             label: 'GitHub',

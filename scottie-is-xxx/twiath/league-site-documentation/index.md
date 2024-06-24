@@ -1,7 +1,7 @@
 ---
-title: Getting Started with the League Site 
+title: 📌 League Site Documentation 
 date: "2020-08-08"
-description: "Documentation for creating new content."
+description: "Documentation for creating new content on the league site."
 authors: [scottie]
 tags: ["Getting Started", "Documentation"]
 ---
@@ -118,7 +118,7 @@ The section wrapped in `---` is called the slug. It contains metadata for queryi
 │   └── champion.png
 └── blog
     └── posts
-        └── getting-started
+        └── league-site-documentation
             ├── image.png
             └── index.md
 ```
