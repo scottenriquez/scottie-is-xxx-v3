@@ -3,7 +3,7 @@ authors: [scottenriquez]
 title: ISP Complainer
 date: "2016-02-21"
 description: "Source code and technical documentation for a bot to tweet at my ISP whenever my promised speeds aren't met."
-tag: "Programming"
+tags: ["Programming"]
 ---
 
 ## Motivation

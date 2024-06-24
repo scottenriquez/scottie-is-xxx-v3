@@ -3,8 +3,9 @@ authors: [scottenriquez]
 title: Writing Cost-Conscious Terraform Using Infracost and AWS Developer Tools 
 date: "2022-07-16"
 description: "A CI/CD pipeline that alerts Terraform developers of cost increases."
-tag: "Programming"
+tags: ["Cloud", "Programming"]
 ---
+
 ## Solution Overview
 My current role focuses on every facet of AWS cost optimization. Much of this entails helping to remediate existing infrastructure and usage. Many customers ask how they can shift left on cloud costs, like they do with security. Ultimately, cost consciousness needs to be injected into every aspect of the engineering lifecycle: from the initial architecture design to implementation and upkeep.
 

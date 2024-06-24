@@ -3,7 +3,7 @@ authors: [scottenriquez]
 title: A Timeline for Learning Japanese
 date: "2012-12-04"
 description: "An outline of the road to Japanese fluency."
-tag: "Japanese"
+tags: ["Japanese"]
 ---
 
 Without the neatly defined classroom aspect the first couple of years of Japanese study, it may be unclear what you should be doing or even where to start. So, let me define a formal outline of how (in my humble opinion) one should approach Japanese literacy.

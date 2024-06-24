@@ -3,7 +3,7 @@ authors: [scottenriquez]
 title: College Football Opening Weekend 2016
 date: "2016-11-06"
 description: "An epic trip to start the season."
-tag: "Travel"
+tags: ["Travel"]
 ---
 import getGoogleMapsAPIKey from '../../src/services/googleMapsAPIKeyService'
 import getGoogleMapsOptionsSettings from '../../src/services/googleMapsOptionsService'

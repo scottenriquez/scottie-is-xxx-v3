@@ -2,16 +2,17 @@
 title: "Scottie's Week One 2021 Power Rankings"
 date: "2021-09-15"
 description: "Scottie's haemic power rankings."
-authors: [scottie] 
+authors: [scottie]
+tags: ["Power Rankings"]
 ---
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLevelUpAlt } from "@fortawesome/free-solid-svg-icons"
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-one-scottie" class="sleeper-avatar"/> Fresh Prince of Helaire | 1-0W/L | 117PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-one-scottie" class="sleeper-avatar"/>Fresh Prince of Helaire | 1-0W/L | 117PF
 
-### Week One Points: 117
+#### Week One Points: 117
 
 Much like K-State against a typical, laughably bad OOC schedule, Chris is once again looking good at the start of the season. Unfortunately, Southern Illinois looked more competitive against the Wildcats than I did against Cramsey. This roster looks good from top to bottom. I didn't think he'd part ways with Mahomes, but his team still looks elite without him. With a couple of bench spots freeing up, I expect this deep team to get deeper.
 
@@ -27,9 +28,9 @@ Much like K-State against a typical, laughably bad OOC schedule, Chris is once a
 | Robert Woods          | LAR-WR  | 1     |
 | Buffalo Bills         | BUF-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-one-scottie" class="sleeper-avatar"/> Jordan '96 '97 | 1-0W/L | 115PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-one-scottie" class="sleeper-avatar"/>Jordan '96 '97 | 1-0W/L | 115PF
 
-### Week One Points: 115
+#### Week One Points: 115
 
 Tarv does it again. After being close to Trond levels of horrific fantasy football for years, he suddenly looks like an elite manager for two years straight. Unfortunately, this season doesn't look any different. Barkley and Allen didn't inspire confidence this week, but he had enough boom potential to put up triple digits. However, I could see this team being very inconsistent. I certainly don't expect Corey Davis to put up a 20-piece every week.
 
@@ -45,9 +46,9 @@ Tarv does it again. After being close to Trond levels of horrific fantasy footba
 | Corey Davis         | NYJ-WR | 1     |
 | San Francisco 49ers | SF-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-one-scottie" class="sleeper-avatar"/> Zeke Squad | 1-0W/L | 116PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-one-scottie" class="sleeper-avatar"/>Zeke Squad | 1-0W/L | 116PF
 
-### Week One Points: 116
+#### Week One Points: 116
 
 Don't trade with John. These starters look elite. Don't trade with John. The bench looks trash. Don't trade with John.
 
@@ -63,11 +64,11 @@ Don't trade with John. These starters look elite. Don't trade with John. The ben
 | Diontae Johnson     | PIT-WR  | 1     |
 | Pittsburgh Steelers | PIT-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-one-scottie" class="sleeper-avatar"/> Darrel and the Hendersons | 1-0W/L | 125PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-one-scottie" class="sleeper-avatar"/>Darrel and the Hendersons | 1-0W/L | 125PF
 
-> You versus the guy that ranked you 11th.
+#### Week One Points: 125
 
-### Week One Points: 125
+>You versus the guy that ranked you 11th.
 
 Logan hit big this week, but I still have significant concerns about this team. With Mostert and Jeudy on IR and a weak bench looking about as polished as his Warhammer figurines, I'd say Logan will trend down. Of course, I'm always a fan of talking smack while you can, so go off now, king.
 
@@ -83,9 +84,9 @@ Logan hit big this week, but I still have significant concerns about this team. 
 | Mecole Hardman    | KC-WR   | 1 (Q) |
 | Los Angeles Rams  | LAR-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/a91cfbe2665c3bc237b6aa5199fb0d7a-one-scottie" class="sleeper-avatar"/> Moore Cowbell | 0-1W/L | 109PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/a91cfbe2665c3bc237b6aa5199fb0d7a-one-scottie" class="sleeper-avatar"/>Moore Cowbell | 0-1W/L | 109PF
 
-### Week One Points: 109
+#### Week One Points: 109
 
 Much like K-Man, Matthew Stafford appears to be thriving after leaving behind the Lions. In typical fashion, K-Man reached for some players like DJ Moore, but he has managed his roster well since then. Ty'Son Williams could be a big hit. Kelce looks like he's going to perform at an RB1-level yet again. I'm bullish on this team.
 
@@ -101,11 +102,11 @@ Much like K-Man, Matthew Stafford appears to be thriving after leaving behind th
 | Ja'Marr Chase      | CIN-WR  | 1     |
 | Indianapolis Colts | IND-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-one-scottie" class="sleeper-avatar"/> FEED ME 🥄 | 1-0W/L | 96PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-one-scottie" class="sleeper-avatar"/>FEED ME 🥄 | 1-0W/L | 96PF
 
-> Dallas will win the next 10 games in a row.
+#### Week One Points: 96
 
-### Week One Points: 96
+>Dallas will win the next 10 games in a row.
 
 Mrak's starters look good, but his team is about as deep as an episode of The Joe Rogan Experience. I'm about to grab his entire bench in the golf league. He should have been in the triple-digit club this week, but the Texans decided to end that dream. They must have read Mrak's tweets about how bad Spencer Rattler is and opted to try this season instead of tanking.
 
@@ -121,9 +122,9 @@ Mrak's starters look good, but his team is about as deep as an episode of The Jo
 | Tee Higgins          | CIN-WR  | 1     |
 | Jacksonville Jaguars | JAX-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-one-scottie" class="sleeper-avatar"/> Mom’s Volkswagen | 0-1W/L | 108PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-one-scottie" class="sleeper-avatar"/>Mom’s Volkswagen | 0-1W/L | 108PF
 
-### Week One Points: 108
+#### Week One Points: 108
 
 Trond doesn't care enough to draft his own team, so I don't care enough to write a decent description of it. He'll end up at the bottom per usual.
 
@@ -139,9 +140,9 @@ Trond doesn't care enough to draft his own team, so I don't care enough to write
 | JuJu Smith-Schuster | PIT-WR  | 1     |
 | Carolina Panthers   | CAR-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-one-scottie" class="sleeper-avatar"/> Uncle Cral's Little Dogs | 0-1W/L | 92PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-one-scottie" class="sleeper-avatar"/>Uncle Cral's Little Dogs | 0-1W/L | 92PF
 
-### Week One Points: 92
+#### Week One Points: 92
 
 This score is a bit misleading. If Brandon Aiyuk wasn't as nonexistent as Tulsa's invite to the Big XII, this team would look a lot different. It also doesn't help that he was unfortunate enough to play the weekly high score. I trust that he'll ditch Burrow and some of the dead weight on his bench and find the next James Robinson.
 
@@ -157,11 +158,11 @@ This score is a bit misleading. If Brandon Aiyuk wasn't as nonexistent as Tulsa'
 | Kenny Golladay           | NYG-WR  | 1 (Q) |
 | Washington Football Team | WAS-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-one-scottie" class="sleeper-avatar"/> All Gaskin No Breaks | 0-1W/L | 96PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-one-scottie" class="sleeper-avatar"/>All Gaskin No Breaks | 0-1W/L | 96PF
 
-> I hope there's no Texas football in heaven.
+#### Week One Points: 96
 
-### Week One Points: 96
+>I hope there's no Texas football in heaven.
 
 My team, much like Texas Longhorns football, continues to be aggressively mediocre and disappointing. I'd argue that I have one of the deepest rosters, but I'm going to manage it about as well as Trond managed his work during his stint in Mobility. Unfortunately, I left about as much on the bench as I do the meat on a bone-in chicken wing too.
 
@@ -177,9 +178,9 @@ My team, much like Texas Longhorns football, continues to be aggressively medioc
 | Justin Jefferson     | MIN-WR | 1     |
 | New England Patriots | NE-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-one-scottie" class="sleeper-avatar"/>  GodWinsGunninRunninNuns | 1-0W/L | 74PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-one-scottie" class="sleeper-avatar"/>God Wins Gunnin Runnin Nuns | 1-0W/L | 74PF
 
-### Week One Points: 74
+#### Week One Points: 74
 
 Caleb got off easier this week than when we let him keep his players despite missing the deadline. Aaron Rodgers looked about as threatening as a dude wearing cargo shorts (with a salt lamp) in a NOLA bar. Najee Harris managed to be on the field for every offensive snap without breaking five points. There are some good pieces here, but he won't always be this lucky.
 
@@ -195,9 +196,9 @@ Caleb got off easier this week than when we let him keep his players despite mis
 | Jarvis Landry  | CLE-WR  | 1     |
 | Denver Broncos | DEN-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-one-scottie" class="sleeper-avatar"/> These rankings are trash | 0-1W/L | 76PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-one-scottie" class="sleeper-avatar"/>These rankings are trash | 0-1W/L | 76PF
 
-### Week One Points: 76
+#### Week One Points: 76
 
 CMC couldn't save this trash-ass team. Kyle Pitts? More like Kyle Shitts. Michael Pittman? More like Michael Shittman. Mike Evans did his best impression of the Texas A&M offense too. Jokes aside, I think this team just had a down week. I think Carlos will trend up.
 
@@ -213,11 +214,11 @@ CMC couldn't save this trash-ass team. Kyle Pitts? More like Kyle Shitts. Michae
 | Michael Pittman     | IND-WR  | 1     |
 | Baltimore Ravens    | BAL-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-one-scottie" class="sleeper-avatar"/> Glizzy Guzzlers | 0-1W/L | 58PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-one-scottie" class="sleeper-avatar"/>Glizzy Guzzlers | 0-1W/L | 58PF
 
-> GOOD ONE, BRO. GOOD JOKE. JUST WANTED TO TAKE A SEC AND CONGRATULATE YOU ON THAT GREAT JOKE.
+#### Week One Points: 58
 
-### Week One Points: 58
+>GOOD ONE, BRO. GOOD JOKE. JUST WANTED TO TAKE A SEC AND CONGRATULATE YOU ON THAT GREAT JOKE.
 
 This isn't the first offensive dud that Callen witnessed this weekend. His fantasy team's anemic performance rivals A&M's inability to score against one of the worst P5 teams. Callen missed OBJ being out just like Calzada missed just about every throw he attempted. This week's terrible performance extended to the golf league as well. With these roster management skills, he's making Bill O'Brien look like a quality GM. This team will actually be pretty good, but I want to take this opportunity to doo doo on the commish.
 

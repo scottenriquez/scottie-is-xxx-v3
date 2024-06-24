@@ -3,7 +3,7 @@ authors: [scottenriquez]
 title: "Visual Studio Live 2019: San Diego"
 date: "2019-10-01"
 description: "Thoughts and proofs-of-concepts from Visual Studio Live 2019 in San Diego."
-tag: "Programming"
+tags: ["Cloud", "Programming"]
 ---
 
 ## Contents

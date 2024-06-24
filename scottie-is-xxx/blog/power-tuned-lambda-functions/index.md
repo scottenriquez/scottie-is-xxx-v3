@@ -3,7 +3,7 @@ authors: [scottenriquez]
 title: Writing Optimized Functions Using AWS Lambda Power Tuning
 date: "2023-11-03"
 description: "A CI/CD pipeline that ensures Lambda functions are optimized for cost."
-tag: "Programming"
+tags: ["Cloud", "Programming"]
 ---
 
 ## Solution Overview

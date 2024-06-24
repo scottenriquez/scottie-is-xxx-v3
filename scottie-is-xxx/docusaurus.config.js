@@ -11,7 +11,6 @@ import rehypeKatex from 'rehype-katex';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Scottie Enriquez',
-  tagline: 'Computer Scientist in Los Angeles, California',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -65,8 +64,8 @@ const config = {
         blogSidebarTitle: 'Posts',
         blogSidebarCount: 'ALL',
         processBlogPosts: async ({blogPosts}) => {
-          const documentationPosts = blogPosts.filter((post) => post.metadata.tags.length !== 0);
-          const powerRankingsPosts = blogPosts.filter((post) => post.metadata.tags.length === 0);
+          const documentationPosts = blogPosts.filter((post) => post.metadata.tags.length > 1);
+          const powerRankingsPosts = blogPosts.filter((post) => post.metadata.tags.length <= 1);
           powerRankingsPosts.sort((first, second) => {
             return first.metadata.date < second.metadata.date;
           });

@@ -3,7 +3,7 @@ authors: [scottenriquez]
 title: "Testing the PINEBOOK Pro as a Daily Driver"
 date: "2020-07-11"
 description: "Using a $200 laptop as my primary machine."
-tag: "Hardware"
+tags: ["Hardware"]
 ---
 
 ## Hardware

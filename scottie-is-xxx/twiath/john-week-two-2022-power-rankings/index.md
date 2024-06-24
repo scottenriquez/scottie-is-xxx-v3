@@ -3,16 +3,16 @@ title: "John's Week Two 2022 Power Rankings"
 date: "2022-09-23"
 description: "John's duskish power rankings."
 authors: [john]
-tag: "Power Rankings"
+tags: ["Power Rankings"]
 ---
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLevelUpAlt } from "@fortawesome/free-solid-svg-icons"
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-two-john" class="sleeper-avatar"/> Fullmetal Ekelerist | 1-1W/L | 201PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-two-john" class="sleeper-avatar"/>Fullmetal Ekelerist | 1-1W/L | 201PF
 
-### Week Two Points: 121.52
+#### Week Two Points: 121.5
 
 Callen - It was a close race for first, but I'm giving the slight edge to Callen. He's been building for a while and it's finally paying off. His efforts are stacked. Everything has just been pulling together nicely. The beard is strong, but the flow is where Callen got my #1 vote. It's thick and luscious, enough said.
 
@@ -30,9 +30,9 @@ Fantasy ranking I guess: #7. Callen wins comeback player of the week with a stro
 | Allen Lazard     | GB-WR   | 1 (O) |
 | Cleveland Browns | CLE-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-two-john" class="sleeper-avatar"/> Cheeseburger Lenny | 1-1W/L | 228PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-two-john" class="sleeper-avatar"/>Cheeseburger Lenny | 1-1W/L | 228PF
 
-### Week Two Points: 117.82
+#### Week Two Points: 117.8
 
 Chris is a close second, also with the nice flow. I'll admit my length bias here. Any man who is bold enough to let it flow gets points in my book. The beard is also strong, another full package.
 
@@ -50,11 +50,11 @@ TWIATH: #5. Chris is looking solid, even with some room for improvement. He seem
 | Kareem Hunt       | CLE-RB | 2     |
 | Green Bay Packers | GB-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-two-john" class="sleeper-avatar"/> Unaccredited Chili Guy | 1-1W/L | 229PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-two-john" class="sleeper-avatar"/>Unaccredited Chili Guy | 1-1W/L | 229PF
 
-> These rankings couldn’t have been more biased against my top drawer team.
+#### Week Two Points: 108.5
 
-### Week Two Points: 108.53
+>These rankings couldn’t have been more biased against my top drawer team.
 
 A strong case could be made for Trond at #1, but I'm going with both my recency bias and my beard bias and putting Callen and Chris ahead. The flow is also majestic with Trond, though.
 
@@ -72,9 +72,9 @@ TWIATH: #8. Trond is still looking in great shape, if a little boom/busty. Betwe
 | Tyler Boyd            | CIN-WR  | 1     |
 | Los Angeles Rams      | LAR-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-two-john" class="sleeper-avatar"/> My Hero Alvin Kamaria | 1-1W/L | 197PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-two-john" class="sleeper-avatar"/>My Hero Alvin Kamaria | 1-1W/L | 197PF
 
-### Week Two Points: 92.25
+#### Week Two Points: 92.3
 
 Rounding out the long-hair tier 1 bois is Logan with yet again a very nice flow. How does 1/3 of our league have this going for them? Once again though, the lack of beard keeps Logz from the top spots.
 
@@ -92,9 +92,9 @@ TWIATH: #10. Logz is staying above 90, but that's about it. How long can he ride
 | Gabe Davis           | BUF-WR | 1     |
 | Tampa Bay Buccaneers | TB-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-two-john" class="sleeper-avatar"/> Derrick on Titan | 1-1W/L | 159PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-two-john" class="sleeper-avatar"/>Derrick on Titan | 1-1W/L | 159PF
 
-### Week Two Points: 93.77
+#### Week Two Points: 93.8
 
 Between the curls and thickness, Claeb takes the top non-long-hair bois spot. It's just a good head of hair. Maybe if the full curl-fro was grown out he could compete for the top spot. 10/10 beard as well.
 
@@ -112,9 +112,9 @@ TWIATH: #12. With a two-week PF under 160, there's not much that can be done at 
 | Rhamondre Stevenson | NE-RB   | 2     |
 | Buffalo Bills       | BUF-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-two-john" class="sleeper-avatar"/> Saquon deez nuts | 2-0W/L | 231PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-two-john" class="sleeper-avatar"/>Saquon deez nuts | 2-0W/L | 231PF
 
-### Week Two Points: 115.84
+#### Week Two Points: 115.8
 
 Carlos comes in at a solid performance, maintaining a solid head of hair along with strong performance from the 5 o'clock shadow beard.
 
@@ -132,11 +132,11 @@ TWIATH: #2. Somehow the lone undefeated team, Carlos, is still looking solid. Al
 | James Robinson        | JAX-RB | 2     |
 | San Francisco 49ers   | SF-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/0658c50f92789c23a6f0b1efef9dbdaa-two-john" class="sleeper-avatar"/> Najeeruto  | 1-1W/L | 224PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/0658c50f92789c23a6f0b1efef9dbdaa-two-john" class="sleeper-avatar"/>Najeeruto  | 1-1W/L | 224PF
 
-> brb booking an Airbnb on the Branson strip for next August.
+#### Week Two Points: 133.8
 
-### Week Two Points: 133.77
+>brb booking an Airbnb on the Branson strip for next August.
 
 Matt rounds out the full-hair boys with a solid head of hair once again paired with a great beard. Nothing to complain about here. It was looking especially fresh in those wedding photos.
 
@@ -154,9 +154,9 @@ TWIATH: #6. I'll give K-Man some recency credit and bump him up here to the 6th 
 | AJ Dillon            | GB-RB  | 2     |
 | New England Patriots | NE-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-two-john" class="sleeper-avatar"/> Dragonball Zeke | 1-1W/L | 240PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-two-john" class="sleeper-avatar"/>Dragonball Zeke | 1-1W/L | 240PF
 
-### Week Two Points: 113.46
+#### Week Two Points: 113.5
 
 Why are the bald bros towards the end of the list? What injustice is this? Is the mainstream media creating bias against those that are more follically challenged? Do I need to take a step back and reflect on my unconscious pro-hair biases? Probably. Anyway, Scottie takes the top spot here due to the epic beard. Once again, tie goes to length.
 
@@ -174,11 +174,11 @@ TWIATH: #4. Although a little more boom-heavy like myself, Scottie is in a great
 | Darrell Henderson   | LAR-RB  | 1     |
 | Pittsburgh Steelers | PIT-DEF |       |
 
-#### Travis, Mark, Carl - I just can't chose between Trav, Mark, and Carl, so I'm calling it a tie. All three of these bald men are beautiful. The beards are all strong and thick. They're fit. The full bald package.
+##### Travis, Mark, Carl - I just can't chose between Trav, Mark, and Carl, so I'm calling it a tie. All three of these bald men are beautiful. The beards are all strong and thick. They're fit. The full bald package.
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-two-john" class="sleeper-avatar"/> Jalen the Super Saiyan | 1-1W/L | 241PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-two-john" class="sleeper-avatar"/>Jalen the Super Saiyan | 1-1W/L | 241PF
 
-### Week Two Points: 111.69
+#### Week Two Points: 111.7
 
 TWIATH Travis: #1. With the most PF (by 0.11), I'm taking Tarv for the #1 spot this week. With the #3 QB, and the #2 RB, Tarv should be watched closely.
 
@@ -194,9 +194,9 @@ TWIATH Travis: #1. With the most PF (by 0.11), I'm taking Tarv for the #1 spot t
 | DeVonta Smith       | PHI-WR  | 1     |
 | Denver Broncos      | DEN-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-two-john" class="sleeper-avatar"/> Dollar General Box Fans | 1-1W/L | 182PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-two-john" class="sleeper-avatar"/>Dollar General Box Fans | 1-1W/L | 182PF
 
-### Week Two Points: 101.86
+#### Week Two Points: 101.9
 
 TWIATH Mark: #9. Even though the numbers aren't there yet, Mark is in a good spot. With a solid RB core, he can do some damage in the long run. St. Brown is currently on fire, so that's nice.
 
@@ -212,11 +212,11 @@ TWIATH Mark: #9. Even though the numbers aren't there yet, Mark is in a good spo
 | Devin Duvernay      | BAL-WR  | 1     |
 | Baltimore Ravens    | BAL-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-two-john" class="sleeper-avatar"/> JoJo's Ja'Marr Adventure | 0-2W/L | 177PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-two-john" class="sleeper-avatar"/>JoJo's Ja'Marr Adventure | 0-2W/L | 177PF
 
-> I'm starting to worry about my team.
+#### Week Two Points: 78.3
 
-### Week Two Points: 78.3
+>I'm starting to worry about my team.
 
 TWIATH Carl: #11. A rough week for Cral, not even breaking the 80 pt. mark. Maybe a couple well-worded Insta DMs to his player can get them up to playing to their potential.
 
@@ -232,9 +232,9 @@ TWIATH Carl: #11. A rough week for Cral, not even breaking the 80 pt. mark. Mayb
 | Ja'Marr Chase      | CIN-WR  | 1     |
 | Cincinnati Bengals | CIN-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-two-john" class="sleeper-avatar"/> Taylor Moon | 1-1W/L | 239PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-two-john" class="sleeper-avatar"/>Taylor Moon | 1-1W/L | 239PF
 
-### Week Two Points: 137.7
+#### Week Two Points: 137.7
 
 Welp, here I am. Stuck in-between two worlds. The front is doing ok, but the back is retreating quickly. I probably should just shave it. But I can't yet, ya know? I'm just not ready to take that step. And for that reason, I will sit here in my last-place ranking and my decent beard.
 

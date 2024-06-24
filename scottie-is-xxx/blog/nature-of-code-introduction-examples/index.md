@@ -3,7 +3,7 @@ authors: [scottenriquez]
 title: "The Nature of Code Companion Series: Introduction Chapter"
 date: "2022-07-24"
 description: "A companion for the introduction section of Daniel Shiffman's book."
-tag: "Programming"
+tags: ["Programming"]
 ---
 import RandomWalk from '../../src/components/NatureOfCode/Introduction/randomWalk'
 import RandomNormalDistribution from '../../src/components/NatureOfCode/Introduction/randomNormalDistribution'

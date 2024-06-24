@@ -3,7 +3,7 @@ authors: [scottenriquez]
 title: "Using the New Terraform for CDK Convert Feature"
 date: "2021-08-02"
 description: "Testing the new CDKTF 0.5 feature."
-tag: "Programming"
+tags: ["Cloud", "Programming"]
 ---
 
 I previously wrote [a blog post](https://scottie.is/writing/cdktf-alpha-csharp-infrastructure/) about getting started with Terraform for CDK and the benefits. At that time, the latest version was 0.3. Last week, [version 0.5](https://github.com/hashicorp/terraform-cdk/releases/tag/v0.5.0) was released. In this version, some new experimental features could make adopting CDK for Terraform exponentially easier.

@@ -3,7 +3,7 @@ title: Getting Started with the League Site
 date: "2020-08-08"
 description: "Documentation for creating new content."
 authors: [scottie]
-tags: ["Documentation"]
+tags: ["Getting Started", "Documentation"]
 ---
 
 ## Frontend Build Status

@@ -3,7 +3,7 @@ authors: [scottenriquez]
 title: "Bright Nights, Nomadic Days"
 date: "2014-06-22"
 description: "Wandering around after graduation."
-tag: "Personal"
+tags: ["Life", "Travel"]
 ---
 
 It feels strange waking up in the Lower 48 again. When I left Alaska, the sunlight was already making people and plants manic again. The grass that was dead for months bloomed vivaciously in a matter of days. The snow was long gone, but the rain hadn’t shown itself quite yet. The midnight sun was already creeping and beaming over me.

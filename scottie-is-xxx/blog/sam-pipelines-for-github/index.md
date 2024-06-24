@@ -3,7 +3,7 @@ authors: [scottenriquez]
 title: "Configuring AWS SAM Pipelines for GitHub Actions"
 date: "2021-07-29"
 description: "Creating a multi-account CI/CD pipeline using the latest SAM CLI functionality."
-tag: "Programming"
+tags: ["Cloud", "Programming"]
 ---
 
 ## About AWS SAM Pipelines
