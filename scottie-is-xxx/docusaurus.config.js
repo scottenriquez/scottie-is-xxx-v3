@@ -114,7 +114,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: 'Crafted with love by Scottie in Los Angeles',
+        copyright: 'Crafted with love by Scottie in Los Angeles 💻',
         logo: {
           alt: 'Logo',
           src: 'img/scott-s.svg',

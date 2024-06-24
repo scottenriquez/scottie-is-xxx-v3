@@ -45,7 +45,7 @@ I wish there were more things to say about my team, but its pretty boring so far
 
 ## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/49b1d67d6b1562f8ef7d03645a046694-one-callen" class="sleeper-avatar"/>Waiver Wire Burrow | 0-1W/L | 83PF
 
-Derrick Henry’s big ass touched the football 34 times in week one. What the fuck is that about? Outside of that, I wasn’t super impressed by anyone. Mark Ingram had pedestrian numbers. Diggs did total nearly 100 yards, so maybe that’s something. Juice looks like he’s in for a rough year if Baker keeps playing so poorly. I’d say you could also hang your hat on Kittle, but he’s missed practice all week due to a knee injury. Things are looking shaky, but still plenty of potential.
+Derrick Henry’s big ass touched the football 34 times in week one. What the hell is that about? Outside of that, I wasn’t super impressed by anyone. Mark Ingram had pedestrian numbers. Diggs did total nearly 100 yards, so maybe that’s something. Juice looks like he’s in for a rough year if Baker keeps playing so poorly. I’d say you could also hang your hat on Kittle, but he’s missed practice all week due to a knee injury. Things are looking shaky, but still plenty of potential.
 
 ## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/94702f21e95d3aa14c8d671585ae6c58-one-callen" class="sleeper-avatar"/>The Mixon Administration | 0-1W/L | 79PF
 

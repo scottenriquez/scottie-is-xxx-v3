@@ -54,7 +54,7 @@ I like Tarv's team overall. His wide receivers are looking a bit weak right now,
 
 #### Week One Points: 127.1
 
->It's another Colt game. I'll fucking say it. It would have whipped Bama if Ewers didn't get injured. We would have won if the refs didn't fuck us on that missed face mask, safety, etc. We lost by one with a second-string quarterback limping around the field.
+>It's another Colt game. I'll say it. It would have whipped Bama if Ewers didn't get injured. We would have won if the refs didn't fuck us on that missed face mask, safety, etc. We lost by one with a second-string quarterback limping around the field.
 
 My streak of 100+ point weeks continues. Even with starting a tight end at flex, who got zero points, my team won comfortably over John. Darrell Henderson could be a quality flex option depending on how the Cam Akers situation shakes out. Zeke looked like some poo poo, but the Cowboys also did overall. With Dak being out, I expect his workload to increase. My team needs Kenneth Walker III to come back and take the starting job from Rashaad Penny. Thanks again for Justin Jefferson, K-Man!
 
