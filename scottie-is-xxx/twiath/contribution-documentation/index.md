@@ -1,9 +1,9 @@
 ---
-title: 📌 League Site Documentation 
+title: 📌 Contribution Documentation 
 date: "2020-08-08"
 description: "Documentation for creating new content on the league site."
 authors: [scottie]
-tags: ["Getting Started", "Documentation"]
+tags: ["Contributing", "Documentation"]
 ---
 
 ## Frontend Build Status
@@ -118,7 +118,7 @@ The section wrapped in `---` is called the slug. It contains metadata for queryi
 │   └── champion.png
 └── blog
     └── posts
-        └── league-site-documentation
+        └── contribution-documentation
             ├── image.png
             └── index.md
 ```
