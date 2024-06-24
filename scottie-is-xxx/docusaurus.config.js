@@ -60,6 +60,7 @@ const config = {
       {
         id: 'twiath',
         routeBasePath: 'writing-about-fantasy-football',
+        blogTitle: 'Fantasy Football',
         path: './twiath',
         blogSidebarTitle: 'Posts',
         blogSidebarCount: 'ALL',
