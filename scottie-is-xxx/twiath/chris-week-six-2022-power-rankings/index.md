@@ -15,7 +15,7 @@ import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
 #### Week Six Points: 128.1
 
-Topping off the charts with 748 PF is Scottie. This team looks as unstoppable as the 2005 Texas Longhorns. The scary part is points are distributed around the whole team. The bench even appears to have some serviceable contributors in times of need. Barring some very bad luck, this team may very well be headed to the Rose Bowl to battle for the championship.
+Topping off the charts with 748 PF is Scottie. This team looks as unstoppable as the 2005 Texas Longhorns. The scary part is points are distributed around the whole team. The bench even has some serviceable contributors in times of need. Barring some bad luck, this team may be headed to the Rose Bowl to battle for the championship.
 
 | Name              | Team    | Depth |
 | ----------------- | ------- | ----- |
@@ -35,7 +35,7 @@ Topping off the charts with 748 PF is Scottie. This team looks as unstoppable as
 
 >Most PA and second highest PF. I should be no lower than 4th.
 
-Can't believe I'm doing this, but the numbers speak for themselves. The offensive unit on this team reminds me a lot of the 1916 Georgia Tech Yellow Jackets, the historic team that beat Cumberland 222-0. The only main difference is that team went 8-0-1 (LOL @ the 7-7 tie to Washington & Lee), while Trond's team is scraping by at 1-5 and 661 PF. It pains me to see Miles Sanders putting up monster numbers after I had so much patience with him last year. Alas, you win some you lose some. If Trond can start putting together some Dubs, he may fight his way back into the outright playoff picture. He certainly looks to be a contender for the PF spots. 
+I can't believe I'm doing this, but the numbers speak for themselves. The offensive unit on this team reminds me a lot of the 1916 Georgia Tech Yellow Jackets, the historic team that beat Cumberland 222-0. The main difference is that the team went 8-0-1 (with a 7-7 tie to Washington & Lee), while Trond's team is scraping by at 1-5 and 661 PF. It pains me to see Miles Sanders putting up monster numbers after I had so much patience with him last year. Alas, you win some, and you lose some. If Trond can start putting together some dubs, he may fight back into the outright playoff picture. He certainly looks to be a contender for the PF spots.
 
 | Name               | Team    | Depth |
 | ------------------ | ------- | ----- |
@@ -53,7 +53,7 @@ Can't believe I'm doing this, but the numbers speak for themselves. The offensiv
 
 #### Week Six Points: 84.5
 
-Under normal circumstances, I would rank this team way lower based on the eye test of the roster. But I can't argue the 649 PF he's put up this season, and I have no reason to believe that will decrease. If Lincoln Riley taught us anything, it's that Offense Wins Championships and Defense Doesn't Matter At All. Yeah yeah, that's not really panning out for him at USC as of last weekend, but in the case of both Lincoln and Andrew we have learned that scheduling a Charmin Soft schedule helps a lot. I don't know where the points will come from going forward, but with the unbelievable 6-0 start Andrew has some breathing room to figure that out. With regard to the top 4 playoff spots, a dub is a dub. Unlike OU, Andrew is in great position to make the playoffs.
+Under normal circumstances, I rank this team way lower based on the eye test of the roster. But I can't argue with the 649 PF he's put up this season, and I have no reason to believe that will decrease. If Lincoln Riley taught us anything, offense wins championships, and defense doesn't matter. Yeah, that's not panning out for him at USC as of last weekend, but in the case of both Lincoln and Andrew, we have learned that scheduling a Charmin Soft schedule helps a lot. I don't know where the points will come from going forward, but with the unbelievable 6-0 start, Andrew has some breathing room to figure that out. For the top four playoff spots, a dub is a dub. Unlike OU, Andrew is in a great position to make the playoffs.
 
 | Name                | Team   | Depth |
 | ------------------- | ------ | ----- |
@@ -71,7 +71,7 @@ Under normal circumstances, I would rank this team way lower based on the eye te
 
 #### Week Six Points: 88.3
 
-Surprisingly, Callen's team had a down week this week moving his squad to a respectable 4-2 on the season. The good news is when 88 points is a disappointment, you are in good shape. The other bit of good news is that you don't have Appalachian State on your schedule. Like the Texas A&M Aggies every year, heading into week 7 we must ask ourselves the question of which team will we get down the stretch? Callen's team has put up some monster numbers this year so far, clocking in at 619 PF to date. If he stays the course, it seems like a playoff spot is imminent. 
+Surprisingly, Callen's team had a down week this week, moving his squad to a respectable 4-2 in the season. The good news is when 88 points is a disappointment, you are in good shape. The other good news is that you don't have Appalachian State on your schedule. Like the Texas A&M Aggies every year, heading into week seven, we must ask ourselves which team we will get down the stretch. Callen's team has put up some monster numbers this year, clocking in at 619 PF. If he stays the course, a playoff spot is likely imminent.
 
 
 | Name              | Team    | Depth |
@@ -90,7 +90,7 @@ Surprisingly, Callen's team had a down week this week moving his squad to a resp
 
 #### Week Six Points: 128.4
 
-Understandably, Logz was kind of busy this weekend (Congrats again, Logz!). Regardless, his team decided to give him another reason to celebrate by grabbing the highest PF of the week with a whopping 128. That brings his PF on the season to a quite respectable 617. Much like OU's opponents this season, points this week were distributed generously all over the place which is good to see in a potential playoff contender. At 3-3 he's certainly in the mix to take one of the top 4 spots, and if not he should have a shot at the PF spots if his team continues to play well. Might wanna check on Robbie Anderson tho, dude went absolutely off the rails on the sideline this week. Big brain move keeping him on your bench.
+Understandably, Logz was busy this weekend (congrats again!). Regardless, his team gave him another reason to celebrate by grabbing the highest PF of the week with a whopping 128. That brings his PF on the season to a respectable 617. Much like OU's opponents this season, points this week were distributed generously all over the place, which is good to see in a potential playoff contender. At 3-3, he's certainly in the mix to take one of the top four spots, and if not, he should have a shot at the PF spots if his team continues to play well. You might want to check on Robbie Anderson, though. Dude went absolutely off the rails on the sideline this week. Big brain move, keeping him on your bench.
 
 | Name                 | Team   | Depth |
 | -------------------- | ------ | ----- |
@@ -108,7 +108,7 @@ Understandably, Logz was kind of busy this weekend (Congrats again, Logz!). Rega
 
 #### Week Six Points: 100.1
 
-Xylophone sounds in the distance is what I heard after getting my first dub in 5 attempts this week bringing me to 2-4. Big shout out to the Denver Broncos for laying another egg and not utilizing Melvin Gordon while doing so. At 607 PF, while respectable, it is looking more and more like that may be my only shot at the playoffs this season. While not unrealistic to make the playoffs outright, I'm gonna have to transform into the Kansas State Wildcats real quick so I can start actually winning with some consistency. Jimmy Neutron move starting Deon Jackson this week really helped me out. Gonna have to start getting clever on the waiver if I want to break into the mix. Go Cats.
+Xylophone sounds in the distance are what I heard after getting my first dub in five attempts this week, bringing me to 2-4. Big shout out to the Denver Broncos for laying another egg and not utilizing Melvin Gordon. At 607 PF, while respectable, it looks more and more like that may be my only shot at the playoffs this season. While not unrealistic to make the playoffs outright, I will have to transform into the Kansas State Wildcats real quick so I can start winning with some consistency. Jimmy Neutron's move, starting with Deon Jackson this week, really helped me. Going to have to start getting clever on the waiver if I want to break into the mix. Go Cats!
 
 | Name              | Team    | Depth |
 | ----------------- | ------- | ----- |
@@ -126,7 +126,7 @@ Xylophone sounds in the distance is what I heard after getting my first dub in 5
 
 #### Week Six Points: 82.4
 
-Great job by Michael Pittman this week with a monster game. But, like a lot of Jimbo Fisher's in-game adjustments, did it really matter in the end? With John having a down week, Tarv's team easily moved to 4-2 on the season with 602 PF registered. Very much in the mix for an outright playoff spot, but if the pack catches him, he better hope for some Johnny Manziel numbers int the PF column down the stretch. Right now though, much like Jimbo on a 10 year contract, there's not much to be worried about.
+Michael Pittman did a great job this week with a monster game. But, like many of Jimbo Fisher's in-game adjustments, did it matter in the end? With John having a down week, Tarv's team moved to 4-2 on the season with 602 PF registered. He's in the mix for an outright playoff spot, but if the pack catches him, he better hope for some Johnny Manziel numbers in the PF column down the stretch. Right now, though, much like Jimbo on a 10-year contract, there's not much to be worried about.
 
 | Name            | Team    | Depth |
 | --------------- | ------- | ----- |
@@ -144,7 +144,7 @@ Great job by Michael Pittman this week with a monster game. But, like a lot of J
 
 #### Week Six Points: 73.2
 
-OU beat an overrated CFB team this week, but the Dollar General (Booty) Box Fans couldn't replicate the magic. Granted, Mrak had 4 players OUT on his bench, but it's next-man-up mentality for the Box Fans. In one of the lower scoring battles of the week, Mrak was edged out by an underwhelming squad that continues to defy the odds. Hard to believe we witness a fantasy match-up where Aaron Rodgers and Tom Brady combine for fewer points than Trevor Lawrence, but here we are. At 2-4 and 591 PF, Mrak is gonna have to harness some Sooner Magic and start putting up some points and/or dubs. It's a long season, so anything is possible. 
+OU beat an overrated CFB team this week, but the Dollar General (Booty) Box Fans couldn't replicate the magic. Granted, Mrak had four players out on his bench, but it's a next-man-up mentality for the Box Fans. In one of the lower-scoring battles of the week, Mark was edged out by an underwhelming squad that continues to defy the odds. It's hard to believe we witnessed a fantasy match-up where Aaron Rodgers and Tom Brady combined for fewer points than Trevor Lawrence, but here we are. At 2-4 and 591 PF, Mrak will have to harness some Sooner Magic and start putting up some points and dubs. It's a long season, so anything is possible.
 
 | Name                | Team    | Depth |
 | ------------------- | ------- | ----- |
@@ -164,7 +164,7 @@ OU beat an overrated CFB team this week, but the Dollar General (Booty) Box Fans
 
 >My rule is backfiring.
 
-Contrary to his previous 2 weeks, Geno Smith did not have a good game, which put this already hamstrung team (due to byes) into a poor position. It was a valiant effort by Claeb's team in the loss, but Logan had all the magic this week. With a 2-4 record and 589 PF, he's in the same position as the Denver Broncos and many teams in this league are. Not last, in the mix, but time to kick it into gear. He's gaining some key contributors off bye next week which should help him a lot.  
+Contrary to his previous two weeks, Geno Smith did not have a good game, putting this hamstrung team (due to byes) into a poor position. It was a valiant effort by Claeb's team in the loss, but Logan had all the magic this week. With a 2-4 record and 589 PF, he's in the same position as the Denver Broncos and many teams in this league. Not last, in the mix, but time to kick it into gear. He's gaining some key contributors off bye next week, which should greatly help him.  
 
 | Name                | Team    | Depth |
 | ------------------- | ------- | ----- |
@@ -182,7 +182,7 @@ Contrary to his previous 2 weeks, Geno Smith did not have a good game, which put
 
 #### Week Six Points: 88.7
 
-Another week, another Kirk Cousins disappointment. The QBs this week in general did pretty poor, so it's not like he's the only one. Tough week for Carl this week, losing winnable games with his fantasy team and the Chiefs. Kelce had a great game but I was just waiting for him to pop off the whole time. Melvin Gordon essentially laying an egg on Monday night with the Broncos sealed the deal for this team. Like the Chiefs, Carl controls his own destiny. He is in the exact same situation nearly half the league is at 2-4 and 589 PF. Lots of runway left in the season, may the best manager win the coveted playoff spots. 
+Another week, another Kirk Cousins disappointment. The QBs this week did pretty poorly, so it's not like he's the only one. It was a tough week for Carl, losing winnable games with his fantasy team and the Chiefs. Kelce had a great game, but I was waiting for him to pop off the whole time. Melvin Gordon essentially laid an egg on Monday night with the Broncos and sealed the deal for this team. Like the Chiefs, Carl controls his destiny. He is in the same situation that half the league is at 2-4 and 589 PF. Lots of runway left in the season. May the best manager win the coveted playoff spots.
 
 | Name                | Team    | Depth |
 | ------------------- | ------- | ----- |
@@ -202,7 +202,7 @@ Another week, another Kirk Cousins disappointment. The QBs this week in general 
 
 >My team got bad fast.
 
-The rapid decline of this team is truly shocking. While John was impacted by byes this week, the team could only muster 53 points including 20 from Mark Andrews. With John though, we all know he should never be counted out. At 3-3 and 588 PF, he's certainly in the mix with the 1 game advantage on half the league. I think John and I have been turning in fantasy karma for KSU Wildcat karma and I'm fully here for it. Cats by 90 this weekend. 
+The rapid decline of this team is genuinely shocking. While byes impacted John this week, the team could only muster 53 points, including 20 from Mark Andrews. With John, we all know he should never be counted out. At 3-3 and 588 PF, he's certainly in the mix with the one-game advantage on half the league. I think John and I have been turning in fantasy karma for KSU Wildcat karma, and I'm fully here for it. Cats by 90 this weekend.
 
 | Name              | Team   | Depth |
 | ----------------- | ------ | ----- |
@@ -222,7 +222,7 @@ The rapid decline of this team is truly shocking. While John was impacted by bye
 
 >Sorry that you came across my team as it’s exploding into its final form.
 
-Sheesh K-Man, with 116 this week to edge out Trond, I could see this team moving up the rankings in a flash. Lawrence and Diggs balled out, and contributions came from nearly everywhere. At 2-4 and 570 PF, K-Man's squad is right there with half the league. Much like the Golden Hurricane, although with a slow start, K-Man is still certainly in the mix for postseason play. 
+Sheesh, K-Man. With 116 this week to edge out Trond, I could see this team moving up the rankings quickly. Lawrence and Diggs balled out, and contributions came from nearly everywhere. At 2-4 and 570 PF, K-Man's squad is right there with half the league. Much like the Golden Hurricane, although with a slow start, K-Man is still in the mix for postseason play.
 
 | Name            | Team    | Depth |
 | --------------- | ------- | ----- |

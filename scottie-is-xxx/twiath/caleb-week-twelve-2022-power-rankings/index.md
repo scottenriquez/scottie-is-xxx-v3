@@ -15,7 +15,7 @@ import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
 #### Week Twelve Points: 133.9
 
-This team slaps harder than Will Smith on Oscars night. Having Josh Allen Nick Chub and Justin Jefferson makes for a high ceiling and a high floor. Throw in the fact that Kenneth Walker has kept up a surprisingly good pace of points and Hockenson being traded off the Lions just makes this team that much scarier. Even his weak points can rack up some double D points in Deebo and Diante. The one risk is that his bench looks pretty shaky, but if the team stays healthy, I think only luck will keep Scottie from bringing home the Kathy.
+This team slaps harder than Will Smith on Oscars night. Having Josh Allen, Nick Chub, and Justin Jefferson makes for a high ceiling and a high floor. Throwing in the fact that Kenneth Walker has kept up a surprisingly good pace of points and Hockenson being traded off the Lions makes this team that much scarier. Even his weak points can rack up some double D points in Deebo and Diante. The one risk is that his bench looks pretty shaky, but if the team stays healthy, only luck will keep Scottie from bringing home the Cathy.
 
 | Name                 | Team   | Depth |
 | -------------------- | ------ | ----- |
@@ -33,7 +33,7 @@ This team slaps harder than Will Smith on Oscars night. Having Josh Allen Nick C
 
 #### Week Twelve Points: 117.3
 
-Coming in at number 2 we have Callen. Solid team overall and they are consistent. However I don’t think this team comes anywhere close to Scotties. There is a lot of really good talent on this team but not a lot of great talent. His list of start able RBs is longer than his hair, but just like it takes more than glorious hair to make an average guy handsome, I think it might take more than solid depth to make a championship team.
+Coming in at number two, we have Callen. Overall, this is a solid team, and they are consistent. However, I don't think this team comes anywhere close to Scottie's. There is a lot of really good talent on this team, but not a lot of great talent. His list of startable RBs is longer than his hair, but just like it takes more than glorious hair to make an average guy handsome, I think it might take more than solid depth to make a championship team.
 
 | Name               | Team    | Depth |
 | ------------------ | ------- | ----- |
@@ -51,7 +51,7 @@ Coming in at number 2 we have Callen. Solid team overall and they are consistent
 
 #### Week Twelve Points: 115.3
 
-This team is hitting on all cylinders just at the right time. Christian McCaffery having an off game and still putting up solid numbers speaks for itself. Godwin is looking back to his true self and Olave and St. Brown are only looking better. Pollard is looking more and more like the back to have in Dallas and now that Conner is back in the mix hes finally putting up the numbers Mark hoped he would all season. Once Mark gets Keenan Allen in his lineup again and if Fields keeps ballin out, this bargin bin team could go from straight blowin, to blowin the competition away… just like a high powered dollar general box fan.
+This team is hitting on all cylinders just at the right time. Christian McCaffery is having an off-game and still putting up solid numbers, which speaks for itself. Godwin is looking back to his true self, and Olave and St. Brown only look better. Pollard is looking more and more like the back to have in Dallas, and now that Conner is back in the mix, he's finally putting up the numbers Mark hoped he would all season. Once Mark gets Keenan Allen in his lineup again, and if Fields keeps ballin' out, this bargain bin team could go from straight blowin' to blowin' the competition away… just like a high-powered Dollar General box fan.
 
 | Name                | Team    | Depth |
 | ------------------- | ------- | ----- |
@@ -69,7 +69,7 @@ This team is hitting on all cylinders just at the right time. Christian McCaffer
 
 #### Week Twelve Points: 95.97
 
-Andrew is the Jerry Jones of this league. Really good at making you think his team is the best, but when it all comes down to it, they will probably be out in the first round of the playoffs. One look at this team and you see that it’s a bunch of people performing better than they should…. Which more or less defines this team as a whole. I don’t think this team has the start power to bring home the trophy… and the fact that Andrew has two bench spots taken up player on IR including Rashad Penny (have you seen Kenneth Walker play?) instead of shooting his shot in spending his $185 FAAB on Z Knight shows that this manager doesn’t deserve the Kathy either.
+Andrew is the Jerry Jones of this league. He is good at making you think his team is the best, but when it all comes down to it, they will probably be out in the first round of the playoffs. One look at this team, and you see a bunch of people performing better than they should. Which more or less defines this team as a whole. I don’t think this team has the star power to bring home the trophy. The fact that Andrew has two bench spots taken up by players on IR, including Rashad Penny (have you seen Kenneth Walker play?) instead of shooting his shot in spending his $185 FAAB on Z. Knight shows that this manager doesn’t deserve the Cathy either.
 
 | Name                | Team   | Depth |
 | ------------------- | ------ | ----- |
@@ -87,7 +87,7 @@ Andrew is the Jerry Jones of this league. Really good at making you think his te
 
 #### Week Twelve Points: 101.26
 
-If I was betting knowing nothing about this league I would place money on Trond winning every match up against any team except Scotties. Unfortunately, for Trond, even when his team is really good, he still finds ways to lose and I don’t see this trend stopping just because playoffs happen.
+If I were betting, knowing nothing about this league, I would place money on Trond winning every match against any team except Scottie's. Unfortunately, even when his team is really good, Trond still finds ways to lose, and I don't see this trend stopping just because playoffs happen.
 
 | Name                  | Team    | Depth |
 | --------------------- | ------- | ----- |
@@ -105,7 +105,7 @@ If I was betting knowing nothing about this league I would place money on Trond 
 
 #### Week Twelve Points: 121.12
 
-Having the Number 1, Number 3, and Number 7 RBs in the league should make me one of the top teams in the league. With Nuk and Mike Williams as the WRs I should be killing it. Unfortunately, the football gods haven’t been smiling upon this Denver fan very much this year. Close games never seeming to fall my way, injuries, and poorly timed bye weeks have made it to where my team will be lucky to make the playoffs this year… but if I do I think Ill make some noise.
+Having the number one, three, and seven RBs in the league should make me one of the top teams in the league. With Nuk and Mike Williams as the WRs, I should be killing it. Unfortunately, the football gods haven't been smiling upon this Denver fan very much this year. Close games never fall my way; injuries and poorly timed bye weeks have made it to where my team will be lucky to make the playoffs this year, but if I do, I'll make some noise.
 
 | Name                | Team    | Depth |
 | ------------------- | ------- | ----- |
@@ -123,7 +123,7 @@ Having the Number 1, Number 3, and Number 7 RBs in the league should make me one
 
 #### Week Twelve Points: 123.84
 
-Is this the new World Beaters? Chris saved up and used all his FAAB money just at the right time to really make a push for the playoffs. They were good moves, but also very risky. Knight is unproven and Watson could be very rusty especially in his first two week back (and honestly I hope he sucks and this backfires on you just because hes a scum bag… and cause I didn’t get him for my $0 play). But if Chris is able to make it in, hed probably beat Andrews team like Kareem Hunt
+Is this the new World Beaters? Chris saved up and used all his FAAB money just at the right time to make a push for the playoffs. They were good moves but also very risky. Knight is unproven, and Watson could be very rusty, especially in his first two weeks back (and honestly, I hope he sucks and this backfires on you just because he's a scum bag and because I didn't get him for my $0 play). But if Chris can make it in, he will probably beat Andrews's team.
 
 | Name           | Team    | Depth |
 | -------------- | ------- | ----- |
@@ -141,7 +141,7 @@ Is this the new World Beaters? Chris saved up and used all his FAAB money just a
 
 #### Week Twelve Points: 104.92
 
-For how good the Vikings have been this year, Dalvin Cook has been a bit disappointing… and hes not even the most disappointing RB on Tarvs roster (Najee)/ Luckily for Tarv, Jalen Hurts has been outstanding and WR injuries on the Chargers has allowed Palmer to shine. But with Eagles facing tougher defenses in the coming weeks and Chargers WRs getting healthy, Travis is going to need to hope his RBs figure it out.
+For how good the Vikings have been this year, Dalvin Cook has been a bit disappointing, and he is not even the most disappointing RB on Tarv's roster (Najee). Luckily for Tarv, Jalen Hurts has been outstanding, and WR injuries on the Chargers have allowed Palmer to shine. But with the Eagles facing tougher defenses in the coming weeks and Chargers WRs getting healthy, Travis is going to need to hope his RBs figure it out.
 
 | Name                | Team    | Depth |
 | ------------------- | ------- | ----- |
@@ -159,7 +159,7 @@ For how good the Vikings have been this year, Dalvin Cook has been a bit disappo
 
 #### Week Twelve Points: 94.67
 
-Outside of Kelce this team is tough to look at. With Chase being out  there isnt much to get excited about here. Watson has been crushing it and helping carry the load, and if Tua could turn his real football points into fantasy points hed be a stud. I have this team ranked here cause with a little luck, Carl could get into the playoffs even with the doodiest of pair RBs Ive ever seen.
+Outside of Kelce, this team is tough to look at. With Chase out, there isn't much to get excited about here. Watson has been crushing it and helping carry the load, and if Tua could turn his real football points into fantasy points, he'd be a stud. I have this team ranked here because, with a little luck, Carl could get into the playoffs even with the doodiest pair of RBs I've ever seen.
 
 | Name                | Team    | Depth |
 | ------------------- | ------- | ----- |
@@ -177,7 +177,7 @@ Outside of Kelce this team is tough to look at. With Chase being out  there isnt
 
 #### Week Twelve Points: 69.57
 
-This teams got potential but its boom or bust and you can tell that looking at Kmans bench this last week that its hard to pick all the Booms.
+This team has potential, but it's boom or bust, and you can tell, looking at K-Man's bench this last week, that it's hard to pick all the booms.
 
 | Name           | Team    | Depth |
 | -------------- | ------- | ----- |
@@ -195,7 +195,7 @@ This teams got potential but its boom or bust and you can tell that looking at K
 
 #### Week Twelve Points: 123.95
 
-What the hell happened to Kamara this year? Ouch. Harris is out and even if he wasn’t Stevenson is making a pretty strong case to be the lead back in the Patriots. Davis has been disappointing as well. Joe Burrow and AJ Brown are studs but its not enough to carry this trash two defense team.
+What the hell happened to Kamara this year? Ouch! Harris is out, and even if he wasn't, Stevenson is making a solid case to be the lead back for the Patriots. Davis has been disappointing as well. Joe Burrow and AJ Brown are studs, but it's not enough to carry this trash two-defense team.
 
 | Name            | Team    | Depth |
 | --------------- | ------- | ----- |
@@ -213,7 +213,7 @@ What the hell happened to Kamara this year? Ouch. Harris is out and even if he w
 
 #### Week Twelve Points: 108.8
 
-Yikes. Hey at least JT finally had a good game right?
+Yikes. Hey, at least JT finally had a good game, right?
 
 | Name               | Team   | Depth |
 | ------------------ | ------ | ----- |
