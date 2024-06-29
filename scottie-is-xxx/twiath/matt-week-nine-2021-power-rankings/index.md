@@ -17,7 +17,7 @@ import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
 >Big sad about UT and the 'Stros. My fantasy team is looking good though. Pulling for your fantasy team as well so that we have a better chance for a Holland, Michigan draft in 2022.
 
-Scottie wasn't quite able to pull out the win against Mark's season-high outburst, but he is still tied for the top record, number one in points for and has scored in the top half the league in the past three weeks. His team is buoyed by his studs (Tom Brady, soon to be number one RB Jonathan Taylor, and Deebo Samuel) while also getting servicable production from Justin Jefferson and Noah Fant (when he doesn't, you know, have COVID). AJ Brown will probably need to be relied on even more with the Titans missing Derrick Henry's production. So long as his stars stay healthy, he's got the firepower to stay on top.
+Scottie wasn't quite able to pull out the win against Mark's season-high outburst, but he is still tied for the top record, number one in points, and has scored in the league's top half in the past three weeks. His team is buoyed by his studs (Tom Brady, soon-to-be number-one RB Jonathan Taylor, and Deebo Samuel) while getting serviceable production from Justin Jefferson and Noah Fant (when he doesn't, you know, have COVID). AJ Brown will probably need to be relied on even more, given that the Titans are missing Derrick Henry's production. So long as his stars stay healthy, he's got the firepower to stay on top.
 
 | Name                 | Team   | Depth |
 | -------------------- | ------ | ----- |
@@ -37,7 +37,7 @@ Scottie wasn't quite able to pull out the win against Mark's season-high outburs
 
 >TU continued its tradition of performing well as a significant underdog, extending its streak of covering against ranked opponents to 11 games in a row.
 
-My team was able to squeak out a win over Trond this weekend with Matthew Stafford salvaging what could've been a devastating fantasy performance. Stafford, Ja'Marr Chase, and Travis Kelce continue to be my team's MVP's, while other skill players (Moore, McLaurin, Harris) pitch in enough to keep me in contention. With Michael Carter on the rise and David Montgomery coming back from IR my team could be on the upswing, so long as DJ Moore and McLaurin can bounce back from their respective offenses' mini funks.
+My team squeaked out a win over Trond this weekend, with Matthew Stafford salvaging what could've been a devastating fantasy performance. Stafford, Ja'Marr Chase, and Travis Kelce continue to be my team's MVPs, while other skill players (Moore, McLaurin, Harris) pitch in enough to keep me in contention. With Michael Carter on the rise and David Montgomery returning from IR, my team could be on the upswing as long as DJ Moore and McLaurin bounce back from their respective offenses' funks.
 
 | Name               | Team   | Depth |
 | ------------------ | ------ | ----- |
@@ -57,7 +57,7 @@ My team was able to squeak out a win over Trond this weekend with Matthew Staffo
 
 >At the end of the year, at least I have a Crop Judging title.
 
-John's team's production has fallen off in recent weeks, but he's still bolstered in the standings by his blistering start to the season. His team as of late has been carried by Cordarelle Patterson in his 'Ice Ice Baby' Memorial One-Hit wonder season and the Sooners-to-Raven's pass-catching tandem of Marquise Brown and Mark Andrews. John would probably love to see Patrick Mahomes and the Chiefs offense get back on track as well as Zeke get back to his early season success. Josh Jacobs seems to be bouncing back well from his earlier injury, and Tyler Lockett will benefit from having Russ back in the fold. If some things break right for John, this team could be right back in the mix of things.
+John's team's production has fallen off in recent weeks, but he's still bolstered in the standings by his blistering start to the season. Cordarelle Patterson has carried his team in his 'Ice Ice Baby' Memorial One-Hit wonder season and the Sooners-to-Raven's pass-catching tandem of Marquise Brown and Mark Andrews. John would probably love to see Patrick Mahomes and the Chiefs offense get back on track and Zeke get back to his early season success. Josh Jacobs is bouncing back well from his earlier injury, and Tyler Lockett will benefit from having Russ back in the fold. If some things break right for John, this team could be right back in the mix.
 
 | Name                | Team    | Depth |
 | ------------------- | ------- | ----- |
@@ -77,7 +77,7 @@ John's team's production has fallen off in recent weeks, but he's still bolstere
 
 >I was gonna pick up Andrew Yang off the waiver wire and start him at RB with all the running he’s been doing but I think he’s partying too much these days.
 
-Andrew Yang would've definitely provided some much needed RB depth to this squad, but Chris still got the W this weekend. The Oracle strikes again by starting Elijah Moore and Jordan Howard while getting just enough from everyone else to move to tied for first place. Things will be much better getting the Russ-to-DK connection back from injury and bye, respectively. Things could improve even further once Clyde comes back, and if Jeremy McNichols can get in on some of that post-Derrick Henry snap share, this team could continue its upward trajectory.
+Andrew Yang would've provided some much-needed RB depth to this squad, but Chris still got the W this weekend. The Oracle strikes again by starting Elijah Moore and Jordan Howard while getting enough from everyone else to tie for first place. Things will be much better getting the Russ-to-DK connection back from injury and bye, respectively. Things could improve even further once Clyde returns, and if Jeremy McNichols can get in on some of that post-Derrick Henry snap share, this team could continue its upward trajectory.
 
 | Name                  | Team    | Depth |
 | --------------------- | ------- | ----- |
@@ -97,7 +97,7 @@ Andrew Yang would've definitely provided some much needed RB depth to this squad
 
 >Who is Derrick Gore? Why is he taking all my points? Why has God forsaken my fantasy team? Is it because Logan watches more anime than me? Where do babies come from? Why so the keep making so many star wars spinoffs? How do magnets work?
 
-Callen just missed out scoring in the top half the league this week due to a down week across the board in fantasy football, but it was still enough to smoke Carl's squad. Jalen Hurts, his trio of top ten RBs and Hunter Henry all make this squad scary. Callen is very opportunistic as well, picking up Darrel Williams while CEH is on the shelf, nabbing AP out of the retirement home when Derrick Henry went down, and snagging ODB when he was jettisoned by the Browns to find greener pastures. All that while picking up A&M legend after Scottie unceremoniously dumped him. If Cooks and Lamb can continue with their solid years, this squad will continue to put numbers on the board and will at the very least contend for a PF spot in the playoffs.
+Callen missed out on scoring in the top half of the league this week due to a down week in fantasy football, but it was still enough to smoke Carl's squad. Jalen Hurts, his trio of top-ten RBs, and Hunter Henry all make this squad scary. Callen is very opportunistic as well, picking up Darrel Williams while CEH is on the shelf, nabbing AP out of the retirement home when Derrick Henry went down, and snagging ODB when the Browns jettisoned him to find greener pastures. All that while picking up A&M legend after Scottie unceremoniously dumped him. If Cooks and Lamb can continue with their solid years, this squad will continue to put numbers on the board and will, at the very least, contend for a PF spot in the playoffs.
 
 | Name                 | Team   | Depth |
 | -------------------- | ------ | ----- |
@@ -117,7 +117,7 @@ Callen just missed out scoring in the top half the league this week due to a dow
 
 >A&M Football >Cowboys >Astros >That 3rd TWIATH ring >>>
 
-Travis scored the second-most points this week on the backs of season-high marks from Devonta Smith, Pat Freiermuth and...the Dolphins defense? Regardless of the luck associated with the last one, the multitude of Tarv's rookie players seem to be hitting their stride right when it counts. Josh Allen will assuredly bounce back, Devontae Booker is filling in admirably for Saquon Barkley, who also happens to be waiting in the wings on Tarv's team. If D'Andre Swift can get his production back up, I don't think this is the last time we will see Tarv scoring in the upper echelon of the league.
+Travis scored the second-most points this week on the backs of season-high marks from Devonta Smith, Pat Freiermuth, and (somehow) the Dolphin's defense. Regardless of the luck associated with the last one, the multitude of Tarv's rookie players seem to be hitting their stride right when it counts. Josh Allen will assuredly bounce back, and Devontae Booker is filling in admirably for Saquon Barkley, who also happens to be waiting in the wings on Tarv's team. If D'Andre Swift can get his production back up, I don't think this is the last time we will see Tarv scoring in the upper echelon of the league.
 
 | Name                     | Team    | Depth |
 | ------------------------ | ------- | ----- |
@@ -137,7 +137,7 @@ Travis scored the second-most points this week on the backs of season-high marks
 
 >One of these days we will play without a player on your team going for 50 lol.
 
-Mark secured the bag this week in spite of Jonathan Taylor giving him quite the scare in the TNF game. Dak played a bad IRL football game but contibuted just enough from a fantasy perspective. Nick Chubb and James Connor both exploded, but unfortunately may be headed in opposite directions while Chubb navigates the COVID protocol and James Connor takes on a larger workload with Chase Edmonds' injury. Jakobi Meyers still does not have a regular season touchdown, and Chuba Hubbard's relevance is trending downward with the return of CMac, which all hurt the projections for this team moving forward. However, George "Brittle" Kittle returned to action for the first time in a month and looks to have picked up where he left off. If his starters can stay healthy, Mark will be right in the post-season mix.
+Mark secured the bag this week despite Jonathan Taylor giving him quite the scare in the TNF game. Dak played a bad IRL football game but contributed just enough from a fantasy perspective. Nick Chubb and James Connor both exploded, but unfortunately, they may be headed in opposite directions. Chubb navigates the COVID protocol, and James Connor takes on a more significant workload with Chase Edmonds' injury. Jakobi Meyers still does not have a regular season touchdown, and Chuba Hubbard's relevance is trending downward with the return of C-Mac, which all hurt the projections for this team moving forward. However, George "Brittle" Kittle returned to action for the first time in a month and looked to have picked up where he left off. Mark will be right in the post-season mix if his starters can stay healthy.
 
 | Name             | Team    | Depth |
 | ---------------- | ------- | ----- |
@@ -157,7 +157,7 @@ Mark secured the bag this week in spite of Jonathan Taylor giving him quite the 
 
 >Sounds like you just need to get your hands on some more alpha brain.
 
-It looks like Logan alpha-brained his backup QB situation, with Kirk Cousins filling in well for Kyler on his bye week. Joe Mixon continued on his top-five RB campaign, and although the decision to play two players widely considered to see an increase of action in their respective offenses (Bryan Edwards, Jerry Jeudy) didn't quite pan out, I think there is room for both to see more action on the back end of the season. Logan may be quietly creeping into the playoff picture looking in, and his team is still dangerous with Darrell Henderson and Deandre Hopkins on the slate to return.
+Logan alpha-brained his backup QB situation, with Kirk Cousins filling in well for Kyler on his bye week. Joe Mixon continued on his top-five RB campaign. Although the decision to play two players widely considered to see an increase of action in their respective offenses (Bryan Edwards, Jerry Jeudy) didn't quite pan out, there is room for both to see more action on the back end of the season. Logan may be quietly creeping into the playoff picture looking in, and his team is still dangerous with Darrell Henderson and Deandre Hopkins on the slate to return.
 
 | Name              | Team    | Depth |
 | ----------------- | ------- | ----- |
@@ -177,7 +177,7 @@ It looks like Logan alpha-brained his backup QB situation, with Kirk Cousins fil
 
 >I'm bout to just give my team to Neal and let him finish out the season for me.
 
-Carl's team is spiraling at the moment. Outside of Joe Burrow, Darren Waller, and a superlative season from Cooper Kupp this team is comprised of backups and disappointments. Keenan Allen hasn't lived up to his normal standards, Kenny Golladay hasn't lived up to his offseason payday, and James Robinson looked to be on a roll before getting hurt. Hopefully he is back in short order though. Aside from those players, no one else is at the top of the depth chart of their respective positions on their teams (aside from Marvin Jones, I suppose, but being the best WR on the Jags right now is a low bar to clear). This team is going to have to hope for the Giants passing game to step it up (yikes) and James Robinson to return to full stength soon, otherwise this may be a lost season for Carl.
+Carl's team is spiraling at the moment. Outside of Joe Burrow, Darren Waller, and a superlative season from Cooper Kupp, this team is comprised of backups and disappointments. Keenan Allen has yet to live up to his usual standards, Kenny Golladay hasn't lived up to his offseason payday, and James Robinson looked to be on a roll before getting hurt. Hopefully, he is back in short order, though. Aside from those players, no one else is at the top of the depth chart of their respective positions on their teams (aside from Marvin Jones, I suppose, but being the best WR on the Jags right now is a low bar to clear). This team must hope that the Giants' passing game will step it up (yikes) and that James Robinson will return to full strength soon. Otherwise, this may be a lost season for Carl.
 
 | Name              | Team    | Depth |
 | ----------------- | ------- | ----- |
@@ -197,7 +197,7 @@ Carl's team is spiraling at the moment. Outside of Joe Burrow, Darren Waller, an
 
 >What the actual fuck are these rankings?
 
-Andrew's team looks much better on paper than what's been reflected in its performance. Justin Herbert has built upon an exceptional and suprising rookie season, Michael Pittman and Mike Evans have both quietly been having top ten WR seasons, and Kyle Pitts is one of the first rookie TE's to appear to actually live up to the hype. Unfortunately, Christian McCaffrey and Antonio Gibson have both been slowed by injury, basically decimating his RB corps. If they can come back to full strength this team could make some noise, but will it be enough to overcome a slow first half of the season? Will Andrew seek to bolster his roster for a second half push or hold on to Michael Thomas as a sneaky keeper? Time will tell.
+Andrew's team looks much better on paper than what's been reflected in its performance. Justin Herbert has built upon an exceptional and surprising rookie season, Michael Pittman and Mike Evans have quietly been having top-ten WR seasons, and Kyle Pitts is one of the first rookie TEs to live up to the hype. Unfortunately, Christian McCaffrey and Antonio Gibson have both been slowed by injury, which is basically decimating his RB corps. If they can come back to full strength, this team could make some noise, but will it be enough to overcome a slow first half of the season? Will Andrew seek to bolster his roster for a second-half push or hold on to Michael Thomas as a sneaky keeper? Time will tell.
 
 | Name                | Team    | Depth |
 | ------------------- | ------- | ----- |
@@ -217,7 +217,7 @@ Andrew's team looks much better on paper than what's been reflected in its perfo
 
 >My team really needed to play its bench this week cause my starting line up is too good.
 
-How this team has a 5-4 record despite having the lowest points for is astounding to me. Kudos to Caleb's fantasy defense for holding his opponents to the fourth-lowest points against in the league. A stellar rookie season from Najee Harris and breakout year for Mike Gesicki are what are keeping this team afloat at the moment. It does not help at all that Aaron Rodgers has COVID and is embroiled in controversy at the moment, or that Chris Carson and TY Hilton have been hurt for most of the season. If Jarvis Landry can soak up some extra targets without ODB, Chris Godwin can continue his underrated season and Allen Robinson can help Justin Fields by playing better football, this team can maybe squeak out enough wins to earn a playoff berth. If not, it might find its record reflecting the scores it has been putting up.
+How this team has a 5-4 record despite having the lowest PF is astounding to me. Kudos to Caleb's fantasy defense for holding his opponents to the fourth-lowest PA in the league. A stellar rookie season from Najee Harris and a breakout year for Mike Gesicki are keeping this team afloat. It does not help that Aaron Rodgers has COVID and is currently embroiled in controversy or that Chris Carson and TY Hilton have been hurt for most of the season. If Jarvis Landry can soak up some extra targets without ODB, Chris Godwin can continue his underrated season, and Allen Robinson can help Justin Fields by playing better football, then this team can squeak out enough wins to earn a playoff berth. If not, it might find its record reflecting the scores it has been putting up.
 
 | Name           | Team    | Depth |
 | -------------- | ------- | ----- |
@@ -237,7 +237,7 @@ How this team has a 5-4 record despite having the lowest points for is astoundin
 
 >It’s alright I’m just playing @K-Man. Historically, he lets me win every time.
 
-Trond's season has been a tale of two quarters. Through the first five weeks, he had scored in the upper half the league three out of five of the weeks. Ever since then his team has been in the basement. What happened? For starters, his WR corps, which were objectively the best in the league, have either cooled off, played inconsistently or suffered from injuries. His top three WR's (Mike Williams, Tyreek Hill, and Davante Adams) still can go toe-to-toe with anyone in the league, but he'll need consistency to compete. Lamar Jackson and TJ Hockenson are having solid seasons, but they can't make up for Trond's rough RB situation. Really his only option there is Kareem Hunt, who is currently on IR but is eligible to return soon. That can't happen soon enough for Trond, because the rest of his RB options are, as Logan has put it, "unstartable."
+Trond's season has been a tale of two quarters. Through the first five weeks, he had scored in the upper half of the league three out of five of the weeks. Ever since then, his team has been in the basement. What happened? For starters, objectively the best in the league, his WR corps has either cooled off, played inconsistently, or suffered from injuries. His top three WRs (Mike Williams, Tyreek Hill, and Davante Adams) still can go toe-to-toe with anyone in the league, but he'll need consistency to compete. Lamar Jackson and TJ Hockenson are having solid seasons, but they can't compensate for Trond's rough RB situation. His only option is Kareem Hunt, who is currently on IR but is eligible to return soon. That can't happen soon enough for Trond because the rest of his RB options are, as Logan has put it, "unstartable."
 
 | Name                | Team    | Depth |
 | ------------------- | ------- | ----- |

@@ -56,7 +56,7 @@ I like Tarv's team overall. His wide receivers are looking a bit weak right now,
 
 >It's another Colt game. I'll say it. It would have whipped Bama if Ewers didn't get injured. We would have won if the refs didn't fuck us on that missed face mask, safety, etc. We lost by one with a second-string quarterback limping around the field.
 
-My streak of 100+ point weeks continues. Even with starting a tight end at flex, who got zero points, my team won comfortably over John. Darrell Henderson could be a quality flex option depending on how the Cam Akers situation shakes out. Zeke looked like some poo poo, but the Cowboys also did overall. With Dak being out, I expect his workload to increase. My team needs Kenneth Walker III to come back and take the starting job from Rashaad Penny. Thanks again for Justin Jefferson, K-Man!
+My streak of 100+ point weeks continues. Even with starting a tight end at flex, who got zero points, my team won comfortably over John. Darrell Henderson could be a quality flex option, depending on how the Cam Akers situation shakes out. Zeke looked like some poo poo, but the Cowboys also did overall. With Dak being out, I expect his workload to increase. My team needs Kenneth Walker III to come back and take the starting job from Rashaad Penny. Thanks again for Justin Jefferson, K-Man!
 
 | Name                 | Team    | Depth |
 | -------------------- | ------- | ----- |
@@ -74,7 +74,7 @@ My streak of 100+ point weeks continues. Even with starting a tight end at flex,
 
 #### Week One Points: 102.3
 
-I'm delighted to hand John an L to start the season. However, this team has Johnathan Taylor, so he'll make the playoffs. Even if Cam Akers gets banished to the Shadow Realm, this roster is deep enough to stay to contend for another championship. As always, don't trade with John.
+I'm delighted to hand John an L to start the season. However, this team has Johnathan Taylor, so he'll make the playoffs. Even if Cam Akers gets banished to the Shadow Realm, this roster is deep enough to stay and contend for another championship. As always, don't trade with John.
 
 | Name               | Team    | Depth |
 | ------------------ | ------- | ----- |
@@ -92,7 +92,7 @@ I'm delighted to hand John an L to start the season. However, this team has John
 
 #### Week One Points: 109.6
 
-Much like K-State, Chris got a free dub this week by playing a bum ass team. Crams' squad has some high upside, but I am concerned about depth. Kareem Hunt is technically second on the depth chart, but I expect him to put up big numbys on the reg. Joe Mixon and Leonard Fournette should provide ample touches as well. After that, I see a lot of feast or famine. Jalen Waddle could finish as a top-five receiver, but he had a lot of ups and downs last year. I'm not sure if Tyreek Hill helps or hurts his targets yet. Much like another number one overall system quarterback from Oklahoma, Kyler Murray did not look sharp. Tee Higgins is banged up. Unfortunately, I see this team trending down.
+Like K-State, Chris got a free dub this week by playing a bum-ass team. Crams' squad has some high upside, but I am concerned about depth. Kareem Hunt is technically second on the depth chart, but I expect him to put up big numbers on the reg. Joe Mixon and Leonard Fournette should provide ample touches as well. After that, I see a lot of feast or famine. Jalen Waddle could finish as a top-five receiver, but he had a lot of ups and downs last year. I'm not sure if Tyreek Hill helps or hurts his targets yet. Much like another number one overall system quarterback from Oklahoma, Kyler Murray did not look sharp. Tee Higgins is banged up. Unfortunately, I see this team trending down.
 
 | Name              | Team    | Depth |
 | ----------------- | ------- | ----- |
@@ -110,7 +110,7 @@ Much like K-State, Chris got a free dub this week by playing a bum ass team. Cra
 
 #### Week One Points: 121.3
 
-It's unreal how well we draft for Trond every year. Maybe next draft we'll get him to attend by saying that we're going to film it and do interviews in the style of his beloved Joe Rogan. This dude can't even be bothered to set his lineup and put up 120+ points this week. Alexa, play *I'm Upset* by Drake. I'm looking forward to Trondheim's explanation in the Discord about how auto-drafting is low-key a galaxy brain move on his part. "I knew that y'all would draft zero RB for me." Anyway, he's going to run this team into the ground. There is no way that Miles Sanders and Cordarrelle Patterson end up being top running backs.
+It's unreal how well we draft for Trond every year. In the next draft, we'll get him to attend by saying that we will film it and do interviews in the style of his beloved Joe Rogan. This dude can't even be bothered to set his lineup and put up 120+ points this week. Alexa, play *I'm Upset* by Drake. I'm looking forward to Trondheim's explanation in Discord about how auto-drafting is a low-key galaxy brain move on his part. "I knew that y'all would draft zero RBs for me." Anyway, he's going to run this team into the ground. There is no way that Miles Sanders and Cordarrelle Patterson will end up being top running backs.
 
 | Name                  | Team    | Depth |
 | --------------------- | ------- | ----- |
@@ -128,7 +128,7 @@ It's unreal how well we draft for Trond every year. Maybe next draft we'll get h
 
 #### Week One Points: 80.5
 
-Mark's team is solid, but I do have to question the homer ass decision to start Tony Pollard over Amon-Ra St. Brown. My brother in Christ, I think you need to watch some *Hard Knocks*. There's too much talent on this roster for such few points. Coincidentally, that's what Brent Venables said to Oklahoma after the Kent State game.
+Mark's team is solid, but I must question the homer-ass decision to start Tony Pollard over Amon-Ra St. Brown. My brother in Christ, you need to watch some Hard Knocks. There's too much talent on this roster for such few points. Coincidentally, that's what Brent Venables said to Oklahoma after the Kent State game.
 
 | Name                | Team    | Depth |
 | ------------------- | ------- | ----- |
@@ -166,7 +166,7 @@ I have no idea where the hell to rank this team. As usual, I don't know what the
 
 >Stafford confirmed washed.
 
-The reigning champ looks vulnerable right now. Without big weeks from Steffon Diggs and AJ Dillion, this team would be getting the Claeb treatment in the power rankings. There are many rookies on this roster, so it will be interesting to see how the talent develops. That being said, a significant portion of this roster relies on the Raiders, Jaguars, and Jets offenses. That does not spark joy.
+The reigning champ looks vulnerable right now. Without big weeks from Steffon Diggs and AJ Dillion, this team would be getting the Claeb treatment in the power rankings. Many rookies are on this roster, so seeing how the talent develops will be interesting. That being said, a significant portion of this roster relies on the Raiders, Jaguars, and Jets offenses. That does not spark joy.
 
 | Name                 | Team   | Depth |
 | -------------------- | ------ | ----- |
@@ -184,7 +184,7 @@ The reigning champ looks vulnerable right now. Without big weeks from Steffon Di
 
 #### Week One Points: 105.1
 
-Logz had a strong start in week one, but suddenly his team's outlook is bleak. Elijah Mitchell is gone for eight weeks. Alvin Kamara didn't get too much work in week one. Damien Harris once again proved that you can't trust the Patriots' backfield. His bench's performance wasn't inspiring either. I think this team will require exceptional performances week-to-week from cornerstones like Gabe Davis and AJ Brown just to be mediocre. I can only imagine that Logz is as reluctant to set his lineup right now as Shinji piloting the Evangelion Unit 01.
+Logz had a strong start in week one, but his team's outlook is bleak. Elijah Mitchell is gone for eight weeks. Alvin Kamara only got a little work in week one. Damien Harris once again proved that you can't trust the Patriots' backfield. His bench's performance wasn't inspiring either. To be mediocre, this team will require exceptional performances week-to-week from cornerstones like Gabe Davis and AJ Brown. I can only imagine Logz being as reluctant to set his lineup right now as Shinji piloting the Evangelion Unit 01.
 
 | Name                 | Team   | Depth |
 | -------------------- | ------ | ----- |
@@ -204,7 +204,7 @@ Logz had a strong start in week one, but suddenly his team's outlook is bleak. E
 
 >Jimbo will never be that guy. He's gonna win games this year for sure. Wouldn't even be surprised if we upset Bama again after the weakness they showed today. But he showed he'll never be able to put together an entire season. We'll get some highlight wins once or twice a year for the next eight years or however long he's here. Maybe an NY6 bowl game every few years. But he's never going to be able to put together a season that competes for a natty. The only reason he could do it at FSU was because he snuck in before Clemson rose up and had a Heisman winner push him through the playoffs. None of that will happen for him at A&M. We'll end up 8-4 again this year, and that's that.
 
-Between Texas A&M's seven (7) offensive points against a Sun Belt team and this atrocious fantasy performance, the kind of football that Callen watched this weekend belongs on the History Channel. However, I think that some key pieces had an uncharacteristic terrible week. I expect this team to trend up when Austin Ekeler and Aaron Jones return to their usual selves.
+Between Texas A&M's seven (7) offensive points against a Sun Belt team and this atrocious fantasy performance, the kind of football that Callen watched this weekend belongs on the History Channel. However, some key pieces had an uncharacteristic terrible week. I expect this team to trend up when Austin Ekeler and Aaron Jones return to their usual selves.
 
 | Name             | Team    | Depth |
 | ---------------- | ------- | ----- |
@@ -224,7 +224,7 @@ Between Texas A&M's seven (7) offensive points against a Sun Belt team and this 
 
 >I'm a sad boi.
 
-In my work league, one of my coworkers decided to only draft players with the letter 'J' in their name. Somehow, that roster is way more cohesive than Claeb's. This would have been a shit week for you if Derrick Henry was Derrick Henry on Sunday. Instead, it's a dogshit one. If Julio Jones maintains chemistry with Tom Brady (and Claeb actually starts him), this team could have a rise from shit to cheeks.
+In my work league, one of my coworkers only drafted players with the letter 'J' in their name. Somehow, that roster is way more cohesive than Claeb's. This would have been a shit week for you if Derrick Henry was Derrick Henry on Sunday. Instead, it's a dogshit one. If Julio Jones maintains chemistry with Tom Brady (and Claeb starts him), this team could have a rise from shit to cheeks.
 
 | Name                | Team   | Depth |
 | ------------------- | ------ | ----- |

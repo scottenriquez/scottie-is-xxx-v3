@@ -14,9 +14,9 @@ import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
 #### Week Two Points: 121.5
 
-Callen - It was a close race for first, but I'm giving the slight edge to Callen. He's been building for a while and it's finally paying off. His efforts are stacked. Everything has just been pulling together nicely. The beard is strong, but the flow is where Callen got my #1 vote. It's thick and luscious, enough said.
+It was a close race for first place, but I'm giving Callen a slight edge. He's been building for a while, and it's finally paying off. His efforts are stacked. Everything has just been pulling together nicely. The beard is strong, but the flow is where Callen got my #1 vote. It's thick and luscious; enough said.
 
-Fantasy ranking I guess: #7. Callen wins comeback player of the week with a strong showing in week 2. Minus a TE egg, he had a very round performance, getting some boom numbers from Jones. The big question is if this team can stay consistent.
+Fantasy ranking, I guess, #7. Callen wins comeback player of the week with a strong showing in week two. Minus a TE egg, he had a very round performance, getting some boom numbers from Jones. The big question is if this team can stay consistent.
 
 | Name             | Team    | Depth |
 | ---------------- | ------- | ----- |
@@ -34,9 +34,9 @@ Fantasy ranking I guess: #7. Callen wins comeback player of the week with a stro
 
 #### Week Two Points: 117.8
 
-Chris is a close second, also with the nice flow. I'll admit my length bias here. Any man who is bold enough to let it flow gets points in my book. The beard is also strong, another full package.
+Chris is a close second, also with the nice flow. I'll admit my length bias here. Any man who is bold enough to let it flow gets points in my book. The beard is also strong, another complete package.
 
-TWIATH: #5. Chris is looking solid, even with some room for improvement. He seems to have a fairly high floor. Waddle going off this week also didn't hurt.
+TWIATH: #5. Chris is looking solid, even with some room for improvement. He has a reasonably high floor. Waddle going off this week also didn't hurt.
 
 | Name              | Team   | Depth |
 | ----------------- | ------ | ----- |
@@ -56,9 +56,9 @@ TWIATH: #5. Chris is looking solid, even with some room for improvement. He seem
 
 >These rankings couldn’t have been more biased against my top drawer team.
 
-A strong case could be made for Trond at #1, but I'm going with both my recency bias and my beard bias and putting Callen and Chris ahead. The flow is also majestic with Trond, though.
+A strong case could be made for Trond at #1, but I'm going with my recency bias and beard bias and putting Callen and Chris ahead. The flow is also majestic with Trond, though.
 
-TWIATH: #8. Trond is still looking in great shape, if a little boom/busty. Between the former dynamic duo of Mahomes and Hill, he has a ton of upside. I'm not sure why Trond didn't draft any RBs tho...
+TWIATH: #8. Trond is still looking in great shape, even if it's boom or bust. Between the former dynamic duo of Mahomes and Hill, he has a ton of upside. I'm not sure why Trond didn't draft any RBs though., though.
 
 | Name                  | Team    | Depth |
 | --------------------- | ------- | ----- |
@@ -76,9 +76,9 @@ TWIATH: #8. Trond is still looking in great shape, if a little boom/busty. Betwe
 
 #### Week Two Points: 92.3
 
-Rounding out the long-hair tier 1 bois is Logan with yet again a very nice flow. How does 1/3 of our league have this going for them? Once again though, the lack of beard keeps Logz from the top spots.
+Rounding out the long-haired tier 1 bois is Logan, who has yet again had a very nice flow. How does one-third of our league have this going for them? Once again, the lack of a beard keeps Logz from the top spots.
 
-TWIATH: #10. Logz is staying above 90, but that's about it. How long can he ride TB's defense?
+TWIATH: #10. Logz is staying above 90 points, but that's about it. How long can he ride TB's defense?
 
 | Name                 | Team   | Depth |
 | -------------------- | ------ | ----- |
@@ -96,9 +96,9 @@ TWIATH: #10. Logz is staying above 90, but that's about it. How long can he ride
 
 #### Week Two Points: 93.8
 
-Between the curls and thickness, Claeb takes the top non-long-hair bois spot. It's just a good head of hair. Maybe if the full curl-fro was grown out he could compete for the top spot. 10/10 beard as well.
+Between the curls and thickness, Claeb takes the top non-long-hair bois spot. It's just a good head of hair. Maybe he could compete for the top spot if the full curl-fro was grown out. 10/10 beard as well.
 
-TWIATH: #12. With a two-week PF under 160, there's not much that can be done at this point. John Albert Elway Jr. is disappointed in you.
+TWIATH: #12. With a two-week PF under 160, not much can be done now. John Albert Elway Jr. is disappointed in you.
 
 | Name                | Team    | Depth |
 | ------------------- | ------- | ----- |
@@ -116,9 +116,9 @@ TWIATH: #12. With a two-week PF under 160, there's not much that can be done at 
 
 #### Week Two Points: 115.8
 
-Carlos comes in at a solid performance, maintaining a solid head of hair along with strong performance from the 5 o'clock shadow beard.
+Carlos comes in at a solid performance, maintaining a solid head of hair and strong performance from the five o'clock shadow beard.
 
-TWIATH: #2. Somehow the lone undefeated team, Carlos, is still looking solid. Although slightly off the PF lead, he's been the most consistent. It will be hard to keep him from a solid bye-worthy record.
+TWIATH: #2. Somehow, the lone undefeated team, Carlos, is still looking solid. Although slightly off the PF lead, he's been the most consistent. It will be hard to keep him from a solid bye-worthy record.
 
 | Name                  | Team   | Depth |
 | --------------------- | ------ | ----- |
@@ -140,7 +140,7 @@ TWIATH: #2. Somehow the lone undefeated team, Carlos, is still looking solid. Al
 
 Matt rounds out the full-hair boys with a solid head of hair once again paired with a great beard. Nothing to complain about here. It was looking especially fresh in those wedding photos.
 
-TWIATH: #6. I'll give K-Man some recency credit and bump him up here to the 6th spot. With the #1 WR in Diggs currently and the #3 TE in Waller, he has a lot of potential. He'll have to stay on this boomtrain, though, to make the playoffs.
+TWIATH: #6. I'll give K-Man some recency credit and bump him up here to the sixth spot. With the #1 WR in Diggs currently and the #3 TE in Waller, he has a lot of potential. He'll have to stay on this boom train to make the playoffs.
 
 | Name                 | Team   | Depth |
 | -------------------- | ------ | ----- |
@@ -158,9 +158,9 @@ TWIATH: #6. I'll give K-Man some recency credit and bump him up here to the 6th 
 
 #### Week Two Points: 113.5
 
-Why are the bald bros towards the end of the list? What injustice is this? Is the mainstream media creating bias against those that are more follically challenged? Do I need to take a step back and reflect on my unconscious pro-hair biases? Probably. Anyway, Scottie takes the top spot here due to the epic beard. Once again, tie goes to length.
+Why are the bald bros towards the end of the list? What injustice is this? Is the mainstream media creating a bias against those more follically challenged? Do I need to step back and reflect on my unconscious pro-hair biases? Probably. Anyway, Scottie takes the top spot here due to the epic beard. Once again, the tie goes to length.
 
-TWIATH: #4. Although a little more boom-heavy like myself, Scottie is in a great spot with both the #1 RB and #1 QB. If the rest of his lineup catches up to his big boys, this team is v scary.
+TWIATH: #4. Although a little more boom-heavy like myself, Scottie is in a great spot with the #1 RB and #1 QB. If the rest of his lineup catches up to his big boys, this team is very scary.
 
 | Name                | Team    | Depth |
 | ------------------- | ------- | ----- |
@@ -174,13 +174,13 @@ TWIATH: #4. Although a little more boom-heavy like myself, Scottie is in a great
 | Darrell Henderson   | LAR-RB  | 1     |
 | Pittsburgh Steelers | PIT-DEF |       |
 
-##### Travis, Mark, Carl - I just can't chose between Trav, Mark, and Carl, so I'm calling it a tie. All three of these bald men are beautiful. The beards are all strong and thick. They're fit. The full bald package.
+##### Travis, Mark, and Carl. I can't choose between these three, so I'm calling it a tie. All these bald men are beautiful. Their beards are strong and thick. They're fit—the full bald package.
 
 ## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-two-john" class="sleeper-avatar"/>Jalen the Super Saiyan | 1-1W/L | 241PF
 
 #### Week Two Points: 111.7
 
-TWIATH Travis: #1. With the most PF (by 0.11), I'm taking Tarv for the #1 spot this week. With the #3 QB, and the #2 RB, Tarv should be watched closely.
+TWIATH Travis: #1. With the most PF (by 0.11), I'm taking Tarv for the #1 spot this week. With the #3 QB and the #2 RB, Tarv should be watched closely.
 
 | Name                | Team    | Depth |
 | ------------------- | ------- | ----- |
@@ -198,7 +198,7 @@ TWIATH Travis: #1. With the most PF (by 0.11), I'm taking Tarv for the #1 spot t
 
 #### Week Two Points: 101.9
 
-TWIATH Mark: #9. Even though the numbers aren't there yet, Mark is in a good spot. With a solid RB core, he can do some damage in the long run. St. Brown is currently on fire, so that's nice.
+TWIATH Mark: #9. Mark is in a good spot, even though the numbers aren't there yet. He can do some damage in the long run with a solid RB core. St. Brown is currently on fire, so that's nice.
 
 | Name                | Team    | Depth |
 | ------------------- | ------- | ----- |
@@ -218,7 +218,7 @@ TWIATH Mark: #9. Even though the numbers aren't there yet, Mark is in a good spo
 
 >I'm starting to worry about my team.
 
-TWIATH Carl: #11. A rough week for Cral, not even breaking the 80 pt. mark. Maybe a couple well-worded Insta DMs to his player can get them up to playing to their potential.
+TWIATH Carl: #11. It was a rough week for Cral, not even breaking the 80-point mark. A couple of well-worded Instagram DMs to his player can get them up to playing to their potential.
 
 | Name               | Team    | Depth |
 | ------------------ | ------- | ----- |
@@ -236,9 +236,9 @@ TWIATH Carl: #11. A rough week for Cral, not even breaking the 80 pt. mark. Mayb
 
 #### Week Two Points: 137.7
 
-Welp, here I am. Stuck in-between two worlds. The front is doing ok, but the back is retreating quickly. I probably should just shave it. But I can't yet, ya know? I'm just not ready to take that step. And for that reason, I will sit here in my last-place ranking and my decent beard.
+Welp, here I am. Stuck in between two worlds. The front is doing alright, but the back is retreating quickly. I probably should shave it. But I can't yet, you know? I'm just not ready to take that step. For that reason, I will sit here in my last-place ranking with a decent beard.
 
-TWIATH: #3. I may not stay up here, but I feel like I'm currently in a good spot. With Lamar's high ceiling, Andrews productivity, JT in the waiting, and 3 top 25 WRs so far, things aren't looking bad.
+TWIATH: #3. I may not stay here, but I'm in a good spot. With Lamar's high ceiling, Andrews's productivity, JT in the waiting, and three top-25 WRs, things aren't looking bad.
 
 | Name               | Team    | Depth |
 | ------------------ | ------- | ----- |
