@@ -29,8 +29,8 @@ While two hours may sound like plenty of time, you'll need to work quickly to co
 ## Materials and Getting Started
 All code shown here resides in [this GitHub repository](https://github.com/scottenriquez/ckad-exam-prep-using-amazon-eks). In addition to this content, I highly recommend the following:
 - The [CKAD courses on Pluralsight](https://www.pluralsight.com/paths/certified-kubernetes-application-developer-ckad-2023) for classroom learning
-- [Killer Shell](https://killer.sh/pricing) is key for practice exams
-- [This GitHub repository](https://github.com/dgkanatsios/CKAD-exercises/blob/main/README.md) contains many useful CLI commands
+- [Killer Shell](https://killer.sh/pricing) for practice exams
+- [This GitHub repository](https://github.com/dgkanatsios/CKAD-exercises/blob/main/README.md) for many useful CLI commands
 
 My preferred approach was to work through the Pluralsight course first. After reviewing the classroom material, I designed and implemented the examples below. If you have foundational Kubernetes knowledge, skip to the most useful exercises. Each one is designed to be a standalone experience.
 
