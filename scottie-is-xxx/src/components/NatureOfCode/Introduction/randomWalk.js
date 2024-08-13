@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CartesianPlane from '../d3/cartesianPlane';
+import CartesianPlane from '../../Shared/d3/cartesianPlane';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faRefresh} from "@fortawesome/free-solid-svg-icons";
 

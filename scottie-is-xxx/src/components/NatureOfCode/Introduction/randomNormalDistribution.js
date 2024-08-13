@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import BarChart from '../d3/barChart';
+import BarChartTickValues from '../../Shared/d3/barChartTickValues';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faRefresh} from "@fortawesome/free-solid-svg-icons";
 
@@ -34,7 +34,7 @@ class RandomNormalDistribution extends Component {
                 <button className={'button button--secondary button--md'} style={{ backgroundColor: '#50fa7b', color: 'black' }} onClick={this.handleRefreshDataClick}>
                     <FontAwesomeIcon icon={faRefresh} /> Generate New Data
                 </button>
-                <BarChart data={this.generateRandomData()} xAxisName={'index'} yAxisName={'value'} />
+                <BarChartTickValues data={this.generateRandomData()} xAxisName={'index'} yAxisName={'value'} />
             </div>
         );
     }

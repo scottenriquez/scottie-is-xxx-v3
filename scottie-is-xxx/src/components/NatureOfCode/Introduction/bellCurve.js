@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import BarChart from '../d3/barChart';
+import BarChart from '../../Shared/d3/barChart';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faRefresh } from "@fortawesome/free-solid-svg-icons"
 

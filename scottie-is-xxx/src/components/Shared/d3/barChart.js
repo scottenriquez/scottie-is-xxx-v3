@@ -20,27 +20,24 @@ class BarChart extends Component {
         const height = 400;
         const width = 800;
         const margin = { top: 20, right: 30, bottom: 30, left: 40 };
-        const x = d3
+      // Calculate the minimum and maximum values for the x-axis
+      const yMin = d3.min(this.props.data, (d) => d[this.props.yAxisName]);
+      const yMax = d3.max(this.props.data, (d) => d[this.props.yAxisName]);
+      const x = d3
             .scaleBand()
             .domain(this.props.data.map((d) => d[this.props.xAxisName]))
             .rangeRound([margin.left, width - margin.right])
             .padding(0.1);
         const y1 = d3
             .scaleLinear()
-            .domain([0, d3.max(this.props.data, (d) => d[this.props.yAxisName])])
+            .domain([0, yMax])
             .rangeRound([height - margin.bottom, margin.top]);
         const xAxis = (g) =>
             g
-                .attr('transform', `translate(0,${height - margin.bottom})`).call(
-                d3
-                    .axisBottom(x)
-                    .tickValues(
-                        d3
-                            .ticks(...d3.extent(x.domain()), width / 40)
-                            .filter((v) => x(v) !== undefined)
-                    )
-                    .tickSizeOuter(0))
-                .style('color', '#50fa7b');
+              .attr("class", "x-axis")
+              .attr("transform", `translate(0,${height - margin.bottom})`)
+              .style('color', '#50fa7b')
+              .call(d3.axisBottom(x));
         const y1Axis = (g) =>
             g
                 .attr('transform', `translate(${margin.left},0)`)
