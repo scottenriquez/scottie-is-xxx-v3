@@ -87,7 +87,7 @@ So, does regular season PF correlate with championships? For the most part, yes.
 Not quite as well. First of all, weekly PF ranges (89.2 to 103.2) have a higher minimum/maximum delta than PA ranges (95.0 to 100.7). While we see Mark and Scottie in the bottom three (i.e., luckiest), Matt has the highest PA (average and total). In any case, these aggregates omit much of the story. To do so, let's examine a season in more detail and introduce a new metric.
 
 ## Measuring Wins Against All Opponents
-The core aspect of luck in fantasy football is scheduling and PA for a given week. For example, in our 12-team league, you could be the 11th-highest-scoring team and still lose the week. Likewise, you could put up the second-worst performance and win the week. Aggregating the totals for PA and PF does not account for this. However, we can measure how many teams you would have beaten in the given week to measure this: 
+The core aspect of luck in fantasy football is scheduling and PA for a given week. For example, in our 12-team league, you could be the second-highest-scoring team and still lose the week. Likewise, you could put up the second-worst performance and win the week. Aggregating the totals for PA and PF does not account for this. However, we can measure how many teams you would have beaten in the given week to measure this: 
 
 $$
 f(r) = ∑_{p ∈ P(r)} I(p < r.points)
