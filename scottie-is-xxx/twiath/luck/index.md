@@ -3,7 +3,7 @@ title: "Analyzing Luck in the League's Recent History (WIP)"
 date: "2024-08-15"
 description: "Determining who is the luckiest person in the league."
 authors: [scottie, callen]
-tags: ["Blog", "Data"]
+tags: ["Data Analysis Blog"]
 ---
 
 import TeamPointsBarGraph from '../../src/components/FantasyFootball/LuckAnalysis/teamPointsBarGraph'
@@ -82,9 +82,21 @@ Let's convert these to weekly averages:
 
 So, does regular season PF correlate with championships? For the most part, yes. The past four champions were Mark (2023), Mark (2022), Matt (2021), and Travis (2020). Despite consistently leading the league in PF, Scottie and Callen have yet to win a championship (although Scottie did lose in the finals twice during these four seasons). Mark and Travis are in the top four scorers, and Matt's championship season looks like an outlier compared with his average performance. With this in mind, does regular season PA correlate better with championships? 
 
+First, we need to compute points against for each week in the Pandas `DataFrame`:
+
+```python
+def calculate_points_against(row):
+    points_against = matchups.loc[matchups['year'] == row['year']].loc[matchups['week'] == row['week']].loc[matchups['matchup_id'] == row['matchup_id']].loc[matchups['owner_id'] != row['owner_id']]['points'].values
+    if len(points_against) == 1:
+        return points_against[0]
+    else:
+        return 0
+matchups['points_against'] = matchups.apply(calculate_points_against, axis=1)
+```
+
 <TeamPointsBarGraph teamPointsData={[{'team': 'Carl', 'points': 94.96428571428571}, {'team': 'Mark', 'points': 95.26017857142857}, {'team': 'Scottie', 'points': 95.90857142857143}, {'team': 'Caleb', 'points': 96.14196428571428}, {'team': 'John', 'points': 96.385}, {'team': 'Andrew', 'points': 96.49428571428572}, {'team': 'Logan', 'points': 96.59375}, {'team': 'Travis', 'points': 97.43410714285714}, {'team': 'Trond', 'points': 99.42482142857143}, {'team': 'Chris', 'points': 100.16660714285715}, {'team': 'Callen', 'points': 100.62839285714287}, {'team': 'Matt', 'points': 100.71857142857142}]} />
 
-Not quite as well. First of all, weekly PF ranges (89.2 to 103.2) have a higher minimum/maximum delta than PA ranges (95.0 to 100.7). While we see Mark and Scottie in the bottom three (i.e., luckiest), Matt has the highest PA (average and total). In any case, these aggregates omit much of the story. To do so, let's examine a season in more detail and introduce a new metric.
+It appears that PA does not correlate as well as PF. First of all, weekly PF ranges (89.2 to 103.2) have a higher minimum/maximum delta than PA ranges (95.0 to 100.7). While we see Mark and Scottie in the bottom three (i.e., luckiest), Matt has the highest PA (average and total). In any case, these aggregates omit much of the story. To do so, let's examine a season in more detail and introduce a new metric.
 
 ## Measuring Wins Against All Opponents
 The core aspect of luck in fantasy football is scheduling and PA for a given week. For example, in our 12-team league, you could be the second-highest-scoring team and still lose the week. Likewise, you could put up the second-worst performance and win the week. Aggregating the totals for PA and PF does not account for this. However, we can measure how many teams you would have beaten in the given week to measure this: 
@@ -118,30 +130,36 @@ This function produces an integer between 0 and 11 for any given week. When look
 
 # Quantifying the Luckiest Seasons
 
-Using Pandas, we can query the total number of wins and wins against all opponents and group by player and season to create a ratio.
+Using Pandas, we can query the total number of wins and wins against all opponents and group by player and season.
 
 ```python
 matchups.loc[matchups['type'] == 'regular'].groupby(['username', 'year']).agg({'actual_win_loss':'sum','wins_against_all_opponents':'sum'})
 ```
 
-We can identify anomalous seasons by comparing the actual wins to the number of teams the player would have beaten. The higher the percentage, the more lucky the player was. The lower the percentage, the more unlucky the player was. Let's look at the top five luckiest seasons:
+We can identify anomalous seasons by comparing the actual wins to the number of teams the player would have beaten. Using the following formula, we can convert these deltas to a percentage above expected wins (as $$Δ_p$$ with $$w_a$$ as actual wins and $$w_o$$ as wins over all opponents based on 14 possible wins in the regular season and 154 possible wins over all opponents):
 
-| Name   | Season | Actual Wins      | Wins Against All Opponents       | Ratio |
-|--------|--------|------------------|----------------------------------|-------|
-| Andrew | 2022   | 10               | 61                               | 16%   |
-| Mark   | 2023   | 10               | 67                               | 15%   |
-| Logan  | 2023   | 7                | 52                               | 13%   |
-| Carl   | 2023   | 9                | 73                               | 12%   |
-| Carl   | 2020   | 10               | 83                               | 12%   |
+$$
+Δ_p = (w_a / 14) - (w_o / 154)
+$$
+
+Based on this metric, let's look at the top five luckiest seasons:
+
+| Name   | Season | $$w_a$$ | $$w_o$$ | $$Δ_p$$ |
+|--------|--------|---------|---------|---------|
+| Andrew | 2022   | 10      | 61      | 32%     |
+| Mark   | 2023   | 10      | 67      | 28%     |
+| Carl   | 2020   | 10      | 83      | 18%     |
+| Carl   | 2023   | 9       | 73      | 17%     |
+| Logan  | 2023   | 7       | 52      | 16%     |
 
 And the bottom five seasons:
 
-| Name  | Season | Actual Wins      | Wins Against All Opponents       | Ratio |
-|-------|--------|------------------|----------------------------------|-------|
-| Carl  | 2022   | 5                | 73                               | 7%    |
-| Trond | 2021   | 3                | 44                               | 7%    |
-| John  | 2023   | 5                | 77                               | 6%    |
-| Caleb | 2022   | 5                | 79                               | 6%    |
-| Trond | 2023   | 3                | 59                               | 5%    |
+| Name   | Season | $$w_a$$ | $$w_o$$ | $$Δ_p$$ |
+|--------|--------|---------|---------|---------|
+| Carl   | 2022   | 5       | 73      | -12%    |
+| Callen | 2020   | 7       | 95      | -12%    |
+| John   | 2023   | 5       | 77      | -14%    |
+| Caleb  | 2022   | 5       | 79      | -16%    |
+| Trond  | 2023   | 3       | 59      | -17%    |
 
 Caleb's 2022 squad outscored 79 opponents, while Andrew's 2022 team outscored 61. Andrew ended up with ten wins, thus marking the luckiest season in the league's history.
