@@ -126,22 +126,22 @@ matchups.loc[matchups['type'] == 'regular'].groupby(['username', 'year']).agg({'
 
 We can identify anomalous seasons by comparing the actual wins to the number of teams the player would have beaten. The higher the percentage, the more lucky the player was. The lower the percentage, the more unlucky the player was. Let's look at the top five luckiest seasons:
 
-| Name   | Season | Actual Wins      | Wins Against Against All Opponents       | Ratio |
-|--------|--------|------------------|------------------------------------------|-------|
-| Andrew | 2022   | 10               | 61                                       | 16%   |
-| Mark   | 2023   | 10               | 67                                       | 15%   |
-| Logan  | 2023   | 7                | 52                                       | 13%   |
-| Carl   | 2023   | 9                | 73                                       | 12%   |
-| Carl   | 2020   | 10               | 83                                       | 12%   |
+| Name   | Season | Actual Wins      | Wins Against All Opponents       | Ratio |
+|--------|--------|------------------|----------------------------------|-------|
+| Andrew | 2022   | 10               | 61                               | 16%   |
+| Mark   | 2023   | 10               | 67                               | 15%   |
+| Logan  | 2023   | 7                | 52                               | 13%   |
+| Carl   | 2023   | 9                | 73                               | 12%   |
+| Carl   | 2020   | 10               | 83                               | 12%   |
 
 And the bottom five seasons:
 
-| Name  | Season | Actual Wins      | Wins Against Against All Opponents       | Ratio |
-|-------|--------|------------------|------------------------------------------|-------|
-| Carl  | 2022   | 5                | 73                                       | 7%    |
-| Trond | 2021   | 3                | 44                                       | 7%    |
-| John  | 2023   | 5                | 77                                       | 6%    |
-| Caleb | 2022   | 5                | 79                                       | 6%    |
-| Trond | 2023   | 3                | 59                                       | 5%    |
+| Name  | Season | Actual Wins      | Wins Against All Opponents       | Ratio |
+|-------|--------|------------------|----------------------------------|-------|
+| Carl  | 2022   | 5                | 73                               | 7%    |
+| Trond | 2021   | 3                | 44                               | 7%    |
+| John  | 2023   | 5                | 77                               | 6%    |
+| Caleb | 2022   | 5                | 79                               | 6%    |
+| Trond | 2023   | 3                | 59                               | 5%    |
 
 Caleb's 2022 squad outscored 79 opponents, while Andrew's 2022 team outscored 61. Andrew ended up with ten wins, thus marking the luckiest season in the league's history.
