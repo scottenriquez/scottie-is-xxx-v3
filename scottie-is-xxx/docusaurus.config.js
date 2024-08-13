@@ -64,14 +64,6 @@ const config = {
         path: './twiath',
         blogSidebarTitle: 'Posts',
         blogSidebarCount: 'ALL',
-        processBlogPosts: async ({blogPosts}) => {
-          const documentationPosts = blogPosts.filter((post) => post.metadata.tags.length > 1);
-          const powerRankingsPosts = blogPosts.filter((post) => post.metadata.tags.length <= 1);
-          powerRankingsPosts.sort((first, second) => {
-            return first.metadata.date < second.metadata.date;
-          });
-          return documentationPosts.concat(powerRankingsPosts);
-        },
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
       },
