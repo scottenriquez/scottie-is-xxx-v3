@@ -58,7 +58,7 @@ for index, league_id in enumerate(past_league_ids):
 For a complete Jupyter Notebook example, see [this GitHub repository](https://github.com/the-winner-is-a-tryhard/datalake-creation/blob/main/twiath-datalake-prep/historical-sleeper-load.ipynb). Note that this does not follow data lake best practices like a [medallion architecture](https://www.databricks.com/glossary/medallion-architecture). Still, it's enough to start analyzing the entire Sleeper's historical dataset. In a later post, we'll cover our scheduled jobs to load the data weekly during the season.
 
 ## Scoring
-To provide additional context for the numbers shown for those outside the league:
+To provide additional context for the numbers shown for those outside the league, here's our configuration:
 - 12 teams
 - Half-point per reception
 - One-point receiving first down
@@ -68,7 +68,7 @@ To provide additional context for the numbers shown for those outside the league
 - Two WR/RB/TE flex spots
 
 ## A Naive Attempt at Defining Luck and Skill
-In the simplest terms, you might define luck as the fewest points against (PA) since you have no control over your opponent's lineup. By the same logic, you could define skill as points for (PF), since you chose the players on your roster. Let's start with regular season PF in the past four seasons:
+In the simplest terms, you might define luck as the fewest points against (PA) since you have no control over your opponent's lineup. By the same logic, you could define skill as points for (PF) since you chose the players on your roster. Let's start with regular season PF in the past four seasons:
 
 <TeamPointsBarGraph teamPointsData={[{'team': 'Scottie', 'points': 5779.41}, {'team': 'Callen', 'points': 5687.97}, {'team': 'Travis', 'points': 5613.28}, {'team': 'Mark', 'points': 5570.6}, {'team': 'Caleb', 'points': 5510.96}, {'team': 'Andrew', 'points': 5510.57}, {'team': 'Matt', 'points': 5413.31}, {'team': 'John', 'points': 5406.19}, {'team': 'Carl', 'points': 5377.96}, {'team': 'Chris', 'points': 5371.52}, {'team': 'Trond', 'points': 5289.02}, {'team': 'Logan', 'points': 4995.96}]} />
 
@@ -78,7 +78,7 @@ Next, let's convert these to weekly averages:
 
 So, does regular season PF correlate with championships? For the most part, yes. The past four champions were Mark (2023), Mark (2022), Matt (2021), and Travis (2020). Despite consistently leading the league in PF, Scottie and Callen have yet to win a championship (although Scottie did lose in the finals twice during these four seasons). Mark and Travis are in the top four scorers, and Matt's championship season looks like an outlier compared with his average performance. With this in mind, does regular season PA correlate better with championships? 
 
-First, we need to compute points against for each week in the Pandas `DataFrame`, since this is not available in the API:
+First, we need to compute points against for each week in the Pandas `DataFrame` since this is not available in the API:
 
 ```python
 def calculate_points_against(row):
@@ -124,7 +124,7 @@ def calculate_weekly_wins_against_all_opponents(row):
 matchups['wins_against_all_opponents'] = matchups.apply(calculate_weekly_wins_against_all_opponents, axis=1)
 ```
 
-This function produces an integer between 0 and 11 for any given week. When looking at the regular season averages over the past four years, we see the order shift slightly in the middle.
+This function produces an integer between 0 and 11 for any given week that corresponds to the number of teams a player would have beaten (irrespective of who they played against). When looking at the regular season averages over the past four years, we see the order shift slightly in the middle.
 
 <TeamPointsBarGraph teamPointsData={[{'team': 'Scottie', 'points': 6.125}, {'team': 'Travis', 'points': 6.107142857142857}, {'team': 'Callen', 'points': 6.071428571428571}, {'team': 'Caleb', 'points': 5.660714285714286}, {'team': 'Mark', 'points': 5.642857142857143}, {'team': 'Matt', 'points': 5.517857142857143}, {'team': 'Andrew', 'points': 5.446428571428571}, {'team': 'Carl', 'points': 5.267857142857143}, {'team': 'Chris', 'points': 5.071428571428571}, {'team': 'John', 'points': 5.071428571428571}, {'team': 'Trond', 'points': 4.517857142857143}, {'team': 'Logan', 'points': 4.303571428571429}]} />
 
@@ -132,7 +132,7 @@ Over time, this metric largely correlates with PF. At the top, Scottie leads thi
 
 # Quantifying the Luckiest Seasons
 
-Using Pandas, we can query the total number of actual wins and wins against all opponents and group by player and season.
+Using Pandas, we can query the total number of actual wins and wins against all opponents ($$w_o$$) and group by player and season.
 
 ```python
 matchups.loc[matchups['type'] == 'regular'] /
@@ -166,7 +166,7 @@ And the bottom five luckiest seasons:
 | Caleb  | 2022   | 5       | 79      | -16%    |
 | Trond  | 2023   | 3       | 59      | -17%    |
 
-Caleb's 2022 squad outscored 79 opponents, while Andrew's 2022 team outscored 61. Andrew ended up with ten wins, thus marking the luckiest season in the league's history.
+Caleb's 2022 squad outscored 79 opponents, while Andrew's 2022 team outscored 61. Andrew ended up with ten wins to Caleb's five, thus marking the luckiest season in the league's history.
 
 ## The Anatomy of a Lucky Season
 
@@ -174,11 +174,11 @@ First, let's graph Andrew's $$w_o$$ (y-axis) from the previous section by regula
 
 <WeeklyWinsBarGraph weeklyWinsData={[{'week': 1, 'wins': 8}, {'week': 2,'wins': 7}, {'week': 3, 'wins': 10}, {'week': 4,'wins': 7}, {'week': 5,'wins': 3}, {'week': 6,'wins': 4}, {'week': 7,'wins': 1, 'loss': true}, {'week': 8,'wins': 5, 'loss': true}, {'week': 9,'wins': 2}, {'week': 10,'wins': 3}, {'week': 11,'wins': 1, 'loss': true}, {'week': 12,'wins': 2}, {'week': 13,'wins': 5}, {'week': 14,'wins': 3, 'loss': true}]} />
 
-While we see that the two weeks in which he scored higher than only one team were actual losses, he benefited from five wins in which he scored higher than four or fewer teams. Andrew would secure the bye week in the playoffs, but ultimately, this lucky run wouldn't matter. Mark's team exposed him as fraudulent in the second week with a commanding 111.52 to 88.87 win. Speaking of Mark, let's look at his $$w_o$$ for his 2023 campaign to examine a season that actually mattered.
+While we see that the two weeks in which he scored higher than only one team were actual losses, he benefited from five wins in which he scored higher than only four or fewer teams. Andrew would secure the bye week in the playoffs, but ultimately, this lucky run wouldn't matter. Mark's team exposed him as fraudulent in the second round of the playoffs with a commanding 111.52 to 88.87 win. Speaking of Mark, let's look at his $$w_o$$ for his 2023 campaign to examine a season that actually mattered.
 
 <WeeklyWinsBarGraph weeklyWinsData={[{'week': 1, 'wins': 11}, {'week': 2,'wins': 4}, {'week': 3, 'wins': 4}, {'week': 4,'wins': 4}, {'week': 5,'wins': 5}, {'week': 6,'wins': 11}, {'week': 7,'wins': 5}, {'week': 8,'wins': 6}, {'week': 9,'wins': 0, 'loss': true}, {'week': 10,'wins': 7}, {'week': 11,'wins': 3, 'loss': true}, {'week': 12,'wins': 4}, {'week': 13,'wins': 1, 'loss': true}, {'week': 14,'wins': 2, 'loss': true}]} />
 
-Sure enough, Mark's team benefited in the same way as Andrew's: four wins in which he scored higher than four or fewer teams. We've finally quantified what luck looks like in the regular season.
+Sure enough, Mark's team benefited in the same way as Andrew's: four wins in which he scored higher than only four or fewer teams. We've finally quantified what luck looks like in the regular season.
 
 ## The Luckiest and Unluckiest Individual Weeks
 Since $$w_o$$ values range from 0 to 11, the unluckiest outcome is to score higher than ten other teams and still lose. By the same token, the luckiest would be to outscore only one team and still win. These have happened several times over the past four years. First, the $$w_o=10$$ losses:
