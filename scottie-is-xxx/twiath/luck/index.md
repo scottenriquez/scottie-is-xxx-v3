@@ -21,6 +21,9 @@ base_s3_path = 's3://your-bucket-name/sleeper'
 # get the leauge IDs from your Sleeper leauge's URL
 # there is one ID per season
 past_league_ids = ['541384381865115648', '706690303247065088','784536701455429632','961113588070985728']
+default_regular_season_weeks = 14
+# this is because the NFL extended the season in 2021
+year_playoff_map_exceptions = {2020: 13}
 for index, league_id in enumerate(past_league_ids):
     # as noted above, we migrated to Sleeper in 2020
     # update this value with the first year in Sleeper
@@ -39,16 +42,8 @@ for index, league_id in enumerate(past_league_ids):
             week_result['year'] = year
             # determine which weeks are regular season and which are playoffs
             # these API endpoints do not have this metadata
-            if year == 2020:
-                if week <= 13:
-                    week_result['type'] = 'regular'
-                else:
-                    week_result['type'] = 'playoff'
-            else:
-                if week <= 14:
-                    week_result['type'] = 'regular'
-                else:
-                    week_result['type'] = 'playoff'
+            playoff_week = year_playoff_map_exceptions.get(year, default_regular_season_weeks)
+            week_result['type'] = 'regular' if week <= playoff_week else 'playoff' 
             players_points_list = []
             # format the player points to support Parquet
             for players_points_week in week_result['players_points'].to_list():
@@ -110,8 +105,7 @@ w_o = ∑_{p ∈ P(r)} I(p < r.points)
 $$
 
 Where:
-- $$P(r)$$ is the set of points from all other players in the same year and week as $$r$$, defined as:
-- $$P(r) = {p | (p.year = r.year) ∧ (p.week = r.week) ∧ (p.username ≠ r.username)}$$
+- $$P(r)$$ is the set of points from all other players in the same year and week as $$r$$, defined as $${p | (p.wy = r.wy) ∧ (p.u ≠ r.u)}$$ where $$wy$$ represents week and year and $$u$$ represents username
 - $$I(condition)$$ is the indicator function, defined as: $$I(condition) = { 1 \text{ if true } 0 \text{ if false } }$$
 - $$r.points$$ represents the points from the input row
 
