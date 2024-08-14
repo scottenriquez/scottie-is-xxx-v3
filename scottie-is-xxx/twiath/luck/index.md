@@ -98,7 +98,7 @@ matchups['points_against'] = matchups.apply(calculate_points_against, axis=1)
 It appears that PA may not correlate as well as PF. First of all, weekly PF ranges (89.2 to 103.2) have a higher minimum/maximum delta than PA ranges (95.0 to 100.7). While we see Mark and Scottie in the bottom three (i.e., luckiest), Matt has the highest PA (average and total). In any case, these aggregates omit much of the story. To paint a clearer picture, let's introduce a new metric.
 
 ## Measuring Wins Against All Opponents ($$w_o$$)
-The core aspect of luck in fantasy football is scheduling and PA for a given week. For example, in our 12-team league, you could be the second-highest-scoring team and still lose the week. Likewise, you could put up the second-worst performance and win the week. Aggregating the totals for PA and PF does not account for this. However, we can measure how many teams a player would have beaten in any given week: 
+The core aspect of luck in fantasy football is scheduling (i.e., PA for a given week). For example, you could be the second-highest-scoring team and still lose the week. Likewise, you could put up the second-worst performance and win the week. Aggregating the totals for PA and PF does not account for this. However, we can measure how many teams a player would have beaten in any given week with the following formula: 
 
 $$
 w_o = ∑_{p ∈ P(r)} I(p < r.points)
@@ -106,12 +106,11 @@ $$
 
 Where:
 - $$P(r)$$ is the set of points from all other players in the same year and week as $$r$$, defined as $${p | (p.wy = r.wy) ∧ (p.u ≠ r.u)}$$ where $$wy$$ represents week and year and $$u$$ represents username
-- $$I(condition)$$ is the indicator function, defined as: $$I(condition) = { 1 \text{ if true } 0 \text{ if false } }$$
+- $$I(condition)$$ is the indicator function defined as $${ 1 \text{ if true } 0 \text{ if false } }$$
 - $$r.points$$ represents the points from the input row
 
 Or expressed in Python with the Pandas `DataFrame`:
 ```python
-# assumes that the data lake Parquet files have been read into a DataFrame called matchups
 def calculate_weekly_wins_against_all_opponents(row):
     other_player_points = list(matchups.loc[matchups['year'] == row['year']] \
         .loc[matchups['week'] == row['week']] \
@@ -140,7 +139,7 @@ matchups.loc[matchups['type'] == 'regular'] /
     .agg({'actual_win_loss':'sum','wins_against_all_opponents':'sum'})
 ```
 
-We can identify anomalous seasons by comparing the actual wins to the number of teams the player would have beaten. Using the following formula, we can convert these deltas to a percentage above expected wins (as $$Δw$$ with $$w_a$$ as actual wins and $$w_o$$ as wins over all opponents based on 14 possible wins in the regular season and 154 possible wins over all opponents):
+We can identify anomalous seasons by comparing the actual wins to the number of teams the player would have beaten. Using the following formula, we can convert these deltas to a percentage above or below actual wins (as $$Δw$$ with $$w_a$$ as actual wins and $$w_o$$ as wins over all opponents based on 14 possible wins in the regular season and 154 possible wins over all opponents):
 
 $$
 Δw = (w_a / 14) - (w_o / 154)
@@ -170,11 +169,11 @@ Caleb's 2022 squad outscored 79 opponents, while Andrew's 2022 team outscored 61
 
 ## The Anatomy of a Lucky Season
 
-First, let's graph Andrew's $$w_o$$ (y-axis) from the previous section by regular season week (x-axis) with purple indicating an actual loss:
+First, let's graph Andrew's $$w_o$$ (y-axis) over each regular season week (x-axis) with purple indicating an actual loss:
 
 <WeeklyWinsBarGraph weeklyWinsData={[{'week': 1, 'wins': 8}, {'week': 2,'wins': 7}, {'week': 3, 'wins': 10}, {'week': 4,'wins': 7}, {'week': 5,'wins': 3}, {'week': 6,'wins': 4}, {'week': 7,'wins': 1, 'loss': true}, {'week': 8,'wins': 5, 'loss': true}, {'week': 9,'wins': 2}, {'week': 10,'wins': 3}, {'week': 11,'wins': 1, 'loss': true}, {'week': 12,'wins': 2}, {'week': 13,'wins': 5}, {'week': 14,'wins': 3, 'loss': true}]} />
 
-While we see that the two weeks in which he scored higher than only one team were actual losses, he benefited from five wins in which he scored higher than only four or fewer teams. Andrew would secure the bye week in the playoffs, but ultimately, this lucky run wouldn't matter. Mark's team exposed him as fraudulent in the second round of the playoffs with a commanding 111.52 to 88.87 win. Speaking of Mark, let's look at his $$w_o$$ for his 2023 campaign to examine a season that actually mattered.
+While we see that the two weeks in which he scored higher than only one team were actual losses, he benefited from five wins in which he scored higher than only four or fewer teams. Andrew would secure the bye week in the playoffs this season, but ultimately, this lucky run wouldn't matter. Mark's team exposed him as fraudulent in the second round of the playoffs with a commanding 111.52 to 88.87 win. Speaking of Mark, let's look at his $$w_o$$ for his 2023 campaign to examine a season that ended in victory.
 
 <WeeklyWinsBarGraph weeklyWinsData={[{'week': 1, 'wins': 11}, {'week': 2,'wins': 4}, {'week': 3, 'wins': 4}, {'week': 4,'wins': 4}, {'week': 5,'wins': 5}, {'week': 6,'wins': 11}, {'week': 7,'wins': 5}, {'week': 8,'wins': 6}, {'week': 9,'wins': 0, 'loss': true}, {'week': 10,'wins': 7}, {'week': 11,'wins': 3, 'loss': true}, {'week': 12,'wins': 4}, {'week': 13,'wins': 1, 'loss': true}, {'week': 14,'wins': 2, 'loss': true}]} />
 
