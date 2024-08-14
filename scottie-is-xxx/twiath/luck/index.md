@@ -146,7 +146,7 @@ $$
 Δw = (w_a / t) - (w_o / (11t))
 $$
 
-For 2021 and on, $$t$$ is equal to 14. For 2020 and prior, $$t$$ is equal to 13. Based on this metric, let's look at the top five luckiest seasons:
+For 2021 and on, $$t=14$$. For 2020 and prior, $$t=13$$. Based on this metric, let's look at the top five luckiest seasons:
 
 | Name   | Season | $$w_a$$ | $$w_o$$ | $$Δw$$ |
 |--------|--------|---------|---------|--------|
