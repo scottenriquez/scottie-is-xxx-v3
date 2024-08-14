@@ -97,7 +97,7 @@ matchups['points_against'] = matchups.apply(calculate_points_against, axis=1)
 
 It appears that PA may not correlate as well as PF. First of all, weekly PF ranges (89.2 to 103.2) have a higher minimum/maximum delta than PA ranges (95.0 to 100.7). While we see Mark and Scottie in the bottom three (i.e., luckiest), Matt has the highest PA (average and total). In any case, these aggregates omit much of the story. To paint a clearer picture, let's introduce a new metric.
 
-## Measuring Wins Against All Opponents ($$w_o$$)
+## Measuring Wins Against All Opponents
 The core aspect of luck in fantasy football is scheduling (i.e., PA for a given week). For example, you could be the second-highest-scoring team and still lose the week. Likewise, you could put up the second-worst performance and win the week. Aggregating the totals for PA and PF does not account for this. However, we can measure how many teams a player would have beaten in any given week with the following formula: 
 
 $$
@@ -110,6 +110,7 @@ Where:
 - $$r.points$$ represents the points from the input row
 
 Or expressed in Python with the Pandas `DataFrame`:
+
 ```python
 def calculate_weekly_wins_against_all_opponents(row):
     other_player_points = list(matchups.loc[matchups['year'] == row['year']] \
