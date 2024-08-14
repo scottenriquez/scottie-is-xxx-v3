@@ -1,6 +1,6 @@
 ---
 title: "Analyzing Luck in the League's Recent History"
-date: "2024-08-15"
+date: "2024-08-13"
 description: "Determining who is the luckiest person in the league."
 authors: [scottie, callen]
 tags: ["Data Analysis Blog"]
