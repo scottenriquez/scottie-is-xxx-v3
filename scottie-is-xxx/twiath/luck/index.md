@@ -140,31 +140,31 @@ matchups.loc[matchups['type'] == 'regular'] /
     .agg({'actual_win_loss':'sum','wins_against_all_opponents':'sum'})
 ```
 
-We can identify anomalous seasons by comparing the actual wins to the number of teams the player would have beaten. Using the following formula, we can convert these deltas to a percentage above or below actual wins (as $$Δw$$ with $$w_a$$ as actual wins and $$w_o$$ as wins over all opponents based on 14 possible wins in the regular season and 154 possible wins over all opponents):
+We can identify anomalous seasons by comparing the actual wins to the number of teams the player would have beaten. Using the following formula, we can convert these deltas to a percentage above or below actual wins (as $$Δw$$ with $$w_a$$ as actual wins and $$w_o$$ as wins over all opponents based on $$t$$ possible wins in the regular season and $$11t$$ possible wins over all opponents):
 
 $$
-Δw = (w_a / 14) - (w_o / 154)
+Δw = (w_a / t) - (w_o / (11t))
 $$
 
-Based on this metric, let's look at the top five luckiest seasons:
+For 2021 and on, $$t$$ is equal to 14. For 2020 and prior, $$t$$ is equal to 13. Based on this metric, let's look at the top five luckiest seasons:
 
-| Name   | Season | $$w_a$$ | $$w_o$$ | $$Δw$$  |
-|--------|--------|---------|---------|---------|
-| Andrew | 2022   | 10      | 61      | 32%     |
-| Mark   | 2023   | 10      | 67      | 28%     |
-| Carl   | 2020   | 10      | 83      | 18%     |
-| Carl   | 2023   | 9       | 73      | 17%     |
-| Logan  | 2023   | 7       | 52      | 16%     |
+| Name   | Season | $$w_a$$ | $$w_o$$ | $$Δw$$ |
+|--------|--------|---------|---------|--------|
+| Andrew | 2022   | 10      | 61      | 32%    |
+| Mark   | 2023   | 10      | 67      | 28%    |
+| Carl   | 2020   | 10      | 83      | 19%    |
+| Carl   | 2023   | 9       | 73      | 17%    |
+| Logan  | 2023   | 7       | 52      | 16%    |
 
 And the bottom five luckiest seasons:
 
-| Name   | Season | $$w_a$$ | $$w_o$$ | $$Δw$$  |
-|--------|--------|---------|---------|---------|
-| Carl   | 2022   | 5       | 73      | -12%    |
-| Callen | 2020   | 7       | 95      | -12%    |
-| John   | 2023   | 5       | 77      | -14%    |
-| Caleb  | 2022   | 5       | 79      | -16%    |
-| Trond  | 2023   | 3       | 59      | -17%    |
+| Name   | Season | $$w_a$$ | $$w_o$$ | $$Δw$$ |
+|--------|--------|---------|---------|--------|
+| Carl   | 2022   | 5       | 73      | -12%   |
+| Callen | 2020   | 7       | 95      | -13%   |
+| John   | 2023   | 5       | 77      | -14%   |
+| Caleb  | 2022   | 5       | 79      | -16%   |
+| Trond  | 2023   | 3       | 59      | -17%   |
 
 Caleb's 2022 squad outscored 79 opponents, while Andrew's 2022 team outscored 61. Andrew ended up with ten wins to Caleb's five, thus marking the luckiest season in the league's history.
 
