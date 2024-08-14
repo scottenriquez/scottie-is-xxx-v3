@@ -1,5 +1,5 @@
 ---
-title: "Analyzing Luck in the League's Recent History (WIP)"
+title: "Analyzing Luck in the League's Recent History"
 date: "2024-08-15"
 description: "Determining who is the luckiest person in the league."
 authors: [scottie, callen]
@@ -7,6 +7,7 @@ tags: ["Data Analysis Blog"]
 ---
 
 import TeamPointsBarGraph from '../../src/components/FantasyFootball/LuckAnalysis/teamPointsBarGraph'
+import WeeklyWinsBarGraph from '../../src/components/FantasyFootball/LuckAnalysis/weeklyWinsBarGraph'
 
 ## Background
 The Winner Is a Tryhard, affectionately known as TWIATH, began in 2014 and has been going strong ever since. We started our journey on ESPN before migrating to Sleeper in 2020. A few years ago, ESPN quietly deleted many leagues' histories without warning, including ours. We had previously stored some historical data in an EBS snapshot in AWS, but sadly, we haven't been able to recover the full dataset. Since Sleeper provides an API for accessing data (and most of us are nerds who work as technology professionals), I opted to use this to create a data lake in AWS to prevent this from happening again. More importantly, I wanted to use this data to start answering some important questions, such as, who is the luckiest person in league history?
@@ -86,11 +87,14 @@ First, we need to compute points against for each week in the Pandas `DataFrame`
 
 ```python
 def calculate_points_against(row):
-    points_against = matchups.loc[matchups['year'] == row['year']].loc[matchups['week'] == row['week']].loc[matchups['matchup_id'] == row['matchup_id']].loc[matchups['owner_id'] != row['owner_id']]['points'].values
+    points_against = matchups.loc[matchups['year'] == row['year']] \
+        .loc[matchups['week'] == row['week'] \
+        .loc[matchups['matchup_id'] == row['matchup_id']] \
+        .loc[matchups['owner_id'] != row['owner_id']]['points'].values
     if len(points_against) == 1:
         return points_against[0]
     else:
-        return 0
+        return 0.0
 matchups['points_against'] = matchups.apply(calculate_points_against, axis=1)
 ```
 
@@ -109,13 +113,15 @@ Where:
 - $$P(r)$$ is the set of points from all other players in the same year and week as $$r$$, defined as:
 - $$P(r) = {p | (p.year = r.year) ∧ (p.week = r.week) ∧ (p.username ≠ r.username)}$$
 - $$I(condition)$$ is the indicator function, defined as: $$I(condition) = { 1 \text{ if true } 0 \text{ if false } }$$
-- $$r.points$$ represents the points of the input row
+- $$r.points$$ represents the points from the input row
 
 Or expressed in Python with the Pandas `DataFrame`:
 ```python
 # assumes that the data lake Parquet files have been read into a DataFrame called matchups
 def calculate_weekly_wins_against_all_opponents(row):
-    other_player_points = list(matchups.loc[matchups['year'] == row['year']].loc[matchups['week'] == row['week']].loc[matchups['username'] != row['username']]['points'])
+    other_player_points = list(matchups.loc[matchups['year'] == row['year']] \
+        .loc[matchups['week'] == row['week']] \
+        .loc[matchups['username'] != row['username']]['points'])
     wins_against_all_opponents = 0.0
     for other_player_point in other_player_points:
         if other_player_point < row['points']:
@@ -130,21 +136,23 @@ This function produces an integer between 0 and 11 for any given week. When look
 
 # Quantifying the Luckiest Seasons
 
-Using Pandas, we can query the total number of wins and wins against all opponents and group by player and season.
+Using Pandas, we can query the total number of actual wins and wins against all opponents and group by player and season.
 
 ```python
-matchups.loc[matchups['type'] == 'regular'].groupby(['username', 'year']).agg({'actual_win_loss':'sum','wins_against_all_opponents':'sum'})
+matchups.loc[matchups['type'] == 'regular'] /
+    .groupby(['username', 'year']) \
+    .agg({'actual_win_loss':'sum','wins_against_all_opponents':'sum'})
 ```
 
-We can identify anomalous seasons by comparing the actual wins to the number of teams the player would have beaten. Using the following formula, we can convert these deltas to a percentage above expected wins (as $$Δ_p$$ with $$w_a$$ as actual wins and $$w_o$$ as wins over all opponents based on 14 possible wins in the regular season and 154 possible wins over all opponents):
+We can identify anomalous seasons by comparing the actual wins to the number of teams the player would have beaten. Using the following formula, we can convert these deltas to a percentage above expected wins (as $$Δw$$ with $$w_a$$ as actual wins and $$w_o$$ as wins over all opponents based on 14 possible wins in the regular season and 154 possible wins over all opponents):
 
 $$
-Δ_p = (w_a / 14) - (w_o / 154)
+Δw = (w_a / 14) - (w_o / 154)
 $$
 
 Based on this metric, let's look at the top five luckiest seasons:
 
-| Name   | Season | $$w_a$$ | $$w_o$$ | $$Δ_p$$ |
+| Name   | Season | $$w_a$$ | $$w_o$$ | $$Δw$$  |
 |--------|--------|---------|---------|---------|
 | Andrew | 2022   | 10      | 61      | 32%     |
 | Mark   | 2023   | 10      | 67      | 28%     |
@@ -152,9 +160,9 @@ Based on this metric, let's look at the top five luckiest seasons:
 | Carl   | 2023   | 9       | 73      | 17%     |
 | Logan  | 2023   | 7       | 52      | 16%     |
 
-And the bottom five seasons:
+And the bottom five luckiest seasons:
 
-| Name   | Season | $$w_a$$ | $$w_o$$ | $$Δ_p$$ |
+| Name   | Season | $$w_a$$ | $$w_o$$ | $$Δw$$  |
 |--------|--------|---------|---------|---------|
 | Carl   | 2022   | 5       | 73      | -12%    |
 | Callen | 2020   | 7       | 95      | -12%    |
@@ -163,3 +171,54 @@ And the bottom five seasons:
 | Trond  | 2023   | 3       | 59      | -17%    |
 
 Caleb's 2022 squad outscored 79 opponents, while Andrew's 2022 team outscored 61. Andrew ended up with ten wins, thus marking the luckiest season in the league's history.
+
+## The Anatomy of a Lucky Season
+
+First, let's graph Andrew's $$Δw$$ (y-axis) from the previous section by regular season week (x-axis) with purple indicating an actual loss:
+
+<WeeklyWinsBarGraph weeklyWinsData={[{'week': 1, 'wins': 8}, {'week': 2,'wins': 7}, {'week': 3, 'wins': 10}, {'week': 4,'wins': 7}, {'week': 5,'wins': 3}, {'week': 6,'wins': 4}, {'week': 7,'wins': 1, 'loss': true}, {'week': 8,'wins': 5, 'loss': true}, {'week': 9,'wins': 2}, {'week': 10,'wins': 3}, {'week': 11,'wins': 1, 'loss': true}, {'week': 12,'wins': 2}, {'week': 13,'wins': 5}, {'week': 14,'wins': 3, 'loss': true}]} />
+
+While we see that the two weeks in which he scored higher than only one team were actual losses, he benefited from five wins in which he scored higher than four or fewer teams. Andrew would secure the bye week in the playoffs, but ultimately, this lucky run wouldn't matter. Mark's team exposed him as fraudulent in the second week with a commanding 111.52 to 88.87 win. Speaking of Mark, let's look at his $$Δw$$ for his 2023 campaign to examine a season that actually mattered.
+
+<WeeklyWinsBarGraph weeklyWinsData={[{'week': 1, 'wins': 11}, {'week': 2,'wins': 4}, {'week': 3, 'wins': 4}, {'week': 4,'wins': 4}, {'week': 5,'wins': 5}, {'week': 6,'wins': 11}, {'week': 7,'wins': 5}, {'week': 8,'wins': 6}, {'week': 9,'wins': 0, 'loss': true}, {'week': 10,'wins': 7}, {'week': 11,'wins': 3, 'loss': true}, {'week': 12,'wins': 4}, {'week': 13,'wins': 1, 'loss': true}, {'week': 14,'wins': 2, 'loss': true}]} />
+
+Sure enough, Mark's team benefited in the same way as Andrew's: four wins in which he scored higher than four or fewer teams. We've finally captured what luck looks like in the regular season.
+
+## The Luckiest and Unluckiest Individual Weeks
+Since $$w_o$$ values range from 0 to 11, the unluckiest outcome is to score higher than ten other teams and still lose. By the same token, the luckiest would be to outscore only one team and still win. These have happened several times over the past four years. First, the $$w_o=10$$ losses:
+
+```python
+matchups.loc[matchups['type'] == 'regular'] \
+    .loc[matchups['wins_against_all_opponents'] == 10] \
+    .loc[matchups['actual_win_loss'] == 0] \
+    .groupby(['username', 'year', 'week']) \
+    .sum()
+```
+
+| Name   | Year  | Week  | PF        | PA        |
+|--------|-------|-------|-----------|-----------|
+| Travis | 2023  |   9   |   119.48  |   166.01  |
+| John   | 2020  |   8   |   109.42  |   114.39  |
+| Logan  | 2020  |   1   |   115.15  |   127.59  |
+| Matt   | 2023  |   4   |   129.45  |   154.08  |
+| Caleb  | 2021  |   14  |   130.06  |   130.74  |
+| Caleb  | 2022  |   7   |   136.90  |   141.45  |
+
+Next, the $$w_o=1$$ wins:
+
+```python
+matchups.loc[matchups['type'] == 'regular'] \
+    .loc[matchups['wins_against_all_opponents'] == 1] \
+    .loc[matchups['actual_win_loss'] == 1] \
+    .groupby(['username', 'year', 'week']) \
+    .sum()
+```
+
+| Name   | Year  | Week  | PF        | PA        |
+|--------|-------|-------|-----------|-----------|
+| Callen | 2021  |  12   |   64.07   |   56.10   |
+| Callen | 2022  |   3   |   78.12   |   74.83   |
+| Caleb  | 2021  |   1   |   74.64   |   58.41   |
+
+## Conclusion
+Over time, luck regresses to the mean. We can spot it in an individual season or week, but luck-based metrics like PA tend to balance out within a few points on average. Skill-based metrics like PF and $$w_o$$ have wider ranges and identify performance outliers, such as Logan at the bottom of both. However, luck is clearly still required to win the championship, as evidenced by Scottie and Callen, who lead the skill metrics and have yet to win.
