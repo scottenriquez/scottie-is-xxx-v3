@@ -38,7 +38,7 @@ const getGoogleMapsOptionsSettings = () => {
             {
                 featureType: "administrative.country",
                 elementType: "labels.text.fill",
-                stylers: [{ color: "#50fa7b" }],
+                stylers: [{ color: "#a4ff90" }],
             },
             {
                 featureType: "administrative.locality",
@@ -48,7 +48,7 @@ const getGoogleMapsOptionsSettings = () => {
             {
                 featureType: "administrative.neighborhood",
                 elementType: "labels.text.fill",
-                stylers: [{ color: "#50fa7b" }],
+                stylers: [{ color: "#a4ff90" }],
             },
             {
                 featureType: "landscape",
@@ -72,7 +72,7 @@ const getGoogleMapsOptionsSettings = () => {
             {
                 featureType: "road.highway",
                 elementType: "geometry.fill",
-                stylers: [{ color: "#50fa7b" }, { lightness: "0" }],
+                stylers: [{ color: "#a4ff90" }, { lightness: "0" }],
             },
             {
                 featureType: "road.highway",
@@ -87,7 +87,7 @@ const getGoogleMapsOptionsSettings = () => {
             {
                 featureType: "road.highway",
                 elementType: "labels.text.stroke",
-                stylers: [{ color: "#50fa7b" }],
+                stylers: [{ color: "#a4ff90" }],
             },
             {
                 featureType: "road.arterial",

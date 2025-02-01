@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {nightOwl, oceanicNext, palenight, themes as prismThemes} from 'prism-react-renderer';
+import {themes as prismThemes} from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
@@ -117,8 +117,7 @@ const config = {
         },
       },
       prism: {
-        theme: prismThemes.dracula,
-        darkTheme: prismThemes.dracula,
+        darkTheme: prismThemes.shadesOfPurple,
         additionalLanguages: ['bash', 'diff', 'json', 'yaml', 'csharp', 'hcl', 'toml', 'sql', 'docker', 'editorconfig', 'swift', 'markdown', 'typescript', 'jsx', 'python', 'graphql']
       },
       colorMode: {

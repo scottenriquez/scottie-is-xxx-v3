@@ -40,11 +40,11 @@ class BarChartTickValues extends Component {
               .filter((v) => x(v) !== undefined)
           )
           .tickSizeOuter(0))
-        .style('color', '#50fa7b');
+        .style('color', '#a4ff90');
     const y1Axis = (g) =>
       g
         .attr('transform', `translate(${margin.left},0)`)
-        .style('color', '#50fa7b')
+        .style('color', '#a4ff90')
         .call(d3.axisLeft(y1).ticks(null, 's'))
         .call((g) => g.select('.domain').remove())
         .call((g) =>
@@ -60,7 +60,7 @@ class BarChartTickValues extends Component {
     svg.select('.y-axis').call(y1Axis);
     svg
       .select('.plot-area')
-      .attr('fill', '#50fa7b')
+      .attr('fill', '#a4ff90')
       .selectAll('.bar')
       .data(this.props.data)
       .join('rect')

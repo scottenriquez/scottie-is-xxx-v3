@@ -6,24 +6,25 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #bd93f9;
+  --ifm-color-primary: #b362ff;
   --ifm-color-primary-dark:#6272a4;
   --ifm-color-primary-darker: #44475a;
   --ifm-color-primary-darkest: #282a36;
-  --ifm-color-primary-light: #50fa7b;
+  --ifm-color-primary-light: #a4ff90;
   --ifm-color-primary-lighter: #ff79c6;
   --ifm-color-primary-lightest: #8be9fd;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #bd93f9;
+  --ifm-color-primary: #b362ff;
   --ifm-color-primary-dark:#6272a4;
   --ifm-color-primary-darker: #44475a;
   --ifm-color-primary-darkest: #282a36;
-  --ifm-color-primary-light: #50fa7b;
+  --ifm-color-primary-light: #a4ff90;
   --ifm-color-primary-lighter: #ff79c6;
   --ifm-color-primary-lightest: #8be9fd;
   --ifm-code-font-size: 95%;
@@ -69,11 +70,15 @@ table {
 }
 
 .levelUp {
-  color: #50fa7b;
+  color: #a4ff90;
   height: 30px;
 }
 
 .levelDown {
-  color: #ff5555;
+  color: #ff628c;
   height: 30px;
+}
+
+code {
+  color: #ff9d00;
 }

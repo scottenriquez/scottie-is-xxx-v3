@@ -31,7 +31,7 @@ class RandomNormalDistribution extends Component {
     render() {
         return (
             <div>
-                <button className={'button button--secondary button--md'} style={{ backgroundColor: '#50fa7b', color: 'black' }} onClick={this.handleRefreshDataClick}>
+                <button className={'button button--secondary button--md'} style={{ backgroundColor: '#a4ff90', color: 'black' }} onClick={this.handleRefreshDataClick}>
                     <FontAwesomeIcon icon={faRefresh} /> Generate New Data
                 </button>
                 <BarChartTickValues data={this.generateRandomData()} xAxisName={'index'} yAxisName={'value'} />

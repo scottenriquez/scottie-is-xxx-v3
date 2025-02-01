@@ -187,7 +187,7 @@ const generateSphere = () => {
   const z = Math.random() * 100 - 50;
   const sphereLocationVector = new THREE.Vector3(x, y, z);
   const sphereGeometry = new THREE.SphereGeometry(5, 32, 32);
-  const sphereMaterial = new THREE.MeshStandardMaterial({color: 0x50fa7b, roughness: 0});
+  const sphereMaterial = new THREE.MeshStandardMaterial({color: 0xa4ff90, roughness: 0});
   const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
   sphere.position.set(sphereLocationVector.x, sphereLocationVector.y, sphereLocationVector.z);
   return sphere;

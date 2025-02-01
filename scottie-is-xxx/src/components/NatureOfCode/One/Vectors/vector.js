@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import SceneInit from './sceneInit';
 
 const generateLine = (vectors) => {
-  const material = new THREE.LineBasicMaterial({color: 0x50fa7b});
+  const material = new THREE.LineBasicMaterial({color: 0xa4ff90});
   const geometry = new THREE.BufferGeometry().setFromPoints(vectors);
   return new THREE.Line(geometry, material);
 };
