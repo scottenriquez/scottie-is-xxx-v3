@@ -11,7 +11,7 @@ import rehypeKatex from 'rehype-katex';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Scottie Enriquez',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon-grey.ico',
 
   // Set the production url of your site here
   url: 'https://scottie.is',
