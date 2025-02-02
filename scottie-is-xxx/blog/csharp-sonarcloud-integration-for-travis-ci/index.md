@@ -73,7 +73,3 @@ Your Travis CI build will fail if there are any issues with the SonarScanner com
 ## References
 
 I was able to find [a project called NGenerics](https://github.com/ngenerics/ngenerics) that utilizes an older version of SonarScanner with some syntax differences. There was also [a short blog post by Riaan Hanekom](https://riaanhanekom.com/2018/01/21/using-sonar-cloud-on-net-core-with-travis) that expands on it. These were extremely helpful starting points.
-
-## Travis CI Build Status
-
-[![Build Status](https://travis-ci.org/scottenriquez/sonarcloud-travis-ci-csharp.svg?branch=master)](https://travis-ci.org/scottenriquez/sonarcloud-travis-ci-csharp)

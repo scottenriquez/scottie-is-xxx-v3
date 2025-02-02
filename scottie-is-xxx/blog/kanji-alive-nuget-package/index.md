@@ -34,10 +34,6 @@ KanjiAliveClient client = new KanjiAliveClient(Environment.GetEnvironmentVariabl
 
 Please ensure that any code additions follow the styling laid out in the `.DotSettings` file and that all unit and integration tests pass before submitting a pull request. For break fixes, please add tests. For any questions, issues, or enhancements, please use the issue tracker for this repository.
 
-## Build Status
-
-[![Build status](https://travis-ci.org/scottenriquez/kanji-alive-nuget.svg?branch=master)](https://travis-ci.org/scottenriquez/kanji-alive-nuget)
-
 ## Thanks
 
 Special thanks to the Kanji Alive team for not only providing their kanji data in a clean, consumable format, but also for hosting a RESTful API to expose it too. Note that if you would like to include this kanji data locally in your project, you can download the language data and media directly from [this repo](https://github.com/kanjialive/kanji-data-media).

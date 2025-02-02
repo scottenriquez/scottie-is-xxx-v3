@@ -1,5 +1,5 @@
 ---
-title: 📌 Contribution Documentation 
+title: Contribution Documentation 
 date: "2020-08-08"
 description: "Documentation for creating new content on the league site."
 authors: [scottie]
