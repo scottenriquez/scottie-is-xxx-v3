@@ -5,10 +5,6 @@ date: "2016-11-06"
 description: "An epic trip to start the season."
 tags: ["Travel"]
 ---
-import getGoogleMapsAPIKey from '../../src/services/googleMapsAPIKeyService'
-import getGoogleMapsOptionsSettings from '../../src/services/googleMapsOptionsService'
-import GoogleMapReact from 'google-map-react'
-import MapMarker from '../../src/components/GoogleMaps/mapMarker'
 import CustomMap from '../../src/components/GoogleMaps/customMap'
 
 ## The Plan
