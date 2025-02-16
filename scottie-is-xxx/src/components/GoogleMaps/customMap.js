@@ -1,20 +1,21 @@
 import React from "react"
 import getGoogleMapsAPIKey from '../../services/googleMapsAPIKeyService.js'
 import getGoogleMapsOptionsSettings from '../../services/googleMapsOptionsService.js'
-import GoogleMapReact from 'google-map-react'
-import MapMarker from './mapMarker.js'
+import { Marker, APIProvider, Map } from '@vis.gl/react-google-maps';
 
 export default function({ defaultZoom, defaultCenter, markers }) {
+    const { styles } = getGoogleMapsOptionsSettings();
     return (
-        <GoogleMapReact
-            bootstrapURLKeys={{ key: getGoogleMapsAPIKey() }}
-            defaultCenter={defaultCenter}
-            defaultZoom={defaultZoom}
-            options={getGoogleMapsOptionsSettings()}
-        >
-            {markers.map(({lat, lng}) => (
-                <MapMarker key={lat} lat={lat} lng={lng} />
-            ))}
-        </GoogleMapReact>
+        <APIProvider apiKey={getGoogleMapsAPIKey()}>
+            <Map
+                defaultCenter={defaultCenter}
+                defaultZoom={defaultZoom}
+                styles={styles}
+            >
+                {markers.map(({ lat, lng }, i) => (
+                    <Marker key={i} position={{ lat, lng }} />
+                ))}
+            </Map>
+        </APIProvider>
     )
 }
