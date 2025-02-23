@@ -5,24 +5,18 @@ date: "2016-11-06"
 description: "An epic trip to start the season."
 tags: ["Travel"]
 ---
-import getGoogleMapsAPIKey from '../../src/services/googleMapsAPIKeyService'
-import getGoogleMapsOptionsSettings from '../../src/services/googleMapsOptionsService'
-import GoogleMapReact from 'google-map-react'
-import MapMarker from '../../src/components/GoogleMaps/mapMarker'
+import CustomMap from '../../src/components/GoogleMaps/customMap'
 
 ## The Plan
 Before the start of the 2016 college football season, two good friends and I decided to make an epic pilgrimage for the opening weekend. While most games are played on Saturdays, it just so happened that our alma maters played on Friday, Saturday, and Sunday of Labor Day weekend. The three of us all lived in Oklahoma at the time, so we began planning the logistics to see if it would even be physically possible to be at each stadium by kickoff. The match ups were Kansas State at Stanford in Palo Alto, California (for Chris), UCLA at Texas A&M in College Station, Texas (for Callen), and Notre Dame at UT in Austin, Texas (for me). Despite requiring about 4,500 miles of total travel, we determined that it would be possible to see all the games barring any sort of delays. We took a gamble, and this is how it all played out.
 
 ## Thursday, September 1st
 <div style={{ height: '50vh', width: '100%' }}>
-    <GoogleMapReact
-        bootstrapURLKeys={{ key: getGoogleMapsAPIKey() }}
-        defaultCenter={{lat: 32.899800, lng: -97.040636}}
+    <CustomMap
         defaultZoom={9}
-        options={getGoogleMapsOptionsSettings()}
-    >
-    <MapMarker lat={32.899800} lng={-97.040636} />
-    </GoogleMapReact>
+        defaultCenter={{lat: 32.899800, lng: -97.040636}}
+        markers={[{lat: 32.899800, lng: -97.040636}]}
+    />
 </div>
 <br />
 
@@ -30,14 +24,11 @@ The journey began with a five-hour drive from northern Oklahoma to a hotel adjac
 
 ## Friday, September 2nd
 <div style={{ height: '50vh', width: '100%' }}>
-    <GoogleMapReact
-        bootstrapURLKeys={{ key: getGoogleMapsAPIKey() }}
-        defaultCenter={{lat: 37.712384, lng: -122.218832}}
+    <CustomMap
         defaultZoom={9}
-        options={getGoogleMapsOptionsSettings()}
-    >
-    <MapMarker lat={37.712384} lng={-122.218832} />
-    </GoogleMapReact>
+        defaultCenter={{lat: 37.712384, lng: -122.218832}}
+        markers={[{lat: 37.712384, lng: -122.218832}]}
+    />
 </div>
 <br />
 
@@ -62,14 +53,11 @@ After the very solid matchup, we took an Uber from Palo Alto back to San Francis
 ## Saturday, September 3rd
 
 <div style={{ height: '50vh', width: '100%' }}>
-    <GoogleMapReact
-        bootstrapURLKeys={{ key: getGoogleMapsAPIKey() }}
-        defaultCenter={{lat: 30.619470, lng: -96.338035}}
+    <CustomMap
         defaultZoom={9}
-        options={getGoogleMapsOptionsSettings()}
-    >
-    <MapMarker lat={30.619470} lng={-96.338035} />
-    </GoogleMapReact>
+        defaultCenter={{lat: 30.619470, lng: -96.338035}}
+        markers={[{lat: 30.619470, lng: -96.338035}]}
+    />
 </div>
 <br />
 
@@ -93,14 +81,11 @@ As much as I would have liked to check out the local scene, we ate Buffalo Wild 
 
 ## Sunday, September 4th
 <div style={{ height: '50vh', width: '100%' }}>
-    <GoogleMapReact
-        bootstrapURLKeys={{ key: getGoogleMapsAPIKey() }}
-        defaultCenter={{lat: 30.283983, lng: -97.732759}}
+    <CustomMap
         defaultZoom={9}
-        options={getGoogleMapsOptionsSettings()}
-    >
-    <MapMarker lat={30.283983} lng={-97.732759} />
-    </GoogleMapReact>
+        defaultCenter={{lat: 30.283983, lng: -97.732759}}
+        markers={[{lat: 30.283983, lng: -97.732759}]}
+    />
 </div>
 <br />
 

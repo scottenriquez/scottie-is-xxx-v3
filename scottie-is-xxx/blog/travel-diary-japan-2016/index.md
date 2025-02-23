@@ -5,21 +5,15 @@ date: "2016-06-05"
 description: "A detailed log from my second journey to Japan."
 tags: ["Travel"]
 ---
-import getGoogleMapsAPIKey from '../../src/services/googleMapsAPIKeyService'
-import getGoogleMapsOptionsSettings from '../../src/services/googleMapsOptionsService'
-import GoogleMapReact from 'google-map-react'
-import MapMarker from '../../src/components/GoogleMaps/mapMarker'
+import CustomMap from '../../src/components/GoogleMaps/customMap'
 
 ## April 30th, 2016 - 電車の風 - Tokyo
 <div style={{ height: '50vh', width: '100%' }}>
-    <GoogleMapReact
-        bootstrapURLKeys={{ key: getGoogleMapsAPIKey() }}
-        defaultCenter={{lat: 35.772230, lng: 140.392904}}
+    <CustomMap
         defaultZoom={7}
-        options={getGoogleMapsOptionsSettings()}
-    >
-    <MapMarker lat={35.772230} lng={140.392904} />
-    </GoogleMapReact>
+        defaultCenter={{lat: 35.772230, lng: 140.392904}}
+        markers={[{lat: 35.772230, lng: 140.392904}]}
+    />
 </div>
 <br />
 
@@ -31,14 +25,11 @@ We all purchased our tickets and awaited the Skyliner express train. Right on sc
 
 ## May 1st, 2016 - Nooks and Crannies - Tokyo
 <div style={{ height: '50vh', width: '100%' }}>
-    <GoogleMapReact
-        bootstrapURLKeys={{ key: getGoogleMapsAPIKey() }}
-        defaultCenter={{lat: 35.710324, lng: 139.810657}}
+    <CustomMap
         defaultZoom={9}
-        options={getGoogleMapsOptionsSettings()}
-    >
-    <MapMarker lat={35.710324} lng={139.810657} />
-    </GoogleMapReact>
+        defaultCenter={{lat: 35.710324, lng: 139.810657}}
+        markers={[{lat: 35.710324, lng: 139.810657}]}
+    />
 </div>
 <br />
 
@@ -54,14 +45,11 @@ That’s not to say that you're never exposed to copious amount of people. From 
 
 ## May 2nd, 2016 - Sea of Trees - Aokigahara
 <div style={{ height: '50vh', width: '100%' }}>
-    <GoogleMapReact
-        bootstrapURLKeys={{ key: getGoogleMapsAPIKey() }}
-        defaultCenter={{lat: 35.491928, lng: 138.682636}}
+    <CustomMap
         defaultZoom={7}
-        options={getGoogleMapsOptionsSettings()}
-    >
-    <MapMarker lat={35.491928} lng={138.682636} />
-    </GoogleMapReact>
+        defaultCenter={{lat: 35.491928, lng: 138.682636}}
+        markers={[{lat: 35.491928, lng: 138.682636}]}
+    />
 </div>
 <br />
 
@@ -95,14 +83,11 @@ We decided to follow the tissues. Honestly, I hadn't taken into consideration wh
 
 ## May 3rd, 2016 - Change of Pace - Chiba
 <div style={{ height: '50vh', width: '100%' }}>
-    <GoogleMapReact
-        bootstrapURLKeys={{ key: getGoogleMapsAPIKey() }}
-        defaultCenter={{lat: 35.644085, lng: 140.04023}}
+    <CustomMap
         defaultZoom={7}
-        options={getGoogleMapsOptionsSettings()}
-    >
-    <MapMarker lat={35.644085} lng={140.04023} />
-    </GoogleMapReact>
+        defaultCenter={{lat: 35.644085, lng: 140.04023}}
+        markers={[{lat: 35.644085, lng: 140.04023}]}
+    />
 </div>
 <br />
 
@@ -112,14 +97,11 @@ I had the pleasure of seeing two of my favorite bands that I frequently listened
 
 ## May 4th-5th, 2016 - The Old City - Kyoto
 <div style={{ height: '50vh', width: '100%' }}>
-    <GoogleMapReact
-        bootstrapURLKeys={{ key: getGoogleMapsAPIKey() }}
-        defaultCenter={{lat: 35.012881, lng: 135.677749}}
+    <CustomMap
         defaultZoom={8}
-        options={getGoogleMapsOptionsSettings()}
-    >
-    <MapMarker lat={35.012881} lng={135.677749} />
-    </GoogleMapReact>
+        defaultCenter={{lat: 35.012881, lng: 135.677749}}
+        markers={[{lat: 35.012881, lng: 135.677749}]}
+    />
 </div>
 <br />
 
@@ -143,14 +125,11 @@ The next day was mostly reserved for traveling. From Kyoto Station, we went to K
 
 ## May 5th-8th, 2016 - Texas in the Pacific - Okinawa
 <div style={{ height: '50vh', width: '100%' }}>
-    <GoogleMapReact
-        bootstrapURLKeys={{ key: getGoogleMapsAPIKey() }}
-        defaultCenter={{lat: 26.699348, lng: 127.902083}}
+    <CustomMap
         defaultZoom={7}
-        options={getGoogleMapsOptionsSettings()}
-    >
-    <MapMarker lat={26.699348} lng={127.902083} />
-    </GoogleMapReact>
+        defaultCenter={{lat: 26.699348, lng: 127.902083}}
+        markers={[{lat: 26.699348, lng: 127.902083}]}
+    />
 </div>
 <br />
 
