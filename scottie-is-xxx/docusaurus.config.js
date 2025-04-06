@@ -106,7 +106,6 @@ const config = {
         ],
       },
       footer: {
-        copyright: 'Crafted with love by Scottie in Los Angeles 💻',
         logo: {
           alt: 'Logo',
           src: 'img/scott-s.svg',
