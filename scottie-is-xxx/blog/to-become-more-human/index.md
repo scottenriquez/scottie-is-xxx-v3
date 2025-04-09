@@ -1,23 +1,23 @@
 ---
 authors: [scottenriquez]
 title: Becoming More Human in an Increasingly AI World 
-date: "2025-02-08"
+date: "2025-04-25"
 description: ""
 tags: ["Personal", "Technology"]
 ---
 
 I'm tired. Existentially.
 
-As a senior engineer with nearly 13 years of professional experience, I've reinvented myself countless times. I've seen more technologies than I can count or remember come and go. I've seen bubbles form and burst. I remember when the latest flop was supposed to be the next big thing. I've spent countless hours learning new skills and honing my craft in a knowingly futile effort to stay up-to-date with technology. I've seen layoffs and downturns. I've been told by executives that I'll need to do more with less. Trust me. I understand that the macroeconomics of the tech industry has peaks and valleys. After all, I wrote my first `Hello, world!` in high school in 2004 shortly after the `.com` crash. However, something feels different this time. I'm starting to feel deeply disillusioned. I can't tell if it's the industry or just me.
+As a senior engineer with nearly 13 years of professional experience, I've reinvented myself countless times. I've seen more technologies than I can count or remember come and go. I've seen bubbles form and burst. I remember when the latest flop was supposed to be the next big thing. I've spent countless hours learning new skills and honing my craft in a knowingly futile effort to stay up-to-date with technology. I've seen layoffs and downturns. Trust me. I understand that the macroeconomics of the tech industry has peaks and valleys. After all, I wrote my first `Hello, world!` in high school in 2004 shortly after the `.com` crash. However, something feels different this time. I'm starting to feel more and more concerned and disillusioned.
 
-## Goodhart's Law and Vestigial Structures 
-Goodhart's Law states that:
+## Goodhart's Law
+I will refer to the concept of Goodhart's Law a few times throughout this post, so I'll quickly define my interpretation. It states that:
 > Any observed statistical regularity will tend to collapse once pressure is placed upon it for control purposes.
 
 Or, in layperson's terms (which I strongly prefer):
 > When a measure becomes a target, it ceases to be a good measure.
 
-I think about this adage almost every single day. It's no secret that Amazon is one of the most data-driven companies on the planet. During my tenure at AWS, I've written numerous docs overflowing with quantitative evidence to support my claims and proposals. As a customer-facing solutions architect, data is integral to guiding my customers on the right path and measuring the efficacy of my work. That said, Amazonians are also expected to balance the data with anecdotes. Like Jeff Bezos famously said back in 2018:
+I think about this adage almost every single day. It's no secret that Amazon is one of the most data-driven companies on the planet. During my tenure at AWS, I wrote numerous docs overflowing with quantitative evidence to support my claims and proposals. As a customer-facing solutions architect, data was integral to guiding my customers on the right path and measuring the efficacy of my work. That said, Amazonians are also expected to balance the data with anecdotes. Like Jeff Bezos famously said back in 2018:
 
 > The thing I have noticed is that when the anecdotes and the data disagree, the anecdotes are usually right. There is something wrong with the way that you are measuring it.
 
@@ -54,12 +54,9 @@ const ifWithExtraLines = (condition: Boolean, truePathReturn: object, falsePathR
 }
 ```
 
-You get the idea. These code snippets are terrible, but if developers' targets are runtime or the number of lines, this is the type of software that is incentivized.
+You get the idea. These code snippets are terrible, but if developers' targets are runtime or the number of lines, this is the type of software that is incentivized. Goodhart's Law.
 
-There is no shortage of impactful metrics directly correlating to my role's business value. My re:Invent sessions received CSAT (customer satisfaction) scores. Influenced revenue is another logic target, given I've only worked in customer-facing roles at AWS. These make perfect sense from a business perspective, but how do I define growth metrics for myself as a human being? This is a question that I've been dealing with for a while. It could be the wrong question to ask altogether.
-
-Over the years, I've sought personal validation and measured my worth through various metrics that, unfortunately, are deeply rooted in capitalism and vanity. To name a couple, the number of professional certifications (eight AWS ones alone) and quantity of GitHub commits (yes, I admit that I am beholden to the vanity of cultivating a lush wall of green squares). This mentality makes perfect sense for a corporate job but can be deeply damaging on a human level. At no other point in human history have we had unfettered access to data about ourselves as we do now. We can measure how seen we are with social media views, how much people approve of our thoughts via likes, how valuable we are with our incomes and contributions to our employers, etc. Perhaps even worse, we can also see these metrics for our peers. We choose these arbitrary metrics as our targets, and the wrong actions are incentivized. We build and optimize for these targets, and our humanity takes a backseat. No longer do we have time to gaze up at the stars, draw constellations, tell stories, have downtime and boredom, etc., as our ancient ancestors did. We've replaced this with incessant media consumption, working more than ever, and nonstop reminders that all the numbers that matter to us must keep going up.
-
+## Vestigial Structures 
 As the tech industry has narrowed its focus and investments on AI lately, I can't help but feel even less human. I'm constantly bombarded with the (likely) sensationalized idea that developers will soon be replaced. Programmers will become vestigial structures, casualties of the rise of AI agents, and ironically, the very source of data that will lead to our own demise. While I am skeptical about just how close humans are to achieving AGI (artificial general intelligence), there's no doubt that we are approaching a critical juncture in technological history. I'm also not convinced that we're considering the right metrics.
 
 ## Developer Productivity Is Not for You
