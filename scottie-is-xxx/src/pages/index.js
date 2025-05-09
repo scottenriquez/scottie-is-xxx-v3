@@ -20,7 +20,7 @@ export default function Home() {
             <h1 className={'styled-name'}>Scottie Enriquez</h1>
           </div>
           <div className={'text--center'}>
-            <p>Cloud solutions architect, software engineer, and computer scientist in Los Angeles, California</p>
+            <p>Cloud solutions architect, software engineer, and technical leader in Los Angeles, California</p>
           </div>
           <div className={'text--center'}>
             <Link to={'/files/resume.pdf'} target={'_blank'}><FontAwesomeIcon
