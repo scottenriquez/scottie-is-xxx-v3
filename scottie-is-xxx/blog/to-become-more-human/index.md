@@ -70,7 +70,7 @@ I also won't parade myself around as an open-source purist. The lion's share of 
 
 While these technological advancements are truly remarkable, I still struggle with the ethics of using these large models at times. Without namedropping any company or model, you can find countless lawsuits from creators who have coaxed significant portions of their works from LLMs and diffusion models without the proper licensing. These cases are ample evidence, in my opinion, that the macroeconomic corporate stance is to ask for forgiveness, not permission, for what content is acceptable to train models on.
 
-Ultimately, we gave away the knowledge for free, but now we have to pay for access to its application. When we look at the jobs that are most at risk of being replaced by AI, they are mostly well-paying jobs in a rapidly vanishing middle class (e.g., developers) or creative fields like graphic design. To quote the [brilliant tweet](https://x.com/QuinnCat13/status/1609711617062703104) of `@QuinnCat13`:
+Ultimately, we gave away the knowledge for free, but now we have to pay for access to its application. When we look at the jobs that are most at risk of being replaced by AI (or rather by its perceived value), they are mostly well-paying jobs in a rapidly vanishing middle class (e.g., developers) or creative fields like graphic design. To quote the [brilliant tweet](https://x.com/QuinnCat13/status/1609711617062703104) of `@QuinnCat13`:
 
 > We could automate menial jobs so people have time to make art and music, but apparently, we'd rather automate art and music so people have time for menial jobs.
 
