@@ -23,7 +23,7 @@ export default function Home() {
             <p>Cloud solutions architect, software engineer, data scientist, and technical leader in Los Angeles, California</p>
           </div>
           <div className={'text--center'}>
-            <Link to={'/files/resume.pdf'} target={'_blank'}><FontAwesomeIcon
+            <Link to={'/serving/resume.pdf'} target={'_blank'}><FontAwesomeIcon
               icon={faFilePdf} size={'2x'}/></Link> <Link to={'/writing'}><FontAwesomeIcon icon={faBlog} size={'2x'}/></Link> <Link to={'/discussing-fantasy-football'}><FontAwesomeIcon icon={faFootball} size={'2x'}/></Link> <Link to={'https://github.com/scottenriquez'}><FontAwesomeIcon icon={faGithub} size={'2x'}/></Link> <Link to={'https://www.linkedin.com/in/scottenriquez/'}><FontAwesomeIcon icon={faLinkedin} size={'2x'}/></Link>
           </div>
         </div>
