@@ -133,7 +133,7 @@ with a top-6 QB in Justin Herbert. All of his bench players put up at least 15 p
 pick (Tetairoa McMillan) is legit too. This team is a
 juggernaut, and the only problem that Callen has right now is choosing who to start. In the words of Tim Brewster,
 **"BALLERS EVERYWHERE!"** I'm glad that this team will make the playoffs, because the Aggies and Texans sure as hell
-won't (and the Astros are trending in that direction either). With just the right luck so far (i.e., a $$Δw$$ of 24%)
+won't (and the Astros are trending in that direction too). With just the right luck so far (i.e., a $$Δw$$ of 24%)
 and this roster, Callen has to take the number one spot.
 
 | Name                 | Team   | Depth |
@@ -157,7 +157,7 @@ at least one rushing TD in each of the first three weeks. Any concerns about Saq
 since been moot. Jahmyr Gibbs continues to play like a league-winning RB, and Javonte Williams hoards the rushing
 touches for the Cowboys. George Pickens and Rome Odunze are forming a strong WR corps for Tarv, but the injury to Mike
 Evans will test this roster's depth. Trey McBride has been 10 points guaranteed, which is fantastic in the TE slot. That
-said, I think Tarv will need some wavier wire magic to stay at the top. Another injury or Williams/Pickens falling back
+said, I think Tarv will need some wavier wire magic to stay near the top. Another injury or Williams/Pickens falling back
 to earth could quickly send this team to the middle of the pack. Much like A&M's ref-assisted win over a massively
 overrated Notre Dame, this team might be fool's gold (pun intended).
 
