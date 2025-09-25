@@ -71,20 +71,20 @@ $$
 Given that this is week three, $$t = 3$$. Negative values indicate unluckiness, and positive values indicate luckiness.
 Let's review these metrics so far.
 
-| Team                      | Week Three $$w_o$$ | Season Total $$w_o$$ | $$Δw$$ |
-|---------------------------|--------------------|----------------------|--------|
-| MeHurts&theGibbyGibbys    | 10                 | 28                   | 15%    |
-| ZOOT SCOOT BOOGIE         | 11                 | 26                   | -12%   |
-| Brian Thomas Gooners      | 9                  | 25                   | 24%    |
-| Uncle Cral's Little Dogs  | 6                  | 23                   | -3%    |
-| Sour Diesel Enjoyer       | 5                  | 23                   | 30%    |
-| Mayfield Advantage        | 3                  | 13                   | -6%    |
-| Disney hater bville mayor | 0                  | 13                   | -6%    |
-| Rashee Ya Later Alligator | 8                  | 13                   | -6%    |
-| TUlsa King                | 7                  | 11                   | 0%     |
-| Moore Lamb Plz            | 4                  | 10                   | -30%   |
-| This Team Is The Pitts    | 2                  | 7                    | -21%   |
-| Henrything is Possible    | 1                  | 6                    | 15%    |
+| Team    | Week Three $$w_o$$ | Season Total $$w_o$$ | $$Δw$$ |
+|---------|--------------------|----------------------|--------|
+| Travis  | 10                 | 28                   | 15%    |
+| Scottie | 11                 | 26                   | -12%   |
+| Callen  | 9                  | 25                   | 24%    |
+| Carl    | 6                  | 23                   | -3%    |
+| Mark    | 5                  | 23                   | 30%    |
+| Andrew  | 3                  | 13                   | -6%    |
+| Trond   | 0                  | 13                   | -6%    |
+| Chris   | 8                  | 13                   | -6%    |
+| Matt    | 7                  | 11                   | 0%     |
+| Caleb   | 4                  | 10                   | -30%   |
+| Logan   | 2                  | 7                    | -21%   |
+| John    | 1                  | 6                    | 15%    |
 
 Notice any usual suspects? I'll save that part for the power rankings.
 
@@ -157,7 +157,8 @@ at least one rushing TD in each of the first three weeks. Any concerns about Saq
 since been moot. Jahmyr Gibbs continues to play like a league-winning RB, and Javonte Williams hoards the rushing
 touches for the Cowboys. George Pickens and Rome Odunze are forming a strong WR corps for Tarv, but the injury to Mike
 Evans will test this roster's depth. Trey McBride has been 10 points guaranteed, which is fantastic in the TE slot. That
-said, I think Tarv will need some wavier wire magic to stay near the top. Another injury or Williams/Pickens falling back
+said, I think Tarv will need some wavier wire magic to stay near the top. Another injury or Williams/Pickens falling
+back
 to earth could quickly send this team to the middle of the pack. Much like A&M's ref-assisted win over a massively
 overrated Notre Dame, this team might be fool's gold (pun intended).
 
