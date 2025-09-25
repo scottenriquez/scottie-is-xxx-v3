@@ -178,7 +178,7 @@ overrated Notre Dame, this team might be fool's gold (pun intended).
 
 #### Week Three Points: 127.85
 
-Look at that! I've had negative luck, but I'm still in second place. Shout out to the Minnesota D/ST for making me $20
+Look at that! I've had negative luck, but I'm still in second place by $$w_o$$. Shout out to the Minnesota D/ST for making me $20
 this week for the highest score. As a lifelong USC fan since June, I've always believed in Caleb Williams. He's looking
 like a top-5 fantasy QB. Bijan Robinson and Ken Walker are forming a strong RB corps, but I'm feeling thin with the
 season-ending injury to James Conner. I've been able to get to a great start, even with Justin Jefferson yet to have an
