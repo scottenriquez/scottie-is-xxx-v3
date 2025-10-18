@@ -33,3 +33,6 @@ Let's not mince words here. This Compact is a quid pro quo, a tactic for which t
 If you believe, as I do, that the University of Texas at Austin is a world-class institution, then leave what makes it great in place. With a $20B+ endowment, this university does not need to capitulate to Trump's ideological demands and grovel for money. I am one tiny voice. I am merely a proud alumnus, not a megadonor or booster. I have donated to the university in the past, but if the school joins the Compact, I will withhold all further donations. My pride as a Longhorn will be severely diminished, but I will not be deterred by the xenophobia and prejudice that plagues the United States. Education is worth fighting for.
 
 Hook 'em and fight on!
+
+## Disclaimer
+The opinions and views expressed here are my own and not those of my employer or school.
