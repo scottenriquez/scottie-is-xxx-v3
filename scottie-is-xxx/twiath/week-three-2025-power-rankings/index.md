@@ -228,7 +228,7 @@ this team to be a contender. I should have traded you James Conner at the draft.
 
 Mark is already pacing to have as much luck as his 2023 championship season. After a narrow four-point victory against
 me in week two, followed by a sub-100-point victory against Logz, we might have to accept that Mark is going to win it
-all. The Josh Allen pick is looking galaxy-brain right now. I'm not inspired by his `r'\*Chub\*'` RB room or his twelve
+all. The Josh Allen pick is looking galaxy-brain right now. I'm not inspired by his `r'*Chub*'` RB room or his twelve
 other
 RBs
 that he has stashed on his bench. However, Puka/Amon-Ra/Ridley/Deebo is a lethal WR combo. History says that Mark is
