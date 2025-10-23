@@ -35,4 +35,4 @@ If you believe, as I do, that the University of Texas at Austin is a world-class
 Hook 'em and fight on!
 
 ## Disclaimer
-The opinions and views expressed here are my own and not those of my employer or school.
+The opinions and views expressed here are my own and not those of my employer or any school.
