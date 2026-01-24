@@ -18,9 +18,10 @@ export default function Home() {
         <div className="container">
           <div className={'text--center'}>
             <h1 className={'styled-name'}>Scottie Enriquez</h1>
+            <h3>Los Angeles, California</h3>
           </div>
           <div className={'text--center'}>
-            <p>Cloud solutions architect, software engineer, data scientist, and technical leader in Los Angeles, California</p>
+            <p>Cloud solutions architect, software engineer, data scientist, and technical leader</p>
           </div>
           <div className={'text--center'}>
             <Link to={'/serving/resume.pdf'} target={'_blank'}><FontAwesomeIcon
