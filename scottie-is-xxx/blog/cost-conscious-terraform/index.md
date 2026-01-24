@@ -105,40 +105,40 @@ resource_usage:
 Commit these changes to the `feature` branch and open a pull request. Doing so will trigger the CodeBuild project that computes the cost delta and publishes the payload to the SNS topic if the amount increases. Assuming you subscribed to the SNS topic via email, some JSON should be in your inbox. Here's an abridged example output:
 ```json
 {
-	"version": "0.2",
-	"currency": "USD",
-	"projects": [{
-		"name": "codecommit::us-east-1://TerraformRepository/.",
-		"metadata": {
-			"path": "/tmp/main",
-			"infracostCommand": "breakdown",
-			"type": "terraform_dir",
-			"branch": "main",
-			"commit": "2e6eafd94811a0c9ac814a8c31132dc3badc0b9f",
-			"commitAuthorName": "AWS CodeCommit",
-			"commitAuthorEmail": "noreply-awscodecommit@amazon.com",
-			"commitTimestamp": "2022-07-16T05:47:50Z",
-			"commitMessage": "Initial commit by AWS CodeCommit",
-			"vcsRepoUrl": "codecommit::us-east-1://TerraformRepository",
-			"vcsSubPath": "."
-		}
-	}],
-	"totalHourlyCost": "0.41661461198630137000733251",
-	"totalMonthlyCost": "304.12866675",
-	"pastTotalHourlyCost": "0.33101461198630137000733251",
-	"pastTotalMonthlyCost": "241.64066675",
-	"diffTotalHourlyCost": "0.0856",
-	"diffTotalMonthlyCost": "62.488",
-	"timeGenerated": "2022-07-16T06:21:02.155239211Z",
-	"summary": {
-		"totalDetectedResources": 3,
-		"totalSupportedResources": 3,
-		"totalUnsupportedResources": 0,
-		"totalUsageBasedResources": 3,
-		"totalNoPriceResources": 0,
-		"unsupportedResourceCounts": {},
-		"noPriceResourceCounts": {}
-	}
+    "version": "0.2", 
+    "currency": "USD", 
+    "projects": [{
+        "name": "codecommit::us-east-1://TerraformRepository/.",
+        "metadata": {
+            "path": "/tmp/main",
+            "infracostCommand": "breakdown",
+            "type": "terraform_dir",
+            "branch": "main",
+            "commit": "2e6eafd94811a0c9ac814a8c31132dc3badc0b9f",
+            "commitAuthorName": "AWS CodeCommit",
+            "commitAuthorEmail": "noreply-awscodecommit@amazon.com",
+            "commitTimestamp": "2022-07-16T05:47:50Z",
+            "commitMessage": "Initial commit by AWS CodeCommit",
+            "vcsRepoUrl": "codecommit::us-east-1://TerraformRepository",
+            "vcsSubPath": "."
+        }
+    }],
+    "totalHourlyCost": "0.41661461198630137000733251",
+    "totalMonthlyCost": "304.12866675",
+    "pastTotalHourlyCost": "0.33101461198630137000733251",
+    "pastTotalMonthlyCost": "241.64066675",
+    "diffTotalHourlyCost": "0.0856",
+    "diffTotalMonthlyCost": "62.488",
+    "timeGenerated": "2022-07-16T06:21:02.155239211Z",
+    "summary": {
+        "totalDetectedResources": 3,
+        "totalSupportedResources": 3,
+        "totalUnsupportedResources": 0,
+        "totalUsageBasedResources": 3,
+        "totalNoPriceResources": 0,
+        "unsupportedResourceCounts": {},
+        "noPriceResourceCounts": {}
+    }
 }
 ```
 
