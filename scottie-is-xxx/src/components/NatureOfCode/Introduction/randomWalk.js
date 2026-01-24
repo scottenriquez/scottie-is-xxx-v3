@@ -68,9 +68,9 @@ class RandomWalk extends Component {
         const pixels = [];
         this.steps.current = 0;
         while (this.steps.current <= this.steps.max &&
-            this.coordinates.x < width - 1 && this.coordinates.x > 0
-            && this.coordinates.y < height - 1
-            && this.coordinates.y > 0)
+        this.coordinates.x < width - 1 && this.coordinates.x > 0
+        && this.coordinates.y < height - 1
+        && this.coordinates.y > 0)
         {
             if (weightedRight) {
                 this.walkWeightedRight(pixels);
@@ -96,7 +96,7 @@ class RandomWalk extends Component {
     render() {
         return (
             <div>
-                <button className={'button button--secondary button--md'} style={{ backgroundColor: '#b362ff', color: 'black' }} onClick={this.handleRefreshDataClick}><FontAwesomeIcon icon={faRefresh} /> Generate {this.props.buttonText}</button>
+                <button className={'button button--secondary button--md'} style={{ backgroundColor: '#a7c080', color: '#272e33' }} onClick={this.handleRefreshDataClick}><FontAwesomeIcon icon={faRefresh} /> Generate {this.props.buttonText}</button>
                 <CartesianPlane pixels={this.state.pixels} />
             </div>
         );

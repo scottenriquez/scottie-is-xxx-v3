@@ -11,7 +11,7 @@ import { faLevelUpAlt } from "@fortawesome/free-solid-svg-icons"
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-four-chris" class="sleeper-avatar"/>Zeke Squad | 3-1W/L | 456PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-four-chris" class="sleeper-avatar"/> Zeke Squad | 3-1W/L | 456PF
 
 #### Week Four Points: 127.9
 
@@ -31,7 +31,7 @@ John’s magic from his preseason trade with the dingus that traded him Patrick 
 | Diontae Johnson     | PIT-WR  | 1     |
 | Pittsburgh Steelers | PIT-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/a91cfbe2665c3bc237b6aa5199fb0d7a-four-chris" class="sleeper-avatar"/>Moore Cowbell | 3-1W/L | 431PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/a91cfbe2665c3bc237b6aa5199fb0d7a-four-chris" class="sleeper-avatar"/> Moore Cowbell | 3-1W/L | 431PF
 
 #### Week Four Points: 110.5
 
@@ -51,7 +51,7 @@ In my eyes, K-Man’s team is consistently good. In four weeks, his scores have 
 | Ja'Marr Chase      | CIN-WR | 1     |
 | New Orleans Saints | NO-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-four-chris" class="sleeper-avatar"/>Hot Chubb Time Machine | 2-2W/L | 373PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-four-chris" class="sleeper-avatar"/> Hot Chubb Time Machine | 2-2W/L | 373PF
 
 #### Week Four Points: 69.4
 
@@ -71,7 +71,7 @@ Brutal loss this week. So close, but yet so far. I hope you find solace in the f
 | Tee Higgins      | CIN-WR  | 1     |
 | Cleveland Browns | CLE-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-four-chris" class="sleeper-avatar"/>Jordan '96 '97 | 3-1W/L | 371PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-four-chris" class="sleeper-avatar"/> Jordan '96 '97 | 3-1W/L | 371PF
 
 #### Week Four Points: 61.8
 
@@ -91,7 +91,7 @@ Much like Jordan himself: another week, another dub. While this week was not as 
 | Javonte Williams         | DEN-RB  | 2     |
 | Washington Football Team | WAS-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-four-chris" class="sleeper-avatar"/>All Gaskin No Breaks | 2-2W/L | 385PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-four-chris" class="sleeper-avatar"/> All Gaskin No Breaks | 2-2W/L | 385PF
 
 #### Week Four Points: 101.5
 
@@ -111,7 +111,7 @@ Scooter's team drops 108 points, including an 11-point dud from the most accompl
 | Justin Jefferson     | MIN-WR | 1     |
 | New England Patriots | NE-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-four-chris" class="sleeper-avatar"/>Uncle Cral's Little Dogs | 2-2W/L | 413PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-four-chris" class="sleeper-avatar"/> Uncle Cral's Little Dogs | 2-2W/L | 413PF
 
 #### Week Four Points: 129.9
 
@@ -131,7 +131,7 @@ Much like Cral's Snapchats, this team is a mixed bag that gets better every time
 | Kenny Golladay    | NYG-WR  | 1 (Q) |
 | Arizona Cardinals | ARI-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-four-chris" class="sleeper-avatar"/>God Wins Gunnin Runnin Nuns | 3-1W/L | 366PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-four-chris" class="sleeper-avatar"/> God Wins Gunnin Runnin Nuns | 3-1W/L | 366PF
 
 #### Week Four Points: 107.0
 
@@ -151,7 +151,7 @@ Like the Denver Broncos, I am somewhat skeptical of this team. But I cannot deny
 | Jarvis Landry  | CLE-WR  | 1     |
 | Denver Broncos | DEN-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-four-chris" class="sleeper-avatar"/>Glizzy Guzzlers | 1-3W/L | 378PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-four-chris" class="sleeper-avatar"/> Glizzy Guzzlers | 1-3W/L | 378PF
 
 #### Week Four Points: 121.5
 
@@ -171,7 +171,7 @@ This is a case of a good team with bad luck. I’d say Callen left too many poin
 | Aaron Jones          | GB-RB  | 1     |
 | Tampa Bay Buccaneers | TB-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-four-chris" class="sleeper-avatar"/>These rankings are trash | 1-3W/L | 355PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-four-chris" class="sleeper-avatar"/> These rankings are trash | 1-3W/L | 355PF
 
 #### Week Four Points: 95.4
 
@@ -191,7 +191,7 @@ Trash, indeed. Like Mike Davis, Adam Thielen, Henry Ruggs, and Michael Pittman t
 | Danny Amendola      | HOU-WR  | 2     |
 | Baltimore Ravens    | BAL-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-four-chris" class="sleeper-avatar"/>Long hair, beautiful nose | 1-3W/L | 388PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-four-chris" class="sleeper-avatar"/> Long hair, beautiful nose | 1-3W/L | 388PF
 
 #### Week Four Points: 106.2
 
@@ -211,7 +211,7 @@ Not a lot to say here. Tyreek Hill scored nearly half the points, and Trond's te
 | JuJu Smith-Schuster | PIT-WR  | 1     |
 | Carolina Panthers   | CAR-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-four-chris" class="sleeper-avatar"/>GLOATS Team Lead | 1-3W/L | 330PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-four-chris" class="sleeper-avatar"/> GLOATS Team Lead | 1-3W/L | 330PF
 
 #### Week Four Points: 87.6
 
@@ -231,7 +231,7 @@ In the true character of a proper GLOATS Team Lead, Logz started a player listed
 | Sterling Shepard  | NYG-WR  | 1     |
 | Los Angeles Rams  | LAR-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-four-chris" class="sleeper-avatar"/>all i know is pain | 2-2W/L | 384PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-four-chris" class="sleeper-avatar"/> all i know is pain | 2-2W/L | 384PF
 
 #### Week Four Points: 73.1
 

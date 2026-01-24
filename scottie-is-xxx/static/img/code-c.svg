@@ -6,12 +6,12 @@
             }
 
             .b {
-            opacity: 0.6;
-            mix-blend-mode: screen;
+            opacity: 0.8;
+            mix-blend-mode: normal;
             }
 
             .c {
-            fill: #9efeff;
+            fill: #a7c080;
             }
         </style>
     </defs>

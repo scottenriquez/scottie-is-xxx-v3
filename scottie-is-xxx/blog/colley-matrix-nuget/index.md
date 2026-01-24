@@ -65,7 +65,3 @@ For the `Solve` method, the matrix is lower-upper factorized then solved for the
 IEnumerable<double> colleyRatings = _teams.Select(team => team.ColleyRating);
 IEnumerable<double> solvedVector = _matrixProvider.LowerUpperFactorizeAndSolve(colleyRatings);
 ```
-
-## Build Status
-
-[![Build status](https://travis-ci.org/scottenriquez/colley-matrix-nuget.svg?branch=master)](https://travis-ci.org/scottenriquez/colley-matrix-nuget)

@@ -11,7 +11,7 @@ import { faLevelUpAlt } from "@fortawesome/free-solid-svg-icons"
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-six-chris" class="sleeper-avatar"/>Dragonball Zeke | 5-1W/L | 748PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-six-chris" class="sleeper-avatar"/> Dragonball Zeke | 5-1W/L | 748PF
 
 #### Week Six Points: 128.1
 
@@ -29,7 +29,7 @@ Topping off the charts with 748 PF is Scottie. This team looks as unstoppable as
 | Kenneth Walker    | SEA-RB  | 2     |
 | Chicago Bears     | CHI-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-six-chris" class="sleeper-avatar"/>Unaccredited Chili Guy | 1-5W/L | 661PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-six-chris" class="sleeper-avatar"/> Unaccredited Chili Guy | 1-5W/L | 661PF
 
 #### Week Six Points: 113.0
 
@@ -49,7 +49,7 @@ I can't believe I'm doing this, but the numbers speak for themselves. The offens
 | Tyler Boyd         | CIN-WR  | 1     |
 | Los Angeles Rams   | LAR-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-six-chris" class="sleeper-avatar"/>Saquon deez nuts | 5-1W/L | 638PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-six-chris" class="sleeper-avatar"/> Saquon deez nuts | 5-1W/L | 638PF
 
 #### Week Six Points: 84.5
 
@@ -67,7 +67,7 @@ Under normal circumstances, I rank this team way lower based on the eye test of 
 | Adam Thielen        | MIN-WR | 1     |
 | San Francisco 49ers | SF-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-six-chris" class="sleeper-avatar"/>Fullmetal Ekelerist | 4-2W/L | 619PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-six-chris" class="sleeper-avatar"/> Fullmetal Ekelerist | 4-2W/L | 619PF
 
 #### Week Six Points: 88.3
 
@@ -86,7 +86,7 @@ Surprisingly, Callen's team had a down week this week, moving his squad to a res
 | Eno Benjamin      | ARI-RB  | 2     |
 | Minnesota Vikings | MIN-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-six-chris" class="sleeper-avatar"/>My Hero Alvin Kamaria | 3-3W/L | 617PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-six-chris" class="sleeper-avatar"/> My Hero Alvin Kamaria | 3-3W/L | 617PF
 
 #### Week Six Points: 128.4
 
@@ -104,7 +104,7 @@ Understandably, Logz was busy this weekend (congrats again!). Regardless, his te
 | Brandon Aiyuk        | SF-WR  | 1     |
 | Tampa Bay Buccaneers | TB-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-six-chris" class="sleeper-avatar"/>Cheeseburger Lenny | 2-4W/L | 607PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-six-chris" class="sleeper-avatar"/> Cheeseburger Lenny | 2-4W/L | 607PF
 
 #### Week Six Points: 100.1
 
@@ -122,7 +122,7 @@ Xylophone sounds in the distance are what I heard after getting my first dub in 
 | Deon Jackson      | IND-RB  | 3     |
 | Baltimore Ravens  | BAL-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/a18f9fc9312fa9c2003503730b41e7fc-six-chris" class="sleeper-avatar"/>Jalen the Super Saiyan | 4-2W/L | 602PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/a18f9fc9312fa9c2003503730b41e7fc-six-chris" class="sleeper-avatar"/> Jalen the Super Saiyan | 4-2W/L | 602PF
 
 #### Week Six Points: 82.4
 
@@ -140,7 +140,7 @@ Michael Pittman did a great job this week with a monster game. But, like many of
 | Romeo Doubs     | GB-WR   | 1     |
 | Dallas Cowboys  | DAL-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-six-chris" class="sleeper-avatar"/>Dollar General Box Fans | 3-3W/L | 591PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-six-chris" class="sleeper-avatar"/> Dollar General Box Fans | 3-3W/L | 591PF
 
 #### Week Six Points: 73.2
 
@@ -158,7 +158,7 @@ OU beat an overrated CFB team this week, but the Dollar General (Booty) Box Fans
 | DeVante Parker      | NE-WR   | 1     |
 | Miami Dolphins      | MIA-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-six-chris" class="sleeper-avatar"/>Derrick on Titan | 2-4W/L | 589PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-six-chris" class="sleeper-avatar"/> Derrick on Titan | 2-4W/L | 589PF
 
 #### Week Six Points: 71.6
 
@@ -178,7 +178,7 @@ Contrary to his previous two weeks, Geno Smith did not have a good game, putting
 | Tevin Coleman       | SF-RB   |       |
 | Buffalo Bills       | BUF-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-six-chris" class="sleeper-avatar"/>JoJo's Ja'Marr Adventure | 2-4W/L | 589PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-six-chris" class="sleeper-avatar"/> JoJo's Ja'Marr Adventure | 2-4W/L | 589PF
 
 #### Week Six Points: 88.7
 
@@ -196,7 +196,7 @@ Another week, another Kirk Cousins disappointment. The QBs this week did pretty 
 | Cooper Kupp         | LAR-WR  | 1     |
 | Philadelphia Eagles | PHI-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-six-chris" class="sleeper-avatar"/>Taylor Moon | 3-3W/L | 588PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-six-chris" class="sleeper-avatar"/> Taylor Moon | 3-3W/L | 588PF
 
 #### Week Six Points: 53.7
 
@@ -216,7 +216,7 @@ The rapid decline of this team is genuinely shocking. While byes impacted John t
 | Christian Kirk    | JAX-WR | 1     |
 | Green Bay Packers | GB-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/0658c50f92789c23a6f0b1efef9dbdaa-six-chris" class="sleeper-avatar"/>Najeeruto  | 2-4W/L | 570PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/0658c50f92789c23a6f0b1efef9dbdaa-six-chris" class="sleeper-avatar"/> Najeeruto  | 2-4W/L | 570PF
 
 #### Week Six Points: 116.7
 

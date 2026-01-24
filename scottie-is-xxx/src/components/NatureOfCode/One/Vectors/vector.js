@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import SceneInit from './sceneInit';
 
 const generateLine = (vectors) => {
-  const material = new THREE.LineBasicMaterial({color: 0xa4ff90});
+  const material = new THREE.LineBasicMaterial({color: 0xa7c080});
   const geometry = new THREE.BufferGeometry().setFromPoints(vectors);
   return new THREE.Line(geometry, material);
 };
@@ -26,10 +26,10 @@ const Vector = () => {
     canvas.animate();
   }, []);
   return (<div id={'noc-vector-1-canvas-div'} style={{
-      height: '400px', width: '100%', backgroundColor: 'black', position: 'relative'
-    }}>
-      <canvas id={'noc-bouncing-vector-1-canvas'}/>
-    </div>);
+    height: '400px', width: '100%', backgroundColor: '#272e33', position: 'relative'
+  }}>
+    <canvas id={'noc-bouncing-vector-1-canvas'}/>
+  </div>);
 }
 
 export default Vector;

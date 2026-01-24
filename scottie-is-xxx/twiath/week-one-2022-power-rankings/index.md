@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLevelUpAlt } from "@fortawesome/free-solid-svg-icons"
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-one-scottie" class="sleeper-avatar"/>Saquon deez nuts | 1-0W/L | 115PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-one-scottie" class="sleeper-avatar"/> Saquon deez nuts | 1-0W/L | 115PF
 
 #### Week One Points: 115.5
 
@@ -30,7 +30,7 @@ I really hate putting Carlos here, but his team is looking stacked. Aaron Rodger
 | DK Metcalf            | SEA-WR | 1     |
 | San Francisco 49ers   | SF-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-one-scottie" class="sleeper-avatar"/>Jalen the Super Saiyan | 1-0W/L | 129PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-one-scottie" class="sleeper-avatar"/> Jalen the Super Saiyan | 1-0W/L | 129PF
 
 #### Week One Points: 130.0
 
@@ -50,7 +50,7 @@ I like Tarv's team overall. His wide receivers are looking a bit weak right now,
 | JuJu Smith-Schuster | KC-WR   | 1 (Q) |
 | Denver Broncos      | DEN-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-one-scottie" class="sleeper-avatar"/>Dragonball Zeke | 1-0W/L | 127PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-one-scottie" class="sleeper-avatar"/> Dragonball Zeke | 1-0W/L | 127PF
 
 #### Week One Points: 127.1
 
@@ -70,7 +70,7 @@ My streak of 100+ point weeks continues. Even with starting a tight end at flex,
 | Cole Kmet            | CHI-TE  | 1     |
 | Los Angeles Chargers | LAC-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-one-scottie" class="sleeper-avatar"/>Taylor Moon | 0-1W/L | 102PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-one-scottie" class="sleeper-avatar"/> Taylor Moon | 0-1W/L | 102PF
 
 #### Week One Points: 102.3
 
@@ -88,7 +88,7 @@ I'm delighted to hand John an L to start the season. However, this team has John
 | Christian Kirk     | JAX-WR  | 1     |
 | Indianapolis Colts | IND-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-one-scottie" class="sleeper-avatar"/>Cheeseburger Lenny | 1-0W/L | 109PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-one-scottie" class="sleeper-avatar"/> Cheeseburger Lenny | 1-0W/L | 109PF
 
 #### Week One Points: 109.6
 
@@ -106,7 +106,7 @@ Like K-State, Chris got a free dub this week by playing a bum-ass team. Crams' s
 | Kareem Hunt       | CLE-RB  | 2     |
 | Tennessee Titans  | TEN-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-one-scottie" class="sleeper-avatar"/>Unaccredited Chili Guy | 1-0W/L | 121PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-one-scottie" class="sleeper-avatar"/> Unaccredited Chili Guy | 1-0W/L | 121PF
 
 #### Week One Points: 121.3
 
@@ -124,7 +124,7 @@ It's unreal how well we draft for Trond every year. In the next draft, we'll get
 | Darnell Mooney        | CHI-WR  | 1     |
 | Los Angeles Rams      | LAR-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-one-scottie" class="sleeper-avatar"/>Dollar General Box Fans | 0-1W/L | 80PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-one-scottie" class="sleeper-avatar"/> Dollar General Box Fans | 0-1W/L | 80PF
 
 #### Week One Points: 80.5
 
@@ -142,7 +142,7 @@ Mark's team is solid, but I must question the homer-ass decision to start Tony P
 | Tony Pollard        | DAL-RB  | 2     |
 | Baltimore Ravens    | BAL-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-one-scottie" class="sleeper-avatar"/>JoJo's Ja'Marr Adventure | 0-1W/L | 99PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-one-scottie" class="sleeper-avatar"/> JoJo's Ja'Marr Adventure | 0-1W/L | 99PF
 
 #### Week One Points: 99.6
 
@@ -160,7 +160,7 @@ I have no idea where the hell to rank this team. As usual, I don't know what the
 | Chase Claypool     | PIT-WR  | 1     |
 | Cincinnati Bengals | CIN-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/0658c50f92789c23a6f0b1efef9dbdaa-one-scottie" class="sleeper-avatar"/>Najeeruto  | 0-1W/L | 90PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/0658c50f92789c23a6f0b1efef9dbdaa-one-scottie" class="sleeper-avatar"/> Najeeruto  | 0-1W/L | 90PF
 
 #### Week One Points: 90.8
 
@@ -180,7 +180,7 @@ The reigning champ looks vulnerable right now. Without big weeks from Steffon Di
 | AJ Dillon            | GB-RB  | 2     |
 | New England Patriots | NE-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-one-scottie" class="sleeper-avatar"/>My Hero Alvin Kamaria | 1-0W/L | 105PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-one-scottie" class="sleeper-avatar"/> My Hero Alvin Kamaria | 1-0W/L | 105PF
 
 #### Week One Points: 105.1
 
@@ -198,7 +198,7 @@ Logz had a strong start in week one, but his team's outlook is bleak. Elijah Mit
 | Gabe Davis           | BUF-WR | 1     |
 | Tampa Bay Buccaneers | TB-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-one-scottie" class="sleeper-avatar"/>Fullmetal Ekelerist | 0-1W/L | 79PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-one-scottie" class="sleeper-avatar"/> Fullmetal Ekelerist | 0-1W/L | 79PF
 
 #### Week One Points: 79.7
 
@@ -218,7 +218,7 @@ Between Texas A&M's seven (7) offensive points against a Sun Belt team and this 
 | CeeDee Lamb      | DAL-WR  | 1     |
 | Cleveland Browns | CLE-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-one-scottie" class="sleeper-avatar"/>Derrick on Titan | 0-1W/L | 65PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-one-scottie" class="sleeper-avatar"/> Derrick on Titan | 0-1W/L | 65PF
 
 #### Week One Points: 65.7
 

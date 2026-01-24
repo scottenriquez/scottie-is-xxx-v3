@@ -11,7 +11,7 @@ import { faLevelUpAlt } from "@fortawesome/free-solid-svg-icons"
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-nine-matt" class="sleeper-avatar"/>All Gaskin No Breaks | 6-3W/L | 928PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-nine-matt" class="sleeper-avatar"/> All Gaskin No Breaks | 6-3W/L | 928PF
 
 #### Week Nine Points: 92.0
 
@@ -31,7 +31,7 @@ Scottie wasn't quite able to pull out the win against Mark's season-high outburs
 | Justin Jefferson     | MIN-WR | 1     |
 | New England Patriots | NE-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/a91cfbe2665c3bc237b6aa5199fb0d7a-nine-matt" class="sleeper-avatar"/>Steppe Brother | 6-3W/L | 904PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/a91cfbe2665c3bc237b6aa5199fb0d7a-nine-matt" class="sleeper-avatar"/> Steppe Brother | 6-3W/L | 904PF
 
 #### Week Nine Points: 74.0
 
@@ -51,7 +51,7 @@ My team squeaked out a win over Trond this weekend, with Matthew Stafford salvag
 | Ja'Marr Chase      | CIN-WR | 1     |
 | New Orleans Saints | NO-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-nine-matt" class="sleeper-avatar"/>Zeke Squad | 5-4W/L | 921PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-nine-matt" class="sleeper-avatar"/> Zeke Squad | 5-4W/L | 921PF
 
 #### Week Nine Points: 72.8
 
@@ -71,7 +71,7 @@ John's team's production has fallen off in recent weeks, but he's still bolstere
 | Diontae Johnson     | PIT-WR  | 1     |
 | Pittsburgh Steelers | PIT-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-nine-matt" class="sleeper-avatar"/>all i know is pain | 6-3W/L | 840PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-nine-matt" class="sleeper-avatar"/> all i know is pain | 6-3W/L | 840PF
 
 #### Week Nine Points: 84.2
 
@@ -91,7 +91,7 @@ Andrew Yang would've provided some much-needed RB depth to this squad, but Chris
 | Robert Woods          | LAR-WR  | 1     |
 | Buffalo Bills         | BUF-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-nine-matt" class="sleeper-avatar"/>Glizzy Guzzlers | 4-5W/L | 886PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-nine-matt" class="sleeper-avatar"/> Glizzy Guzzlers | 4-5W/L | 886PF
 
 #### Week Nine Points: 121.5
 
@@ -111,7 +111,7 @@ Callen missed out on scoring in the top half of the league this week due to a do
 | Aaron Jones          | GB-RB  | 1     |
 | Tampa Bay Buccaneers | TB-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-nine-matt" class="sleeper-avatar"/>Jordan '96 '97 | 6-3W/L | 822PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-nine-matt" class="sleeper-avatar"/> Jordan '96 '97 | 6-3W/L | 822PF
 
 #### Week Nine Points: 98.9
 
@@ -131,7 +131,7 @@ Travis scored the second-most points this week on the backs of season-high marks
 | Javonte Williams         | DEN-RB  | 2     |
 | Washington Football Team | WAS-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-nine-matt" class="sleeper-avatar"/>Pole Assassin’s Monkey | 4-5W/L | 859PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-nine-matt" class="sleeper-avatar"/> Pole Assassin’s Monkey | 4-5W/L | 859PF
 
 #### Week Nine Points: 120.7
 
@@ -151,7 +151,7 @@ Mark secured the bag this week despite Jonathan Taylor giving him quite the scar
 | Tee Higgins      | CIN-WR  | 1     |
 | Cleveland Browns | CLE-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-nine-matt" class="sleeper-avatar"/>GLOATS Team Lead | 4-5W/L | 807PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-nine-matt" class="sleeper-avatar"/> GLOATS Team Lead | 4-5W/L | 807PF
 
 #### Week Nine Points: 80.3
 
@@ -171,7 +171,7 @@ Logan alpha-brained his backup QB situation, with Kirk Cousins filling in well f
 | Sterling Shepard  | NYG-WR  | 1     |
 | Los Angeles Rams  | LAR-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-nine-matt" class="sleeper-avatar"/>Uncle Cral's Little Dogs | 4-5W/L | 830PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-nine-matt" class="sleeper-avatar"/> Uncle Cral's Little Dogs | 4-5W/L | 830PF
 
 #### Week Nine Points: 54.6
 
@@ -191,7 +191,7 @@ Carl's team is spiraling at the moment. Outside of Joe Burrow, Darren Waller, an
 | Kenny Golladay    | NYG-WR  | 1 (Q) |
 | Arizona Cardinals | ARI-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-nine-matt" class="sleeper-avatar"/>These rankings are trash | 2-7W/L | 822PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-nine-matt" class="sleeper-avatar"/> These rankings are trash | 2-7W/L | 822PF
 
 #### Week Nine Points: 70.8
 
@@ -211,7 +211,7 @@ Andrew's team looks much better on paper than what's been reflected in its perfo
 | Danny Amendola      | HOU-WR  | 2     |
 | Baltimore Ravens    | BAL-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-nine-matt" class="sleeper-avatar"/> GodWinsGunninRunninNuns | 5-4W/L | 764PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-nine-matt" class="sleeper-avatar"/>  GodWinsGunninRunninNuns | 5-4W/L | 764PF
 
 #### Week Nine Points: 64.1
 
@@ -231,7 +231,7 @@ How this team has a 5-4 record despite having the lowest PF is astounding to me.
 | Jarvis Landry  | CLE-WR  | 1     |
 | Denver Broncos | DEN-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-nine-matt" class="sleeper-avatar"/>Unaccredited Chili Guy | 2-7W/L | 800PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-nine-matt" class="sleeper-avatar"/> Unaccredited Chili Guy | 2-7W/L | 800PF
 
 #### Week Nine Points: 69.9
 

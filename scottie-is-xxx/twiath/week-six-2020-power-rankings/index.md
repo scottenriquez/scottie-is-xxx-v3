@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLevelUpAlt } from "@fortawesome/free-solid-svg-icons"
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-six-callen" class="sleeper-avatar"/>🏆‼️ | 4-2W/L | 632PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-six-callen" class="sleeper-avatar"/> 🏆‼️ | 4-2W/L | 632PF
 
 #### Week Six Points: 95.8
 
@@ -30,7 +30,7 @@ Thanks to K-Man’s beautiful spreadsheet, we can now look at simulated records 
 | Christian Kirk     | ARI-WR  | 1     |
 | Indianapolis Colts | IND-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-six-callen" class="sleeper-avatar"/>FEED ME 🥄 | 4-2W/L | 642PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-six-callen" class="sleeper-avatar"/> FEED ME 🥄 | 4-2W/L | 642PF
 
 #### Week Six Points: 73.7
 
@@ -88,7 +88,7 @@ I have to give Caleb’s team credit. He’s third place in PF and simulated lea
 | Laviska Shenault    | JAX-WR  | 1 (Q) |
 | Pittsburgh Steelers | PIT-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-six-callen" class="sleeper-avatar"/>Glizzy Guzzlers | 4-2W/L | 602PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-six-callen" class="sleeper-avatar"/> Glizzy Guzzlers | 4-2W/L | 602PF
 
 #### Week Six Points: 77.2
 
@@ -106,7 +106,7 @@ My team is proving to be solidly middle class—a true Hamburger Helper of a tea
 | Davante Adams            | GB-WR   | 1     |
 | Washington Football Team | WAS-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-six-callen" class="sleeper-avatar"/>Uncle Cral's Little Dogs | 4-2W/L | 585PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-six-callen" class="sleeper-avatar"/> Uncle Cral's Little Dogs | 4-2W/L | 585PF
 
 #### Week Six Points: 126.2
 
@@ -126,7 +126,7 @@ This bi-polar ass team is somehow now tied for first place. The team is below av
 | Brandon Aiyuk        | SF-WR  | 1     |
 | Tampa Bay Buccaneers | TB-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/a91cfbe2665c3bc237b6aa5199fb0d7a-six-callen" class="sleeper-avatar"/>Digital Nomad | 3-3W/L | 571PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/a91cfbe2665c3bc237b6aa5199fb0d7a-six-callen" class="sleeper-avatar"/> Digital Nomad | 3-3W/L | 571PF
 
 #### Week Six Points: 101.2
 
@@ -146,7 +146,7 @@ This team has disappointed me a bit this year. There was a rough stretch of game
 | Alexander Mattison  | MIN-RB | 1     |
 | San Francisco 49ers | SF-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-six-callen" class="sleeper-avatar"/>Manhattan (KS) Miracles | 3-3W/L | 606PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-six-callen" class="sleeper-avatar"/> Manhattan (KS) Miracles | 3-3W/L | 606PF
 
 #### Week Six Points: 65.9
 
@@ -168,7 +168,7 @@ If we want to talk about tremendous scoring variations, Chris’s team has a lar
 | Marvin Jones     | DET-WR  | 1     |
 | Los Angeles Rams | LAR-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/435658a13979aacae96267cfb8e95b76-six-callen" class="sleeper-avatar"/>76-37-5 | 2-4W/L | 580PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/435658a13979aacae96267cfb8e95b76-six-callen" class="sleeper-avatar"/> 76-37-5 | 2-4W/L | 580PF
 
 #### Week Six Points: 132.8
 
@@ -188,7 +188,7 @@ Scottie out here completing four-vert Hail Marys, trading away his best player. 
 | Damien Harris         | NE-RB   | 3     |
 | Chicago Bears         | CHI-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/94702f21e95d3aa14c8d671585ae6c58-six-callen" class="sleeper-avatar"/>The Mixon Administration | 3-3W/L | 551PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/94702f21e95d3aa14c8d671585ae6c58-six-callen" class="sleeper-avatar"/> The Mixon Administration | 3-3W/L | 551PF
 
 #### Week Six Points: 87.9
 

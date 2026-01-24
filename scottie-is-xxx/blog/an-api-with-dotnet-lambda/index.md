@@ -1,23 +1,37 @@
 ---
-authors: [scottenriquez]
+authors: [ scottenriquez ]
 title: ".NET 5 Docker Lambda Function with API Gateway and Self-Mutating Pipeline Using CDK"
 date: "2021-02-11"
 description: "A step-by-step walkthrough for creating a multi-environment API using .NET 5, CDK, Docker, and Lambda."
-tags: ["Cloud", "Programming"]
+tags: [ "Cloud", "Programming" ]
 ---
 
 ## Deciding on Which Technology to Use
-While infrastructure as code (IaC) has existed within the AWS ecosystem since 2011, adoption has exploded recently due to the ability to manage large amounts of infrastructure at scale and standardize design across an organization. There are almost too many options between CloudFormation (CFN), CDK, and Terraform for IaC and Serverless Application Model (SAM) and Serverless Framework for development. [This article](https://acloudguru.com/blog/engineering/cloudformation-terraform-or-cdk-guide-to-iac-on-aws) from A Cloud Guru quickly sums up the pros and cons of each option. I choose this particular stack for some key reasons:
-- CDK allows the infrastructure and the CI/CD pipeline to be described as C# instead of YAML, JSON, or [HCL](https://www.terraform.io/docs/language/syntax/configuration.html)
-- CDK provides the ability to inject more robust logic than intrinsic functions in CloudFormation and more modularity as well while still being a native AWS offering
-- Docker ensures that the Lambda functions run consistently across local development, builds, and production environments and simplifies dependency management
-- [CDK Pipelines](https://docs.aws.amazon.com/cdk/api/latest/docs/@aws-cdk_pipelines.CdkPipeline.html) offer a higher level construct with much less configuration than CodePipeline and streamline management of multiple environments
+
+While infrastructure as code (IaC) has existed within the AWS ecosystem since 2011, adoption has exploded recently due
+to the ability to manage large amounts of infrastructure at scale and standardize design across an organization. There
+are almost too many options between CloudFormation (CFN), CDK, and Terraform for IaC and Serverless Application Model (
+SAM) and Serverless Framework for
+development. [This article](https://acloudguru.com/blog/engineering/cloudformation-terraform-or-cdk-guide-to-iac-on-aws)
+from A Cloud Guru quickly sums up the pros and cons of each option. I choose this particular stack for some key reasons:
+
+- CDK allows the infrastructure and the CI/CD pipeline to be described as C# instead of YAML, JSON,
+  or [HCL](https://www.terraform.io/docs/language/syntax/configuration.html)
+- CDK provides the ability to inject more robust logic than intrinsic functions in CloudFormation and more modularity as
+  well while still being a native AWS offering
+- Docker ensures that the Lambda functions run consistently across local development, builds, and production
+  environments and simplifies dependency management
+- [CDK Pipelines](https://docs.aws.amazon.com/cdk/api/latest/docs/@aws-cdk_pipelines.CdkPipeline.html) offer a higher
+  level construct with much less configuration than CodePipeline and streamline management of multiple environments
 
 ## GitHub Repository
+
 You can find a complete working example [here](https://github.com/scottenriquez/dotnet-5-lambda-api-cdk).
 
 ## Initializing the Project
-Ensure that .NET 5 and the latest version of CDK are installed. To create a solution skeleton, run these commands in the root directory:
+
+Ensure that .NET 5 and the latest version of CDK are installed. To create a solution skeleton, run these commands in the
+root directory:
 
 ```shell
 # note that CDK uses this directory name as the solution name
@@ -30,6 +44,7 @@ cdk deploy
 ```
 
 In order to use CDK Pipelines later on, a specific flag needs to be added to `cdk.json`:
+
 ```json title='LambdaApiSolution/cdk.json'
 {
   "app": "dotnet run -p src/LambdaApiSolution/LambdaApiSolution.csproj",
@@ -41,14 +56,16 @@ In order to use CDK Pipelines later on, a specific flag needs to be added to `cd
 }
 ```
 
-At the time of writing, the generated CDK template uses .NET Core 3.1. Inside of the `.csproj` file, change the `TargetFramework` tag to `net5.0`.
+At the time of writing, the generated CDK template uses .NET Core 3.1. Inside of the `.csproj` file, change the
+`TargetFramework` tag to `net5.0`.
 
 ```xml title='LambdaApiSolution/src/LambdaApiSolution/LambdaApiSolution.csproj'
+
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
 </Project>
 ```
 
@@ -68,10 +85,12 @@ dotnet test LambdaApiSolution.sln
 ```
 
 ## Creating the Lambda Infrastructure and Build
+
 First, add the Lambda CDK NuGet package to the CDK project.
 
 ```xml
-<PackageReference Include="Amazon.CDK.AWS.Lambda" Version="1.90.0" />
+
+<PackageReference Include="Amazon.CDK.AWS.Lambda" Version="1.90.0"/>
 ```
 
 Then, create the Docker image and Lambda function using CDK constructs in `LambdaApiSolutionStack.cs`:
@@ -120,17 +139,23 @@ COPY --from=build-image /build/build_artifacts/ /var/task/
 CMD ["LambdaApiSolution.DockerFunction::LambdaApiSolution.DockerFunction.Function::FunctionHandler"]
 ```
 
-At this point, you can now deploy the changes with the `cdk deploy` command. The Lambda function can be tested via the AWS Console. The easiest way to do so is to navigate to the CloudFormation stack, click on the function resource, and then create a test event with the string `"hello"` as the input. Note that this should not be a JSON object because the event handler's parameter currently accepts a single string.
+At this point, you can now deploy the changes with the `cdk deploy` command. The Lambda function can be tested via the
+AWS Console. The easiest way to do so is to navigate to the CloudFormation stack, click on the function resource, and
+then create a test event with the string `"hello"` as the input. Note that this should not be a JSON object because the
+event handler's parameter currently accepts a single string.
 
 ## Integrating API Gateway
+
 Add the following packages to the CDK project:
 
 ```xml
-<PackageReference Include="Amazon.CDK.AWS.APIGatewayv2" Version="1.90.0" />
-<PackageReference Include="Amazon.CDK.AWS.APIGatewayv2.Integrations" Version="1.90.0" />
+
+<PackageReference Include="Amazon.CDK.AWS.APIGatewayv2" Version="1.90.0"/>
+<PackageReference Include="Amazon.CDK.AWS.APIGatewayv2.Integrations" Version="1.90.0"/>
 ```
 
-Next, you can add the API Gateway resources to the stack immediately after the `DockerImageFunction` in `LambdaApiSolutionStack.cs`:
+Next, you can add the API Gateway resources to the stack immediately after the `DockerImageFunction` in
+`LambdaApiSolutionStack.cs`:
 
 ```csharp title='LambdaApiSolution/src/LambdaApiSolution/LambdaApiSolutionStack.cs'
 HttpApi httpApi = new HttpApi(this, "APIGatewayForLambda", new HttpApiProps()
@@ -145,6 +170,7 @@ HttpApi httpApi = new HttpApi(this, "APIGatewayForLambda", new HttpApiProps()
     }
 });
 ```
+
 Then, create a Lambda proxy integration and a route for the function:
 
 ```csharp title='LambdaApiSolution/src/LambdaApiSolution/LambdaApiSolutionStack.cs'
@@ -161,7 +187,8 @@ httpApi.AddRoutes(new AddRoutesOptions()
 });
 ```
 
-I used `/casing` for the path since the sample Lambda function returns an upper and lower case version of the input string. Finally, it's helpful to display the endpoint URL using a CFN output for testing.
+I used `/casing` for the path since the sample Lambda function returns an upper and lower case version of the input
+string. Finally, it's helpful to display the endpoint URL using a CFN output for testing.
 
 ```csharp title='LambdaApiSolution/src/LambdaApiSolution/LambdaApiSolutionStack.cs'
 // adding entropy to prevent a name collision
@@ -173,7 +200,8 @@ CfnOutput apiUrl = new CfnOutput(this, "APIGatewayURLOutput", new CfnOutputProps
 });
 ```
 
-With these changes to the resources, the Lambda function can be invoked by a `POST` request. The handler method parameters in `Function.cs` need to be updated for the request body to be passed in.
+With these changes to the resources, the Lambda function can be invoked by a `POST` request. The handler method
+parameters in `Function.cs` need to be updated for the request body to be passed in.
 
 ```csharp title='LambdaApiSolution/src/LambdaApiSolution.DockerFunction/src/LambdaApiSolution.DockerFunction/Function.cs'
 // replace the string parameter with a proxy request parameter
@@ -185,7 +213,10 @@ public Casing FunctionHandler(APIGatewayProxyRequest apiGatewayProxyRequest, ILa
 }
 ```
 
-After successfully deploying the changes, the function can be tested in two ways. The first way is through an HTTP client like Postman. Add a string to the body parameter of the `POST` request. This action tests the full integration with API Gateway as well as the Lambda function. To test via the Lambda Console, update the test event from before to match the `APIGatewayProxyRequest` parameter:
+After successfully deploying the changes, the function can be tested in two ways. The first way is through an HTTP
+client like Postman. Add a string to the body parameter of the `POST` request. This action tests the full integration
+with API Gateway as well as the Lambda function. To test via the Lambda Console, update the test event from before to
+match the `APIGatewayProxyRequest` parameter:
 
 ```json
 {
@@ -194,20 +225,27 @@ After successfully deploying the changes, the function can be tested in two ways
 ```
 
 ## Adding CI/CD Using CDK Pipelines
-For this example, the source code resides in GitHub as opposed to CodeCommit. To grant the CI/CD pipeline access to the repository, a personal access token with `repo` permissions must be created via GitHub and stored in Secrets Manager as a plaintext format object. Note that for this codebase, I've named my secret `GitHub-Token`.
+
+For this example, the source code resides in GitHub as opposed to CodeCommit. To grant the CI/CD pipeline access to the
+repository, a personal access token with `repo` permissions must be created via GitHub and stored in Secrets Manager as
+a plaintext format object. Note that for this codebase, I've named my secret `GitHub-Token`.
 
 ![GitHub Personal Access Token](./github-personal-access-token.png)
 
 Next, add the following packages to the CDK project:
+
 ```xml
-<PackageReference Include="Amazon.CDK.AWS.CodeBuild" Version="1.90.0" />
-<PackageReference Include="Amazon.CDK.AWS.CodeDeploy" Version="1.90.0" />
-<PackageReference Include="Amazon.CDK.AWS.CodePipeline" Version="1.90.0" />
-<PackageReference Include="Amazon.CDK.AWS.CodePipeline.Actions" Version="1.90.0" />
-<PackageReference Include="Amazon.CDK.Pipelines" Version="1.90.0" />
+
+<PackageReference Include="Amazon.CDK.AWS.CodeBuild" Version="1.90.0"/>
+<PackageReference Include="Amazon.CDK.AWS.CodeDeploy" Version="1.90.0"/>
+<PackageReference Include="Amazon.CDK.AWS.CodePipeline" Version="1.90.0"/>
+<PackageReference Include="Amazon.CDK.AWS.CodePipeline.Actions" Version="1.90.0"/>
+<PackageReference Include="Amazon.CDK.Pipelines" Version="1.90.0"/>
 ```
 
-With these dependencies loaded, create a class called `PipelineStack.cs`. The following code creates a self-mutating CDK Pipeline, adds a GitHub source action to fetch the code using the token from Secrets Manager, and synthesizes the solution's CDK:
+With these dependencies loaded, create a class called `PipelineStack.cs`. The following code creates a self-mutating CDK
+Pipeline, adds a GitHub source action to fetch the code using the token from Secrets Manager, and synthesizes the
+solution's CDK:
 
 ```csharp title='LambdaApiSolution/src/LambdaApiSolution/PipelineStack.cs'
 using Amazon.CDK;
@@ -218,55 +256,57 @@ using Amazon.CDK.Pipelines;
 
 namespace LambdaApiSolution
 {
-	public class PipelineStack : Stack
-	{
-		internal PipelineStack(Construct scope, string id, IStackProps props = null) : base(scope, id, props)
-		{
-			Artifact_ sourceArtifact = new Artifact_();
-			Artifact_ cloudAssemblyArtifact = new Artifact_();
-			CdkPipeline pipeline = new CdkPipeline(this, "LambdaApiSolutionPipeline", new CdkPipelineProps()
-			{
-				CloudAssemblyArtifact = cloudAssemblyArtifact,
-				PipelineName = "LambdaApiSolutionPipeline",
-				SourceAction = new GitHubSourceAction(new GitHubSourceActionProps()
-				{
-					ActionName = "GitHubSource",
-					Output = sourceArtifact,
-					OauthToken = SecretValue.SecretsManager(Constants.GitHubTokenSecretsManagerId),
-					// these values are in Constants.cs instead of being hardcoded
-					Owner = Constants.Owner,
-					Repo = Constants.RepositoryName,
-					Branch = Constants.Branch,
-					Trigger = GitHubTrigger.POLL
-				}),
-				SynthAction = new SimpleSynthAction(new SimpleSynthActionProps()
-				{
-					Environment = new BuildEnvironment
-					{
-						// required for .NET 5
-						// https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-available.html
-						BuildImage = LinuxBuildImage.STANDARD_5_0
-					},
-					SourceArtifact = sourceArtifact,
-					CloudAssemblyArtifact = cloudAssemblyArtifact,
-					// navigates to the proper subdirectory to simplify other commands
-					Subdirectory = "LambdaApiSolution",
-					InstallCommands = new [] { "npm install -g aws-cdk" },
-					BuildCommands = new [] { "dotnet build src/LambdaApiSolution.sln" },
-					SynthCommand = "cdk synth"
-				})
-			});
-		}
-	}
+    public class PipelineStack : Stack
+    {
+        internal PipelineStack(Construct scope, string id, IStackProps props = null) : base(scope, id, props)
+        {
+            Artifact_ sourceArtifact = new Artifact_();
+            Artifact_ cloudAssemblyArtifact = new Artifact_();
+            CdkPipeline pipeline = new CdkPipeline(this, "LambdaApiSolutionPipeline", new CdkPipelineProps()
+            {
+                CloudAssemblyArtifact = cloudAssemblyArtifact,
+                PipelineName = "LambdaApiSolutionPipeline",
+                SourceAction = new GitHubSourceAction(new GitHubSourceActionProps()
+                {
+                    ActionName = "GitHubSource",
+                    Output = sourceArtifact,
+                    OauthToken = SecretValue.SecretsManager(Constants.GitHubTokenSecretsManagerId),
+                    // these values are in Constants.cs instead of being hardcoded
+                    Owner = Constants.Owner,
+                    Repo = Constants.RepositoryName,
+                    Branch = Constants.Branch,
+                    Trigger = GitHubTrigger.POLL
+                }),
+                SynthAction = new SimpleSynthAction(new SimpleSynthActionProps()
+                {
+                    Environment = new BuildEnvironment
+                    {
+                        // required for .NET 5
+                        // https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-available.html
+                        BuildImage = LinuxBuildImage.STANDARD_5_0
+                    },
+                    SourceArtifact = sourceArtifact,
+                    CloudAssemblyArtifact = cloudAssemblyArtifact,
+                    // navigates to the proper subdirectory to simplify other commands
+                    Subdirectory = "LambdaApiSolution",
+                    InstallCommands = new [] { "npm install -g aws-cdk" },
+                    BuildCommands = new [] { "dotnet build src/LambdaApiSolution.sln" },
+                    SynthCommand = "cdk synth"
+                })
+            });
+        }
+    }
 }
 ```
 
 Remove the following line from `Program.cs` since the pipeline will deploy the API from now on:
+
 ```csharp
 new LambdaApiSolutionStack(app, "LambdaApiSolutionStack");
 ```
 
-Delete the previous stack, commit the latest changes to the source code so that they'll be available when the pipeline fetches the repo, and finally deploy the pipeline:
+Delete the previous stack, commit the latest changes to the source code so that they'll be available when the pipeline
+fetches the repo, and finally deploy the pipeline:
 
 ```shell
 cdk destroy
@@ -277,7 +317,12 @@ cdk deploy LambdaApiSolutionPipelineStack
 ```
 
 ## Creating Multiple Environments
-From now on, the pipeline will manage changes instead of manual `cdk deploy` commands. By merely pushing changes to the `main` branch, the pipeline will update itself and the other resources. The last feature in this example is adding development, test, and production environments. Rather than creating more stacks, we can leverage stages instead. Each environment will have a stage that makes a separate stack plus actions like approvals or integration testing. First, a stage must be defined in code. For this example, a stage will only contain an API stack.
+
+From now on, the pipeline will manage changes instead of manual `cdk deploy` commands. By merely pushing changes to the
+`main` branch, the pipeline will update itself and the other resources. The last feature in this example is adding
+development, test, and production environments. Rather than creating more stacks, we can leverage stages instead. Each
+environment will have a stage that makes a separate stack plus actions like approvals or integration testing. First, a
+stage must be defined in code. For this example, a stage will only contain an API stack.
 
 ```csharp title='LambdaApiSolution/src/LambdaApiSolution/Program.cs'
 using Amazon.CDK;
@@ -295,7 +340,8 @@ namespace LambdaApiSolution
 }
 ```
 
-To implement the stages, navigate back to `PipelineStack.cs` and append the following code after the pipeline declaration:
+To implement the stages, navigate back to `PipelineStack.cs` and append the following code after the pipeline
+declaration:
 
 ```csharp title='LambdaApiSolution/src/LambdaApiSolution/PipelineStack.cs'
 CdkStage developmentStage = pipeline.AddApplicationStage(new SolutionStage(this, "Development"));
@@ -308,4 +354,6 @@ CdkStage productionStage = pipeline.AddApplicationStage(new SolutionStage(this, 
 ```
 
 ## Next Steps
-The Lambda function, API Gateway, and multi-environment CI/CD pipeline are now in place. More Lambda functions can be added as separate C# projects. More stacks can be created and added to `SolutionStage.cs`.
+
+The Lambda function, API Gateway, and multi-environment CI/CD pipeline are now in place. More Lambda functions can be
+added as separate C# projects. More stacks can be created and added to `SolutionStage.cs`.

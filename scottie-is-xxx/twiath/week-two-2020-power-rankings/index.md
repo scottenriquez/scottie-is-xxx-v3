@@ -11,7 +11,7 @@ import { faLevelUpAlt } from "@fortawesome/free-solid-svg-icons"
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-two-scottie" class="sleeper-avatar"/>🏆‼️ | 2-0W/L | 239PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-two-scottie" class="sleeper-avatar"/> 🏆‼️ | 2-0W/L | 239PF
 
 #### Week Two Points: 139.7
 
@@ -29,7 +29,7 @@ There's a new number one team in town. Tarv's team looks excellent from top to b
 | Julian Edelman  | NE-WR   | 1     |
 | Chicago Bears   | CHI-DEF |       
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/a91cfbe2665c3bc237b6aa5199fb0d7a-two-scottie" class="sleeper-avatar"/>Fart Masseuse | 2-0W/L | 221PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/a91cfbe2665c3bc237b6aa5199fb0d7a-two-scottie" class="sleeper-avatar"/> Fart Masseuse | 2-0W/L | 221PF
 
 #### Week Two Points: 110.6
 
@@ -48,7 +48,7 @@ Clyde Edwards-Helaire has a down week, and K-Man still posts 115 on me. Once he 
 | Tennessee Titans      | TEN-DEF |       |
 
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-two-scottie" class="sleeper-avatar"/>Court is Not in Sutton | 1-1W/L | 243PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-two-scottie" class="sleeper-avatar"/> Court is Not in Sutton | 1-1W/L | 243PF
 
 #### Week Two Points: 116.2
 
@@ -66,7 +66,7 @@ Caleb has had back-to-back baller weeks, and I'm very impressed. There are two c
 | Raheem Mostert      | SF-RB   | 1 (Q) |
 | Pittsburgh Steelers | PIT-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-two-scottie" class="sleeper-avatar"/>FEED ME 🥄 | 2-0W/L | 221PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-two-scottie" class="sleeper-avatar"/> FEED ME 🥄 | 2-0W/L | 221PF
 
 #### Week Two Points: 123.1
 
@@ -86,7 +86,7 @@ It's hard to have a bad week when your QB posts a 40-piece. There's not much to 
 | J.K. Dobbins    | BAL-RB  | 2     |
 | Buffalo Bills   | BUF-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-two-scottie" class="sleeper-avatar"/>Manhattan (KS) Miracles | 1-1W/L | 210PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-two-scottie" class="sleeper-avatar"/> Manhattan (KS) Miracles | 1-1W/L | 210PF
 
 #### Week Two Points: 110.9
 
@@ -106,7 +106,7 @@ This was a tough loss. I'm not writing off Chris by any means, but it's hard to 
 | Melvin Gordon       | DEN-RB | 1     |
 | San Francisco 49ers | SF-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-two-scottie" class="sleeper-avatar"/>Glizzy Guzzlers | 1-1W/L | 223PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-two-scottie" class="sleeper-avatar"/> Glizzy Guzzlers | 1-1W/L | 223PF
 
 #### Week Two Points: 130.4
 
@@ -126,7 +126,7 @@ Yeah, that sums it up.
 | Marvin Jones       | DET-WR  | 1     |
 | Arizona Cardinals  | ARI-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-two-scottie" class="sleeper-avatar"/>These rankings are trash | 1-1W/L | 205PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-two-scottie" class="sleeper-avatar"/> These rankings are trash | 1-1W/L | 205PF
 
 #### Week Two Points: 98.0
 
@@ -144,7 +144,7 @@ I'm still not very high on this team's running backs. I'm very interested to see
 | Robby Anderson       | CAR-WR | 1     |
 | New England Patriots | NE-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-two-scottie" class="sleeper-avatar"/>Uncle Cral's Little Dogs | 1-1W/L | 164PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-two-scottie" class="sleeper-avatar"/> Uncle Cral's Little Dogs | 1-1W/L | 164PF
 
 #### Week Two Points: 107.9
 
@@ -164,7 +164,7 @@ I have no idea what the hell this team is and do not care to speculate. Uncle Cr
 | James Conner         | PIT-RB | 1     |
 | Tampa Bay Buccaneers | TB-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/94702f21e95d3aa14c8d671585ae6c58-two-scottie" class="sleeper-avatar"/>The Mixon Administration | 1-1W/L | 175PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/94702f21e95d3aa14c8d671585ae6c58-two-scottie" class="sleeper-avatar"/> The Mixon Administration | 1-1W/L | 175PF
 
 #### Week Two Points: 96.5
 
@@ -184,7 +184,7 @@ John is one Russell Wilson away from the Sacko. In typical John luck, he eeks ou
 | John Brown         | BUF-WR | 1     |
 | Kansas City Chiefs | KC-DEF |       
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-two-scottie" class="sleeper-avatar"/>Zug My Balls | 0-2W/L | 173PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-two-scottie" class="sleeper-avatar"/> Zug My Balls | 0-2W/L | 173PF
 
 #### Week Two Points: 58.3
 
@@ -202,7 +202,7 @@ It was a very tough week for Logz, and I'm not convinced it was a fluke. Deshaun
 | Sterling Shepard    | NYG-WR  | 1 (Q) |
 | Baltimore Ravens    | BAL-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-two-scottie" class="sleeper-avatar"/>Cant print points | 0-2W/L | 172PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-two-scottie" class="sleeper-avatar"/> Cant print points | 0-2W/L | 172PF
 
 #### Week Two Points: 91.7
 
@@ -222,7 +222,7 @@ I feel bad for Trondheim. This team has some solid pieces in Kyler Murray, Darre
 | Sammy Watkins    | KC-WR   | 1 (Q) |
 | Seattle Seahawks | SEA-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/49b1d67d6b1562f8ef7d03645a046694-two-scottie" class="sleeper-avatar"/>Waiver Wire Burrow | 0-2W/L | 169PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/49b1d67d6b1562f8ef7d03645a046694-two-scottie" class="sleeper-avatar"/> Waiver Wire Burrow | 0-2W/L | 169PF
 
 #### Week Two Points: 86.0
 

@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLevelUpAlt } from "@fortawesome/free-solid-svg-icons"
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-one-scottie" class="sleeper-avatar"/>Fresh Prince of Helaire | 1-0W/L | 117PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-one-scottie" class="sleeper-avatar"/> Fresh Prince of Helaire | 1-0W/L | 117PF
 
 #### Week One Points: 117
 
@@ -28,7 +28,7 @@ Much like K-State against a typical, laughably bad OOC schedule, Chris is once a
 | Robert Woods          | LAR-WR  | 1     |
 | Buffalo Bills         | BUF-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-one-scottie" class="sleeper-avatar"/>Jordan '96 '97 | 1-0W/L | 115PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-one-scottie" class="sleeper-avatar"/> Jordan '96 '97 | 1-0W/L | 115PF
 
 #### Week One Points: 115
 
@@ -46,7 +46,7 @@ Tarv does it again. After being close to Trond levels of horrific fantasy footba
 | Corey Davis         | NYJ-WR | 1     |
 | San Francisco 49ers | SF-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-one-scottie" class="sleeper-avatar"/>Zeke Squad | 1-0W/L | 116PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-one-scottie" class="sleeper-avatar"/> Zeke Squad | 1-0W/L | 116PF
 
 #### Week One Points: 116
 
@@ -64,7 +64,7 @@ Don't trade with John. These starters look elite. Don't trade with John. The ben
 | Diontae Johnson     | PIT-WR  | 1     |
 | Pittsburgh Steelers | PIT-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-one-scottie" class="sleeper-avatar"/>Darrel and the Hendersons | 1-0W/L | 125PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-one-scottie" class="sleeper-avatar"/> Darrel and the Hendersons | 1-0W/L | 125PF
 
 #### Week One Points: 125
 
@@ -84,7 +84,7 @@ Logan hit big this week, but I still have significant concerns about this team. 
 | Mecole Hardman    | KC-WR   | 1 (Q) |
 | Los Angeles Rams  | LAR-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/a91cfbe2665c3bc237b6aa5199fb0d7a-one-scottie" class="sleeper-avatar"/>Moore Cowbell | 0-1W/L | 109PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/a91cfbe2665c3bc237b6aa5199fb0d7a-one-scottie" class="sleeper-avatar"/> Moore Cowbell | 0-1W/L | 109PF
 
 #### Week One Points: 109
 
@@ -102,7 +102,7 @@ Much like K-Man, Matthew Stafford appears to be thriving after leaving behind th
 | Ja'Marr Chase      | CIN-WR  | 1     |
 | Indianapolis Colts | IND-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-one-scottie" class="sleeper-avatar"/>FEED ME 🥄 | 1-0W/L | 96PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-one-scottie" class="sleeper-avatar"/> FEED ME 🥄 | 1-0W/L | 96PF
 
 #### Week One Points: 96
 
@@ -122,7 +122,7 @@ Mrak's starters look good, but his team is about as deep as an episode of The Jo
 | Tee Higgins          | CIN-WR  | 1     |
 | Jacksonville Jaguars | JAX-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-one-scottie" class="sleeper-avatar"/>Mom’s Volkswagen | 0-1W/L | 108PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-one-scottie" class="sleeper-avatar"/> Mom’s Volkswagen | 0-1W/L | 108PF
 
 #### Week One Points: 108
 
@@ -140,7 +140,7 @@ Trond doesn't care enough to draft his own team, so I don't care enough to write
 | JuJu Smith-Schuster | PIT-WR  | 1     |
 | Carolina Panthers   | CAR-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-one-scottie" class="sleeper-avatar"/>Uncle Cral's Little Dogs | 0-1W/L | 92PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-one-scottie" class="sleeper-avatar"/> Uncle Cral's Little Dogs | 0-1W/L | 92PF
 
 #### Week One Points: 92
 
@@ -158,7 +158,7 @@ This score is a bit misleading. If Brandon Aiyuk wasn't as nonexistent as Tulsa'
 | Kenny Golladay           | NYG-WR  | 1 (Q) |
 | Washington Football Team | WAS-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-one-scottie" class="sleeper-avatar"/>All Gaskin No Breaks | 0-1W/L | 96PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-one-scottie" class="sleeper-avatar"/> All Gaskin No Breaks | 0-1W/L | 96PF
 
 #### Week One Points: 96
 
@@ -178,7 +178,7 @@ My team, much like Texas Longhorns football, continues to be aggressively medioc
 | Justin Jefferson     | MIN-WR | 1     |
 | New England Patriots | NE-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-one-scottie" class="sleeper-avatar"/>God Wins Gunnin Runnin Nuns | 1-0W/L | 74PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-one-scottie" class="sleeper-avatar"/> God Wins Gunnin Runnin Nuns | 1-0W/L | 74PF
 
 #### Week One Points: 74
 
@@ -196,7 +196,7 @@ Caleb got off easier this week than when we let him keep his players despite mis
 | Jarvis Landry  | CLE-WR  | 1     |
 | Denver Broncos | DEN-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-one-scottie" class="sleeper-avatar"/>These rankings are trash | 0-1W/L | 76PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-one-scottie" class="sleeper-avatar"/> These rankings are trash | 0-1W/L | 76PF
 
 #### Week One Points: 76
 
@@ -214,7 +214,7 @@ CMC couldn't save this trash-ass team. Kyle Pitts? More like Kyle Shitts. Michae
 | Michael Pittman     | IND-WR  | 1     |
 | Baltimore Ravens    | BAL-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-one-scottie" class="sleeper-avatar"/>Glizzy Guzzlers | 0-1W/L | 58PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-one-scottie" class="sleeper-avatar"/> Glizzy Guzzlers | 0-1W/L | 58PF
 
 #### Week One Points: 58
 

@@ -11,7 +11,7 @@ import { faLevelUpAlt } from "@fortawesome/free-solid-svg-icons"
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-zero-callen" class="sleeper-avatar"/>Uncle Cral's Little Dogs | 0-0W/L | 0PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-zero-callen" class="sleeper-avatar"/> Uncle Cral's Little Dogs | 0-0W/L | 0PF
 
 #### Week Zero Points: 0
 
@@ -29,7 +29,7 @@ Carl is good where it counts and weak where it doesn't. This is exactly what you
 | Kenny Golladay           | NYG-WR  | 1 (Q) |
 | Washington Football Team | WAS-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-zero-callen" class="sleeper-avatar"/>These rankings are trash | 0-0W/L | 0PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-zero-callen" class="sleeper-avatar"/> These rankings are trash | 0-0W/L | 0PF
 
 #### Week Zero Points: 0
 
@@ -47,7 +47,7 @@ The top end of Andrew's roster stacks up as well as Carl's, but there are a coup
 | Michael Pittman     | IND-WR  | 1     |
 | Baltimore Ravens    | BAL-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-zero-callen" class="sleeper-avatar"/>FEED ME 🥄 | 0-0W/L | 0PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-zero-callen" class="sleeper-avatar"/> FEED ME 🥄 | 0-0W/L | 0PF
 
 #### Week Zero Points: 0
 
@@ -65,7 +65,7 @@ In this draft, I think there are 3 or 4 tiers. Carl and Andrew are on top, and t
 | Tee Higgins      | CIN-WR  | 1     |
 | Seattle Seahawks | SEA-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-zero-callen" class="sleeper-avatar"/>Glizzy Guzzlers | 0-0W/L | 0PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-zero-callen" class="sleeper-avatar"/> Glizzy Guzzlers | 0-0W/L | 0PF
 
 #### Week Zero Points: 0
 
@@ -83,7 +83,7 @@ My team is sitting in a fairly similar situation to Mark's. Both teams had two g
 | Aaron Jones          | GB-RB  | 1     |
 | Tampa Bay Buccaneers | TB-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-zero-callen" class="sleeper-avatar"/>All Gaskin No Breaks | 0-0W/L | 0PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-zero-callen" class="sleeper-avatar"/> All Gaskin No Breaks | 0-0W/L | 0PF
 
 #### Week Zero Points: 0
 
@@ -101,7 +101,7 @@ In my mind, this team has four top-tier, sure-fire stars. Those being Taylor, Br
 | Justin Jefferson     | MIN-WR | 1     |
 | New England Patriots | NE-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-zero-callen" class="sleeper-avatar"/>Jordan '96 '97 | 0-0W/L | 0PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-zero-callen" class="sleeper-avatar"/> Jordan '96 '97 | 0-0W/L | 0PF
 
 #### Week Zero Points: 0
 
@@ -119,7 +119,7 @@ Just like I thought my team and Mark's had similarities, I also think Travis and
 | Corey Davis         | NYJ-WR | 1     |
 | San Francisco 49ers | SF-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-zero-callen" class="sleeper-avatar"/>Zeke Squad | 0-0W/L | 0PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-zero-callen" class="sleeper-avatar"/> Zeke Squad | 0-0W/L | 0PF
 
 #### Week Zero Points: 0
 
@@ -137,7 +137,7 @@ When I look at John's team, I keep asking myself the same type of question: "Thi
 | Diontae Johnson     | PIT-WR  | 1     |
 | Pittsburgh Steelers | PIT-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/a91cfbe2665c3bc237b6aa5199fb0d7a-zero-callen" class="sleeper-avatar"/>Moore Cowbell | 0-0W/L | 0PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/a91cfbe2665c3bc237b6aa5199fb0d7a-zero-callen" class="sleeper-avatar"/> Moore Cowbell | 0-0W/L | 0PF
 
 #### Week Zero Points: 0
 
@@ -155,7 +155,7 @@ This team gave me almost the opposite problem that I had when evaluating John's 
 | Jakobi Meyers      | NE-WR   | 1     |
 | Indianapolis Colts | IND-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-zero-callen" class="sleeper-avatar"/>Runnin Gunnin Nunnin | 0-0W/L | 0PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-zero-callen" class="sleeper-avatar"/> Runnin Gunnin Nunnin | 0-0W/L | 0PF
 
 #### Week Zero Points: 0
 
@@ -173,7 +173,7 @@ Maybe I'm just a full-on chalk boy, but if you cut my rankings into thirds, you'
 | Jarvis Landry  | CLE-WR  | 1     |
 | Denver Broncos | DEN-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-zero-callen" class="sleeper-avatar"/>Fresh Prince of Helaire | 0-0W/L | 0PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-zero-callen" class="sleeper-avatar"/> Fresh Prince of Helaire | 0-0W/L | 0PF
 
 #### Week Zero Points: 0
 
@@ -191,7 +191,7 @@ Chris' team starts off the remaining tier of rosters, which lacks both the high 
 | Robert Woods          | LAR-WR  | 1     |
 | Buffalo Bills         | BUF-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-zero-callen" class="sleeper-avatar"/>You Shenault Pass | 0-0W/L | 0PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-zero-callen" class="sleeper-avatar"/> You Shenault Pass | 0-0W/L | 0PF
 
 #### Week Zero Points: 0
 
@@ -209,7 +209,7 @@ In last year's ranking, I put Logan as the #11 team. He took offense to this and
 | Darrell Henderson | LAR-RB  | 1     |
 | Los Angeles Rams  | LAR-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-zero-callen" class="sleeper-avatar"/>Mom’s Volkswagen | 0-0W/L | 0PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-zero-callen" class="sleeper-avatar"/> Mom’s Volkswagen | 0-0W/L | 0PF
 
 #### Week Zero Points: 0
 

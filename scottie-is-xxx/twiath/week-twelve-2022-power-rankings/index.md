@@ -11,7 +11,7 @@ import { faLevelUpAlt } from "@fortawesome/free-solid-svg-icons"
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-twelve-caleb" class="sleeper-avatar"/>Dragonball Zeke | 8-4W/L | 1421PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-twelve-caleb" class="sleeper-avatar"/> Dragonball Zeke | 8-4W/L | 1421PF
 
 #### Week Twelve Points: 133.9
 
@@ -29,7 +29,7 @@ This team slaps harder than Will Smith on Oscars night. Having Josh Allen, Nick 
 | Deebo Samuel         | SF-WR  | 1     |
 | New England Patriots | NE-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-twelve-caleb" class="sleeper-avatar"/>Fullmetal Ekelerist | 8-4W/L | 1317PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-twelve-caleb" class="sleeper-avatar"/> Fullmetal Ekelerist | 8-4W/L | 1317PF
 
 #### Week Twelve Points: 117.3
 
@@ -47,7 +47,7 @@ Coming in at number two, we have Callen. Overall, this is a solid team, and they
 | Austin Ekeler      | LAC-RB  | 1     |
 | Indianapolis Colts | IND-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-twelve-caleb" class="sleeper-avatar"/>Dollar General Box Fans | 6-6W/L | 1261PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-twelve-caleb" class="sleeper-avatar"/> Dollar General Box Fans | 6-6W/L | 1261PF
 
 #### Week Twelve Points: 115.3
 
@@ -65,7 +65,7 @@ This team is hitting on all cylinders just at the right time. Christian McCaffer
 | Tony Pollard        | DAL-RB  | 2     |
 | Baltimore Ravens    | BAL-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-twelve-caleb" class="sleeper-avatar"/>Saquon deez nuts | 9-3W/L | 1184PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-twelve-caleb" class="sleeper-avatar"/> Saquon deez nuts | 9-3W/L | 1184PF
 
 #### Week Twelve Points: 95.97
 
@@ -83,7 +83,7 @@ Andrew is the Jerry Jones of this league. He is good at making you think his tea
 | Devin Singletary    | BUF-RB | 1     |
 | San Francisco 49ers | SF-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-twelve-caleb" class="sleeper-avatar"/>Unaccredited Chili Guy | 4-8W/L | 1341PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-twelve-caleb" class="sleeper-avatar"/> Unaccredited Chili Guy | 4-8W/L | 1341PF
 
 #### Week Twelve Points: 101.26
 
@@ -101,7 +101,7 @@ If I were betting, knowing nothing about this league, I would place money on Tro
 | Michael Carter        | NYJ-RB  | 1     |
 | Los Angeles Rams      | LAR-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/89735500b2020c604c3ca05189da7dbc-twelve-caleb" class="sleeper-avatar"/>Derrick on Titan | 4-8W/L | 1276PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/89735500b2020c604c3ca05189da7dbc-twelve-caleb" class="sleeper-avatar"/> Derrick on Titan | 4-8W/L | 1276PF
 
 #### Week Twelve Points: 121.12
 
@@ -119,7 +119,7 @@ Having the number one, three, and seven RBs in the league should make me one of 
 | Josh Jacobs         | LV-RB   | 1     |
 | Buffalo Bills       | BUF-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-twelve-caleb" class="sleeper-avatar"/>Cheeseburger Lenny | 6-6W/L | 1249PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-twelve-caleb" class="sleeper-avatar"/> Cheeseburger Lenny | 6-6W/L | 1249PF
 
 #### Week Twelve Points: 123.84
 
@@ -137,7 +137,7 @@ Is this the new World Beaters? Chris saved up and used all his FAAB money just a
 | Jaylen Waddle  | MIA-WR  | 1     |
 | Miami Dolphins | MIA-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/a18f9fc9312fa9c2003503730b41e7fc-twelve-caleb" class="sleeper-avatar"/>Jalen the Super Saiyan | 7-5W/L | 1216PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/a18f9fc9312fa9c2003503730b41e7fc-twelve-caleb" class="sleeper-avatar"/> Jalen the Super Saiyan | 7-5W/L | 1216PF
 
 #### Week Twelve Points: 104.92
 
@@ -155,7 +155,7 @@ For how good the Vikings have been this year, Dalvin Cook has been a bit disappo
 | Marquise Brown      | ARI-WR  | 1     |
 | Dallas Cowboys      | DAL-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-twelve-caleb" class="sleeper-avatar"/>JoJo's Ja'Marr Adventure | 4-8W/L | 1232PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-twelve-caleb" class="sleeper-avatar"/> JoJo's Ja'Marr Adventure | 4-8W/L | 1232PF
 
 #### Week Twelve Points: 94.67
 
@@ -173,7 +173,7 @@ Outside of Kelce, this team is tough to look at. With Chase out, there isn't muc
 | George Pickens      | PIT-WR  | 1     |
 | Philadelphia Eagles | PHI-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-twelve-caleb" class="sleeper-avatar"/>My Hero Alvin Kamaria | 6-6W/L | 1221PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-twelve-caleb" class="sleeper-avatar"/> My Hero Alvin Kamaria | 6-6W/L | 1221PF
 
 #### Week Twelve Points: 69.57
 
@@ -191,7 +191,7 @@ This team has potential, but it's boom or bust, and you can tell, looking at K-M
 | Terry McLaurin | WAS-WR  | 1     |
 | Denver Broncos | DEN-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/0658c50f92789c23a6f0b1efef9dbdaa-twelve-caleb" class="sleeper-avatar"/>Neon Genesis Etienne | 5-7W/L | 1123PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/0658c50f92789c23a6f0b1efef9dbdaa-twelve-caleb" class="sleeper-avatar"/> Neon Genesis Etienne | 5-7W/L | 1123PF
 
 #### Week Twelve Points: 123.95
 
@@ -209,7 +209,7 @@ What the hell happened to Kamara this year? Ouch! Harris is out, and even if he 
 | Garrett Wilson  | NYJ-WR  | 1     |
 | New York Jets   | NYJ-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-twelve-caleb" class="sleeper-avatar"/>Taylor Moon | 5-7W/L | 1183PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-twelve-caleb" class="sleeper-avatar"/> Taylor Moon | 5-7W/L | 1183PF
 
 #### Week Twelve Points: 108.8
 

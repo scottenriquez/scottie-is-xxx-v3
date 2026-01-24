@@ -20,10 +20,10 @@ class BarChart extends Component {
         const height = 400;
         const width = 800;
         const margin = { top: 20, right: 30, bottom: 30, left: 40 };
-      // Calculate the minimum and maximum values for the x-axis
-      const yMin = d3.min(this.props.data, (d) => d[this.props.yAxisName]);
-      const yMax = d3.max(this.props.data, (d) => d[this.props.yAxisName]);
-      const x = d3
+        // Calculate the minimum and maximum values for the x-axis
+        const yMin = d3.min(this.props.data, (d) => d[this.props.yAxisName]);
+        const yMax = d3.max(this.props.data, (d) => d[this.props.yAxisName]);
+        const x = d3
             .scaleBand()
             .domain(this.props.data.map((d) => d[this.props.xAxisName]))
             .rangeRound([margin.left, width - margin.right])
@@ -34,14 +34,14 @@ class BarChart extends Component {
             .rangeRound([height - margin.bottom, margin.top]);
         const xAxis = (g) =>
             g
-              .attr("class", "x-axis")
-              .attr("transform", `translate(0,${height - margin.bottom})`)
-              .style('color', '#a4ff90')
-              .call(d3.axisBottom(x));
+                .attr("class", "x-axis")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .style('color', '#a7c080')
+                .call(d3.axisBottom(x));
         const y1Axis = (g) =>
             g
                 .attr('transform', `translate(${margin.left},0)`)
-                .style('color', '#a4ff90')
+                .style('color', '#a7c080')
                 .call(d3.axisLeft(y1).ticks(null, 's'))
                 .call((g) => g.select('.domain').remove())
                 .call((g) =>
@@ -57,7 +57,7 @@ class BarChart extends Component {
         svg.select('.y-axis').call(y1Axis);
         svg
             .select('.plot-area')
-            .attr('fill', '#a4ff90')
+            .attr('fill', '#a7c080')
             .selectAll('.bar')
             .data(this.props.data)
             .join('rect')

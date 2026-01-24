@@ -3,7 +3,7 @@ authors: [ scottenriquez ]
 title: TEALS Week One Postmortem
 date: "2018-09-03"
 description: "Successes and lessons learned during my first week of teaching computer science."
-tags: ["Teaching"]
+tags: [ "Teaching" ]
 ---
 
 My first week of teaching is in the books, and there’s already a ton to reflect on. Overall, I think that class so far
@@ -11,7 +11,8 @@ has been a success, but I’ve already identified several opportunities for impr
 
 ## What Went Well
 
-I graduated from high school over a decade ago, and the world and technology have changed a great deal since then. I pounded
+I graduated from high school over a decade ago, and the world and technology have changed a great deal since then. I
+pounded
 out Java programs on crawling, clunky Windows 95 desktop machines without the interruptions of smartphones. Now every
 student has their own laptop. I assumed that my lectures and exercises would have to rival the distractions of the
 digital age. Overall, I found that it was easy to get the students engaged with the material especially when I made a
@@ -39,21 +40,21 @@ this doesn’t pan out, my contingency is to simply make flashcards.
 ```csharp
 public class TEALSRandomNameSelector {
     public static void main(String[] args) {
-		try {
-			ArrayList studentNames = new ArrayList();
-			Scanner scanner = new Scanner(new FileReader("students.txt"));
-			while(scanner.hasNextLine()) {
-				studentNames.add(scanner.nextLine());
-			}
-			scanner.close();
-			Random random = new Random();
-			int randomIndex = random.nextInt(studentNames.size());
-			System.out.println(studentNames.get(randomIndex));
-		}
-		catch(FileNotFoundException exception) {
-			System.out.println("File not found. Check the path in the FileReader constructor method.");
-		}
-	}
+        try {
+            ArrayList studentNames = new ArrayList();
+            Scanner scanner = new Scanner(new FileReader("students.txt"));
+            while(scanner.hasNextLine()) {
+                studentNames.add(scanner.nextLine());
+            }
+            scanner.close();
+            Random random = new Random();
+            int randomIndex = random.nextInt(studentNames.size());
+            System.out.println(studentNames.get(randomIndex));
+        }
+        catch(FileNotFoundException exception) {
+            System.out.println("File not found. Check the path in the FileReader constructor method.");
+        }
+    }
 }
 ```
 
