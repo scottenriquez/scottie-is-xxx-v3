@@ -27,7 +27,6 @@
 }
 
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #a7c080;
   --ifm-color-primary-dark: #83c092;
@@ -51,12 +50,14 @@
   font-style: normal;
 }
 
-/* Apply JetBrains Mono globally */
+img:not([src*="maps.googleapis.com"]):not([src*="maps.gstatic.com"]) {
+  filter: grayscale(100%);
+}
+
 * {
   font-family: 'JetBrains Mono', monospace;
 }
 
-/* Maximize content width */
 .container {
   max-width: 100%;
   padding-left: 2rem;
@@ -67,13 +68,11 @@
   max-width: 100%;
 }
 
-/* Adjust blog post container width */
 article {
   max-width: 900px;
   margin: 0 auto;
 }
 
-/* Widen the doc content area */
 .theme-doc-markdown {
   max-width: 900px;
 }
