@@ -50,7 +50,7 @@
   font-style: normal;
 }
 
-img:not([src*="maps.googleapis.com"]):not([src*="maps.gstatic.com"]) {
+img:not([src*="maps.googleapis.com"]):not([src*="maps.gstatic.com"]):not([src$=".svg"]) {
   filter: grayscale(100%);
 }
 
