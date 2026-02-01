@@ -1,9 +1,9 @@
 ---
 authors: [scottenriquez]
 title: Continuous Integration for Swift Packages in Azure DevOps
-date: "2020-08-04"
-description: "Building CI for Swift packages using Azure Pipelines."
-tags: ["Programming"]
+date: '2020-08-04'
+description: 'Building CI for Swift packages using Azure Pipelines.'
+tags: ['Programming']
 ---
 
 ## Overview
@@ -27,7 +27,7 @@ In general, I want CI to run on all branches, so I use the following YAML instea
 trigger:
   branches:
     include:
-      - "*"
+      - '*'
 ```
 
 ## Specifying a Virtual Machine Image
@@ -36,7 +36,7 @@ After specifying the trigger, Azure Pipelines needs to know what type of infrast
 
 ```yaml
 pool:
-  vmImage: "ubuntu-18.04"
+  vmImage: 'ubuntu-18.04'
 ```
 
 ## Installing Swift Programmatically
@@ -64,7 +64,7 @@ steps:
       tar -xvzf swift-5.2.4-RELEASE*
       export PATH=$PATH:$(pwd)/swift-5.2.4-RELEASE-ubuntu18.04
       swift -version
-    displayName: "Install Swift"
+    displayName: 'Install Swift'
 ```
 
 ## Additional Steps
@@ -75,10 +75,10 @@ With Swift successfully installed, the remainder of the build steps is scripted 
 trigger:
   branches:
     include:
-      - "*"
+      - '*'
 
 pool:
-  vmImage: "ubuntu-18.04"
+  vmImage: 'ubuntu-18.04'
 
 steps:
   - script: |
@@ -89,9 +89,9 @@ steps:
       tar -xvzf swift-5.2.4-RELEASE*
       export PATH=$PATH:$(pwd)/swift-5.2.4-RELEASE-ubuntu18.04
       swift -version
-    displayName: "Install Swift"
+    displayName: 'Install Swift'
 
   - script: |
       swift test
-    displayName: "Run unit tests"
+    displayName: 'Run unit tests'
 ```

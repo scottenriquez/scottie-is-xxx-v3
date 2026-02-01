@@ -1,9 +1,9 @@
 ---
 authors: [scottenriquez]
 title: Fantasy Football Power Rankings Markdown Generator
-date: "2020-08-21"
+date: '2020-08-21'
 description: "A CLI for creating posts for my league's fantasy football site."
-tags: ["Programming"]
+tags: ['Programming']
 ---
 
 ## Overview
@@ -57,68 +57,68 @@ The league-specific details exist in various JavaScript configuration files to m
 ```javascript title='/lib/config/gatsby.js'
 const gatsby = {
   // used to determine if the user created a new branch
-  mainBranchName: "master",
+  mainBranchName: 'master',
   // used to determine if the user is in the root Gatsby directory
-  configFileName: "gatsby-config.js",
+  configFileName: 'gatsby-config.js',
   // used to support any changes to the default blog path for vanity URLs
-  postPath: "/content/blog/posts",
+  postPath: '/content/blog/posts',
   // used to defer image styling for the avatar to the Gatsby site
-  avatarHTMLClass: "sleeper-avatar",
-}
+  avatarHTMLClass: 'sleeper-avatar',
+};
 ```
 
 ```javascript title='/lib/config/aws.js'
 const awsConfig = {
   // S3 bucket
-  bucketName: "twiath-site-cdn",
+  bucketName: 'twiath-site-cdn',
   // URL base to be used for source in <img> tag
-  cdnURLBase: "https://d1yqxti3jheii7.cloudfront.net",
-}
+  cdnURLBase: 'https://d1yqxti3jheii7.cloudfront.net',
+};
 ```
 
 ```javascript title='/lib/config/league.js'
 const league = {
   // Sleeper league ID number
-  id: "541384381865115648",
-}
+  id: '541384381865115648',
+};
 ```
 
 ```javascript title='/lib/config/validAuthors.js'
 const authors = {
-  Scottie: "Scottie Enriquez",
-  Callen: "Callen Trail",
-  Logan: "Logan Richardson",
-  Carl: "Carl Meziere",
-  Andrew: "Andrew Carlough",
-  John: "John Yarrow",
-  Matt: "Matt Kniowski",
-  Chris: "Chris Ramsey",
-  Caleb: "Caleb Trantow",
-  Travis: "Travis James",
-  Trond: "Trond Liu",
-  Mark: "Mark Hamilton",
-}
+  Scottie: 'Scottie Enriquez',
+  Callen: 'Callen Trail',
+  Logan: 'Logan Richardson',
+  Carl: 'Carl Meziere',
+  Andrew: 'Andrew Carlough',
+  John: 'John Yarrow',
+  Matt: 'Matt Kniowski',
+  Chris: 'Chris Ramsey',
+  Caleb: 'Caleb Trantow',
+  Travis: 'Travis James',
+  Trond: 'Trond Liu',
+  Mark: 'Mark Hamilton',
+};
 ```
 
 ```javascript title='/lib/config/validWeeks.js'
 const weeks = {
-  0: "zero",
-  1: "one",
-  2: "two",
-  3: "three",
-  4: "four",
-  5: "five",
-  6: "six",
-  7: "seven",
-  8: "eight",
-  9: "nine",
-  10: "ten",
-  11: "eleven",
-  12: "twelve",
-  13: "thirteen",
-  14: "fourteen",
-  15: "fifteen",
-  16: "sixteen",
-  17: "seventeen",
-}
+  0: 'zero',
+  1: 'one',
+  2: 'two',
+  3: 'three',
+  4: 'four',
+  5: 'five',
+  6: 'six',
+  7: 'seven',
+  8: 'eight',
+  9: 'nine',
+  10: 'ten',
+  11: 'eleven',
+  12: 'twelve',
+  13: 'thirteen',
+  14: 'fourteen',
+  15: 'fifteen',
+  16: 'sixteen',
+  17: 'seventeen',
+};
 ```

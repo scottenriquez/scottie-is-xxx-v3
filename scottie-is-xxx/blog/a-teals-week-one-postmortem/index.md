@@ -1,9 +1,9 @@
 ---
-authors: [ scottenriquez ]
+authors: [scottenriquez]
 title: TEALS Week One Postmortem
-date: "2018-09-03"
-description: "Successes and lessons learned during my first week of teaching computer science."
-tags: [ "Teaching" ]
+date: '2018-09-03'
+description: 'Successes and lessons learned during my first week of teaching computer science.'
+tags: ['Teaching']
 ---
 
 My first week of teaching is in the books, and there’s already a ton to reflect on. Overall, I think that class so far

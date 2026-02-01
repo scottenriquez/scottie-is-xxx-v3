@@ -1,18 +1,20 @@
 ---
 title: "Analyzing Luck in the League's Recent History"
-date: "2024-08-13"
-description: "Determining who is the luckiest person in the league."
+date: '2024-08-13'
+description: 'Determining who is the luckiest person in the league.'
 authors: [scottie, callen]
-tags: ["Data Analysis Blog"]
+tags: ['Data Analysis Blog']
 ---
 
 import TeamPointsBarGraph from '../../src/components/FantasyFootball/LuckAnalysis/teamPointsBarGraph'
 import WeeklyWinsBarGraph from '../../src/components/FantasyFootball/LuckAnalysis/weeklyWinsBarGraph'
 
 ## Background
+
 The Winner Is a Tryhard, affectionately known as TWIATH, began in 2014 and has been going strong ever since. We started our journey on ESPN before migrating to Sleeper in 2020. A few years ago, ESPN quietly deleted many leagues' histories without warning, including ours. We had previously stored some historical data in an EBS snapshot in AWS, but sadly, we haven't been able to recover the full dataset. Since Sleeper provides an API for accessing data (and most of us are nerds who work as technology professionals), we opted to use this to create a data lake in AWS to prevent this from happening again. More importantly, we wanted to use this data to start answering some important questions, such as, who is the luckiest person in league history?
 
-## Building an Initial Data Lake Using Python 
+## Building an Initial Data Lake Using Python
+
 Before answering any questions, we must first build our dataset. Thankfully, Sleeper offers [an API](https://docs.sleeper.com/) to pull data programmatically. Numerous [Python wrapper](https://pypi.org/project/sleeper-py/) packages are available to accelerate development. With object storage like Amazon S3 to store the data, it only takes a bit of Python code to get started. With `pandas`, `pyarrow`, and `sleeper-py` installed via `pip`, the following code establishes the base dataset as partitioned Parquet files uploaded to S3:
 
 ```python title='twiath-datalake-prep/historical-sleeper-load.ipynb'
@@ -43,7 +45,7 @@ for index, league_id in enumerate(past_league_ids):
             # determine which weeks are regular season and which are playoffs
             # these API endpoints do not have this metadata
             playoff_week = year_playoff_map_exceptions.get(year, default_regular_season_weeks)
-            week_result['type'] = 'regular' if week <= playoff_week else 'playoff' 
+            week_result['type'] = 'regular' if week <= playoff_week else 'playoff'
             players_points_list = []
             # format the player points to support Parquet
             for players_points_week in week_result['players_points'].to_list():
@@ -58,7 +60,9 @@ for index, league_id in enumerate(past_league_ids):
 For a complete Jupyter Notebook example, see [this GitHub repository](https://github.com/the-winner-is-a-tryhard/datalake-creation/blob/main/twiath-datalake-prep/historical-sleeper-load.ipynb). Note that this does not follow data lake best practices like a [medallion architecture](https://www.databricks.com/glossary/medallion-architecture). Still, it's enough to start analyzing the entire Sleeper's historical dataset. In a later post, we'll cover our scheduled jobs to load the data weekly during the season.
 
 ## Scoring
+
 To provide additional context for the numbers shown for those outside the league, here's our configuration:
+
 - 12 teams
 - Half-point per reception
 - One-point receiving first down
@@ -68,6 +72,7 @@ To provide additional context for the numbers shown for those outside the league
 - Two WR/RB/TE flex spots
 
 ## A Naive Attempt at Defining Luck and Skill
+
 In the simplest terms, you might define luck as the fewest points against (PA) since you have no control over your opponent's lineup. By the same logic, you could define skill as points for (PF) since you chose the players on your roster. Let's start with regular season PF in the past four seasons:
 
 <TeamPointsBarGraph teamPointsData={[{'team': 'Scottie', 'points': 5779.41}, {'team': 'Callen', 'points': 5687.97}, {'team': 'Travis', 'points': 5613.28}, {'team': 'Mark', 'points': 5570.6}, {'team': 'Caleb', 'points': 5510.96}, {'team': 'Andrew', 'points': 5510.57}, {'team': 'Matt', 'points': 5413.31}, {'team': 'John', 'points': 5406.19}, {'team': 'Carl', 'points': 5377.96}, {'team': 'Chris', 'points': 5371.52}, {'team': 'Trond', 'points': 5289.02}, {'team': 'Logan', 'points': 4995.96}]} />
@@ -76,7 +81,7 @@ Next, let's convert these to weekly averages:
 
 <TeamPointsBarGraph teamPointsData={[{'team': 'Scottie', 'points': 103.20375}, {'team': 'Callen', 'points': 101.57089285714287}, {'team': 'Travis', 'points': 100.23714285714286}, {'team': 'Mark', 'points': 99.47500000000001}, {'team': 'Caleb', 'points': 98.41}, {'team': 'Andrew', 'points': 98.4030357142857}, {'team': 'Matt', 'points': 96.66625}, {'team': 'John', 'points': 96.53910714285713}, {'team': 'Carl', 'points': 96.035}, {'team': 'Chris', 'points': 95.92}, {'team': 'Trond', 'points': 94.44678571428572}, {'team': 'Logan', 'points': 89.21357142857143}]} />
 
-So, does regular season PF correlate with championships? For the most part, yes. The past four champions were Mark (2023), Mark (2022), Matt (2021), and Travis (2020). Despite consistently leading the league in PF, Scottie and Callen have yet to win a championship (although Scottie did lose in the finals twice during these four seasons). Mark and Travis are in the top four scorers, and Matt's championship season looks like an outlier compared with his average performance. With this in mind, does regular season PA correlate better with championships? 
+So, does regular season PF correlate with championships? For the most part, yes. The past four champions were Mark (2023), Mark (2022), Matt (2021), and Travis (2020). Despite consistently leading the league in PF, Scottie and Callen have yet to win a championship (although Scottie did lose in the finals twice during these four seasons). Mark and Travis are in the top four scorers, and Matt's championship season looks like an outlier compared with his average performance. With this in mind, does regular season PA correlate better with championships?
 
 First, we need to compute points against for each week in the Pandas `DataFrame` since this is not available in the API:
 
@@ -98,13 +103,15 @@ matchups['points_against'] = matchups.apply(calculate_points_against, axis=1)
 It appears that PA may not correlate as well as PF. First of all, weekly PF ranges (89.2 to 103.2) have a higher minimum/maximum delta than PA ranges (95.0 to 100.7). While we see Mark and Scottie in the bottom three (i.e., luckiest), Matt has the highest PA (average and total). In any case, these aggregates omit much of the story. To paint a clearer picture, let's introduce a new metric.
 
 ## Measuring Wins Against All Opponents
-The core aspect of luck in fantasy football is scheduling (i.e., PA for a given week). For example, you could be the second-highest-scoring team and still lose the week. Likewise, you could put up the second-worst performance and win the week. Aggregating the totals for PA and PF does not account for this. However, we can measure how many teams a player would have beaten in any given week with the following formula: 
+
+The core aspect of luck in fantasy football is scheduling (i.e., PA for a given week). For example, you could be the second-highest-scoring team and still lose the week. Likewise, you could put up the second-worst performance and win the week. Aggregating the totals for PA and PF does not account for this. However, we can measure how many teams a player would have beaten in any given week with the following formula:
 
 $$
 w_o = ∑_{p ∈ P(r)} I(p < r.points)
 $$
 
 Where:
+
 - $$P(r)$$ is the set of points from all other players in the same year and week as $$r$$, defined as $${p | (p.wy = r.wy) ∧ (p.u ≠ r.u)}$$ where $$wy$$ represents week and year and $$u$$ represents username
 - $$I(condition)$$ is the indicator function defined as $${ 1 \text{ if true } 0 \text{ if false } }$$
 - $$r.points$$ represents the points from the input row
@@ -149,7 +156,7 @@ $$
 For 2021 and on, $$t=14$$. For 2020 and prior, $$t=13$$. Based on this metric, let's look at the top five luckiest seasons:
 
 | Name   | Season | $$w_a$$ | $$w_o$$ | $$Δw$$ |
-|--------|--------|---------|---------|--------|
+| ------ | ------ | ------- | ------- | ------ |
 | Andrew | 2022   | 10      | 61      | 32%    |
 | Mark   | 2023   | 10      | 67      | 28%    |
 | Carl   | 2020   | 10      | 83      | 19%    |
@@ -159,7 +166,7 @@ For 2021 and on, $$t=14$$. For 2020 and prior, $$t=13$$. Based on this metric, l
 And the bottom five luckiest seasons:
 
 | Name   | Season | $$w_a$$ | $$w_o$$ | $$Δw$$ |
-|--------|--------|---------|---------|--------|
+| ------ | ------ | ------- | ------- | ------ |
 | Carl   | 2022   | 5       | 73      | -12%   |
 | Callen | 2020   | 7       | 95      | -13%   |
 | John   | 2023   | 5       | 77      | -14%   |
@@ -181,6 +188,7 @@ While we see that the two weeks in which he scored higher than only one team wer
 Sure enough, Mark's team benefited in the same way as Andrew's: four wins in which he scored higher than only four or fewer teams. We've finally quantified what luck looks like in the regular season.
 
 ## The Luckiest and Unluckiest Individual Weeks
+
 Since $$w_o$$ values range from 0 to 11, the unluckiest outcome is to score higher than ten other teams and still lose. By the same token, the luckiest would be to outscore only one team and still win. These have happened several times over the past four years. First, the $$w_o=10$$ losses:
 
 ```python
@@ -191,14 +199,14 @@ matchups.loc[matchups['type'] == 'regular'] \
     .sum()
 ```
 
-| Name   | Year  | Week  | PF        | PA        |
-|--------|-------|-------|-----------|-----------|
-| Travis | 2023  |   9   |   119.48  |   166.01  |
-| John   | 2020  |   8   |   109.42  |   114.39  |
-| Logan  | 2020  |   1   |   115.15  |   127.59  |
-| Matt   | 2023  |   4   |   129.45  |   154.08  |
-| Caleb  | 2021  |   14  |   130.06  |   130.74  |
-| Caleb  | 2022  |   7   |   136.90  |   141.45  |
+| Name   | Year | Week | PF     | PA     |
+| ------ | ---- | ---- | ------ | ------ |
+| Travis | 2023 | 9    | 119.48 | 166.01 |
+| John   | 2020 | 8    | 109.42 | 114.39 |
+| Logan  | 2020 | 1    | 115.15 | 127.59 |
+| Matt   | 2023 | 4    | 129.45 | 154.08 |
+| Caleb  | 2021 | 14   | 130.06 | 130.74 |
+| Caleb  | 2022 | 7    | 136.90 | 141.45 |
 
 Next, the $$w_o=1$$ wins:
 
@@ -210,11 +218,12 @@ matchups.loc[matchups['type'] == 'regular'] \
     .sum()
 ```
 
-| Name   | Year  | Week  | PF        | PA        |
-|--------|-------|-------|-----------|-----------|
-| Callen | 2021  |  12   |   64.07   |   56.10   |
-| Callen | 2022  |   3   |   78.12   |   74.83   |
-| Caleb  | 2021  |   1   |   74.64   |   58.41   |
+| Name   | Year | Week | PF    | PA    |
+| ------ | ---- | ---- | ----- | ----- |
+| Callen | 2021 | 12   | 64.07 | 56.10 |
+| Callen | 2022 | 3    | 78.12 | 74.83 |
+| Caleb  | 2021 | 1    | 74.64 | 58.41 |
 
 ## Conclusion
+
 Over time, luck regresses to the mean. We can spot it in an individual season or week, but luck-based metrics like PA tend to balance out within a few points on average. Skill-based metrics like PF and $$w_o$$ have wider ranges and identify performance outliers, such as Logan at the bottom of both. However, luck is clearly still required to win the championship, as evidenced by Scottie and Callen, who lead the skill metrics and have yet to win.

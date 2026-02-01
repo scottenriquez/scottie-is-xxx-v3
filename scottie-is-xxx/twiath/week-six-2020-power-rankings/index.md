@@ -1,9 +1,9 @@
 ---
 title: "Callen's Week Six 2020 Power Rankings"
-date: "2020-10-22"
+date: '2020-10-22'
 description: "Callen's antlike power rankings."
 authors: [callen]
-tags: ["Power Rankings"]
+tags: ['Power Rankings']
 ---
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -14,7 +14,7 @@ import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
 #### Week Six Points: 95.8
 
->[Tarv] is coming for that Waiver Wire Gawd title.
+> [Tarv] is coming for that Waiver Wire Gawd title.
 
 Thanks to K-Man’s beautiful spreadsheet, we can now look at simulated records for the league this year and see that Travis would still have a top team under almost any schedule. Not only is he putting up consistently high scores, having his worst week of the season still at a respectable 90, but he’s also got a bunch of the high potential players on his roster. Losing Miles Sanders to injury for a few weeks isn’t great. But Josh Allen locks down a roster with newly broken out players: Kenyan Drake, D’Andre Swift, Travis Fulgham, and Christian Kirk. This team looks like they’ll just keep winning.
 
@@ -34,7 +34,7 @@ Thanks to K-Man’s beautiful spreadsheet, we can now look at simulated records 
 
 #### Week Six Points: 73.7
 
->It appears that Andy Dalton is only able to throw the ball to tight ants and running backs.
+> It appears that Andy Dalton is only able to throw the ball to tight ants and running backs.
 
 Mark just put up an absolute turd of a game, but it was his first game below 98 points all year. He’s scored 120+ in half the weeks this season. Because of that, and the fact that he’s still tied for 1st place, he gets to stay near the top of the rankings. But things are trending down pretty hard for him. Cam and Zeke both look like they’re getting worse, CeeDee loses Dak at QB, Thielen is being overshadowed by Justin Jefferson more and more, and Chubb still has probably another month on IR. The team isn’t bad by any means, but he may need to ride out a few down weeks until these players find their groove again.
 
@@ -72,7 +72,7 @@ Andrew gets the #3 spot this week, mainly based on his consistency. He’s avera
 
 #### Week Six Points: 59.5
 
->I should have never done power rankings.
+> I should have never done power rankings.
 
 I have to give Caleb’s team credit. He’s third place in PF and simulated league record. And he’s only one game back from first place in the standings. However, his team’s score has gone down literally every week of the season from 127 in their season debut. He’s bottoming out this week with a sub-60 performance. He’s bound to bounce back, but he’s trending the wrong way.
 
@@ -110,7 +110,7 @@ My team is proving to be solidly middle class—a true Hamburger Helper of a tea
 
 #### Week Six Points: 126.2
 
->Derrick Henry hates me as much as I hate him.
+> Derrick Henry hates me as much as I hate him.
 
 This bi-polar ass team is somehow now tied for first place. The team is below average in terms of points scored, but Carl's players seem to team up and explode simultaneously, so the weeks he hits are almost guaranteed wins. Coming off a solid 126-point game, this team will be challenging to play and manage for the rest of the season.
 
@@ -130,7 +130,7 @@ This bi-polar ass team is somehow now tied for first place. The team is below av
 
 #### Week Six Points: 101.2
 
->Dear diary, I lost everything again.
+> Dear diary, I lost everything again.
 
 This team has disappointed me a bit this year. There was a rough stretch of games after a strong start, but this week saw Matt make a strong push back with a 100-point performance. I also like the move of picking up Derrick Henry, even though we all just watched the players traded away go off this week. I know it's tough to watch "your guys" play that well right after a trade, but I still think Henry can bring weekly stability and a high floor to this roster.
 
@@ -150,9 +150,9 @@ This team has disappointed me a bit this year. There was a rough stretch of game
 
 #### Week Six Points: 65.9
 
->The depression flows like wine.
+> The depression flows like wine.
 
->I am a poor, poor fantasy manager.
+> I am a poor, poor fantasy manager.
 
 If we want to talk about tremendous scoring variations, Chris’s team has a larger standard deviation than Carl’s. After going for 155 just two weeks ago, virtually the same roster put up a 66-point dud. I think this is just going to be the reality for a while when you hold players like Will Fuller, who is always up and down, Amari Cooper, who just lost his QB, and Kareem Hunt, who will probably lose value in a few weeks if Chubb comes back. I think we’re all forgetting about the absolute bomb that’s waiting on this bench, though. C-Mac already has rumors of a potential week eight return, so while this team is only average right now, they could quickly shoot back up the standings in the back half of the season.
 
@@ -172,7 +172,7 @@ If we want to talk about tremendous scoring variations, Chris’s team has a lar
 
 #### Week Six Points: 132.8
 
->Is Ryan Tannehill elite?
+> Is Ryan Tannehill elite?
 
 Scottie out here completing four-vert Hail Marys, trading away his best player. It was a big gamble to ship out D-Hennessey when he's the team's strongest player. But the reality was that his roster wasn't winning, and he had to make a move. Even after seeing an immediate ROI on this move, I'm not calling any guarantees on Justin Jefferson scoring 30 a game for the rest of the year or CEH going for 160 again. Still, the team is trending up and could jump a few spots very quickly.
 

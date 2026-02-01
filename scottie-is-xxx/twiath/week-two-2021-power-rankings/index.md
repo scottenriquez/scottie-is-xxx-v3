@@ -1,15 +1,14 @@
 ---
 title: "Scottie's Week Two 2021 Power Rankings"
-date: "2021-09-21"
+date: '2021-09-21'
 description: "Scottie's gruntled power rankings."
 authors: [scottie]
-tags: ["Power Rankings"]
+tags: ['Power Rankings']
 ---
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLevelUpAlt } from "@fortawesome/free-solid-svg-icons"
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
-
 
 ## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d4a248857805d63cd2b3c95a760181c3-two-scottie" class="sleeper-avatar"/> Zeke Squad | 2-0W/L | 244PF
 
@@ -31,7 +30,7 @@ JOHN CAN'T KEEP GETTING AWAY WITH THIS. CRAMSEY, WHY DID YOU TRADE WITH JOHN?
 
 ## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-two-scottie" class="sleeper-avatar"/> Uncle Cral's Little Dogs | 1-1W/L | 222PF
 
->[Pollard] might replace Robinson as my RB2.
+> [Pollard] might replace Robinson as my RB2.
 
 #### Week Two Points: 129.9
 
@@ -71,7 +70,7 @@ This feels weird. I usually write these power rankings from the top down. By the
 
 #### Week Two Points: 87.6
 
->Well, Mitchell's $30 per point is better than when K-Man spent $200 per point on Nyheim Hines.
+> Well, Mitchell's $30 per point is better than when K-Man spent $200 per point on Nyheim Hines.
 
 It is well known that I'm a hater, so it's with great pleasure that I get to rip on this team. Let's get this straight: without Texas A&M legend Kyler Murray propping up this roster, this would have been a blowout of Joey Burrow versus OU proportions. In addition, Logz now has about as much money as Adrian Peterson after blowing his FAAB on a bigger dud than Spencer Rattler. That's four back-to-back-to-back-to-back OU jokes. Coincidentally, that's the number of Oklahoma's first-round playoff losses too.
 

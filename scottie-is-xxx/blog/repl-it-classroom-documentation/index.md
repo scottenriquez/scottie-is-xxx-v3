@@ -1,9 +1,9 @@
 ---
 authors: [scottenriquez]
 title: Using Repl.it in a High School Classroom
-date: "2020-07-30"
-description: "Configuring a classroom environment in Repl.it for high school computer science."
-tags: ["Programming", "Teaching"]
+date: '2020-07-30'
+description: 'Configuring a classroom environment in Repl.it for high school computer science.'
+tags: ['Programming', 'Teaching']
 ---
 
 ## Background
@@ -36,7 +36,7 @@ With GitHub, a team can create a template project to be used when a new reposito
 
 This [GitHub project](https://github.com/teals-heights-high-school/repl-it-example) contains a template repository.
 
-### Main File 
+### Main File
 
 In terms of source code, only the `"Hello, World!"` program is included:
 
@@ -50,7 +50,7 @@ class Main {
 
 Given that most assignments fit into a single file, I haven't injected any opinions on the file structure.
 
-### EditorConfig 
+### EditorConfig
 
 I've included an [EditorConfig](https://editorconfig.org/) file in this project so that the code styling remains consistent across multiple codebases. EditorConfig is IDE-agnostic with plugins or native integration across IntelliJ, Visual Studio Code, Eclipse, etc.
 
@@ -64,7 +64,7 @@ charset = utf-8
 trim_trailing_whitespace = true
 ```
 
-### Repl.it Configuration File 
+### Repl.it Configuration File
 
 Repl.it supports a configuration file that allows a developer to specify which language and run command to use. Without going into details about the recent changes to Oracle's Java license structure, I'll note that this project uses OpenJDK 10, which is free and open-source. The `run` variable in the configuration file refers to a shell command to compile and execute the program. Bash on the underlying Linux virtual machine interprets the command, so it isn't specific to Repl.it. The run command can be tested on a local computer or by modifying the configuration file directly in Repl.it.
 

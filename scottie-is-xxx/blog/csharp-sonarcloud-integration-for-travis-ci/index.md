@@ -1,9 +1,9 @@
 ---
 authors: [scottenriquez]
-title: "SonarCloud for C# Projects with Travis CI"
-date: "2019-06-09"
-description: "Example .NET project utilizing SonarCloud for continuous code inspection via Travis CI build."
-tags: ["Programming"]
+title: 'SonarCloud for C# Projects with Travis CI'
+date: '2019-06-09'
+description: 'Example .NET project utilizing SonarCloud for continuous code inspection via Travis CI build.'
+tags: ['Programming']
 ---
 
 ## Example SonarCloud/SonarScanner C# Integration for Travis CI
@@ -49,12 +49,12 @@ Start by including the [SonarCloud addon](https://docs.travis-ci.com/user/sonarc
 ```yaml title='.travis.yml'
 addons:
   sonarcloud:
-    organization: "YOUR_ORG_NAME_HERE"
+    organization: 'YOUR_ORG_NAME_HERE'
 ```
 
 You'll also need to run the `/tools/travis-ci-install-sonar.sh` script as part of `before-install` section and `/tools/travis-ci-build.sh` as part of the `script` section.
 
-### Modifying Build Script 
+### Modifying Build Script
 
 You'll need to make a few replacements in this file. Add your organization name and project key to the `SonarScanner.MSBuild.dll` (or `SonarScanner.MSBuild.exe` for the .NET Framework version) arguments. Note that you can also expose these as environment variables like `SONAR_TOKEN`. You'll also want to add any project-specific build and test commands to this script.
 

@@ -1,9 +1,9 @@
 ---
 authors: [scottenriquez]
 title: Colley Matrix NuGet Package
-date: "2018-04-01"
-description: "A NuGet package for the Colley Matrix algorithm."
-tags: ["Programming"]
+date: '2018-04-01'
+description: 'A NuGet package for the Colley Matrix algorithm.'
+tags: ['Programming']
 ---
 
 ## Overview

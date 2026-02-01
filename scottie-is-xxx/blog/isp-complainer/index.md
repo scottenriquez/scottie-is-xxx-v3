@@ -1,9 +1,9 @@
 ---
 authors: [scottenriquez]
 title: ISP Complainer
-date: "2016-02-21"
+date: '2016-02-21'
 description: "Source code and technical documentation for a bot to tweet at my ISP whenever my promised speeds aren't met."
-tags: ["Programming"]
+tags: ['Programming']
 ---
 
 ## Motivation
@@ -38,18 +38,18 @@ Once you have your keys, you’ll need to add them to a file called `/server/con
 ```javascript title='twitter-api-config-template.js'
 module.exports = {
   twitterConsumerKey: function () {
-    return ""
+    return '';
   },
   twitterConsumerSecret: function () {
-    return ""
+    return '';
   },
   twitterAccessTokenKey: function () {
-    return ""
+    return '';
   },
   twitterAccessTokenSecret: function () {
-    return ""
+    return '';
   },
-}
+};
 ```
 
 One other config must be modified before use:
@@ -57,25 +57,18 @@ One other config must be modified before use:
 ```javascript title='complaint-config.js'
 module.exports = {
   tweetBody: function (promisedSpeed, actualSpeed, ispHandle) {
-    return (
-      ispHandle +
-      " I pay for " +
-      promisedSpeed +
-      "mbps down, but am getting " +
-      actualSpeed +
-      "mbps."
-    )
+    return ispHandle + ' I pay for ' + promisedSpeed + 'mbps down, but am getting ' + actualSpeed + 'mbps.';
   },
   ispHandle: function () {
-    return "@cableONE"
+    return '@cableONE';
   },
   promisedSpeed: function () {
-    return 150.0
+    return 150.0;
   },
   threshold: function () {
-    return 80.0
+    return 80.0;
   },
-}
+};
 ```
 
 `tweetBody()` generates what will be tweeted to your ISP. Note that the body must be 140 characters or less including the speeds and ISP’s Twitter handle. `ispHandle()` returns the ISP’s Twitter account name. A simple search should yield your ISP’s Twitter information. Be sure to include the `'@'` at the beginning of the handle. `promisedSpeed()` returns the speed that was advertised to you. `threshold()` is the percent of your promised speed that you are holding your ISP to. If the actual speed is less than your promised speed times the threshold, a tweet will be sent.

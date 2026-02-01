@@ -1,9 +1,9 @@
 ---
 authors: [scottenriquez]
 title: Gaming on EC2
-date: "2019-03-17"
-description: "Creating a gaming rig on AWS."
-tags: ["Cloud"]
+date: '2019-03-17'
+description: 'Creating a gaming rig on AWS.'
+tags: ['Cloud']
 ---
 
 ## The Idea
@@ -12,7 +12,7 @@ For a quick weekend project, I wanted to see how feasible setting up a cloud gam
 
 ## Choosing an AMI
 
-An Amazon Machine Image is a virtual appliance used to create a virtual machine in EC2. These AMIs span a variety of purposes and use a *NIX or Windows operating system. You can create your own AMIs, use community-provided AMIs, or subscribe to one from the AWS Marketplace. It’s worth noting that the last option tacks on an additional hourly cost in addition to the base EC2 computing costs. In the interest of time, I opted to start with [a marketplace AMI specifically purposed for gaming](https://aws.amazon.com/marketplace/pp/Amazon-Web-Services-Microsoft-Windows-Server-2016-/B07612M5P7) with the requisite graphics drivers preinstalled.
+An Amazon Machine Image is a virtual appliance used to create a virtual machine in EC2. These AMIs span a variety of purposes and use a \*NIX or Windows operating system. You can create your own AMIs, use community-provided AMIs, or subscribe to one from the AWS Marketplace. It’s worth noting that the last option tacks on an additional hourly cost in addition to the base EC2 computing costs. In the interest of time, I opted to start with [a marketplace AMI specifically purposed for gaming](https://aws.amazon.com/marketplace/pp/Amazon-Web-Services-Microsoft-Windows-Server-2016-/B07612M5P7) with the requisite graphics drivers preinstalled.
 
 ## Launching an Instance
 

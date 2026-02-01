@@ -1,9 +1,9 @@
 ---
 title: "Scottie's Week Zero 2020 Power Rankings"
-date: "2020-08-31"
+date: '2020-08-31'
 description: "Scottie's post-draft power rankings."
 authors: [scottie]
-tags: ["Power Rankings"]
+tags: ['Power Rankings']
 ---
 
 ## Draft Board

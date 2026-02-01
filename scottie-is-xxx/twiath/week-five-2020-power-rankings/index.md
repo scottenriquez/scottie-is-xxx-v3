@@ -1,22 +1,20 @@
 ---
 title: "Caleb's Week Five 2020 Power Rankings"
-date: "2020-10-15"
+date: '2020-10-15'
 description: "Caleb's capricious power rankings."
-authors: [caleb] 
-tags: ["Power Rankings"]
+authors: [caleb]
+tags: ['Power Rankings']
 ---
-
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLevelUpAlt } from "@fortawesome/free-solid-svg-icons"
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
-
 ## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-five-caleb" class="sleeper-avatar"/> FEED ME 🥄 | 4-1W/L | 569PF
 
 #### Week Five Points: 101.64
 
->I don't watch ankle injuries.
+> I don't watch ankle injuries.
 
 Rough week to be a Cowboys fan, but on the bright side, Mark was able to snap Tarv's winning streak just like… like… damn, I can't think of an apt metaphor. Losing Dak hurts Mark's team, especially since his team is Cowboys lite. But, with Dallas's D/ST being awful, the offense will have to score to keep up, and he still has their number one weapon. Pair that with Mark getting Dak's replacement in the form of a scrub 2015 MVP, quality receivers, and a strong bench. Mark is number one until he isn't.
 
@@ -72,7 +70,7 @@ Cook going down was scary, but it doesn't look like he will be out long. Mattiso
 
 #### Week Five Points: 95.29
 
->Thanks for not starting Mikey.
+> Thanks for not starting Mikey.
 
 Who is carrying this team? Is it Lamar Jackson? James Conner? Michael Thomas? AJ Brown? No. Idiots. It's James Robinson and Jonathan Taylor, of course. Once Thomas is back, it might just be game over for all of us if his studs start pulling their weight. Did I mention Mike Williams got over 22 points while on the bench? Just like we all predicted…
 
@@ -92,7 +90,7 @@ Who is carrying this team? Is it Lamar Jackson? James Conner? Michael Thomas? AJ
 
 #### Week Five Points: 110.86
 
-Carlough will complain that these 'rankings are trash,' but when your QB and RB1 score less than nine points combined, and neither had an injury,  you don't deserve to be any higher. Andrew has a scary set of WRs, but outside of that, I don't see much positive about this team, especially once McCaffrey gets healthy and sends Davis back to the Shadow Realm. This team won't get far without a quality starting running back, even if you do put up the high score once in a while.
+Carlough will complain that these 'rankings are trash,' but when your QB and RB1 score less than nine points combined, and neither had an injury, you don't deserve to be any higher. Andrew has a scary set of WRs, but outside of that, I don't see much positive about this team, especially once McCaffrey gets healthy and sends Davis back to the Shadow Realm. This team won't get far without a quality starting running back, even if you do put up the high score once in a while.
 
 | Name             | Team    | Depth |
 | ---------------- | ------- | ----- |
@@ -164,7 +162,7 @@ This team has so much potential, but K-Man's choice to pick fifth instead of fou
 
 #### Week Five Points: 91.69
 
->I'll trade you Mark Ingram for the rest of your pho. That way, I can get something meaningful for him, at least.
+> I'll trade you Mark Ingram for the rest of your pho. That way, I can get something meaningful for him, at least.
 
 I feel like this is where teams start to fall off a cliff. Everyone above this spot wouldn't surprise me if they took home the trophy. The Joe Burrow experiment was fun, I'm sure. Instead of trading me for Herbert, you decide that Goff is going to bring you the championship. How's that logic working out for the Rams? Outside of Henry and Diggs, there is not much on this team to get excited about.
 
@@ -179,7 +177,6 @@ I feel like this is where teams start to fall off a cliff. Everyone above this s
 | Henry Ruggs       | LV-WR   | 1     |
 | Mark Ingram       | BAL-RB  | 1     |
 | Chicago Bears     | CHI-DEF |       |
-
 
 ## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} />Trailing spouse to not Dr | 1-4W/L | 464PF
 
@@ -203,7 +200,7 @@ This team could have been in a pretty good spot with a few waiver pickups and ma
 
 #### Week Five Points: 76.2
 
->Did you watch any anime today? Wondering if I should start three Chargers or not.
+> Did you watch any anime today? Wondering if I should start three Chargers or not.
 
 I have Mixon in my other league, and I'm doing just as terrible as John. So I feel ya, man. I don't think even Russel can save this team. On the bright side, OBJ finally looks like himself again, and Julio could come back and help. But God, the rest of this team is just a mess.
 
@@ -223,7 +220,7 @@ I have Mixon in my other league, and I'm doing just as terrible as John. So I fe
 
 #### Week Five Points: 104.76
 
->I don’t think power rankings are necessary. Everyone is of equal value and worth here at TWIATH.
+> I don’t think power rankings are necessary. Everyone is of equal value and worth here at TWIATH.
 
 Poor Logan. Even when he does well, he loses. Honestly, I think this team is better than its record, and I would probably bet on Logan to win against any of the above three teams on any given week. But with Green and JuJu disappointing this season and Lindsay out, it has been challenging to fill flex spots with any talent. 0-5 is a tough spot to come back from and deserves nothing more than last in the power rankings. That said, I don't think the Sacko is in Logan's future this year.
 

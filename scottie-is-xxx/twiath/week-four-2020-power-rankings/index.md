@@ -1,9 +1,9 @@
 ---
 title: "Scottie's Week Four 2020 Power Rankings"
-date: "2020-10-07"
+date: '2020-10-07'
 description: "Scottie's fleeceless power rankings."
 authors: [scottie]
-tags: ["Power Rankings"]
+tags: ['Power Rankings']
 ---
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -12,13 +12,13 @@ import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
 ## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-four-scottie" class="sleeper-avatar"/> THIS GUY SLEEPS AT HEB | 3-1W/L | 460PF
 
->Imagine dropping a 150-burger with CMC and Mahomes on the bench. Spooky SZN is here.
+> Imagine dropping a 150-burger with CMC and Mahomes on the bench. Spooky SZN is here.
 
 My goodness, the king is back. Even without Patrick Mahomes and Christian McCaffrey, this dude yeeted Trondheim into oblivion with a season-high 155 points. Kareem Hunt is looking like the steal of the draft right now with Nick Chubb out for a significant amount of time. Jerrick McKinnon is reliable. I can't find a weakness here. Clearly, the football gods have accepted the Arkansas State sacrifice because everything is going Crams's way now.
 
 ## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-four-scottie" class="sleeper-avatar"/> FEED ME 🥄 | 3-1W/L | 467PF
 
->Sounds like Mark should have played better defense.
+> Sounds like Mark should have played better defense.
 
 Man, what a heartbreaking week. John must have watched hours of anime at church to pull out this dub against a top team having a great week. Dak Prescott is a monster right now, and I'd never have expected him to be the number two quarterback. Mark has some solid pieces right now, but I'm a bit concerned about depth. With Nick Chubb out for a while, his running back situation went from great to a bit suspect. JK Dobbins has been fading away like he got Thanos snapped. For that reason, I think his team will trend down. Make no mistake; I'm not counting this team out.
 
@@ -28,7 +28,7 @@ Caleb's team is officially good. After four weeks, I'll freely admit that I was 
 
 ## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-four-scottie" class="sleeper-avatar"/> 🏆‼️ | 4-0W/L | 447PF
 
->I'm a Mark Ingram hater. I think he's the most likely number two doo doo ass running back behind Mixon.
+> I'm a Mark Ingram hater. I think he's the most likely number two doo doo ass running back behind Mixon.
 
 Tarv's points against looks like he played the SEC's FCS-heavy out of conference schedule. Kenyan Drake's points are receding into nothing like my hairline. He's (#33) only two spots ahead of Mark Ingram (#35) right now. Josh Allen and Dalvin Cook are carrying this team. Tyler Lockett has been a home run hitter. If any of them has a bad week, there's not much else on this team that excites me. It looks like this team might be falling back down to earth. It definitely wouldn't be the first Aggie collapse in the month of October against actual competition.
 
@@ -58,15 +58,14 @@ Two weeks later, I still have no idea what the hell this team is other than not 
 
 Much like Oklahoma after the Red River Shootout, I didn't expect to be 1-3 after four weeks. I don't want to say anything nice about my team because the fantasy gods don't seem to like that. However, the Waiver Wire God is back! I pulled a 100-piece out of dire straits against my archrival. With Derrick Hennesy coming back, my team should theoretically trend up.
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} />BLM’s Milwaukee rep  | 0-4W/L | 368PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} />BLM’s Milwaukee rep | 0-4W/L | 368PF
 
->I thought I was dead last in the league and then checked standings. Not in the basement after all.
+> I thought I was dead last in the league and then checked standings. Not in the basement after all.
 
 Do you want a trophy for being the 11th best team? The only reason you're not last is that we drafted for you.
 
 ## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} />Zug My Balls | 0-4W/L | 335PF
 
->This Texans team is directly correlated to my ass, my dude fantasy performance. They should fire Brandin Cooks too.
+> This Texans team is directly correlated to my ass, my dude fantasy performance. They should fire Brandin Cooks too.
 
 This team is about as depressing as living in The Woodlands. Logan's roster is about as appetizing as his shitty, suburban dining options. Which will happen first: Logan moving back inside the 610 Loop or his first win? Neither seems likely in the immediate future. In the meantime, all Logz can do is live, laugh, and love and go to Chili's for that sweet two for $20 deal.
-

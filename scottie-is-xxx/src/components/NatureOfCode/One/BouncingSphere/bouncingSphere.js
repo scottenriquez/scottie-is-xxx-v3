@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import * as THREE from 'three';
 import SceneInit from './sceneInit';
 
@@ -8,7 +8,7 @@ const generateSphere = () => {
   const z = Math.random() * 100 - 50;
   const sphereLocationVector = new THREE.Vector3(x, y, z);
   const sphereGeometry = new THREE.SphereGeometry(5, 32, 32);
-  const sphereMaterial = new THREE.MeshStandardMaterial({color: 0xa7c080, roughness: 0});
+  const sphereMaterial = new THREE.MeshStandardMaterial({ color: 0xa7c080, roughness: 0 });
   const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
   sphere.name = 'sphere';
   sphere.position.set(sphereLocationVector.x, sphereLocationVector.y, sphereLocationVector.z);
@@ -32,15 +32,18 @@ const BouncingSphere = () => {
     canvas.animate();
   }, []);
   return (
-      <div id={'noc-bouncing-ball-canvas-div'} style={{
+    <div
+      id={'noc-bouncing-ball-canvas-div'}
+      style={{
         height: '400px',
         width: '100%',
         backgroundColor: '#272e33',
-        position: 'relative'
-      }}>
-        <canvas id={'noc-bouncing-ball-canvas'}/>
-      </div>
+        position: 'relative',
+      }}
+    >
+      <canvas id={'noc-bouncing-ball-canvas'} />
+    </div>
   );
-}
+};
 
 export default BouncingSphere;

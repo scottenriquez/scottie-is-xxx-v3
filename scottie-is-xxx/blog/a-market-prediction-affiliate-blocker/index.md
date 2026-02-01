@@ -1,9 +1,9 @@
 ---
-authors: [ scottenriquez ]
+authors: [scottenriquez]
 title: Measuring the Impact of Gambling Affiliates in My Social Media
-date: "2026-02-01"
-description: "Build a Chrome Extension to block and track market prediction affiliate accounts"
-tags: [ "Programming", "Economics" ]
+date: '2026-02-01'
+description: 'Build a Chrome Extension to block and track market prediction affiliate accounts'
+tags: ['Programming', 'Economics']
 ---
 
 import PieChart from '../../src/components/Shared/d3/pieChart'
@@ -24,6 +24,7 @@ bombarded with online betting ads. In fact, I fear that new sports fans are now 
 and the sports themselves. Kids and teenagers today only know betting to be woven into the very fabric of sports.
 
 Then came the prediction markets. Let’s start with the definition from Wikipedia:
+
 > Prediction markets, also known as betting markets, information markets, decision markets, idea futures, or event
 > derivatives, are open markets that enable the prediction of specific outcomes using financial incentives (gambling on
 > real-world events). They are exchange-traded markets established for trading bets in the outcome of various events.
@@ -102,13 +103,13 @@ a simple mapping.
 
 ```javascript title='content.js'
 const BLOCKED_AFFILIATE_BADGE_IDS = {
-    '2000660110239023106': 'Kalshi', 
-    '1994986527341113344': 'Polymarket',
-    '2005664281002491904': 'Polymarket', 
-    '1961093049913851904': 'ProphetX', 
-    '1954932272378925056': 'FanDuel', 
-    '1996078471097761792': 'Onyx', 
-    '2007116898677243904': 'Underdog'
+  '2000660110239023106': 'Kalshi',
+  '1994986527341113344': 'Polymarket',
+  '2005664281002491904': 'Polymarket',
+  '1961093049913851904': 'ProphetX',
+  '1954932272378925056': 'FanDuel',
+  '1996078471097761792': 'Onyx',
+  '2007116898677243904': 'Underdog',
 };
 ```
 
@@ -116,31 +117,31 @@ With this mapping, each tweet can be easily categorized by parsing the HTML usin
 
 ```javascript title='content.js'
 function processTweets() {
-    const tweets = document.querySelectorAll('article[data-testid="tweet"]');
-    tweets.forEach((tweet) => {
-        const container = tweet.parentElement;
-        if (!container) return;
-        if (container.style.display === 'none') return;
-        if (!tweet.dataset.scanned) {
-            tweet.dataset.scanned = 'true';
-            // function to count total Tweets scanned
-            incrementScannedCount();
-        }
-        const affiliate = getAffiliateType(tweet);
-        if (affiliate) {
-            const userArea = tweet.querySelector('[data-testid="User-Name"]');
-            const nameLink = userArea ? userArea.querySelector('a') : null;
-            const username = nameLink ? nameLink.textContent : 'unknown';
-            const tweetText = tweet.querySelector('[data-testid="tweetText"]');
-            const body = tweetText ? tweetText.textContent.substring(0, 100) : 'no text';
-            container.style.display = 'none';
-            if (!tweet.dataset.blocked) {
-                tweet.dataset.blocked = 'true';
-                // track stats in local storage
-                updateBlockedStats(username, affiliate);
-            }
-        }
-    });
+  const tweets = document.querySelectorAll('article[data-testid="tweet"]');
+  tweets.forEach((tweet) => {
+    const container = tweet.parentElement;
+    if (!container) return;
+    if (container.style.display === 'none') return;
+    if (!tweet.dataset.scanned) {
+      tweet.dataset.scanned = 'true';
+      // function to count total Tweets scanned
+      incrementScannedCount();
+    }
+    const affiliate = getAffiliateType(tweet);
+    if (affiliate) {
+      const userArea = tweet.querySelector('[data-testid="User-Name"]');
+      const nameLink = userArea ? userArea.querySelector('a') : null;
+      const username = nameLink ? nameLink.textContent : 'unknown';
+      const tweetText = tweet.querySelector('[data-testid="tweetText"]');
+      const body = tweetText ? tweetText.textContent.substring(0, 100) : 'no text';
+      container.style.display = 'none';
+      if (!tweet.dataset.blocked) {
+        tweet.dataset.blocked = 'true';
+        // track stats in local storage
+        updateBlockedStats(username, affiliate);
+      }
+    }
+  });
 }
 ```
 

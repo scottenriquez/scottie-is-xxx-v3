@@ -1,15 +1,14 @@
 ---
 title: "Chris's Week Six 2022 Power Rankings"
-date: "2022-10-20"
+date: '2022-10-20'
 description: "Chris's after power rankings."
 authors: [chris]
-tags: ["Power Rankings"]
+tags: ['Power Rankings']
 ---
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLevelUpAlt } from "@fortawesome/free-solid-svg-icons"
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
-
 
 ## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-six-chris" class="sleeper-avatar"/> Dragonball Zeke | 5-1W/L | 748PF
 
@@ -33,7 +32,7 @@ Topping off the charts with 748 PF is Scottie. This team looks as unstoppable as
 
 #### Week Six Points: 113.0
 
->Most PA and second highest PF. I should be no lower than 4th.
+> Most PA and second highest PF. I should be no lower than 4th.
 
 I can't believe I'm doing this, but the numbers speak for themselves. The offensive unit on this team reminds me a lot of the 1916 Georgia Tech Yellow Jackets, the historic team that beat Cumberland 222-0. The main difference is that the team went 8-0-1 (with a 7-7 tie to Washington & Lee), while Trond's team is scraping by at 1-5 and 661 PF. It pains me to see Miles Sanders putting up monster numbers after I had so much patience with him last year. Alas, you win some, and you lose some. If Trond can start putting together some dubs, he may fight back into the outright playoff picture. He certainly looks to be a contender for the PF spots.
 
@@ -72,7 +71,6 @@ Under normal circumstances, I rank this team way lower based on the eye test of 
 #### Week Six Points: 88.3
 
 Surprisingly, Callen's team had a down week this week, moving his squad to a respectable 4-2 in the season. The good news is when 88 points is a disappointment, you are in good shape. The other good news is that you don't have Appalachian State on your schedule. Like the Texas A&M Aggies every year, heading into week seven, we must ask ourselves which team we will get down the stretch. Callen's team has put up some monster numbers this year, clocking in at 619 PF. If he stays the course, a playoff spot is likely imminent.
-
 
 | Name              | Team    | Depth |
 | ----------------- | ------- | ----- |
@@ -162,9 +160,9 @@ OU beat an overrated CFB team this week, but the Dollar General (Booty) Box Fans
 
 #### Week Six Points: 71.6
 
->My rule is backfiring.
+> My rule is backfiring.
 
-Contrary to his previous two weeks, Geno Smith did not have a good game, putting this hamstrung team (due to byes) into a poor position. It was a valiant effort by Claeb's team in the loss, but Logan had all the magic this week. With a 2-4 record and 589 PF, he's in the same position as the Denver Broncos and many teams in this league. Not last, in the mix, but time to kick it into gear. He's gaining some key contributors off bye next week, which should greatly help him.  
+Contrary to his previous two weeks, Geno Smith did not have a good game, putting this hamstrung team (due to byes) into a poor position. It was a valiant effort by Claeb's team in the loss, but Logan had all the magic this week. With a 2-4 record and 589 PF, he's in the same position as the Denver Broncos and many teams in this league. Not last, in the mix, but time to kick it into gear. He's gaining some key contributors off bye next week, which should greatly help him.
 
 | Name                | Team    | Depth |
 | ------------------- | ------- | ----- |
@@ -200,7 +198,7 @@ Another week, another Kirk Cousins disappointment. The QBs this week did pretty 
 
 #### Week Six Points: 53.7
 
->My team got bad fast.
+> My team got bad fast.
 
 The rapid decline of this team is genuinely shocking. While byes impacted John this week, the team could only muster 53 points, including 20 from Mark Andrews. With John, we all know he should never be counted out. At 3-3 and 588 PF, he's certainly in the mix with the one-game advantage on half the league. I think John and I have been turning in fantasy karma for KSU Wildcat karma, and I'm fully here for it. Cats by 90 this weekend.
 
@@ -216,11 +214,11 @@ The rapid decline of this team is genuinely shocking. While byes impacted John t
 | Christian Kirk    | JAX-WR | 1     |
 | Green Bay Packers | GB-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/0658c50f92789c23a6f0b1efef9dbdaa-six-chris" class="sleeper-avatar"/> Najeeruto  | 2-4W/L | 570PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/0658c50f92789c23a6f0b1efef9dbdaa-six-chris" class="sleeper-avatar"/> Najeeruto | 2-4W/L | 570PF
 
 #### Week Six Points: 116.7
 
->Sorry that you came across my team as it’s exploding into its final form.
+> Sorry that you came across my team as it’s exploding into its final form.
 
 Sheesh, K-Man. With 116 this week to edge out Trond, I could see this team moving up the rankings quickly. Lawrence and Diggs balled out, and contributions came from nearly everywhere. At 2-4 and 570 PF, K-Man's squad is right there with half the league. Much like the Golden Hurricane, although with a slow start, K-Man is still in the mix for postseason play.
 
@@ -235,4 +233,3 @@ Sheesh, K-Man. With 116 this week to edge out Trond, I could see this team movin
 | Travis Etienne  | JAX-RB  | 2     |
 | Najee Harris    | PIT-RB  | 1     |
 | Denver Broncos  | DEN-DEF |       |
-

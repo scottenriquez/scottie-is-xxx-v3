@@ -1,15 +1,14 @@
 ---
 title: "Callen's Week Zero 2021 Power Rankings"
-date: "2021-09-09"
+date: '2021-09-09'
 description: "Callen's massy power rankings."
 authors: [callen]
-tags: ["Power Rankings"]
+tags: ['Power Rankings']
 ---
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLevelUpAlt } from "@fortawesome/free-solid-svg-icons"
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
-
 
 ## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-zero-callen" class="sleeper-avatar"/> Uncle Cral's Little Dogs | 0-0W/L | 0PF
 

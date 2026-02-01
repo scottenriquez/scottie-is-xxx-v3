@@ -1,9 +1,9 @@
 ---
 authors: [scottenriquez]
 title: Building a React Widget for Mendix 8
-date: "2019-11-20"
-description: "Bringing the Ace editor to Mendix."
-tags: ["Mendix", "Programming"]
+date: '2019-11-20'
+description: 'Bringing the Ace editor to Mendix.'
+tags: ['Mendix', 'Programming']
 ---
 
 ## Use Case, Source Code, and Demo Site
@@ -52,10 +52,10 @@ If you elected to use TypeScript, an interface is generated for you as well.
 
 ```typescript
 interface CommonProps {
-  name: string
-  class: string
-  style?: CSSProperties
-  tabIndex: number
+  name: string;
+  class: string;
+  style?: CSSProperties;
+  tabIndex: number;
 }
 ```
 

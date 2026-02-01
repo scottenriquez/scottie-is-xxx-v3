@@ -1,16 +1,19 @@
 ---
 authors: [scottenriquez]
 title: College Football Opening Weekend 2016
-date: "2016-11-06"
-description: "An epic trip to start the season."
-tags: ["Travel"]
+date: '2016-11-06'
+description: 'An epic trip to start the season.'
+tags: ['Travel']
 ---
+
 import CustomMap from '../../src/components/GoogleMaps/customMap'
 
 ## The Plan
+
 Before the start of the 2016 college football season, two good friends and I decided to make an epic pilgrimage for the opening weekend. While most games are played on Saturdays, it just so happened that our alma maters played on Friday, Saturday, and Sunday of Labor Day weekend. The three of us all lived in Oklahoma at the time, so we began planning the logistics to see if it would even be physically possible to be at each stadium by kickoff. The match ups were Kansas State at Stanford in Palo Alto, California (for Chris), UCLA at Texas A&M in College Station, Texas (for Callen), and Notre Dame at UT in Austin, Texas (for me). Despite requiring about 4,500 miles of total travel, we determined that it would be possible to see all the games barring any sort of delays. We took a gamble, and this is how it all played out.
 
 ## Thursday, September 1st
+
 <div style={{ height: '50vh', width: '100%' }}>
     <CustomMap
         defaultZoom={9}
@@ -23,6 +26,7 @@ Before the start of the 2016 college football season, two good friends and I dec
 The journey began with a five-hour drive from northern Oklahoma to a hotel adjacent to the DFW airport. The three of us had every intention of leaving early to arrive in Dallas at a reasonable hour, but a combination of a forgotten Tyler Lockett jersey and stopping for a GoPro head mount ultimately turned the initial leg of the trip into a six-hour affair. We stumbled into our hotel room well after midnight after making note of a 4:45am shuttle departure to the airport to catch a 6am flight to Oakland. After a few hours of unsatisfying slumber, we packed most of our belongings back into my car, which remained parked at the hotel while we went to the West Coast, and took the essentials with us for a day trip to the Bay Area.
 
 ## Friday, September 2nd
+
 <div style={{ height: '50vh', width: '100%' }}>
     <CustomMap
         defaultZoom={9}
@@ -37,7 +41,7 @@ After a short flight with a timezone change in our favor, we landed in Oakland. 
 ![KSU vs. Stanford](./ksu-stanford-2016.jpg)
 
 | Metric               | Value    |
-|----------------------|----------|
+| -------------------- | -------- |
 | Recorded Attendance  | 46,147   |
 | Stadium Capacity     | 50,000   |
 | Kansas State AP Rank | Unranked |
@@ -66,7 +70,7 @@ Friday and Saturday blended together. The three of us had to pay back the two ho
 ![A&M vs. UCLA](./tamu-ucla-2016.jpg)
 
 | Metric              | Value     |
-|---------------------|-----------|
+| ------------------- | --------- |
 | Recorded Attendance | 100,443   |
 | Stadium Capacity    | 102,733   |
 | Texas A&M AP Rank   | Unranked  |
@@ -80,6 +84,7 @@ As much as it pains me as a Longhorn to say, the A&M gameday vibe was impressive
 As much as I would have liked to check out the local scene, we ate Buffalo Wild Wings again after the game then promptly passed out.
 
 ## Sunday, September 4th
+
 <div style={{ height: '50vh', width: '100%' }}>
     <CustomMap
         defaultZoom={9}
@@ -94,7 +99,7 @@ After the first full night’s sleep in a few days, we drove to Austin. The thre
 ![Texas vs. ND](./texas-nd-2016.jpg)
 
 | Metric              | Value    |
-|---------------------|----------|
+| ------------------- | -------- |
 | Recorded Attendance | 102,315  |
 | Stadium Capacity    | 100,119  |
 | Texas AP Rank       | Unranked |

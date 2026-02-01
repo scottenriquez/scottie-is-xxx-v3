@@ -1,16 +1,19 @@
 ---
 authors: [scottenriquez]
-title: "Exploring CDK for Terraform for .NET"
-date: "2021-05-15"
-description: "Testing the alpha version of CDK for Terraform."
-tags: ["Cloud", "Programming"]
+title: 'Exploring CDK for Terraform for .NET'
+date: '2021-05-15'
+description: 'Testing the alpha version of CDK for Terraform.'
+tags: ['Cloud', 'Programming']
 ---
 
 ## Overview
+
 Both AWS CDK and Terraform aim to solve a similar problem: alleviating some of the infrastructure management challenges with code. CDK supports several general-purpose languages, including C#, Python, and TypeScript, while Terraform uses its configuration language called HCL. While CDK can only create AWS resources, Terraform supports virtually every cloud provider, granting the ability to write code to deploy to multiple public clouds at once. Last year, [Terraform and AWS announced a project called Terraform for CDK](https://www.hashicorp.com/blog/cdk-for-terraform-enabling-python-and-typescript-support), aiming to grant the best of both worlds (i.e., support for GPLs, multi-cloud, etc.).
 
 ## Nuances and Limitations
+
 In addition to the programming language features of AWS CDK, there's a [construct library](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html) with three levels:
+
 - L1 (level one) constructs are representations of CloudFormation resources
 - L2 (level two) constructs provide defaults and boilerplate to simplify the code
 - Patterns are the highest level and create many resources configured together wrapped in a single construct (e.g., [Lambda RESTful API](https://docs.aws.amazon.com/cdk/api/latest/docs/@aws-cdk_aws-apigateway.LambdaRestApi.html))
@@ -18,15 +21,19 @@ In addition to the programming language features of AWS CDK, there's a [construc
 While CDK for Terraform utilizes the [AWS construct programming model](https://aws.amazon.com/blogs/developer/introducing-the-cloud-development-kit-for-terraform-preview/), it does not share the same construct library as CDK. It's important to distinguish that CDK for Terraform stacks only support [Terraform providers](https://www.terraform.io/docs/language/providers/index.html).
 
 ## GitHub Repository
+
 You can find a complete working example [here](https://github.com/scottenriquez/cdktf-alpha-csharp-testing).
 
-## Installing the Tools and Scaffolding the .NET Solution 
+## Installing the Tools and Scaffolding the .NET Solution
+
 The following command line tools are required for getting started:
+
 - Terraform (0.12+)
 - Node.js (12.16+)
 - AWS CLI (specifically the credentials)
 
 First, install the `cdktf` CLI:
+
 ```shell
 npm install -g cdktf-cli
 # 0.3
@@ -34,6 +41,7 @@ cdktf --version
 ```
 
 After that, create the .NET project using the `cdktf` CLI:
+
 ```shell
 mkdir resources
 cd resources
@@ -42,25 +50,28 @@ cdktf init --template=csharp --local
 ```
 
 This action creates several files, including a `cdktf.json` file. Inside this configuration file, specify the AWS provider.
+
 ```json title='resources/cdktf.json'
 {
-    "language": "csharp",
-    "app": "dotnet run -p MyTerraformStack.csproj",
-    "terraformProviders": ["aws@~> 2.0"],
-    "terraformModules": [],
-    "context": {
-        "excludeStackIdFromLogicalIds": "true", 
-        "allowSepCharsInLogicalIds": "true"
-    }
+  "language": "csharp",
+  "app": "dotnet run -p MyTerraformStack.csproj",
+  "terraformProviders": ["aws@~> 2.0"],
+  "terraformModules": [],
+  "context": {
+    "excludeStackIdFromLogicalIds": "true",
+    "allowSepCharsInLogicalIds": "true"
+  }
 }
 ```
 
 After adding the provider configuration, generate the provider objects using the following command:
+
 ```shell
 cdktf get
 ```
 
 The generated objects are stored in the newly created `.gen/` folder. Add this as a reference:
+
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
 
@@ -72,7 +83,7 @@ The generated objects are stored in the newly created `.gen/` folder. Add this a
   <ItemGroup>
     <PackageReference Include="HashiCorp.Cdktf" Version="0.3.0" />
   </ItemGroup>
-  
+
   <ItemGroup>
     <ProjectReference Include=".gen\aws\aws.csproj" />
   </ItemGroup>
@@ -81,6 +92,7 @@ The generated objects are stored in the newly created `.gen/` folder. Add this a
 ```
 
 Lastly, initialize the `AwsProvider` object in the `Main.cs` file.
+
 ```csharp title='resources/Main.cs'
 using System;
 using Constructs;
@@ -113,7 +125,9 @@ namespace MyCompany.MyApp
 ```
 
 ## Adding Resources
+
 As noted above, the resources will be created using the Terraform AWS provider. There are corresponding C# classes for each of the [AWS resources specified by the provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs). While writing code, the AWS provider documentation in conjunction with your IDE's autocomplete functionality is a powerful way to navigate the available resources. For this example, the code looks up the latest AMI for Ubuntu 20.04 and uses it to create an EC2 Instance. Below the `AwsProvider` constructor method call in the `MyApp` constructor method, add a data source and instance like so:
+
 ```csharp title='resources/Main.cs'
 // initialize the AWS provider
 // located in the .gen/ folder
@@ -136,7 +150,7 @@ DataAwsAmi dataAwsAmi = new DataAwsAmi(this, "aws_ami_ubuntu", new DataAwsAmiCon
         {
             Name = "virtualization-type",
             Values = new [] { "hvm" }
-        }, 
+        },
     },
     Owners = new [] { "099720109477" }
 });
@@ -152,11 +166,13 @@ Instance ec2Instance = new Instance(this, "aws_ec2_instance", new InstanceConfig
 Note how this functionally behaves the same as the corresponding Terraform HCL with the power of a general-purpose programming language.
 
 ## Deploying and Managing State
+
 Once finished adding the data source and resource, the project can be built and deployed assuming that the AWS credentials are available (i.e., `aws configure` has been run).
+
 ```shell
 dotnet build
 cdktf deploy
-# when ready 
+# when ready
 cdktf destroy
 ```
 

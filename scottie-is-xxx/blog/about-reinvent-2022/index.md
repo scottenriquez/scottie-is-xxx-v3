@@ -1,20 +1,21 @@
 ---
 authors: [scottenriquez]
-title: AWS re:Invent 2022 
-date: "2022-11-29"
-description: "Thoughts and proofs-of-concepts from re:Invent 2022 releases."
-tags: ["Cloud"]
+title: AWS re:Invent 2022
+date: '2022-11-29'
+description: 'Thoughts and proofs-of-concepts from re:Invent 2022 releases.'
+tags: ['Cloud']
 ---
 
 ## Overview
 
-I learn best by doing, so with every release cycle,  I take the time to build fully functional examples and digest the blog posts and video content. Below are some of my favorite releases from re:Invent 2022. You can find all source code in [this GitHub repository](https://github.com/scottenriquez/reinvent-2022-examples).
+I learn best by doing, so with every release cycle, I take the time to build fully functional examples and digest the blog posts and video content. Below are some of my favorite releases from re:Invent 2022. You can find all source code in [this GitHub repository](https://github.com/scottenriquez/reinvent-2022-examples).
 
 ## Compute Optimizer Third-Party Metrics
 
 Compute Optimizer is a powerful and free offering from AWS that analyzes resource usage and provides recommendations. Most commonly, it produces rightsizing and termination opportunities for EC2 instances. However, in my experience, the most significant limitation for customers is that Compute Optimizer does not factor memory or disk utilization into findings by default. As a result, AWS customers that use CloudWatch metrics have their findings enhanced, but other customers who use third-party alternatives to capture memory and disk utilization did not. AWS announced [third-party metric support for Compute Optimizer](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-compute-optimizer-launches-integration-with-application-performance-monitoring-and-observability-partners/), including Datadog.
 
 To test this new feature, we need a few things:
+
 - Compute Optimizer enabled for the proper AWS account(s)
 - Datadog AWS integration enabled
 - An EC2 instance (i.e., candidate for rightsizing) with the Datadog agent installed
@@ -37,25 +38,27 @@ export class Ec2InstanceWithDatadogStack extends cdk.Stack {
     // networking
     const vpc = new ec2.Vpc(this, 'VPC', {
       ipAddresses: ec2.IpAddresses.cidr('10.0.0.0/16'),
-      natGateways: 0
+      natGateways: 0,
     });
     const selection = vpc.selectSubnets({
       // using public subnets as to not incur NAT Gateway charges
-      subnetType: ec2.SubnetType.PUBLIC
+      subnetType: ec2.SubnetType.PUBLIC,
     });
     const datadogInstanceSecurityGroup = new ec2.SecurityGroup(this, 'datadog-instance-sg', {
       vpc: vpc,
       allowAllOutbound: true,
     });
     // IP range for EC2 Instance Connect
-    datadogInstanceSecurityGroup.addIngressRule(ec2.Peer.ipv4('18.206.107.24/29'), ec2.Port.tcp(22), 'allow SSH access for EC2 Instance Connect');
+    datadogInstanceSecurityGroup.addIngressRule(
+      ec2.Peer.ipv4('18.206.107.24/29'),
+      ec2.Port.tcp(22),
+      'allow SSH access for EC2 Instance Connect'
+    );
 
     // IAM
     const datadogInstanceRole = new iam.Role(this, 'datadog-instance-role', {
       assumedBy: new iam.ServicePrincipal('ec2.amazonaws.com'),
-      managedPolicies: [
-        iam.ManagedPolicy.fromAwsManagedPolicyName('EC2InstanceConnect'),
-      ],
+      managedPolicies: [iam.ManagedPolicy.fromAwsManagedPolicyName('EC2InstanceConnect')],
     });
 
     // EC2 instance
@@ -63,7 +66,7 @@ export class Ec2InstanceWithDatadogStack extends cdk.Stack {
     userData.addCommands(
       'sudo yum install ec2-instance-connect',
       // set these environment variables with your Datadog API key and site
-      `DD_API_KEY=${process.env.DD_API_KEY} DD_SITE="${process.env.DD_SITE}" bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script_agent7.sh)"`,
+      `DD_API_KEY=${process.env.DD_API_KEY} DD_SITE="${process.env.DD_SITE}" bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script_agent7.sh)"`
     );
     const ec2Instance = new ec2.Instance(this, 'ec2-instance', {
       vpc: vpc,
@@ -73,14 +76,11 @@ export class Ec2InstanceWithDatadogStack extends cdk.Stack {
       role: datadogInstanceRole,
       securityGroup: datadogInstanceSecurityGroup,
       // note: this will incur a charge
-      instanceType: ec2.InstanceType.of(
-        ec2.InstanceClass.T3,
-        ec2.InstanceSize.MEDIUM,
-      ),
+      instanceType: ec2.InstanceType.of(ec2.InstanceClass.T3, ec2.InstanceSize.MEDIUM),
       machineImage: new ec2.AmazonLinuxImage({
         generation: ec2.AmazonLinuxGeneration.AMAZON_LINUX_2,
       }),
-      userData: userData
+      userData: userData,
     });
   }
 }
@@ -93,6 +93,7 @@ Once successfully deployed, metrics for the EC2 instance will appear in your Dat
 Finally, wait up to 30 hours for a finding to appear in Compute Optimizer with the proper third-party APM metrics.
 
 ## AWS Lambda SnapStart
+
 Cold starts are one of the most common drawbacks of serverless adoption. Specific runtimes, such as Java, are more affected by this, especially in conjunction with frameworks like Spring Boot. [SnapStart](https://aws.amazon.com/blogs/compute/starting-up-faster-with-aws-lambda-snapstart/) aims to address this:
 
 > After you enable Lambda SnapStart for a particular Lambda function, publishing a new version of the function will trigger an optimization process. The process launches your function and runs it through the entire `Init` phase. Then it takes an immutable, encrypted snapshot of the memory and disk state, and caches it for reuse. When the function is subsequently invoked, the state is retrieved from the cache in chunks on an as-needed basis and used to populate the execution environment. This optimization makes invocation time faster and more predictable, since creating a fresh execution environment no longer requires a dedicated `Init` phase.
@@ -116,35 +117,37 @@ export class Java11SnapstartLambdaStack extends cdk.Stack {
     const lambdaExecutionRole = new iam.Role(this, 'LambdaExecutionRole', {
       assumedBy: new iam.ServicePrincipal('lambda.amazonaws.com'),
     });
-    lambdaExecutionRole.addManagedPolicy(iam.ManagedPolicy.fromAwsManagedPolicyName('service-role/AWSLambdaBasicExecutionRole'));
-    
+    lambdaExecutionRole.addManagedPolicy(
+      iam.ManagedPolicy.fromAwsManagedPolicyName('service-role/AWSLambdaBasicExecutionRole')
+    );
+
     // Lambda functions
     const withSnapStart = new lambda.CfnFunction(this, 'WithSnapStart', {
       code: {
         s3Bucket: artifactDeployment.deployedBucket.bucketName,
-        s3Key: 'corretto-test.zip'
+        s3Key: 'corretto-test.zip',
       },
       functionName: 'withSnapStart',
       handler: 'example.Hello::handleRequest',
       role: lambdaExecutionRole.roleArn,
       runtime: 'java11',
-      snapStart: { applyOn: 'PublishedVersions' }
+      snapStart: { applyOn: 'PublishedVersions' },
     });
     const withoutSnapStart = new lambda.CfnFunction(this, 'WithoutSnapStart', {
       code: {
         s3Bucket: artifactDeployment.deployedBucket.bucketName,
-        s3Key: 'corretto-test.zip'
+        s3Key: 'corretto-test.zip',
       },
       functionName: 'withoutSnapStart',
       handler: 'example.Hello::handleRequest',
       role: lambdaExecutionRole.roleArn,
-      runtime: 'java11'
+      runtime: 'java11',
     });
   }
 }
 ```
 
-In [Jeff Barr's post](https://aws.amazon.com/blogs/aws/new-accelerate-your-lambda-functions-with-lambda-snapstart/), he used a Spring Boot function and achieved significant performance benefits. Next, I wanted to see if there were any benefits to a barebones Java 11 function, given that there is no additional charge for SnapStart. With a few tests, I reproduced a slight decrease in total duration. 
+In [Jeff Barr's post](https://aws.amazon.com/blogs/aws/new-accelerate-your-lambda-functions-with-lambda-snapstart/), he used a Spring Boot function and achieved significant performance benefits. Next, I wanted to see if there were any benefits to a barebones Java 11 function, given that there is no additional charge for SnapStart. With a few tests, I reproduced a slight decrease in total duration.
 
 Cold start without SnapStart (577.84 milliseconds):
 ![without-snapstart.png](without-snapstart.png)
@@ -159,6 +162,7 @@ A few cold start tests are hardly conclusive, but I'm excited to see how AWS cus
 I started my career as a .NET developer writing C#. My first experience with professional software development involved using Team Foundation Server. Even as a consultant focused on AWS about a year ago, many customers I worked for primarily used Azure DevOps to manage code, CI/CD pipelines, etc. While it may seem strange to use a Microsoft tool for AWS, the developer experience felt more unified than AWS CodeSuite in my opinion. CodeCommit, CodeBuild, and CodePipeline feel like entirely separate services within the AWS Console. While they are easily integrated via automation like CloudFormation or CDK, navigating between the services in the UI often takes several clicks.
 
 Enter CodeCatalyst. In addition to the [release blog post](https://aws.amazon.com/blogs/aws/announcing-amazon-codecatalyst-preview-a-unified-software-development-service/), there is an excellent [AWS Developers podcast episode](https://soundcloud.com/awsdevelopers/episode-061-announcing-amazon-codecatalyst-with-harry-mower-and-doug-clauson) outlining the vision for the product. I'm paraphrasing, but these are the four high-level problems that CodeCatalsyt aims to solve in addition to the feedback above:
+
 - Setting up the project itself
 - Setting up CI/CD
 - Setting up infrastructure and environments
@@ -254,6 +258,7 @@ Once the Green instance modifications were finished, I then switched over the in
 ![rds-blue-green-switch-over.png](rds-blue-green-switch-over.png)
 
 ## Amazon CodeWhisperer Support for C# and TypeScript
+
 CodeWhisperer, Amazon's response to GitHub Copilot, is described as an ML-powered coding companion. I had yet to test the preview, but [this release](https://aws.amazon.com/about-aws/whats-new/2022/11/amazon-codewhisperer-enterprise-controls-sign-up-new-languages/) is relevant to me, given I write mostly TypeScript and C# these days. Moreover, TypeScript is particularly interesting to the cloud community, given that it is the de facto standard for CDK as the first language supported. CodeWhisperer is available as part of the AWS Toolkit for Visual Studio Code and the JetBrains suite, but I opted to give it a test run in Cloud9, AWS's cloud-based IDE.
 
 ![amazon-codewhisperer.png](amazon-codewhisperer.png)

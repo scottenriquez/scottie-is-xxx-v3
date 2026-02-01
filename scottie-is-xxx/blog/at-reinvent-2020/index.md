@@ -1,12 +1,13 @@
 ---
 authors: [scottenriquez]
-title: "AWS re:Invent 2020" 
-date: "2020-12-01"
-description: "Thoughts and proofs-of-concepts from AWS re:Invent 2020."
-tags: ["Cloud"]
+title: 'AWS re:Invent 2020'
+date: '2020-12-01'
+description: 'Thoughts and proofs-of-concepts from AWS re:Invent 2020.'
+tags: ['Cloud']
 ---
 
 ## Contents
+
 - Container Support for Lambda
 - Introducing AWS Proton
 - EC2 macOS Instances
@@ -14,10 +15,11 @@ tags: ["Cloud"]
 - CloudShell
 
 ## Container Support for Lambda
+
 AWS Lambda supports Docker images up to 10GB in size. They've also provided base images for Lambda runtimes in the new [public ECR](https://gallery.ecr.aws/). For reference, the [base Node.js 12 image](https://gallery.ecr.aws/lambda/nodejs) is ~450MB. The Serverless Application Model (SAM) CLI has already been updated for container support. Instead of specifying a `--runtime`, engineers can now use the `--base-image` flag.
 
 ```shell
-sam --version 
+sam --version
 # 1.13.2
 sam init --base-image amazon/nodejs12.x-base
 ```
@@ -32,6 +34,7 @@ CMD ["app.lambdaHandler"]
 ```
 
 The `deploy` command also includes container registry support via ECR. With a quick `--guided` deployment, I produced the following `samconfig`:
+
 ```toml
 version = 0.1
 [default]
@@ -48,11 +51,12 @@ image_repository = "ACCOUNT_NUMBER.dkr.ecr.us-east-1.amazonaws.com/IMAGE_REPOSIT
 
 All of this made it seamless to deploy a container-based Lambda function with the same ease as `zip`-based ones. I haven't had the opportunity to do performance testing yet, but per [/u/julianwood](https://www.reddit.com/r/aws/comments/k4p5dc/new_for_aws_lambda_container_image_support/geb5o18?utm_source=share&utm_medium=web2x&context=3) from the Lambda team, it should be equivalent.
 
-> Performance is on par with `zip` functions. We don't use Fargate. This is pure Lambda. We optimize the image when the function is created and cache the layers, so the startup time is pretty much the same as `zip` functions. 
+> Performance is on par with `zip` functions. We don't use Fargate. This is pure Lambda. We optimize the image when the function is created and cache the layers, so the startup time is pretty much the same as `zip` functions.
 
 A fully-functional example can be found in this [GitHub repository](https://github.com/scottenriquez/aws-reinvent-2020-samples/tree/main/sam-app-container-support).
 
 ## Introducing AWS Proton
+
 > AWS Proton is the first fully managed application deployment service for container and serverless applications. Platform engineering teams can use Proton to connect and coordinate all the different tools needed for infrastructure provisioning, code deployments, monitoring, and updates.
 
 During the announcement video, I wasn’t sure what the relationship between Proton and existing DevOps tools like CloudFormation and CodePipeline would be or even who the target audience is. To answer these questions, it makes sense to describe the problem that AWS is aiming to solve.
@@ -68,32 +72,32 @@ As mentioned above, schemas are used to capture inputs. In the sample from GitHu
 ```yaml title='/schema.yaml'
 schema:
   format:
-    openapi: "3.0.0"
-  environment_input_type: "EnvironmentInput"
+    openapi: '3.0.0'
+  environment_input_type: 'EnvironmentInput'
   types:
     EnvironmentInput:
       type: object
-      description: "Input properties for my environment"
+      description: 'Input properties for my environment'
       properties:
         ttl_attribute:
           type: string
-          description: "Which attribute to use as the ttl attribute"
+          description: 'Which attribute to use as the ttl attribute'
           default: ttl
           minLength: 1
           maxLength: 100
 ```
 
-Defining `/infrastructure` or `/pipeline` sections of the Proton template requires a manifest to describe how exactly to interpret the infrastructure as code. I can't find any documentation for the accepted values, but the template indicates that templating engines like [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) are supported and other infrastructure as code options like CDK may be planned for the future. 
+Defining `/infrastructure` or `/pipeline` sections of the Proton template requires a manifest to describe how exactly to interpret the infrastructure as code. I can't find any documentation for the accepted values, but the template indicates that templating engines like [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) are supported and other infrastructure as code options like CDK may be planned for the future.
 
 ```yaml title='/manifest.yaml'
 infrastructure:
   templates:
-    - file: "cloudformation.yaml"
+    - file: 'cloudformation.yaml'
       engine: jinja
       template_language: cloudformation
 ```
 
-Lastly, a CloudFormation template is used to describe the infrastructure and DevOps automation like CodePipeline. Note the use of Jinja templating (specifically `environment.ttl_attribute`) to reference shared resources and input parameters. 
+Lastly, a CloudFormation template is used to describe the infrastructure and DevOps automation like CodePipeline. Note the use of Jinja templating (specifically `environment.ttl_attribute`) to reference shared resources and input parameters.
 
 ```yaml title='/cloudformation.yaml'
 AWSTemplateFormatVersion: '2010-09-09'
@@ -124,11 +128,12 @@ Resources:
           Projection:
             ProjectionType: ALL {% if environment.ttl_attribute|length %}
       TimeToLiveSpecification:
-        AttributeName: "{{ environment.ttl_attribute }}"
+        AttributeName: '{{ environment.ttl_attribute }}'
         Enabled: true
 ```
 
 When the template is finished, compress the source code, push to S3, create a template, and publish it.
+
 ```shell
 # create an environment template
 aws proton-preview create-environment-template \
@@ -175,9 +180,10 @@ aws proton-preview create-environment \
 The process for publishing and instantiating services is largely the same.
 
 ## EC2 macOS Instances
+
 The prospect of having macOS support for EC2 instances is exciting, but the current implementation has some severe limitations. First off, the instances are only available via [dedicated hosts](https://aws.amazon.com/ec2/dedicated-hosts/) with a minimum of a 24-hour tenancy. At an hourly rate of USD 1.083, it’s hard to imagine this being economically viable outside of particular use cases. The only AMIs available are 10.14 (Mojave) and 10.15 (Catalina), although 11.0 (Big Sur) is coming soon. There’s also no mention of support for AWS Workspaces yet, which I hope is a future addition given the popularity of macOS amongst engineers. Lastly, the new Apple M1 ARM-based chip isn’t available until next year.
 
-Despite the cost, I still wanted to get my hands on an instance. I hit two roadblocks while getting started. First, I had to increase my service quota for `mac1` dedicated hosts. Second, I had to try several availability zones to find one with dedicated hosts available (`use1-az6`). I used the following CLI commands to provision a host and instance. 
+Despite the cost, I still wanted to get my hands on an instance. I hit two roadblocks while getting started. First, I had to increase my service quota for `mac1` dedicated hosts. Second, I had to try several availability zones to find one with dedicated hosts available (`use1-az6`). I used the following CLI commands to provision a host and instance.
 
 ```shell
 # create host and echo ID
@@ -229,7 +235,9 @@ I then used [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) to
 ![macOS on EC2](./macOS-ec2.png)
 
 ## First-Class .NET 5 Support for Lambda
+
 According to [AWS](https://aws.amazon.com/blogs/developer/net-5-aws-lambda-support-with-container-images/):
+
 > .NET 5, which was released last month, is a major release towards the vision of a single .NET experience for .NET Core, .NET Framework, and Xamarin developers. .NET 5 is a “Current” release and is not a long term supported (LTS) version of .NET. The next LTS version will be .NET 6, which is currently scheduled to be released in November 2021. .NET 5 will be supported for 3 months after that date, which means that .NET 5 will be supported for about 15 months in total. In comparison, .NET 6 will have 3 years of support. Even though Lambda’s policy has always been to support LTS versions of language runtimes for managed runtimes, the new container image support makes .NET 5 a first-class platform for Lambda functions.
 
 While AWS has already released the [.NET 5 public ECR image](https://gallery.ecr.aws/lambda/dotnet), SAM support as a `--base-image` hasn't been implemented yet as of version `1.13.2`. Porting from a .NET Core starter template is as easy as changing the `<TargetFramework>` in the `.csproj` file and updating the `Dockerfile`.
@@ -261,7 +269,9 @@ CMD ["HelloWorld::HelloWorld.Function::FunctionHandler"]
 A working example can be found [here](https://github.com/scottenriquez/aws-reinvent-2020-samples/tree/main/dotnet5-lambda).
 
 ## CloudShell
+
 Finally catching up with both Azure and Google Cloud, AWS announced the launch of CloudShell:
+
 > AWS CloudShell is a browser-based shell that makes it easy to securely manage, explore, and interact with your AWS resources. CloudShell is pre-authenticated with your console credentials. Common development and operations tools are pre-installed, so no local installation or configuration is required. With CloudShell, you can quickly run scripts with the AWS Command Line Interface (AWS CLI), experiment with AWS service APIs using the AWS SDKs, or use a range of other tools to be productive. You can use CloudShell right from your browser and at no additional cost.
 
 Bash, Zsh, and PowerShell are available as shell options, and run commands can be customized in a typical `~/.bashrc` or `~/.zshrc` fashion. The free gigabyte of storage persists in the `$HOME` directory, making it easy to stash working files. While there are several runtimes like Node.js and Python installed alongside Vim, doing development in CloudShell is not as ergonomic as Cloud9 or a local machine. I can see this tool being useful when combined with something like container tabs in Firefox to interact with multiple AWS accounts from the browser instead of running commands in a local terminal with `--profile` flags.

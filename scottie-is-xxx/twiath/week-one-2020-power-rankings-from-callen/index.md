@@ -1,15 +1,14 @@
 ---
 title: "Callen's Week One 2020 Power Rankings"
-date: "2020-09-18"
+date: '2020-09-18'
 description: "Callen's indign power rankings."
 authors: [callen]
-tags: ["Power Rankings"]
+tags: ['Power Rankings']
 ---
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLevelUpAlt } from "@fortawesome/free-solid-svg-icons"
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
-
 
 ## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-one-callen" class="sleeper-avatar"/> Manhattan (KS) Miracles | 1-0W/L | 99PF
 

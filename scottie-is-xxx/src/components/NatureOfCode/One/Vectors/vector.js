@@ -1,9 +1,9 @@
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 import * as THREE from 'three';
 import SceneInit from './sceneInit';
 
 const generateLine = (vectors) => {
-  const material = new THREE.LineBasicMaterial({color: 0xa7c080});
+  const material = new THREE.LineBasicMaterial({ color: 0xa7c080 });
   const geometry = new THREE.BufferGeometry().setFromPoints(vectors);
   return new THREE.Line(geometry, material);
 };
@@ -25,11 +25,19 @@ const Vector = () => {
     canvas.scene.add(gridYZ);
     canvas.animate();
   }, []);
-  return (<div id={'noc-vector-1-canvas-div'} style={{
-    height: '400px', width: '100%', backgroundColor: '#272e33', position: 'relative'
-  }}>
-    <canvas id={'noc-bouncing-vector-1-canvas'}/>
-  </div>);
-}
+  return (
+    <div
+      id={'noc-vector-1-canvas-div'}
+      style={{
+        height: '400px',
+        width: '100%',
+        backgroundColor: '#272e33',
+        position: 'relative',
+      }}
+    >
+      <canvas id={'noc-bouncing-vector-1-canvas'} />
+    </div>
+  );
+};
 
 export default Vector;

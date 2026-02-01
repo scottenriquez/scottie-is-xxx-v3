@@ -1,9 +1,9 @@
 ---
 title: "Scottie's Week One 2021 Power Rankings"
-date: "2021-09-15"
+date: '2021-09-15'
 description: "Scottie's haemic power rankings."
 authors: [scottie]
-tags: ["Power Rankings"]
+tags: ['Power Rankings']
 ---
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -68,7 +68,7 @@ Don't trade with John. These starters look elite. Don't trade with John. The ben
 
 #### Week One Points: 125
 
->You versus the guy that ranked you 11th.
+> You versus the guy that ranked you 11th.
 
 Logan hit big this week, but I still have significant concerns about this team. With Mostert and Jeudy on IR and a weak bench looking about as polished as his Warhammer figurines, I'd say Logan will trend down. Of course, I'm always a fan of talking smack while you can, so go off now, king.
 
@@ -106,7 +106,7 @@ Much like K-Man, Matthew Stafford appears to be thriving after leaving behind th
 
 #### Week One Points: 96
 
->Dallas will win the next 10 games in a row.
+> Dallas will win the next 10 games in a row.
 
 Mrak's starters look good, but his team is about as deep as an episode of The Joe Rogan Experience. I'm about to grab his entire bench in the golf league. He should have been in the triple-digit club this week, but the Texans decided to end that dream. They must have read Mrak's tweets about how bad Spencer Rattler is and opted to try this season instead of tanking.
 
@@ -162,7 +162,7 @@ This score is a bit misleading. If Brandon Aiyuk wasn't as nonexistent as Tulsa'
 
 #### Week One Points: 96
 
->I hope there's no Texas football in heaven.
+> I hope there's no Texas football in heaven.
 
 My team, much like Texas Longhorns football, continues to be aggressively mediocre and disappointing. I'd argue that I have one of the deepest rosters, but I'm going to manage it about as well as Trond managed his work during his stint in Mobility. Unfortunately, I left about as much on the bench as I do the meat on a bone-in chicken wing too.
 
@@ -218,7 +218,7 @@ CMC couldn't save this trash-ass team. Kyle Pitts? More like Kyle Shitts. Michae
 
 #### Week One Points: 58
 
->GOOD ONE, BRO. GOOD JOKE. JUST WANTED TO TAKE A SEC AND CONGRATULATE YOU ON THAT GREAT JOKE.
+> GOOD ONE, BRO. GOOD JOKE. JUST WANTED TO TAKE A SEC AND CONGRATULATE YOU ON THAT GREAT JOKE.
 
 This isn't the first offensive dud that Callen witnessed this weekend. His fantasy team's anemic performance rivals A&M's inability to score against one of the worst P5 teams. Callen missed OBJ being out just like Calzada missed just about every throw he attempted. This week's terrible performance extended to the golf league as well. With these roster management skills, he's making Bill O'Brien look like a quality GM. This team will actually be pretty good, but I want to take this opportunity to doo doo on the commish.
 

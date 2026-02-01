@@ -1,21 +1,20 @@
 ---
 title: "Scottie's Week Two 2020 Power Rankings"
-date: "2020-09-22"
+date: '2020-09-22'
 description: "Scottie's boastless power rankings."
 authors: [scottie]
-tags: ["Power Rankings"]
+tags: ['Power Rankings']
 ---
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLevelUpAlt } from "@fortawesome/free-solid-svg-icons"
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
-
 ## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-two-scottie" class="sleeper-avatar"/> 🏆‼️ | 2-0W/L | 239PF
 
 #### Week Two Points: 139.7
 
-There's a new number one team in town. Tarv's team looks excellent from top to bottom right now. Alexa, play *Back to Back* by Drake.
+There's a new number one team in town. Tarv's team looks excellent from top to bottom right now. Alexa, play _Back to Back_ by Drake.
 
 | Name            | Team    | Depth |
 | --------------- | ------- | ----- |
@@ -27,7 +26,7 @@ There's a new number one team in town. Tarv's team looks excellent from top to b
 | T.J. Hockenson  | DET-TE  | 1     |
 | Miles Sanders   | PHI-RB  | 1     |
 | Julian Edelman  | NE-WR   | 1     |
-| Chicago Bears   | CHI-DEF |       
+| Chicago Bears   | CHI-DEF |
 
 ## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/a91cfbe2665c3bc237b6aa5199fb0d7a-two-scottie" class="sleeper-avatar"/> Fart Masseuse | 2-0W/L | 221PF
 
@@ -46,7 +45,6 @@ Clyde Edwards-Helaire has a down week, and K-Man still posts 115 on me. Once he 
 | Nyheim Hines          | IND-RB  | 3     |
 | David Montgomery      | CHI-RB  | 1 (Q) |
 | Tennessee Titans      | TEN-DEF |       |
-
 
 ## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/d57bddeb09e102a2b7556973dc6301fb-two-scottie" class="sleeper-avatar"/> Court is Not in Sutton | 1-1W/L | 243PF
 
@@ -70,7 +68,7 @@ Caleb has had back-to-back baller weeks, and I'm very impressed. There are two c
 
 #### Week Two Points: 123.1
 
->Dak got that drip though 💦
+> Dak got that drip though 💦
 
 It's hard to have a bad week when your QB posts a 40-piece. There's not much to complain about here. Mark's team is looking deep. The margin of difference between the top four teams is minimal right now.
 
@@ -90,7 +88,7 @@ It's hard to have a bad week when your QB posts a 40-piece. There's not much to 
 
 #### Week Two Points: 110.9
 
->I 100% think we will win every game we play, even if we are down two scores with one minute left. And then, the depression flows like wine when it doesn't hit.
+> I 100% think we will win every game we play, even if we are down two scores with one minute left. And then, the depression flows like wine when it doesn't hit.
 
 This was a tough loss. I'm not writing off Chris by any means, but it's hard to deny that the Christian McCaffrey injury won't impact this team's elite status. I think this team has depth, but replacing the first overall pick will be a challenge. If Jerrick McKinnon can be a quality stopgap and Kareem Hunt keeps trending up, I think Crams will shoot right back up to the top. There's still an insane amount of talent on this team, but I still think the margins are so thin between the top teams.
 
@@ -110,7 +108,7 @@ This was a tough loss. I'm not writing off Chris by any means, but it's hard to 
 
 #### Week Two Points: 130.4
 
->Good God, Aaron Jones is personally attacking me.
+> Good God, Aaron Jones is personally attacking me.
 
 Yeah, that sums it up.
 
@@ -148,7 +146,7 @@ I'm still not very high on this team's running backs. I'm very interested to see
 
 #### Week Two Points: 107.9
 
->My roster looking like Final Destination. I barely touched Marquez Valdes-Scantling but death found a way.
+> My roster looking like Final Destination. I barely touched Marquez Valdes-Scantling but death found a way.
 
 I have no idea what the hell this team is and do not care to speculate. Uncle Cral is low-key the best manager in the league.
 
@@ -168,7 +166,7 @@ I have no idea what the hell this team is and do not care to speculate. Uncle Cr
 
 #### Week Two Points: 96.5
 
->I was sweating Trond there for a while.
+> I was sweating Trond there for a while.
 
 John is one Russell Wilson away from the Sacko. In typical John luck, he eeks out a win with ~10 points from his running backs and 2.4 from his WR1. Three of the four wide receivers he played this week had touchdowns. Saquon tearing his ACL was the MVP of this team too. I don't understand how John gets so lucky in fantasy football. I want to say that it's not sustainable, but we all know he's going to get into the playoffs with this doo doo team somehow.
 
@@ -182,7 +180,7 @@ John is one Russell Wilson away from the Sacko. In typical John luck, he eeks ou
 | Evan Engram        | NYG-TE | 1     |
 | Odell Beckham      | CLE-WR | 1     |
 | John Brown         | BUF-WR | 1     |
-| Kansas City Chiefs | KC-DEF |       
+| Kansas City Chiefs | KC-DEF |
 
 ## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-two-scottie" class="sleeper-avatar"/> Zug My Balls | 0-2W/L | 173PF
 
@@ -206,7 +204,7 @@ It was a very tough week for Logz, and I'm not convinced it was a fluke. Deshaun
 
 #### Week Two Points: 91.7
 
->Season is over for me. Offer up the trades.
+> Season is over for me. Offer up the trades.
 
 I feel bad for Trondheim. This team has some solid pieces in Kyler Murray, Darren Waller, DK Metcalf, and Mike Evans, but injuries have decimated it. If Trond plays the waiver well, I could see him rising to mediocrity.
 
@@ -226,7 +224,7 @@ I feel bad for Trondheim. This team has some solid pieces in Kyler Murray, Darre
 
 #### Week Two Points: 86.0
 
->Derrick Henry sucks and always has. I'll trade you Michael Thomas for him. 
+> Derrick Henry sucks and always has. I'll trade you Michael Thomas for him.
 
 My team is officially terrible. For the second week, I leave a 20-piece on the bench, which makes me want to rank my team higher (and gives me the faintest glimmer of hope). At this point, my first-round, second-round, and third-round picks could all be considered busts. I don't have a reliable WR2, and my star tight end is injured. I'm already streaming QBs and will probably begin streaming D/STs as well with the terrible performance by the Saints against a mediocre offense.
 

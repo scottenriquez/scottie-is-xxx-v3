@@ -1,9 +1,9 @@
 ---
 title: "Scottie's Week One 2022 Power Rankings"
-date: "2022-09-13"
+date: '2022-09-13'
 description: "Scottie's sorer power rankings."
 authors: [scottie]
-tags: ["Power Rankings"]
+tags: ['Power Rankings']
 ---
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -14,7 +14,7 @@ import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
 
 #### Week One Points: 115.5
 
->TFW you waste an entire roster spot all year for Michael Thomas, then decide not to start him for his first game in two years, and he scores two TDs.
+> TFW you waste an entire roster spot all year for Michael Thomas, then decide not to start him for his first game in two years, and he scores two TDs.
 
 I really hate putting Carlos here, but his team is looking stacked. Aaron Rodgers had probably the worst game of his season, although I think his ceiling this season is significantly lower without Davantae Adams. Carlos could easily stream a better quarterback if he doesn't work out. Micahel Thomas looks like Michael Thomas again. I think Carlos might have the best running back depth in the league. We just might be drafting in Amarillo and eating 72oz steaks.
 
@@ -34,7 +34,7 @@ I really hate putting Carlos here, but his team is looking stacked. Aaron Rodger
 
 #### Week One Points: 130.0
 
->Ok, but the Big XII has only played one team from the Sun Belt. Let me know when y'all play real teams.
+> Ok, but the Big XII has only played one team from the Sun Belt. Let me know when y'all play real teams.
 
 I like Tarv's team overall. His wide receivers are looking a bit weak right now, but I still think that Devonta Smith will take a big step forward this year. I still have no idea who the hell Isiah Pacheco is. If he splits carries with Clyde Edwards-Helaire, Tarv might have some serious running back depth.
 
@@ -54,7 +54,7 @@ I like Tarv's team overall. His wide receivers are looking a bit weak right now,
 
 #### Week One Points: 127.1
 
->It's another Colt game. I'll say it. It would have whipped Bama if Ewers didn't get injured. We would have won if the refs didn't fuck us on that missed face mask, safety, etc. We lost by one with a second-string quarterback limping around the field.
+> It's another Colt game. I'll say it. It would have whipped Bama if Ewers didn't get injured. We would have won if the refs didn't fuck us on that missed face mask, safety, etc. We lost by one with a second-string quarterback limping around the field.
 
 My streak of 100+ point weeks continues. Even with starting a tight end at flex, who got zero points, my team won comfortably over John. Darrell Henderson could be a quality flex option, depending on how the Cam Akers situation shakes out. Zeke looked like some poo poo, but the Cowboys also did overall. With Dak being out, I expect his workload to increase. My team needs Kenneth Walker III to come back and take the starting job from Rashaad Penny. Thanks again for Justin Jefferson, K-Man!
 
@@ -110,7 +110,7 @@ Like K-State, Chris got a free dub this week by playing a bum-ass team. Crams' s
 
 #### Week One Points: 121.3
 
-It's unreal how well we draft for Trond every year. In the next draft, we'll get him to attend by saying that we will film it and do interviews in the style of his beloved Joe Rogan. This dude can't even be bothered to set his lineup and put up 120+ points this week. Alexa, play *I'm Upset* by Drake. I'm looking forward to Trondheim's explanation in Discord about how auto-drafting is a low-key galaxy brain move on his part. "I knew that y'all would draft zero RBs for me." Anyway, he's going to run this team into the ground. There is no way that Miles Sanders and Cordarrelle Patterson will end up being top running backs.
+It's unreal how well we draft for Trond every year. In the next draft, we'll get him to attend by saying that we will film it and do interviews in the style of his beloved Joe Rogan. This dude can't even be bothered to set his lineup and put up 120+ points this week. Alexa, play _I'm Upset_ by Drake. I'm looking forward to Trondheim's explanation in Discord about how auto-drafting is a low-key galaxy brain move on his part. "I knew that y'all would draft zero RBs for me." Anyway, he's going to run this team into the ground. There is no way that Miles Sanders and Cordarrelle Patterson will end up being top running backs.
 
 | Name                  | Team    | Depth |
 | --------------------- | ------- | ----- |
@@ -160,11 +160,11 @@ I have no idea where the hell to rank this team. As usual, I don't know what the
 | Chase Claypool     | PIT-WR  | 1     |
 | Cincinnati Bengals | CIN-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/0658c50f92789c23a6f0b1efef9dbdaa-one-scottie" class="sleeper-avatar"/> Najeeruto  | 0-1W/L | 90PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/0658c50f92789c23a6f0b1efef9dbdaa-one-scottie" class="sleeper-avatar"/> Najeeruto | 0-1W/L | 90PF
 
 #### Week One Points: 90.8
 
->Stafford confirmed washed.
+> Stafford confirmed washed.
 
 The reigning champ looks vulnerable right now. Without big weeks from Steffon Diggs and AJ Dillion, this team would be getting the Claeb treatment in the power rankings. Many rookies are on this roster, so seeing how the talent develops will be interesting. That being said, a significant portion of this roster relies on the Raiders, Jaguars, and Jets offenses. That does not spark joy.
 
@@ -202,7 +202,7 @@ Logz had a strong start in week one, but his team's outlook is bleak. Elijah Mit
 
 #### Week One Points: 79.7
 
->Jimbo will never be that guy. He's gonna win games this year for sure. Wouldn't even be surprised if we upset Bama again after the weakness they showed today. But he showed he'll never be able to put together an entire season. We'll get some highlight wins once or twice a year for the next eight years or however long he's here. Maybe an NY6 bowl game every few years. But he's never going to be able to put together a season that competes for a natty. The only reason he could do it at FSU was because he snuck in before Clemson rose up and had a Heisman winner push him through the playoffs. None of that will happen for him at A&M. We'll end up 8-4 again this year, and that's that.
+> Jimbo will never be that guy. He's gonna win games this year for sure. Wouldn't even be surprised if we upset Bama again after the weakness they showed today. But he showed he'll never be able to put together an entire season. We'll get some highlight wins once or twice a year for the next eight years or however long he's here. Maybe an NY6 bowl game every few years. But he's never going to be able to put together a season that competes for a natty. The only reason he could do it at FSU was because he snuck in before Clemson rose up and had a Heisman winner push him through the playoffs. None of that will happen for him at A&M. We'll end up 8-4 again this year, and that's that.
 
 Between Texas A&M's seven (7) offensive points against a Sun Belt team and this atrocious fantasy performance, the kind of football that Callen watched this weekend belongs on the History Channel. However, some key pieces had an uncharacteristic terrible week. I expect this team to trend up when Austin Ekeler and Aaron Jones return to their usual selves.
 
@@ -222,7 +222,7 @@ Between Texas A&M's seven (7) offensive points against a Sun Belt team and this 
 
 #### Week One Points: 65.7
 
->I'm a sad boi.
+> I'm a sad boi.
 
 In my work league, one of my coworkers only drafted players with the letter 'J' in their name. Somehow, that roster is way more cohesive than Claeb's. This would have been a shit week for you if Derrick Henry was Derrick Henry on Sunday. Instead, it's a dogshit one. If Julio Jones maintains chemistry with Tom Brady (and Claeb starts him), this team could have a rise from shit to cheeks.
 
@@ -237,4 +237,3 @@ In my work league, one of my coworkers only drafted players with the letter 'J' 
 | Allen Robinson      | LAR-WR | 1     |
 | Rhamondre Stevenson | NE-RB  | 2     |
 | New Orleans Saints  | NO-DEF |       |
-

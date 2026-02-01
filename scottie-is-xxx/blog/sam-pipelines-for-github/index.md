@@ -1,27 +1,30 @@
 ---
 authors: [scottenriquez]
-title: "Configuring AWS SAM Pipelines for GitHub Actions"
-date: "2021-07-29"
-description: "Creating a multi-account CI/CD pipeline using the latest SAM CLI functionality."
-tags: ["Cloud", "Programming"]
+title: 'Configuring AWS SAM Pipelines for GitHub Actions'
+date: '2021-07-29'
+description: 'Creating a multi-account CI/CD pipeline using the latest SAM CLI functionality.'
+tags: ['Cloud', 'Programming']
 ---
 
 ## About AWS SAM Pipelines
+
 Last week, [AWS announced the public preview for SAM Pipelines](https://aws.amazon.com/blogs/compute/introducing-aws-sam-pipelines-automatically-generate-deployment-pipelines-for-serverless-applications/). This feature expands the SAM CLI allowing users to create multi-account CI/CD pipelines for serverless applications quickly across several providers such as GitHub Actions, GitLab CI/CD, and Jenkins. Along with [CDK Pipelines](https://scottie.is/writing/an-api-with-dotnet-lambda/), the AWS tooling keeps making it easier to standardize with best practices.
 
-## Preparing Your Machine 
+## Preparing Your Machine
+
 I opted to create a container image for my Lambda function for my testing, so the core dependencies are the AWS CLI, SAM CLI, and Docker.
 
 ```shell
 # aws-cli/2.2.23 Python/3.9.6 Darwin/20.6.0 source/x86_64 prompt/off
 aws --version
 # SAM CLI, version 1.27.2
-sam --version 
+sam --version
 # Docker version 20.10.7, build f0df350
 docker --version
 ```
 
 ## Creating the SAM Application and Pipeline
+
 First, create a starter application. I chose `amazon/nodejs14.x-base` for a base image. Then, run the `pipeline` command with the `--bootstrap` flag to configure the CI/CD provider and requisite AWS resources like IAM policies.
 
 ```shell
@@ -30,6 +33,7 @@ sam pipeline init --bootstrap
 ```
 
 The `pipeline` command walks you through a series of configuration steps. For the CI/CD provider, choose GitHub Actions which is a two-stage pipeline. For each stage, provide the following information:
+
 - Name (i.e., pre-production, production)
 - Account details (i.e., access keys provided for AWS CLI)
 - Reference application build resources (i.e., pipeline execution role, CloudFormation execution role, S3 bucket for build artifacts, ECR repository for container images)
@@ -98,20 +102,15 @@ jobs:
       - run: |
           # trigger the tests here
 
-  build-and-deploy-feature:
-    ...
+  build-and-deploy-feature: ...
 
-  build-and-package:
-    ...
+  build-and-package: ...
 
-  deploy-testing:
-    ...
+  deploy-testing: ...
 
-  integration-test:
-    ... 
+  integration-test: ...
 
-  deploy-prod:
-    ...
+  deploy-prod: ...
 ```
 
 Before pushing the changes to the remote origin, add the IAM pipeline user credentials as secrets in GitHub.
@@ -119,17 +118,19 @@ Before pushing the changes to the remote origin, add the IAM pipeline user crede
 ![github-actions-secret.png](github-actions-secret.png)
 
 ## Adding Approvers
+
 The default pipeline does not have any approval mechanisms in place, so when pushing to `main`, the application goes directly to production. To add approvers, create [an environment](https://docs.github.com/en/actions/reference/environments#creating-an-environment) in GitHub and add approvers. Then, reference the environment in the pipeline YAML.
 
 ```yaml title='.github/workflows/pipeline.yaml'
 deploy-prod:
-    if: github.ref == 'refs/heads/main'
-    needs: [integration-test]
-    runs-on: ubuntu-latest
-    environment: production
+  if: github.ref == 'refs/heads/main'
+  needs: [integration-test]
+  runs-on: ubuntu-latest
+  environment: production
 ```
 
 ## Feature Branch Environments
+
 For [feature branches](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) (i.e., named `feature*`), the pipeline will create a new CloudFormation stack and deploy the branch automatically. This is powerful for quickly testing in a live environment outside of the two stages created by the pipeline.
 
 ![feature-branches-action.png](feature-branches-action.png)

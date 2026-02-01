@@ -16,7 +16,7 @@ export default class SceneInit {
     this.canvasHTMLElement = this.divHTMLElement.children[0];
     this.canvasHTMLElement.height = this.divHTMLElement.clientHeight;
     this.canvasHTMLElement.width = this.divHTMLElement.clientWidth;
-    this.bottomXPosition= -50;
+    this.bottomXPosition = -50;
     this.bottomYPosition = -50;
     this.bottomZPosition = -50;
     this.topXPosition = 50;

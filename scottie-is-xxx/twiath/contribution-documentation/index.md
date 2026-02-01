@@ -1,9 +1,9 @@
 ---
-title: Contribution Documentation 
-date: "2020-08-08"
-description: "Documentation for creating new content on the league site."
+title: Contribution Documentation
+date: '2020-08-08'
+description: 'Documentation for creating new content on the league site.'
 authors: [scottie]
-tags: ["Contributing", "Documentation"]
+tags: ['Contributing', 'Documentation']
 ---
 
 ## Frontend Build Status
@@ -79,9 +79,9 @@ Use the power rankings CLI to generate new posts. The generated template lists e
 ```markdown
 ---
 title: "Scottie's Week One Power Rankings"
-date: "2020-08-22"
+date: '2020-08-22'
 description: "Scottie's dope power rankings."
-authors: [scottie] 
+authors: [scottie]
 ---
 
 ## <img src="https://twiath-site-cdn.s3.amazonaws.com/nfl_dal-one-scottie" class="sleeper-avatar"/> 🏆‼️ | 0-0W/L | 0PF
@@ -128,7 +128,7 @@ The section wrapped in `---` is called the slug. It contains metadata for queryi
 This site is configured to support MDX. MDX adds a new dimension of features in Markdown pages by seamlessly integrating JSX, which allows for writing HTML inside of JavaScript statements.
 
 ```jsx
-const element = <h1>Hello, world!</h1>
+const element = <h1>Hello, world!</h1>;
 ```
 
 Markdown syntax is simple and allows for content structuring, but the ability to write JavaScript inside of it allows for dynamic content such as charts and HTTP calls. The MDX syntax for adding React components is straightforward.
@@ -207,14 +207,14 @@ The league-specific details exist in various JavaScript configuration files to m
 ```javascript title='/lib/config/frontend.js'
 const frontend = {
   // used to determine if the user created a new branch
-  mainBranchName: "main",
+  mainBranchName: 'main',
   // used to determine if the user is in the root directory
-  configFileName: "docusaurus.config.js",
+  configFileName: 'docusaurus.config.js',
   // used to support any changes to the default blog path for vanity URLs
-  postPath: "/twiath/",
-  // used to defer image styling for the avatar 
-  avatarHTMLClass: "sleeper-avatar",
-}
+  postPath: '/twiath/',
+  // used to defer image styling for the avatar
+  avatarHTMLClass: 'sleeper-avatar',
+};
 ```
 
 ### AWS
@@ -222,10 +222,10 @@ const frontend = {
 ```javascript title='/lib/config/aws.js'
 const awsConfig = {
   // S3 bucket
-  bucketName: "twiath-site-cdn",
+  bucketName: 'twiath-site-cdn',
   // URL base to be used for source in <img> tag
-  cdnURLBase: "https://dxyip34awyjyf.cloudfront.net",
-}
+  cdnURLBase: 'https://dxyip34awyjyf.cloudfront.net',
+};
 ```
 
 ### League
@@ -233,50 +233,50 @@ const awsConfig = {
 ```javascript title='/lib/config/league.js'
 const league = {
   // Sleeper league ID number
-  id: "541384381865115648",
-}
+  id: '541384381865115648',
+};
 ```
 
 ### Authors
 
 ```javascript title='/lib/config/validAuthors.js'
 const authors = {
-  Scottie: "Scottie Enriquez",
-  Callen: "Callen Trail",
-  Logan: "Logan Richardson",
-  Carl: "Carl Meziere",
-  Andrew: "Andrew Carlough",
-  John: "John Yarrow",
-  Matt: "Matt Kniowski",
-  Chris: "Chris Ramsey",
-  Caleb: "Caleb Trantow",
-  Travis: "Travis James",
-  Trond: "Trond Liu",
-  Mark: "Mark Hamilton",
-}
+  Scottie: 'Scottie Enriquez',
+  Callen: 'Callen Trail',
+  Logan: 'Logan Richardson',
+  Carl: 'Carl Meziere',
+  Andrew: 'Andrew Carlough',
+  John: 'John Yarrow',
+  Matt: 'Matt Kniowski',
+  Chris: 'Chris Ramsey',
+  Caleb: 'Caleb Trantow',
+  Travis: 'Travis James',
+  Trond: 'Trond Liu',
+  Mark: 'Mark Hamilton',
+};
 ```
 
 ### Weeks
 
 ```javascript title='/lib/config/validWeeks.js'
 const weeks = {
-  0: "zero",
-  1: "one",
-  2: "two",
-  3: "three",
-  4: "four",
-  5: "five",
-  6: "six",
-  7: "seven",
-  8: "eight",
-  9: "nine",
-  10: "ten",
-  11: "eleven",
-  12: "twelve",
-  13: "thirteen",
-  14: "fourteen",
-  15: "fifteen",
-  16: "sixteen",
-  17: "seventeen",
-}
+  0: 'zero',
+  1: 'one',
+  2: 'two',
+  3: 'three',
+  4: 'four',
+  5: 'five',
+  6: 'six',
+  7: 'seven',
+  8: 'eight',
+  9: 'nine',
+  10: 'ten',
+  11: 'eleven',
+  12: 'twelve',
+  13: 'thirteen',
+  14: 'fourteen',
+  15: 'fifteen',
+  16: 'sixteen',
+  17: 'seventeen',
+};
 ```

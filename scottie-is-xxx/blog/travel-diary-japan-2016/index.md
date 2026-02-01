@@ -1,13 +1,15 @@
 ---
 authors: [scottenriquez]
-title: "Travel Diary: Japan 2016"
-date: "2016-06-05"
-description: "A detailed log from my second journey to Japan."
-tags: ["Travel"]
+title: 'Travel Diary: Japan 2016'
+date: '2016-06-05'
+description: 'A detailed log from my second journey to Japan.'
+tags: ['Travel']
 ---
+
 import CustomMap from '../../src/components/GoogleMaps/customMap'
 
 ## April 30th, 2016 - 電車の風 - Tokyo
+
 <div style={{ height: '50vh', width: '100%' }}>
     <CustomMap
         defaultZoom={7}
@@ -24,6 +26,7 @@ Kyle, my close friend from college who lives in Tokyo, greeted us right outside 
 We all purchased our tickets and awaited the Skyliner express train. Right on schedule I was greeted with a brisk gust of wind displaced by the arriving train. It immediately woke me from my exhaustion-induced fog and gave me the strangest sense of déjà vu. Moments like these always come off like a cheap movie transition, but it truly felt like the past year had gone by in instant and that I had only been gone from Tokyo for a few days. Winds from trains are always one of the first images of Japan that come to my mind. It's a perfect mixture of the natural imagery of traditional Japanese culture and technology that's prevalent in the sprawling metropolises like Tokyo.
 
 ## May 1st, 2016 - Nooks and Crannies - Tokyo
+
 <div style={{ height: '50vh', width: '100%' }}>
     <CustomMap
         defaultZoom={9}
@@ -44,6 +47,7 @@ It’s a view with a surreal amount of detail. There seem to be an infinite numb
 That’s not to say that you're never exposed to copious amount of people. From Sumida we travelled to Taito to see the famous Senso-ji. Near this Buddhist temple is a market that sells everything from homemade food to souvenirs geared towards English-speaking tourists. It was some of the most organized havoc that I had ever seen. People were packed tightly together and slowly moving forward through the human congestion. The notion of personal space did not exist there. Even though I’m well over six feet tall and could breathe freely above the mob, I still felt like I was suffocating. I thought back to how peaceful everything looked from the Skytree Tower earlier in the day. My view now was quite different in many ways.
 
 ## May 2nd, 2016 - Sea of Trees - Aokigahara
+
 <div style={{ height: '50vh', width: '100%' }}>
     <CustomMap
         defaultZoom={7}
@@ -82,6 +86,7 @@ At first, we walked as far was we could with the sign that said no entry still i
 We decided to follow the tissues. Honestly, I hadn't taken into consideration what I would have done if I found the person on the other end, but we pressed on. At first the tissues were in very rapid succession. Then they became more sparse. Eventually, the trail began to rise much more steeply and dissipate, and I didn't find any more tissues. I scouted ahead a bit, asking my companions to stay back at the last tissue, but I didn't find anything. Without food or rope to mark our way back, we decided to leave the forest. I'd like to think that the person turned around and left the forest, but we'll never know.
 
 ## May 3rd, 2016 - Change of Pace - Chiba
+
 <div style={{ height: '50vh', width: '100%' }}>
     <CustomMap
         defaultZoom={7}
@@ -96,6 +101,7 @@ After an extremely emotional day in Aokigahara, a light-hearted day in Chiba was
 I had the pleasure of seeing two of my favorite bands that I frequently listened to during my university days when I first started studying Japanese: The Back Horn and the world-famous Asian Kung-Fu Generation. Even though the three of us attended the same music festival when in Japan last year, I can’t even begin to put into words how it felt to enjoy the bands in person whose lyrics I spent hours translating with one of my closest friends. Back then, seeing Japan was just a distant dream that filled the spaces in between my classes. To be there on the beach just felt like anything is possible.
 
 ## May 4th-5th, 2016 - The Old City - Kyoto
+
 <div style={{ height: '50vh', width: '100%' }}>
     <CustomMap
         defaultZoom={8}
@@ -124,6 +130,7 @@ After Arashiyama, we decided to head to our ryokan, a traditional Japanese inn, 
 The next day was mostly reserved for traveling. From Kyoto Station, we went to Kansai Airport to fly to Okinawa for the next few days. It’s about an hour and a half train ride to the artificial island in Osaka Bay where the airport is located. From Kansai, we had a two-hour flight to the Pacific island of Okinawa.
 
 ## May 5th-8th, 2016 - Texas in the Pacific - Okinawa
+
 <div style={{ height: '50vh', width: '100%' }}>
     <CustomMap
         defaultZoom={7}
@@ -156,6 +163,7 @@ In Okinawa, life is very simple. Everyone dresses, speaks, and acts very casuall
 Leaving Okinawa and our new friends was one of the saddest moments of the trip for me, but I’m truly grateful for every amazing experience that I had there and the people who made it possible.
 
 ## May 8th-10th, 2016 - Hard Goodbyes - Tokyo
+
 A seven-hour delay in Naha Airport threw off our plans for the remainder of the trip. We arrived back in Tokyo much later than we had planned and had to sprint to catch the last Skyliner train at 10:30pm. We didn’t make it back to the apartment until midnight and promptly crashed from exhaustion after the last leg of our trip. We originally had plans to go to Hakone the following day, but decided to rest before our long flight back to the United States.
 
 We hung around Shinjuku most of the day instead and ended up eating Domino’s pizza and watching Big Daddy on Netflix for our last night. It was raining all day which made for a very somber departure. Kyle asked me if it would be a while before I came back to Japan again. I told them that coming twice in two years was a lot already. It made me very sad to think about not being back for some time, so I guess I have no choice but to go back next year again even if only for a shorter time.

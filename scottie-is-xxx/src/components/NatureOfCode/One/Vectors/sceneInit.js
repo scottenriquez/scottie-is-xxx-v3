@@ -20,7 +20,7 @@ export default class SceneInit {
     this.bounceDistance = 9;
     this.bottomYPosition = -4;
     this.timeStep = 0.2;
-    this.timeCounter = Math.sqrt(this.bounceDistance * 2 / this.acceleration);
+    this.timeCounter = Math.sqrt((this.bounceDistance * 2) / this.acceleration);
     this.initialSpeed = this.timeCounter * this.acceleration;
   }
 

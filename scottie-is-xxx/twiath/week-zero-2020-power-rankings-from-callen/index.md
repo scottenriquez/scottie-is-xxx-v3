@@ -1,9 +1,9 @@
 ---
 title: "Callen's Week Zero 2020 Power Rankings"
-date: "2020-09-12"
+date: '2020-09-12'
 description: "Callen's draconian power rankings."
 authors: [callen]
-tags: ["Power Rankings"]
+tags: ['Power Rankings']
 ---
 
 ## <img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-zero-callen" class="sleeper-avatar"/> markhambone | 0-0W/L | 0PF
@@ -17,7 +17,6 @@ Chris could very well end up with the top 2 most valuable fantasy players in 202
 ## <img src="https://dxyip34awyjyf.cloudfront.net/74fa749fa8b47609e14d12a902511733-zero-callen" class="sleeper-avatar"/> 🏆‼️ | 0-0W/L | 0PF
 
 Travis might have the best stable of RBs as a whole in the league this year. He owns three outright bellows. His TE isn’t anything special, and on the surface, his WRs are also pretty mediocre as starters. But this is where my personal bias and some potential upside come to play. I think DeVante Parker continues a lot of the success he ended last year with, and I think Lockett has top 5 WR potential, but only if the Seahawks let Rus go to work. In recent years the Seahawks have been a run-first team even though Rus is everything to that offense. If they realize that and let him loose Lockett could have a huge season.
-
 
 ## <img src="https://dxyip34awyjyf.cloudfront.net/789fc45ef5e559607eb1259cb67dd520-zero-callen" class="sleeper-avatar"/> Salty Duck Egg | 0-0W/L | 0PF
 
@@ -49,7 +48,7 @@ I guess our league is just reaching peak efficiencies because even at the #10 sp
 
 ## <img src="https://dxyip34awyjyf.cloudfront.net/94702f21e95d3aa14c8d671585ae6c58-zero-callen" class="sleeper-avatar"/> The Mixon Administration | 0-0W/L | 0PF
 
-I’m sorry to say it, but this may have been one of John’s weakest draft in league history. I can’t believe not taking his RB2 until the 8th round won’t come back to bite him. After last year’s performances, I can’t buy into OBJ or DJ Moore yet either, which leaves a very tiny margin of error for Julio and Golladay to carry a huge load. Julio is notoriously inconsistent on a week to week basis, and Golladay is going to miss week 1.  Mixon will be good, Julio will be good, Russ will be good, but more importantly, I think that if any manager in this league can turn around a less than awesome draft into a playoff team, it will be John. We may just be looking at the beginning of his greatest rebuild yet.
+I’m sorry to say it, but this may have been one of John’s weakest draft in league history. I can’t believe not taking his RB2 until the 8th round won’t come back to bite him. After last year’s performances, I can’t buy into OBJ or DJ Moore yet either, which leaves a very tiny margin of error for Julio and Golladay to carry a huge load. Julio is notoriously inconsistent on a week to week basis, and Golladay is going to miss week 1. Mixon will be good, Julio will be good, Russ will be good, but more importantly, I think that if any manager in this league can turn around a less than awesome draft into a playoff team, it will be John. We may just be looking at the beginning of his greatest rebuild yet.
 
 ## almostwinning | 0-0W/L | 0PF
 

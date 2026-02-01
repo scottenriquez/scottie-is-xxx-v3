@@ -1,9 +1,9 @@
 ---
 title: "Scottie's Week Three 2025 Power Rankings"
-date: "2025-09-24"
+date: '2025-09-24'
 description: "Scottie's bossy power rankings."
-authors: [ scottie ]
-tags: [ "Power Rankings" ]
+authors: [scottie]
+tags: ['Power Rankings']
 ---
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -46,8 +46,8 @@ def calculate_weekly_wins_against_all_opponents(row):
         if other_player_point < row['points']:
             wins_against_all_opponents += 1
     return wins_against_all_opponents
-    
-# assumes that matchups have been loaded from S3    
+
+# assumes that matchups have been loaded from S3
 # more connection details below
 matchups['wins_against_all_opponents'] = matchups.apply(calculate_weekly_wins_against_all_opponents, axis=1)
 ```
@@ -72,7 +72,7 @@ Given that this is week three, $$t = 3$$. Negative values indicate unluckiness, 
 Let's review these metrics so far.
 
 | Team    | Week Three $$w_o$$ | Season Total $$w_o$$ | $$Δw$$ |
-|---------|--------------------|----------------------|--------|
+| ------- | ------------------ | -------------------- | ------ |
 | Travis  | 10                 | 28                   | 15%    |
 | Scottie | 11                 | 26                   | -12%   |
 | Callen  | 9                  | 25                   | 24%    |
@@ -123,7 +123,7 @@ Index(['co_owners', 'keepers', 'league_id', 'owner_id', 'player_map',
 
 Now, on to this week's power rankings.
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-three-scottie" class="sleeper-avatar"/>  Brian Thomas Gooners | 3-0W/L | 339PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/405213591fe488220f2f4f79d9cc28eb-three-scottie" class="sleeper-avatar"/> Brian Thomas Gooners | 3-0W/L | 339PF
 
 #### Week Three Points: 115.26
 
@@ -137,7 +137,7 @@ won't (and the Astros are trending in that direction too). With just the right l
 and this roster, Callen has to take the number one spot.
 
 | Name                 | Team   | Depth |
-|----------------------|--------|-------|
+| -------------------- | ------ | ----- |
 | Justin Herbert       | LAC-QB | 1     |
 | James Cook           | BUF-RB | 1     |
 | Alvin Kamara         | NO-RB  | 1     |
@@ -148,7 +148,7 @@ and this roster, Callen has to take the number one spot.
 | David Montgomery     | DET-RB | 2     |
 | Tampa Bay Buccaneers | TB-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/a18f9fc9312fa9c2003503730b41e7fc-three-scottie" class="sleeper-avatar"/>  MeHurts&theGibbyGibbys | 3-0W/L | 359PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/a18f9fc9312fa9c2003503730b41e7fc-three-scottie" class="sleeper-avatar"/> MeHurts&theGibbyGibbys | 3-0W/L | 359PF
 
 #### Week Three Points: 122.32
 
@@ -163,7 +163,7 @@ to earth could quickly send this team to the middle of the pack. Much like A&M's
 overrated Notre Dame, this team might be fool's gold (pun intended).
 
 | Name             | Team    | Depth |
-|------------------|---------|-------|
+| ---------------- | ------- | ----- |
 | Jalen Hurts      | PHI-QB  | 1     |
 | Jahmyr Gibbs     | DET-RB  | 1     |
 | Chase Brown      | CIN-RB  | 1     |
@@ -174,7 +174,7 @@ overrated Notre Dame, this team might be fool's gold (pun intended).
 | Javonte Williams | DAL-RB  | 1     |
 | Buffalo Bills    | BUF-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/4b497865b72cac32f7c250f948326a9c-three-scottie" class="sleeper-avatar"/>  ZOOT SCOOT BOOGIE | 2-1W/L | 353PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/4b497865b72cac32f7c250f948326a9c-three-scottie" class="sleeper-avatar"/> ZOOT SCOOT BOOGIE | 2-1W/L | 353PF
 
 #### Week Three Points: 127.85
 
@@ -186,7 +186,7 @@ extraordinary game. My bench looks like an ICU at the moment, but the Quentin Jo
 textbook Waiver Wire God move. This roster cannot handle another injury until Aiyuk and/or Jennings get healthy.
 
 | Name              | Team    | Depth |
-|-------------------|---------|-------|
+| ----------------- | ------- | ----- |
 | Caleb Williams    | CHI-QB  | 1     |
 | Bijan Robinson    | ATL-RB  | 1     |
 | Kenneth Walker    | SEA-RB  | 1     |
@@ -197,7 +197,7 @@ textbook Waiver Wire God move. This roster cannot handle another injury until Ai
 | Quentin Johnston  | LAC-WR  | 3     |
 | Minnesota Vikings | MIN-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-three-scottie" class="sleeper-avatar"/>  Uncle Cral's Little Dogs | 2-1W/L | 346PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/400266e997f2d0857da2c8f2b939fda4-three-scottie" class="sleeper-avatar"/> Uncle Cral's Little Dogs | 2-1W/L | 346PF
 
 #### Week Three Points: 103.2
 
@@ -211,7 +211,7 @@ That said, Emeka Egbuka might be the best pick of the draft. TE and flex look to
 this team to be a contender. I should have traded you James Conner at the draft.
 
 | Name                | Team    | Depth |
-|---------------------|---------|-------|
+| ------------------- | ------- | ----- |
 | Marcus Mariota      | WAS-QB  | 2     |
 | Christian McCaffrey | SF-RB   | 1     |
 | J.K. Dobbins        | DEN-RB  | 1     |
@@ -222,7 +222,7 @@ this team to be a contender. I should have traded you James Conner at the draft.
 | Tony Pollard        | TEN-RB  | 1     |
 | Atlanta Falcons     | ATL-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-three-scottie" class="sleeper-avatar"/>  Sour Diesel Enjoyer | 3-0W/L | 336PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/1bac27b3e88d08f050e32b48195acf46-three-scottie" class="sleeper-avatar"/> Sour Diesel Enjoyer | 3-0W/L | 336PF
 
 #### Week Three Points: 99.04
 
@@ -235,7 +235,7 @@ that he has stashed on his bench. However, Puka/Amon-Ra/Ridley/Deebo is a lethal
 likely to win several close games and secure a comfortable playoff spot. I see nothing that changes my mind here.
 
 | Name                | Team    | Depth |
-|---------------------|---------|-------|
+| ------------------- | ------- | ----- |
 | Josh Allen          | BUF-QB  | 1     |
 | Chuba Hubbard       | CAR-RB  | 1     |
 | Nick Chubb          | HOU-RB  | 1     |
@@ -246,7 +246,7 @@ likely to win several close games and secure a comfortable playoff spot. I see n
 | Deebo Samuel        | WAS-WR  | 2     |
 | Pittsburgh Steelers | PIT-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-three-scottie" class="sleeper-avatar"/>  Mayfield Advantage | 1-2W/L | 301PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/61bfca158073b2dda70f755d92aacad9-three-scottie" class="sleeper-avatar"/> Mayfield Advantage | 1-2W/L | 301PF
 
 #### Week Three Points: 91.7
 
@@ -258,7 +258,7 @@ far, and the injury to Brittle Kittle hurts too. That said, I think Chris Godwin
 playoffs.
 
 | Name                | Team    | Depth |
-|---------------------|---------|-------|
+| ------------------- | ------- | ----- |
 | Baker Mayfield      | TB-QB   | 1     |
 | De'Von Achane       | MIA-RB  | 1     |
 | Jonathan Taylor     | IND-RB  | 1     |
@@ -269,7 +269,7 @@ playoffs.
 | Jakobi Meyers       | LV-WR   | 1     |
 | Philadelphia Eagles | PHI-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-three-scottie" class="sleeper-avatar"/>  Disney hater bville mayor | 1-2W/L | 277PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/320f9195b391718105e27b8cc9d40277-three-scottie" class="sleeper-avatar"/> Disney hater bville mayor | 1-2W/L | 277PF
 
 #### Week Three Points: 75.83
 
@@ -279,7 +279,7 @@ far. The rest of the roster looks good, not great. Michael Pittman and one explo
 been bright spots, but this team is aggressively mediocre. That's a step up for Trondheim!
 
 | Name                | Team   | Depth |
-|---------------------|--------|-------|
+| ------------------- | ------ | ----- |
 | Jared Goff          | DET-QB | 1     |
 | Saquon Barkley      | PHI-RB | 1     |
 | Breece Hall         | NYJ-RB | 1     |
@@ -290,7 +290,7 @@ been bright spots, but this team is aggressively mediocre. That's a step up for 
 | Jalen Nailor        | MIN-WR | 3     |
 | San Francisco 49ers | SF-DEF |       |
 
-## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/9696064d6bc28fc8da4e9731c5b02738-three-scottie" class="sleeper-avatar"/>  Moore Lamb Plz | 0-3W/L | 272PF
+## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/9696064d6bc28fc8da4e9731c5b02738-three-scottie" class="sleeper-avatar"/> Moore Lamb Plz | 0-3W/L | 272PF
 
 #### Week Three Points: 95
 
@@ -300,7 +300,7 @@ outside a terrible homer pick in Bo Nix. Jaxon Smith-Njigba looks special this s
 combo. Despite a painful start, I believe that this team will regress to the mean.
 
 | Name               | Team   | Depth |
-|--------------------|--------|-------|
+| ------------------ | ------ | ----- |
 | Bo Nix             | DEN-QB | 1     |
 | Kyren Williams     | LAR-RB | 1     |
 | Jaylen Warren      | PIT-RB | 1     |
@@ -311,7 +311,7 @@ combo. Despite a painful start, I believe that this team will regress to the mea
 | DJ Moore           | CHI-WR | 2     |
 | Green Bay Packers  | GB-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-three-scottie" class="sleeper-avatar"/>  Rashee Ya Later Alligator | 1-2W/L | 270PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/83296c4221970b26ea4d019a7581d032-three-scottie" class="sleeper-avatar"/> Rashee Ya Later Alligator | 1-2W/L | 270PF
 
 #### Week Three Points: 106.59
 
@@ -324,7 +324,7 @@ Courtland Sutton 21.8-point game, this team has demonstrated little boom potenti
 will hover around 90-100 points per week.
 
 | Name             | Team    | Depth |
-|------------------|---------|-------|
+| ---------------- | ------- | ----- |
 | Lamar Jackson    | BAL-QB  | 1     |
 | Josh Jacobs      | GB-RB   | 1     |
 | Rachaad White    | TB-RB   | 2     |
@@ -335,7 +335,7 @@ will hover around 90-100 points per week.
 | Courtland Sutton | DEN-WR  | 1     |
 | Seattle Seahawks | SEA-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/0658c50f92789c23a6f0b1efef9dbdaa-three-scottie" class="sleeper-avatar"/>  TUlsa King | 1-2W/L | 264PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/0658c50f92789c23a6f0b1efef9dbdaa-three-scottie" class="sleeper-avatar"/> TUlsa King | 1-2W/L | 264PF
 
 #### Week Three Points: 103.48
 
@@ -346,7 +346,7 @@ the same way. Personally, I think this team's success will hinge on Omarion Hamp
 good waiver pickups.
 
 | Name               | Team    | Depth |
-|--------------------|---------|-------|
+| ------------------ | ------- | ----- |
 | Daniel Jones       | IND-QB  | 1     |
 | Omarion Hampton    | LAC-RB  | 1     |
 | Bucky Irving       | TB-RB   | 1     |
@@ -357,7 +357,7 @@ good waiver pickups.
 | Ashton Jeanty      | LV-RB   | 1     |
 | Indianapolis Colts | IND-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-three-scottie" class="sleeper-avatar"/>  This Team Is The Pitts | 0-3W/L | 257PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/23fe4994d864928df8f99d56b60c9179-three-scottie" class="sleeper-avatar"/> This Team Is The Pitts | 0-3W/L | 257PF
 
 #### Week Three Points: 89.96
 
@@ -371,7 +371,7 @@ podcasts, and this is who they told me to draft!" Drake London is just having a 
 much confidence.
 
 | Name                   | Team    | Depth |
-|------------------------|---------|-------|
+| ---------------------- | ------- | ----- |
 | Dak Prescott           | DAL-QB  | 1     |
 | Jacory Croskey-Merritt | WAS-RB  | 1     |
 | Travis Etienne         | JAX-RB  | 1     |
@@ -382,7 +382,7 @@ much confidence.
 | Stefon Diggs           | NE-WR   | 1     |
 | Washington Commanders  | WAS-DEF |       |
 
-## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/3618f3aaee361b89185c5e9ed9107c70-three-scottie" class="sleeper-avatar"/>  Henrything is Possible | 1-2W/L | 249PF
+## <FontAwesomeIcon className="levelDown" icon={faLevelDownAlt} /> <img src="https://dxyip34awyjyf.cloudfront.net/3618f3aaee361b89185c5e9ed9107c70-three-scottie" class="sleeper-avatar"/> Henrything is Possible | 1-2W/L | 249PF
 
 #### Week Three Points: 85.64
 
@@ -395,7 +395,7 @@ like John is playing Whac-A-Mole with poor sit/start choices. This team has the 
 100s, so John shouldn't buy Juggalo face paint just yet.
 
 | Name             | Team    | Depth |
-|------------------|---------|-------|
+| ---------------- | ------- | ----- |
 | Patrick Mahomes  | KC-QB   | 1     |
 | Derrick Henry    | BAL-RB  | 1     |
 | Jordan Mason     | MIN-RB  | 1     |
@@ -405,4 +405,3 @@ like John is playing Whac-A-Mole with poor sit/start choices. This team has the 
 | Jerry Jeudy      | CLE-WR  | 1     |
 | Troy Franklin    | DEN-WR  | 3     |
 | Baltimore Ravens | BAL-DEF |       |
-

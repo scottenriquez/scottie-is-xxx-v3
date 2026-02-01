@@ -1,15 +1,14 @@
 ---
 title: "Caleb's Week Twelve 2022 Power Rankings"
-date: "2022-12-04"
+date: '2022-12-04'
 description: "Caleb's blameful power rankings."
 authors: [caleb]
-tags: ["Power Rankings"]
+tags: ['Power Rankings']
 ---
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLevelUpAlt } from "@fortawesome/free-solid-svg-icons"
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons"
-
 
 ## <FontAwesomeIcon className="levelUp" icon={faLevelUpAlt} /><img src="https://dxyip34awyjyf.cloudfront.net/b04d6b963c23d1e407713bc51755826d-twelve-caleb" class="sleeper-avatar"/> Dragonball Zeke | 8-4W/L | 1421PF
 

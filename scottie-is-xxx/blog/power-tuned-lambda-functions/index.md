@@ -1,12 +1,13 @@
 ---
 authors: [scottenriquez]
 title: Writing Optimized Functions Using AWS Lambda Power Tuning
-date: "2023-11-03"
-description: "A CI/CD pipeline that ensures Lambda functions are optimized for cost."
-tags: ["Cloud", "Programming"]
+date: '2023-11-03'
+description: 'A CI/CD pipeline that ensures Lambda functions are optimized for cost.'
+tags: ['Cloud', 'Programming']
 ---
 
 ## Solution Overview
+
 As I [wrote about previously](https://scottie.is/writing/cost-conscious-terraform/), AWS users are shifting left on costs using DevOps and automation. While tools like [Infracost](https://www.infracost.io/) are powerful for estimating costs for Lambda and other services, they alone do not provide optimization or tuning feedback during the development lifecycle. This is where a tool like AWS Lambda Power Tuning assists:
 
 > AWS Lambda Power Tuning is an open-source tool that can help you visualize and fine-tune the memory and power configuration of Lambda functions. It runs in your own AWS account, powered by AWS Step Functions, and it supports three optimization strategies: cost, speed, and balanced.
@@ -18,9 +19,11 @@ Lambda pricing is determined by the number of invocations and the execution dura
 Without running the Lambda function using different configurations, it is unclear what is the most optimal memory amount for cost and/or performance. This solution demonstrates AWS Lambda Tuning Tools integration with a CodeSuite CI/CD pipeline to bring Lambda tuning information to the pull request process and code review discussion. The source code is hosted on [GitHub](https://github.com/scottenriquez/lambda-power-tuned).
 
 ## Solution Architecture
+
 ![Diagram](lambda-power-tuned-architecture-diagram.png)
 
 This solution deploys several resources:
+
 - The AWS Lambda Power Tuning application
 - A CodeCommit repository preloaded with Terraform code for a Lambda function to tune
 - A CodeBuild project triggered by pull request state changes that invoke the AWS Lambda Power Tuning state machine
@@ -29,6 +32,7 @@ This solution deploys several resources:
 - An S3 bucket to store CodePipeline artifacts
 
 ## Preparing Your Development Environment
+
 While this solution is for writing and deploying Terraform HCL syntax, I wrote the infrastructure code for the deployment pipeline and dependent resources using AWS CDK, which is my daily driver for infrastructure as code. I intentionally used Terraform for the target Lambda function to clearly differentiate between the code for resources managed by the pipeline and the pipeline itself.
 
 The following dependencies are required to deploy the pipeline infrastructure:
@@ -40,23 +44,26 @@ The following dependencies are required to deploy the pipeline infrastructure:
 - [Source code](https://github.com/scottenriquez/lambda-power-tuned)
 
 Rather than installing Node.js, CDK, Terraform, and all other dependencies on your local machine, you can alternatively create a [Cloud9 IDE](https://aws.amazon.com/cloud9/) with these pre-installed via the Console or with a CloudFormation template:
+
 ```yaml
 Resources:
   rCloud9Environment:
     Type: AWS::Cloud9::EnvironmentEC2
     Properties:
       AutomaticStopTimeMinutes: 30
-      ConnectionType: CONNECT_SSH 
-      Description: Environment for writing and deploying CDK 
+      ConnectionType: CONNECT_SSH
+      Description: Environment for writing and deploying CDK
       # AWS Free Tier eligible
-      InstanceType: t2.micro	
+      InstanceType: t2.micro
       Name: PowerTuningCDKPipelineCloud9Environment
       # https://docs.aws.amazon.com/cloud9/latest/user-guide/vpc-settings.html#vpc-settings-create-subnet
-      SubnetId: subnet-EXAMPLE 
+      SubnetId: subnet-EXAMPLE
 ```
 
 ## Installation and Deployment
+
 To install and deploy the pipeline, use the following commands:
+
 ```shell
 git clone https://github.com/scottenriquez/lambda-power-tuned.git
 cd lambda-power-tuned
@@ -70,11 +77,13 @@ cdk deploy
 ```
 
 ## Using the Deployment Pipeline
+
 The CodePipeline pipeline is triggered at creation, but there are manual approval stages to prevent any infrastructure from being created without intervention. Feel free to deploy the Terraform, but it is not required for generating tuning information via a pull request. The CodePipeline is triggered by changes to `main`.
 
 ![Pipeline](./pipeline-screenshot.png)
 
 Next, make some code changes to see the performance impact. To modify the Lambda code, either use the CodeCommit GUI in the Console or clone the repository to your development environment. First, create a branch called `feature` off of `main`. Then make some kind of code change, commit to `feature`, and open a pull request. This automatically triggers the build, which does the following:
+
 - Add a comment to the pull request with a hyperlink back to the CodeBuild run
 - Initialize Terraform against the deployment state to detail resources changed relative to `main`
 - Add a comment to the pull request with the `resource_changes` property from the Terraform plan
@@ -189,21 +198,18 @@ Lastly, note that there is an AWS Lambda Power Tuning input file included in the
 
 ```json title='lambda_power_tuned/lambda_power_tuned/terraform/power-tuning-input.json'
 {
-	"powerValues": [
-		128,
-		256,
-		512,
-		1024
-	],
-	"num": 50,
-	"payload": {},
-	"parallelInvocation": true,
-	"strategy": "cost"
+  "powerValues": [128, 256, 512, 1024],
+  "num": 50,
+  "payload": {},
+  "parallelInvocation": true,
+  "strategy": "cost"
 }
 ```
 
 ## Cleanup
+
 If you deployed resources via the deployment pipeline, be sure to either use the `DestroyTerraform` CodeBuild project or run:
+
 ```shell
 # set the bucket name variable or replace with a value
 # the bucket name nomenclature is 'terraform-state-' followed by a UUID
@@ -213,6 +219,7 @@ terraform destroy
 ```
 
 To destroy the pipeline itself run:
+
 ```shell
 cdk destroy
 ```
@@ -220,4 +227,5 @@ cdk destroy
 If you spun up a Cloud9 environment, be sure to delete that as well.
 
 ## Disclaimer
+
 At the time of writing this blog post, I currently work for Amazon Web Services. The opinions and views expressed here are my own and not the views of my employer.

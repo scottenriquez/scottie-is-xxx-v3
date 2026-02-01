@@ -1,13 +1,13 @@
 ---
-title: "Azure DevOps CI/CD Pipeline for an AWS Lambda Node.js Function"
-date: "2020-02-08"
-description: "End-to-end working example for testing, building, linting, and deploying an AWS Lambda Node.js function to multiple environments."
-tags: ["Cloud", "Programming"]
+title: 'Azure DevOps CI/CD Pipeline for an AWS Lambda Node.js Function'
+date: '2020-02-08'
+description: 'End-to-end working example for testing, building, linting, and deploying an AWS Lambda Node.js function to multiple environments.'
+tags: ['Cloud', 'Programming']
 ---
 
 ## Overview
 
-This project serves as an end-to-end working example for testing, building, linting, and deploying an AWS Lambda Node.js function to multiple environments using AWS CloudFormation, Azure Pipelines, and Azure DevOps. The complete source code is located in [this GitHub repository](https://github.com/scottenriquez/azure-devops-aws-lambda-ci-cd "GitHub"), and the build output is publicly available via [Azure DevOps](https://dev.azure.com/scottenriquez/AWS%20Lambda%20CI-CD/_build?definitionId=1&_a=summary "Azure DevOps build summary").
+This project serves as an end-to-end working example for testing, building, linting, and deploying an AWS Lambda Node.js function to multiple environments using AWS CloudFormation, Azure Pipelines, and Azure DevOps. The complete source code is located in [this GitHub repository](https://github.com/scottenriquez/azure-devops-aws-lambda-ci-cd 'GitHub'), and the build output is publicly available via [Azure DevOps](https://dev.azure.com/scottenriquez/AWS%20Lambda%20CI-CD/_build?definitionId=1&_a=summary 'Azure DevOps build summary').
 
 ## Setting Up a Git Repository
 
@@ -22,10 +22,10 @@ A simple `npm init` command will create the `package.json` file and populate rel
 In the root of the project, there's a file called `index.js` with the Lambda function logic. For this example, the handler function simply returns a 200 status code with a serialized JSON body.
 
 ```javascript title='index.js'
-exports.handler = async event => ({
+exports.handler = async (event) => ({
   statusCode: 200,
-  body: JSON.stringify("Hello from Lambda!"),
-})
+  body: JSON.stringify('Hello from Lambda!'),
+});
 ```
 
 ## Adding Unit Tests and Code Coverage
@@ -33,26 +33,26 @@ exports.handler = async event => ({
 First, install a few development dependencies using the command `npm install --save-dev mocha chai nyc`. I've added a unit test in the file `test/handler.test.js`:
 
 ```javascript title='test/handler.test.js'
-const mocha = require("mocha")
-const chai = require("chai")
-const index = require("../index")
+const mocha = require('mocha');
+const chai = require('chai');
+const index = require('../index');
 
-const { expect } = chai
-const { describe } = mocha
-const { it } = mocha
+const { expect } = chai;
+const { describe } = mocha;
+const { it } = mocha;
 
-describe("Handler", async () => {
-  describe("#handler()", async () => {
-    it("should return a 200 response with a body greeting the user from Lambda ", async () => {
+describe('Handler', async () => {
+  describe('#handler()', async () => {
+    it('should return a 200 response with a body greeting the user from Lambda ', async () => {
       const expectedResponse = {
         statusCode: 200,
-        body: JSON.stringify("Hello from Lambda!"),
-      }
-      const actualResponse = await index.handler(null)
-      expect(actualResponse).to.deep.equal(expectedResponse)
-    })
-  })
-})
+        body: JSON.stringify('Hello from Lambda!'),
+      };
+      const actualResponse = await index.handler(null);
+      expect(actualResponse).to.deep.equal(expectedResponse);
+    });
+  });
+});
 ```
 
 To configure code coverage rules for the CI/CD pipeline, add a `.nycrc` (Istanbul configuration) file to the root of the project. For this example, I've specified 80% across branches (i.e. if statement paths), lines, functions, and statements. You can also whitelist files to apply code coverage rules with the `include` attribute.
@@ -85,7 +85,7 @@ You can verify that everything is configured correctly by running `npm test` to 
 
 It's important to think of linting and styling as two separate entities. Linting is part of the CI/CD pipeline and serves as static code analysis. This provides feedback on the code that could potentially cause bugs and should cause a failure in the pipeline if issues are found. Styling, on the other hand, is opinionated and provides readability and consistency across the codebase. However, it may not be part of build pipeline itself (i.e. causing the build to fail if a style rule is violated) and should be run locally prior to a commit.
 
-For configuring ESLint, I used [@wesbos' configuration](https://github.com/wesbos/eslint-config-wesbos "ESLint Setup") as a base using the command `npx install-peerdeps --dev eslint-config-wesbos`. Detailed instructions can be found in his README. This makes the `.eslintrc` config in the root quite clean:
+For configuring ESLint, I used [@wesbos' configuration](https://github.com/wesbos/eslint-config-wesbos 'ESLint Setup') as a base using the command `npx install-peerdeps --dev eslint-config-wesbos`. Detailed instructions can be found in his README. This makes the `.eslintrc` config in the root quite clean:
 
 ```json title='.eslintrc'
 {
@@ -119,24 +119,24 @@ stages:
     jobs:
       - job: BuildLambdaFunction
         pool:
-          vmImage: "ubuntu-latest"
+          vmImage: 'ubuntu-latest'
         continueOnError: false
         steps:
           - task: NodeTool@0
             inputs:
-              versionSpec: "12.x"
-            displayName: "Install Node.js"
+              versionSpec: '12.x'
+            displayName: 'Install Node.js'
           - script: |
               npm install
               npm run lint
               npm test
-            displayName: "NPM install, lint, and test"
+            displayName: 'NPM install, lint, and test'
           - task: ArchiveFiles@2
             inputs:
-              rootFolderOrFile: "$(Build.SourcesDirectory)"
+              rootFolderOrFile: '$(Build.SourcesDirectory)'
               includeRootFolder: true
-              archiveType: "zip"
-              archiveFile: "$(Build.ArtifactStagingDirectory)/LambdaBuild.zip"
+              archiveType: 'zip'
+              archiveFile: '$(Build.ArtifactStagingDirectory)/LambdaBuild.zip'
               replaceExistingArchive: true
               verbose: true
 ```
@@ -145,7 +145,7 @@ For now, there is only one stage in the pipeline, but additional stages will be 
 
 ## Configuring Local Azure Pipeline Builds
 
-As indicated by the nomenclature, Azure Pipelines run in the cloud. It's worth noting that it is possible to host your own build agents if you so choose. Setting it up does take quite a bit of configuration, so for this project, I opted to use the cloud-hosted agent instead. Microsoft has [extensive documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser "Self-hosted agents") for setting this up, and I've included the Dockerfile in the `dockeragent/` directory.
+As indicated by the nomenclature, Azure Pipelines run in the cloud. It's worth noting that it is possible to host your own build agents if you so choose. Setting it up does take quite a bit of configuration, so for this project, I opted to use the cloud-hosted agent instead. Microsoft has [extensive documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser 'Self-hosted agents') for setting this up, and I've included the Dockerfile in the `dockeragent/` directory.
 
 ## Enabling Infrastructure as Code Using AWS CloudFormation
 
@@ -216,8 +216,8 @@ Another stage can be added to the YAML script that depends on a successful build
   jobs:
     - deployment: LambdaDevelopment
       pool:
-        vmImage: "ubuntu-latest"
-      environment: "Development"
+        vmImage: 'ubuntu-latest'
+      environment: 'Development'
       strategy:
         runOnce:
           deploy:
@@ -227,14 +227,14 @@ Another stage can be added to the YAML script that depends on a successful build
                   aws configure set aws_access_key_id $(AWS_ACCESS_KEY_ID)
                   aws configure set aws_secret_access_key $(AWS_SECRET_KEY_ID)
                   aws configure set aws_default_region $(AWS_DEFAULT_REGION)
-                displayName: "install and configure AWS CLI"
+                displayName: 'install and configure AWS CLI'
               - script: |
                   aws s3 cp $(Pipeline.Workspace)/LambdaBuild/s/$(AWS_CLOUDFORMATION_TEMPLATE_FILE_NAME) s3://$(AWS_S3_STAGING_BUCKET_NAME)
                   aws s3 cp $(Pipeline.Workspace)/LambdaBuild/a/LambdaBuild.zip s3://$(AWS_S3_STAGING_BUCKET_NAME)
-                displayName: "upload CloudFormation template and Lambda function ZIP build to staging bucket"
+                displayName: 'upload CloudFormation template and Lambda function ZIP build to staging bucket'
               - script: |
                   aws cloudformation deploy --stack-name $(AWS_STACK_NAME_DEVELOPMENT) --template-file $(Pipeline.Workspace)/LambdaBuild/s/$(AWS_CLOUDFORMATION_TEMPLATE_FILE_NAME) --tags Environment=Development --capabilities CAPABILITY_NAMED_IAM --no-fail-on-empty-changeset
-                displayName: "updating CloudFormation stack"
+                displayName: 'updating CloudFormation stack'
 ```
 
 Note that I have parameterized certain inputs (i.e. `$(AWS_ACCESS_KEY_ID)`) as build environment variables to be reusable and secure. Again, these are managed via settings in Azure DevOps and not committed to source control.
@@ -246,9 +246,9 @@ Because each stage in the Azure Pipeline spins up a separate virtual machine, fi
 ```yaml title='azure-pipelines.yml'
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: "$(Pipeline.Workspace)"
-    artifact: "LambdaBuild"
-    publishLocation: "pipeline"
+    targetPath: '$(Pipeline.Workspace)'
+    artifact: 'LambdaBuild'
+    publishLocation: 'pipeline'
 ```
 
 ## Security Checks
