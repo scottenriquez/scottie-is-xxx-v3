@@ -58,6 +58,13 @@ img:not([src*="maps.googleapis.com"]):not([src*="maps.gstatic.com"]):not([src$="
   font-family: 'JetBrains Mono', monospace;
 }
 
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   max-width: 100%;
   padding-left: 2rem;
