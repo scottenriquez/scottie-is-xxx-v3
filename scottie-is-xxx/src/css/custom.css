@@ -57,7 +57,7 @@ img:not([src*='maps.googleapis.com']):not([src*='maps.gstatic.com']):not([src$='
   font-family: 'JetBrains Mono', monospace;
 }
 
-img:not(.sleeper-avatar):not([src$=".svg"]) {
+img:not(.sleeper-avatar):not([src$='.svg']) {
   display: block;
   margin: 0 auto;
   max-width: 100%;

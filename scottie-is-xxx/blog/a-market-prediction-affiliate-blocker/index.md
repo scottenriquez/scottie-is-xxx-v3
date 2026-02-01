@@ -192,7 +192,9 @@ people through constant marketing and addiction.
 
 ## Try It Yourself
 
-As mentioned, this code is available under MIT on GitHub. At this time, I have no plans to publish in the Chrome Web
+As mentioned, this code is available under MIT
+on [GitHub](https://github.com/scottenriquez/market-prediction-blocker-chrome-extension). At this time, I have no plans
+to publish in the Chrome Web
 Store due to my unfamiliarity with the rules and requirements. That said, it’s straightforward to install extensions
 manually:
 
