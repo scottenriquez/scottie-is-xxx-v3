@@ -55,9 +55,11 @@ Shayne Coplan (Polymarket CEO) said the following in a 60 Minutes interview:
 > you need to be clear and stringent on where the line is drawn...
 
 Aside from this being virtually impossible to enforce, this clearly spells out the game. If you have insider information
-about world events, you are almost certainly wealthy. Generally speaking, the average person is not high enough in their
-company's org chart to obtain sufficient information to commit insider trading. This leaves two winners and one loser.
-Prediction markets derive revenue from trades whether they win or lose. The insiders have a significantly higher chance
+about world events, you are almost certainly wealthy already. Generally speaking, the average person is not high enough
+in their
+company's org chart to obtain sufficient information to commit insider trading. This leaves two winners and one loser in
+the predictive market game.
+Prediction market companies derive revenue from trades with no risk to themselves. The insiders have a significantly higher chance
 of winning than outsiders. This leaves the common person to foot the bill. Their money is then funneled to the elite and
 corporations. Game over, sucker.
 
@@ -82,13 +84,13 @@ Angeles Lakers fan, so here’s an example of an account that I do not follow bu
 
 ![Lakers Empire](lakers-empire.png)
 
-A simple idea came to mind. What if I could easily measure just how much of my feed are affiliates of gambling
+A simple idea came to mind. What if I could measure just how much of my feed are affiliates of gambling
 companies? The experiment begins.
 
 ## The Plan and Implementation
 
-- Since Elon Musk ruined Twitter, I’ve noticed that API call limits are much stricter. I have no interest in paying
-  money to Twitter, so capturing data client-side (i.e., via the web browser) made a lot of sense
+- Since Elon Musk ruined Twitter, I’ve noticed that API call limits are much stricter
+- I have no interest in paying money to Twitter, so capturing data client-side (i.e., via the web browser) made a lot of sense
 - Blocking accounts would impact my algorithm
 - However, simply hiding this type of content via CSS would allow me to observe how often it appears in my feed in a
   controlled way, without having to physically see the actual content
@@ -156,7 +158,7 @@ action:
 ## The Results
 
 As mentioned above, I intentionally do not follow any account that is an affiliate of Polymarket, Kalshi, or any
-gambling account. Given the opacity of any recommendation algorithm, I can’t explain or reproduce exactly how or why
+gambling company. Given the opacity of any recommendation algorithm, I can’t explain or reproduce exactly how or why
 certain accounts appear in my feed. This was far from a perfect experiment, but the directional results were still
 surprising. Below is the breakdown ($$n=1200$$):
 
@@ -186,9 +188,9 @@ valueName="count"
 
 Obviously, everyone’s feed is very different. Mine centers on sports and politics, which now seem more geared toward
 gambling, unfortunately. With that said, the scale of this marketing campaign is staggering. One in four tweets that I
-would have seen is written by these gambling affiliates. While it is certainly not the case that these accounts are
+should have seen is written by these gambling affiliates. While it is certainly not the case that these accounts are
 constantly spewing gambling ads, there seems to be something much larger at play as these companies continue to prey on
-people through constant marketing and addiction.
+people through constant marketing, addiction, and hope of making money.
 
 ## Try It Yourself
 
