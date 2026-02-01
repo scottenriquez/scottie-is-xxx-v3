@@ -207,3 +207,7 @@ manually:
 - Go to Twitter
 - Scroll through some content
 - Open the extension to view the UI
+
+## Disclaimer
+
+The opinions and views expressed here are my own and not those of my employer or school.
