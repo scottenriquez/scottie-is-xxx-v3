@@ -17,9 +17,9 @@ class PieChart extends Component {
 
   updateSVG = () => {
     const svg = d3.select(this.ref.current);
-    const width = 800;
-    const height = 400;
-    const radius = Math.min(width, height) / 2 - 20; // Changed from -40 to -20 for larger pie
+    const width = 480;
+    const height = 480;
+    const radius = Math.min(width, height) / 2 - 20;
 
     // Everforest Dark Hard color palette
     const colors = [
@@ -84,7 +84,8 @@ class PieChart extends Component {
       .attr('transform', (d) => `translate(${labelArc.centroid(d)})`)
       .attr('text-anchor', 'middle')
       .attr('fill', '#4b5263')
-      .style('font-size', '12px')
+      .style('font-size', '16px')
+      .style('font-weight', 'bold')
       .text((d) => d.data[this.props.labelName]);
 
     // Draw percentage labels
@@ -95,11 +96,11 @@ class PieChart extends Component {
       .attr('class', 'percentage')
       .attr('transform', (d) => {
         const [x, y] = labelArc.centroid(d);
-        return `translate(${x}, ${y + 15})`;
+        return `translate(${x}, ${y + 20})`;
       })
       .attr('text-anchor', 'middle')
       .attr('fill', '#4b5263')
-      .style('font-size', '11px')
+      .style('font-size', '14px')
       .text((d) => {
         const total = d3.sum(processedData, (item) => item[this.props.valueName]);
         const percentage = ((d.data[this.props.valueName] / total) * 100).toFixed(1);
@@ -109,7 +110,7 @@ class PieChart extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{ maxWidth: '680px', margin: '0 auto' }}>
         <svg
           ref={this.ref}
           style={{
@@ -118,9 +119,9 @@ class PieChart extends Component {
             marginRight: '0px',
             marginLeft: '0px',
           }}
-          viewBox="0 0 800 400"
+          viewBox="0 0 480 480"
         >
-          <g className="pie-area" transform="translate(400, 200)" />
+          <g className="pie-area" transform="translate(240, 240)" />
         </svg>
       </div>
     );
