@@ -33,13 +33,18 @@ Think about why sports are so often the target of betting. It’s a controlled e
 Each player and coach has their own incentives to perform to the best of their ability, regardless of circumstances. The
 leagues themselves have vested interests in ensuring that the games are refereed and scored fairly in order to maintain
 public trust that these are competitions rather than scripted entertainment. Even with these guardrails and incentives,
-there have been several cases recently of players engaging in game manipulation across the NCAA, NBA, and MLB. Now,
-throw out virtually any guardrails. Add in the fact that folks can now bet on damn near anything.
+there have been several cases recently of players engaging in game manipulation across
+the [NCAA](https://www.espn.com/mens-college-basketball/story/_/id/47619154/many-college-players-20-charged-point-shaving-scheme),
+[NBA](https://www.espn.com/nba/story/_/id/47757702/blakeney-nba-gambling-indictment),
+and [MLB](https://www.espn.com/mlb/story/_/id/47028214/rob-manfred-addresses-mlb-next-steps-betting-scandal). Now, throw
+out virtually any guardrails. Add in the fact that folks can now bet on damn near anything.
 
-On January 3rd, 2026, the United States illegally invaded Venezuela after committing various war crimes throughout the
+On January 3rd, 2026, the United States illegally invaded Venezuela after [committing various war crimes](https://www.aljazeera.com/news/2026/1/13/us-faces-war-crime-allegation-for-disguising-aircraft-in-drug-boat-attack) throughout the
 region in the months prior. The target of Operation Absolute Resolve (other than Venezuela’s oil) was Nicolás Maduro,
-the leader at the time. While this news sent shockwaves around the world, a story about prediction markets may have been
-lost in the mix for some. Someone, almost certainly with inside information, created a Polymarket account in order to
+the leader at the time. While this news sent shockwaves around the
+world, [a story about prediction markets may have been
+lost in the mix for some](https://www.npr.org/2026/01/05/nx-s1-5667232/polymarket-maduro-bet-insider-trading). Someone,
+almost certainly with inside information, created a Polymarket account in order to
 bet on real-world events. Specifically, they bet on Maduro leaving office, which had odds of approximately 7% at the
 time. The user pocketed over $436,000. Real-world insider trading with classified military intelligence.
 
@@ -49,23 +54,28 @@ While this is by far the most public example, it shows just how rigged the syste
 largest players in the predictive market space, are not who you are betting against. Rather than a traditional betting
 model where the customer bets against the house, these two simply facilitate the bets and take a cut of each. As such,
 they have no incentive to prevent insider trading unless it decreases trade volume (i.e., their revenue). In fact,
-Shayne Coplan (Polymarket CEO) said the following in a 60 Minutes interview:
+Shayne Coplan (Polymarket CEO) said the following
+in [a 60 Minutes interview](https://youtu.be/ZA5bY4K9XPs?si=WLPbMdQJNNcg05p8&t=369):
 
 > I think that people going and having an edge to the market is a good thing. Obviously, you need to curate them, and
-> you need to be clear and stringent on where the line is drawn...
+> you need to be really clear and stringent on where the line is drawn...
 
 Aside from this being virtually impossible to enforce, this clearly spells out the game. If you have insider information
 about world events, you are almost certainly wealthy already. Generally speaking, the average person is not high enough
 in their
 company's org chart to obtain sufficient information to commit insider trading. This leaves two winners and one loser in
 the predictive market game.
-Prediction market companies derive revenue from trades with no risk to themselves. The insiders have a significantly higher chance
+Prediction market companies derive revenue from trades with no risk to themselves. The insiders have a significantly
+higher chance
 of winning than outsiders. This leaves the common person to foot the bill. Their money is then funneled to the elite and
 corporations. Game over, sucker.
 
-If you’re hoping for regulatory oversight, you will likely be disappointed. Donald Trump Jr. is a paid advisor for both
-Polymarket and Kalshi. Ignoring the obvious conflicts of interest (as well as the other opportunities that the Trump
-family has capitalized on to profit at least $1.4 billion from the presidency), the Republican administration has yet to
+If you’re hoping for regulatory oversight, you will likely be disappointed. Donald Trump Jr. is [a paid advisor for both
+Polymarket and Kalshi](https://www.nytimes.com/2026/01/15/us/politics/donald-trump-jr-prediction-markets.html). Ignoring
+the obvious conflicts of interest (as well as the other opportunities that the Trump
+family has capitalized on
+to [profit at least $1.4 billion from the presidency](https://www.nytimes.com/interactive/2026/01/20/opinion/editorials/trump-wealth-crypto-graft.html)),
+the Republican administration has yet to
 show any initiative in actually regulating these industries.
 
 ## The Impossibility of Avoiding Gambling in Modern Life
@@ -90,7 +100,8 @@ companies? The experiment begins.
 ## The Plan and Implementation
 
 - Since Elon Musk ruined Twitter, I’ve noticed that API call limits are much stricter
-- I have no interest in paying money to Twitter, so capturing data client-side (i.e., via the web browser) made a lot of sense
+- I have no interest in paying money to Twitter, so capturing data client-side (i.e., via the web browser) made a lot of
+  sense
 - Blocking accounts would impact my algorithm
 - However, simply hiding this type of content via CSS would allow me to observe how often it appears in my feed in a
   controlled way, without having to physically see the actual content
@@ -104,7 +115,10 @@ numbers that served as an ID for the parent account. After reviewing several of 
 a simple mapping.
 
 ```javascript title='content.js'
+// far from a complete list
+// these are only the ones that I detected in my feed
 const BLOCKED_AFFILIATE_BADGE_IDS = {
+  '1998108505408999424': 'Kalshi',
   '2000660110239023106': 'Kalshi',
   '1994986527341113344': 'Polymarket',
   '2005664281002491904': 'Polymarket',
@@ -160,7 +174,7 @@ action:
 As mentioned above, I intentionally do not follow any account that is an affiliate of Polymarket, Kalshi, or any
 gambling company. Given the opacity of any recommendation algorithm, I can’t explain or reproduce exactly how or why
 certain accounts appear in my feed. This was far from a perfect experiment, but the directional results were still
-surprising. Below is the breakdown ($$n=1200$$):
+surprising. Below is the breakdown (with $$n=1200$$ tweets):
 
 <PieChart
 data={[
