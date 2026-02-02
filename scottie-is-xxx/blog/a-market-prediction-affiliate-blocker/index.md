@@ -110,8 +110,8 @@ companies? The experiment begins.
 The first steps were to parse the HTML from Twitter and figure out a clever way to determine if an account is an
 affiliate of one of the gambling companies. Surprisingly, this took a bit of research. One might think that there is
 some obvious text indicating the affiliate company. The best way that I found was to parse the URL for the affiliate
-image (i.e., the little picture with Kalshi or whichever gambling company). I noticed that each had a long string of
-numbers that served as an ID for the parent account. After reviewing several of the most prominent affiliations, I built
+image (i.e., the little picture with Kalshi or whichever gambling company). I noticed that the URL contained the gambling affiliate's [Snowflake ID](https://docs.x.com/fundamentals/x-ids).
+After reviewing several of the most prominent affiliations, I built
 a simple mapping.
 
 ```javascript title='content.js'
