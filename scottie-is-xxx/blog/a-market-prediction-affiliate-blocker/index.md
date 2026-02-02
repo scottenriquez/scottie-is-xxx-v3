@@ -39,7 +39,9 @@ the [NCAA](https://www.espn.com/mens-college-basketball/story/_/id/47619154/many
 and [MLB](https://www.espn.com/mlb/story/_/id/47028214/rob-manfred-addresses-mlb-next-steps-betting-scandal). Now, throw
 out virtually any guardrails. Add in the fact that folks can now bet on damn near anything.
 
-On January 3rd, 2026, the United States illegally invaded Venezuela after [committing various war crimes](https://www.aljazeera.com/news/2026/1/13/us-faces-war-crime-allegation-for-disguising-aircraft-in-drug-boat-attack) throughout the
+On January 3rd, 2026, the United States illegally invaded Venezuela
+after [committing various war crimes](https://www.aljazeera.com/news/2026/1/13/us-faces-war-crime-allegation-for-disguising-aircraft-in-drug-boat-attack)
+throughout the
 region in the months prior. The target of Operation Absolute Resolve (other than Venezuela’s oil) was Nicolás Maduro,
 the leader at the time. While this news sent shockwaves around the
 world, [a story about prediction markets may have been
@@ -110,7 +112,8 @@ companies? The experiment begins.
 The first steps were to parse the HTML from Twitter and figure out a clever way to determine if an account is an
 affiliate of one of the gambling companies. Surprisingly, this took a bit of research. One might think that there is
 some obvious text indicating the affiliate company. The best way that I found was to parse the URL for the affiliate
-image (i.e., the little picture with Kalshi or whichever gambling company). I noticed that the URL contained the gambling affiliate's [Snowflake ID](https://docs.x.com/fundamentals/x-ids).
+image (i.e., the little picture with Kalshi or whichever gambling company). I noticed that the URL contained the
+gambling affiliate's [Snowflake ID](https://docs.x.com/fundamentals/x-ids).
 After reviewing several of the most prominent affiliations, I built
 a simple mapping.
 
@@ -174,12 +177,12 @@ action:
 As mentioned above, I intentionally do not follow any account that is an affiliate of Polymarket, Kalshi, or any
 gambling company. Given the opacity of any recommendation algorithm, I can’t explain or reproduce exactly how or why
 certain accounts appear in my feed. This was far from a perfect experiment, but the directional results were still
-surprising. Below is the breakdown (with $$n=1200$$ tweets):
+surprising. Below is the breakdown (with $$n=2200$$ tweets):
 
 <PieChart
 data={[
-{ category: 'Not', count: 896 },
-{ category: 'Gambling Affiliate', count: 304 },
+{ category: 'Not', count: 1734 },
+{ category: 'Gambling Affiliate', count: 446 },
 ]}
 labelName="category"
 valueName="count"
@@ -189,22 +192,25 @@ Of the affiliates, Kalshi and Polymarket had the lion's share of influence on my
 
 <PieChart
 data={[
-{ platform: 'Kalshi', count: 137 },
-{ platform: 'Polymarket', count: 114 },
+{ platform: 'Kalshi', count: 241 },
+{ platform: 'Polymarket', count: 160 },
 { platform: 'FanDuel', count: 20 },
-{ platform: 'Onyx', count: 14 },
-{ platform: 'Underdog', count: 10 },
-{ platform: 'ProphetX', count: 9 },
+{ platform: 'Onyx', count: 18 },
+{ platform: 'Underdog', count: 16 },
+{ platform: 'ProphetX', count: 11 },
 ]}
 labelName="platform"
 valueName="count"
 />
 
 Obviously, everyone’s feed is very different. Mine centers on sports and politics, which now seem more geared toward
-gambling, unfortunately. With that said, the scale of this marketing campaign is staggering. One in four tweets that I
-should have seen is written by these gambling affiliates. While it is certainly not the case that these accounts are
-constantly spewing gambling ads, there seems to be something much larger at play as these companies continue to prey on
-people through constant marketing, addiction, and hope of making money.
+gambling, unfortunately. In addition, many of these accounts tweet frequently, especially during live games, trade
+rumors, and major world news. For example, during testing today, several of these accounts tweeted about the impending
+NBA trade deadline, Austin Reaves’ injury, the Lakers/Knicks game on national television, and the Grammys. Even with all
+the caveats, there is no denying the web of influence that these companies have in social media. While it is certainly
+not the case that these accounts are constantly spewing gambling ads, there seems to be something much larger at play as
+these companies continue to prey on people through constant marketing, addictive products, and promising the hope of making
+money.
 
 ## Try It Yourself
 
