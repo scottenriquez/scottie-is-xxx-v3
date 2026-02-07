@@ -20,7 +20,7 @@ export default function Home() {
               <h3>Los Angeles, California</h3>
             </div>
             <div className={'text--center'}>
-              <p>Cloud solutions architect, software engineer, data scientist, and technical leader</p>
+              <p>Cloud solutions architect, software engineer, data scientist, technical leader, and educator</p>
             </div>
             <div className={'text--center'}>
               <Link to={'/serving/resume.pdf'} target={'_blank'}>
